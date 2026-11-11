@@ -1,0 +1,280 @@
+/* ==========================================================================
+   AllNote house style - injected by build.py, never referenced by sheets.
+   Print first: white paper only, colour in rules/text, tight vertical rhythm.
+   Margins and page furniture come from build.py.
+   ========================================================================== */
+
+:root {
+  --ink: #111418;
+  --muted: #5b6470;
+  --line: #c7cdd4;
+  --line-soft: #e2e6ea;
+  --accent: #1c5f9e;
+  --accent-ink: #174d80;
+  --warn: #a3231b;
+  --font: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --mono: "Cascadia Mono", Consolas, "SF Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 10pt;
+  line-height: 1.24;
+  text-align: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+}
+
+/* ---------- headings ---------------------------------------------------- */
+
+h1 {
+  margin: 0 0 2.4mm;
+  padding: 0 0 1.3mm;
+  font-size: 14.5pt;
+  line-height: 1.1;
+  letter-spacing: -0.15pt;
+  border-bottom: 1.1pt solid var(--accent);
+  break-after: avoid;
+}
+
+h2 {
+  margin: 3.2mm 0 1.3mm;
+  padding-bottom: 0.5mm;
+  font-size: 9.4pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.55pt;
+  color: var(--accent-ink);
+  border-bottom: 0.5pt solid var(--line-soft);
+  break-after: avoid;
+}
+
+h3 {
+  margin: 2mm 0 0.7mm;
+  font-size: 10pt;
+  line-height: 1.2;
+  break-after: avoid;
+}
+
+h4 {
+  margin: 1.6mm 0 0.5mm;
+  font-size: 9pt;
+  font-weight: 700;
+  letter-spacing: 0.35pt;
+  text-transform: uppercase;
+  color: var(--muted);
+  break-after: avoid;
+}
+
+/* ---------- text -------------------------------------------------------- */
+
+p { margin: 0 0 1.05mm; }
+p:last-child { margin-bottom: 0; }
+
+strong, b { font-weight: 700; }
+em, i { font-style: italic; }
+small { font-size: 8.2pt; }
+sub, sup { font-size: 0.72em; line-height: 0; }
+
+a { color: var(--accent-ink); text-decoration: none; }
+
+ul, ol { margin: 0.3mm 0 1.2mm; padding-left: 4.4mm; }
+li { margin: 0.25mm 0; break-inside: avoid; }
+li::marker { color: var(--accent); }
+li > ul, li > ol { margin: 0.2mm 0 0.2mm; }
+
+ul.tight, ol.tight { margin: 0 0 0.8mm; }
+ul.tight li, ol.tight li { margin: 0; }
+
+/* Two-column flow for reference lists; keep blocks intact. */
+.cols2 { column-count: 2; column-gap: 5mm; column-rule: 0.4pt solid var(--line-soft); }
+.cols2 > * { break-inside: avoid; }
+
+/* ---------- boxes ------------------------------------------------------- */
+
+.box {
+  margin: 1.3mm 0 1.6mm;
+  padding: 0.6mm 0 0.6mm 2.4mm;
+  border-left: 2pt solid var(--accent);
+  break-inside: avoid;
+}
+
+.box .label {
+  display: block;
+  margin: 0 0 0.45mm;
+  font-size: 7.2pt;
+  font-weight: 700;
+  letter-spacing: 0.55pt;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+}
+
+.box.rule { border-left-width: 2.6pt; }
+.box.warn { border-left-color: var(--warn); }
+.box.warn .label { color: var(--warn); }
+.box.note { border-left-color: var(--line); }
+.box.note .label { color: var(--muted); }
+.box > :last-child { margin-bottom: 0; }
+
+/* ---------- formulas ---------------------------------------------------- */
+
+.formula {
+  margin: 1.1mm 0 1.5mm;
+  text-align: center;
+  font-size: 10.5pt;
+  line-height: 1.3;
+  break-inside: avoid;
+}
+
+.formula.left { text-align: left; }
+
+math { font-size: 1.02em; }
+math[display="block"] { margin: 1mm 0; }
+
+.where {
+  margin: 0.2mm 0 1.2mm;
+  font-size: 8.4pt;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ---------- layout helpers ---------------------------------------------- */
+
+.grid2, .grid3 {
+  display: grid;
+  gap: 1.4mm 4mm;
+  margin: 1mm 0 1.6mm;
+  break-inside: avoid;
+}
+.grid2 { grid-template-columns: 1fr 1fr; }
+.grid3 { grid-template-columns: repeat(3, 1fr); }
+.grid2 > *, .grid3 > * { min-width: 0; }
+
+/* ---------- tables ------------------------------------------------------ */
+
+table {
+  width: 100%;
+  margin: 1.1mm 0 1.8mm;
+  border-collapse: collapse;
+  font-size: 8.7pt;
+  line-height: 1.2;
+  break-inside: avoid;
+}
+
+caption {
+  caption-side: top;
+  padding-bottom: 0.6mm;
+  text-align: left;
+  font-size: 7.4pt;
+  font-weight: 700;
+  letter-spacing: 0.5pt;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+th {
+  padding: 0.5mm 1.6mm 0.45mm 0;
+  text-align: left;
+  font-size: 7.9pt;
+  font-weight: 700;
+  color: var(--accent-ink);
+  vertical-align: bottom;
+  border-bottom: 0.9pt solid var(--accent);
+}
+
+td {
+  padding: 0.45mm 1.6mm 0.45mm 0;
+  vertical-align: top;
+  border-bottom: 0.4pt solid var(--line-soft);
+}
+
+tr:last-child td { border-bottom: 0.7pt solid var(--line); }
+td:last-child, th:last-child { padding-right: 0; }
+
+/* Fractions in small table type stay legible. */
+td math, th math { font-size: 1.14em; }
+
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.compact { font-size: 8.3pt; }
+table.compact td, table.compact th { padding-top: 0.25mm; padding-bottom: 0.25mm; }
+
+/* ---------- figures ----------------------------------------------------- */
+
+figure {
+  margin: 1.4mm 0 1.8mm;
+  text-align: center;
+  break-inside: avoid;
+}
+
+figure svg { display: block; max-width: 100%; height: auto; margin: 0 auto; overflow: visible; }
+
+figcaption {
+  margin-top: 0.7mm;
+  font-size: 7.8pt;
+  line-height: 1.2;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Two diagrams side by side. */
+.fig-flex { display: flex; gap: 4mm; align-items: flex-start; justify-content: center; }
+.fig-flex > figure { flex: 1 1 0; margin: 1.2mm 0 1.6mm; }
+
+/* ---------- inline utilities -------------------------------------------- */
+
+.mono, code {
+  font-family: var(--mono);
+  font-size: 0.88em;
+}
+
+.chem { font-variant-numeric: tabular-nums; }
+
+.tag {
+  display: inline-block;
+  padding: 0.15mm 1mm;
+  font-size: 7pt;
+  letter-spacing: 0.35pt;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 0.4pt solid var(--line);
+  border-radius: 0.8mm;
+}
+
+.muted { color: var(--muted); }
+.accent { color: var(--accent-ink); }
+.center { text-align: center; }
+.nowrap { white-space: nowrap; }
+.small { font-size: 8.4pt; }
+.keep { break-inside: avoid; }
+
+/* Definition pairs: <dl class="kv"><dt>…</dt><dd>…</dd></dl> */
+dl.kv {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.3mm 2.4mm;
+  margin: 0.6mm 0 1.2mm;
+  break-inside: avoid;
+}
+dl.kv dt { font-weight: 700; }
+dl.kv dd { margin: 0; }
+
+hr {
+  height: 0;
+  margin: 2mm 0;
+  border: 0;
+  border-top: 0.5pt solid var(--line-soft);
+}
+
+/* ---------- pagination -------------------------------------------------- */
+
+p, li { orphans: 2; widows: 2; }
+img, svg { max-width: 100%; }

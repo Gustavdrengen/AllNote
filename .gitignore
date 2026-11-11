@@ -1,0 +1,19 @@
+# Rendered PDFs (build.py writes these from content/)
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Tool state
+.freebuff/
+.cloud-attachments/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp

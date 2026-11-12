@@ -14,8 +14,10 @@ only**. `build.py` owns layout and turns HTML into PDF.
 | `tools/diagram.py` | SVG diagrams (you run it, never hand-write huge SVGs if the tool can do it) |
 
 Never write, edit or delete a `.pdf` by hand. Never put CSS, `<script>`,
-`<link>` or external images in a sheet. Never add source references — no
-literature lists, no links, no "læs mere".
+`<link>` or external images in a sheet. Never add a source apparatus — no
+literature lists, no links, no "læs mere". Naming the material itself
+(theorists, schools, works under analysis) is content, not a reference; see
+§ 4.
 
 ---
 
@@ -139,8 +141,13 @@ Headings: `h1` title, `h2` main sections (uppercase, accent), `h3` sub-sections,
 
 **Never**
 
-* Source references of any kind: no bibliography, no "Kilde:", no URLs, no
-  book titles, no author names.
+* Citation apparatus: no bibliography, no "Kilde:", no URLs, no page
+  references, no "læs mere", no publisher, edition or ISBN data.
+* But name the material. Theorists, schools, concepts and the works being
+  analysed belong in the text: "Barthes' »Forfatterens død« (1967)", "Propps
+  31 funktioner", "Aristoteles' peripeti". A name is content when the sentence
+  still carries its point for a reader who cannot look it up; it is a citation
+  when the point is where the sheet got it from.
 * Filler introductions, summaries of what the sheet contains, motivational text.
 * Decorative images, icons, emoji, gradients, coloured backgrounds.
 * Invented facts or formulas. If a value is uncertain, leave it out.

@@ -22,8 +22,10 @@ literature lists, no links, no "læs mere".
 ## 1. Add or edit a sheet
 
 ```
-content/Subject/Sheet_name.html      ->  dist/Subject/Sheet_name.pdf
+content/Subject/Sheet_name.html          ->  dist/Subject/Sheet_name.pdf
+content/Subject/Group/Sheet_name.html    ->  dist/Subject/Group/Sheet_name.pdf
 content/Matematik/Retvinklede_trekanter.html
+content/Dansk/Sprog/Ordklasser.html
 ```
 
 * HTML lives only in `content/`, PDFs only in `dist/`. Never write into `dist/`.
@@ -32,17 +34,21 @@ content/Matematik/Retvinklede_trekanter.html
   Create the folder if the subject is new.
 * File name = the sheet title with spaces as underscores. Letters, digits and
   underscores only. Underscores become spaces in the PDF footer.
-* Sheets live **directly** in the subject folder. No sub-folders.
+* Sheets live directly in the subject folder, or **one** group folder deeper
+  (`Dansk/Sprog/Ordklasser.html`). Two levels or more are rejected by `build.py`;
+  `dist/` mirrors the same folder structure.
 * One HTML file = one PDF. Keep a topic together instead of splitting it.
 
 Build just your sheet:
 
 ```bash
 python build.py Matematik
+python build.py Dansk/Sprog
 python build.py content/Matematik/Retvinklede_trekanter.html
 ```
 
-The PDF appears in `dist/Matematik/`. `build.py` skips up-to-date files;
+The PDF appears in the matching folder under `dist/` (`dist/Matematik/`,
+`dist/Dansk/Sprog/`). `build.py` skips up-to-date files;
 `--force` rebuilds everything; no arguments builds every sheet.
 
 ## 2. HTML skeleton
@@ -273,7 +279,8 @@ Then check:
 2. No `!` warnings (missing `<h1>`, own CSS, `<img>`, script, too long).
 3. Open the PDF and look at it: no clipped text, no orphan headings at the
    bottom, no diagram wider than the text block, footer shows
-   `SUBJECT · Sheet name` and — only when there are several pages — `2 / 3`.
+   `SUBJECT · Sheet name` (or `SUBJECT/GROUP · Sheet name` inside a group) and —
+   only when there are several pages — `2 / 3`.
 4. Every formula renders (no empty boxes): MathML mistakes show up as
    unformatted text.
 

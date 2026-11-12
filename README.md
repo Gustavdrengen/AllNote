@@ -9,7 +9,8 @@ factsheet.css            husstilen (refereres aldrig fra et sheet)
 tools/diagram.py         SVG-diagramgenerator (grafer og tegninger)
 requirements.txt         playwright + pypdf
 content/Matematik/…      én mappe per fag, kun indhold: Navn.html
-dist/Matematik/…         den færdige Navn.pdf, spejler content/
+content/Dansk/Sprog/…    valgfri gruppemappe ét niveau dybere
+dist/…                  de færdige PDF'er, spejler content/ 1:1
 ```
 
 ## Installation
@@ -27,12 +28,15 @@ python -m playwright install chromium
 ```bash
 python build.py                                                # alle sheets, kun de ændrede
 python build.py Matematik                                      # ét fag
+python build.py Dansk/Sprog                                    # én gruppe
 python build.py content/Matematik/Retvinklede_trekanter.html   # ét sheet
 python build.py --force                                        # alt (fx efter en stilændring)
 ```
 
-Hver PDF skrives til `dist/<Fag>/` med samme basisnavn som HTML-filen, så
-`content/<Fag>/` spejles 1:1. Uden argumenter bygges alle fag, men kun de
+Hver PDF skrives til samme mappesti under `dist/` (`dist/<Fag>/` eller
+`dist/<Fag>/<Gruppe>/`) med samme basisnavn som HTML-filen, så `content/`
+spejles 1:1. Et sheet må højst ligge ét gruppeniveau under faget. Uden
+argumenter bygges alle fag, men kun de
 sheets, hvor PDF'en er ældre end HTML-filen, `factsheet.css` eller
 `build.py` selv; `--force` ignorerer det og bygger alt igen.
 
@@ -60,7 +64,8 @@ Exitkoden er 1, hvis mindst et sheet fejlede, så kommandoen kan bruges i CI.
 
 ## Tilføj et sheet
 
-1. Opret `content/Fag/Skema_navn.html` — kun indhold, ingen CSS.
+1. Opret `content/Fag/Skema_navn.html` (eller `content/Fag/Gruppe/Skema_navn.html`)
+   — kun indhold, ingen CSS.
 2. Skriv dansk, tæt, uden fyld og uden kildehenvisninger.
 3. Lav diagrammer med `python tools/diagram.py …` og indsæt snippet'en.
 4. Kør `python build.py content/Fag/Skema_navn.html` og tjek PDF'en i `dist/`.

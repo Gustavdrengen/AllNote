@@ -14,7 +14,9 @@ regenerated after a styling change:
 File layout (reserved, do not invent other shapes):
 
     content/Matematik/Retvinklede_trekanter.html   <- written by the agent
+    content/Dansk/Sprog/Ordklasser.html            <- optionally one group deeper
     dist/Matematik/Retvinklede_trekanter.pdf       <- written by this script
+    dist/Dansk/Sprog/Ordklasser.pdf
 """
 
 from __future__ import annotations
@@ -86,9 +88,16 @@ ACCENTS = {
 @dataclass(frozen=True)
 class Sheet:
     subject: str
+    group: str | None
     name: str
     html: Path
     pdf: Path
+
+    @property
+    def label(self) -> str:
+        """Footer label: SUBJECT[/GROUP] · Sheet name."""
+        section = "/".join(p for p in (self.subject, self.group) if p)
+        return f"{section.upper()} · {self.name}"
 
 
 # --------------------------------------------------------------------------- #
@@ -136,16 +145,22 @@ def subject_dirs() -> list[Path]:
     )
 
 
+def sheet_files(folder: Path) -> list[Path]:
+    """Sheets directly in `folder` plus one group level below it."""
+    return sorted(folder.glob("*.html")) + sorted(folder.glob("*/*.html"))
+
+
 def find_sheets(targets: list[str]) -> list[Sheet]:
     paths: list[Path] = []
     if not targets:
         for folder in subject_dirs():
-            paths += sorted(folder.glob("*.html"))
+            paths += sheet_files(folder)
     else:
         for target in targets:
             path = Path(target)
             if not path.is_absolute():
-                # accept "Matematik", "content/Matematik" and "Matematik/Sheet.html"
+                # accept "Matematik", "content/Matematik", "Dansk/Sprog"
+                # and "Matematik/Sheet.html"
                 for candidate in (ROOT / path, CONTENT_DIR / path):
                     if candidate.exists():
                         path = candidate
@@ -153,7 +168,7 @@ def find_sheets(targets: list[str]) -> list[Sheet]:
                 else:
                     path = ROOT / path
             if path.is_dir():
-                paths += sorted(path.glob("*.html"))
+                paths += sheet_files(path)
             elif path.suffix.lower() in (".html", ".htm"):
                 if not path.exists():
                     sys.exit(f"No such sheet: {target}")
@@ -168,12 +183,19 @@ def find_sheets(targets: list[str]) -> list[Sheet]:
             rel = html.relative_to(CONTENT_DIR.resolve())
         except ValueError:
             sys.exit(f"{html} is outside content/ - a sheet must live at content/Subject/Name.html")
-        if len(rel.parts) != 2:
-            sys.exit(f"content/{rel.as_posix()}: a sheet must sit directly in a subject folder")
+        if len(rel.parts) not in (2, 3):
+            sys.exit(
+                f"content/{rel.as_posix()}: a sheet must sit in content/Subject/ "
+                "or content/Subject/Group/ - one group level only"
+            )
         name = html.stem.replace("_", " ")
-        pdf = DIST_DIR / rel.parts[0] / (html.stem + ".pdf")
-        sheets[html] = Sheet(rel.parts[0], name, html, pdf)
-    return sorted(sheets.values(), key=lambda s: (s.subject.lower(), s.name.lower()))
+        pdf = (DIST_DIR / rel).with_suffix(".pdf")
+        group = rel.parts[1] if len(rel.parts) == 3 else None
+        sheets[html] = Sheet(rel.parts[0], group, name, html, pdf)
+    return sorted(
+        sheets.values(),
+        key=lambda s: (s.subject.lower(), (s.group or "").lower(), s.name.lower()),
+    )
 
 
 def up_to_date(sheet: Sheet) -> bool:
@@ -295,7 +317,7 @@ def build(sheets: list[Sheet], force: bool, quiet: bool) -> int:
                 continue
 
             problems = lint(sheet, read_html(sheet.html))
-            label = f"{sheet.subject.upper()} · {sheet.name}"
+            label = sheet.label
             t0 = time.perf_counter()
             try:
                 page.set_content(compose(sheet), wait_until="load")

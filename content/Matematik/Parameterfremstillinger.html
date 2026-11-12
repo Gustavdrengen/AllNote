@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Parameterfremstillinger</title>
+</head>
+<body>
+
+<h1>Parameterfremstillinger</h1>
+
+<h2>Parameterkurver</h2>
+<div class="box rule">
+  <span class="label">Parameterfremstilling</span>
+  <div class="formula"><math><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>f</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>,</mo><mi>g</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>)</mo><mo>,</mo><mspace width="0.8em"/><mi>t</mi><mo>∈</mo><mi>I</mi></math></div>
+  <p class="where"><math><mi>t</mi></math>: parameter · <math><mi>I</mi></math>: parameterinterval · hvert <math><mi>t</mi></math> giver ét punkt</p>
+</div>
+<p>Parameteren kan være tid, en vinkel eller en vilkårlig størrelse. Kurven er mængden af alle punkter, der fremkommer, når <math><mi>t</mi></math> gennemløber <math><mi>I</mi></math>. Ved at eliminere <math><mi>t</mi></math> fås ofte en sædvanlig ligning i <math><mi>x</mi></math> og <math><mi>y</mi></math>.</p>
+
+<h2>Linje og cirkel</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Linje</span>
+    <div class="formula"><math><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo><mo>=</mo><mo>(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo>)</mo><mo>+</mo><mi>t</mi><mo>·</mo><mo>(</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>)</mo></math></div>
+    <p class="where"><math><mo>(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo>)</mo></math>: punkt · <math><mo>(</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>)</mo></math>: retningsvektor</p>
+  </div>
+  <div class="box">
+    <span class="label">Cirkel</span>
+    <div class="formula"><math><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo><mo>=</mo><mo>(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mi>r</mi><mspace width="0.1em"/><mi>cos</mi><mspace width="0.1em"/><mi>t</mi><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo>+</mo><mi>r</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>t</mi><mo>)</mo></math></div>
+    <p class="where"><math><mi>t</mi><mo>∈</mo><mo>[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>π</mi><mo>[</mo></math> · centrum <math><mo>(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo>)</mo></math></p>
+  </div>
+</div>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="64mm" height="48mm" viewBox="0 0 64 48" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="8" y1="27" x2="56" y2="27" stroke="#8f98a2" fill="none" stroke-width="0.25" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="30" y1="5" x2="30" y2="45" stroke="#8f98a2" fill="none" stroke-width="0.25" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="30" cy="27" r="18" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="30" y1="27" x2="43.8" y2="15.4" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/><polygon points="43.8,15.4 43,16.9 42.18,15.93" fill="#1b1b1b" stroke="none"/>
+<line x1="43.8" y1="15.4" x2="43.8" y2="27" stroke="#1b1b1b" fill="none" stroke-width="0.25" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.2 1"/>
+<line x1="30" y1="27" x2="43.8" y2="27" stroke="#1b1b1b" fill="none" stroke-width="0.25" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.2 1"/>
+<circle cx="43.8" cy="15.4" r="1" fill="#1b1b1b" stroke="none"/>
+<path d="M 36.13 21.86 A 8 8 0 0 1 38 27" stroke="#8f98a2" fill="none" stroke-width="0.3"/><text x="40.52" y="23.17" font-size="2.4" fill="#1b1b1b" text-anchor="middle" dominant-baseline="middle">t</text>
+<circle cx="30" cy="27" r="0.8" fill="#1b1b1b" stroke="none"/>
+<text x="30" y="31.5" font-size="2.1" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">(x₀, y₀)</text>
+</svg>
+<figcaption>Cirkel med parameterfremstilling (x, y) = (x₀ + r cos t, y₀ + r sin t).</figcaption>
+</figure>
+
+<h2>Elimination af parameteren</h2>
+<div class="box">
+  <span class="label">Eksempel — linje</span>
+  <div class="formula left">
+    <math><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo><mo>=</mo><mo>(</mo><mn>1</mn><mo>+</mo><mn>3</mn><mi>t</mi><mo>,</mo><mn>2</mn><mo>−</mo><mi>t</mi><mo>)</mo></math><br>
+    <math><mi>t</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mn>3</mn></mfrac><mspace width="0.4em"/><mo>⇒</mo><mspace width="0.4em"/><mi>y</mi><mo>=</mo><mn>2</mn><mo>−</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mn>3</mn></mfrac><mo>=</mo><mfrac><mrow><mn>7</mn><mo>−</mo><mi>x</mi></mrow><mn>3</mn></mfrac></math>
+  </div>
+  <p class="where">Ensbetydende med <math><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>−</mo><mn>7</mn><mo>=</mo><mn>0</mn></math>; retningsvektor <math><mo>(</mo><mn>3</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo>)</mo></math>, normalvektor <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>.</p>
+</div>
+<div class="box">
+  <span class="label">Eksempel — cirkel</span>
+  <p><math><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo><mo>=</mo><mo>(</mo><mn>2</mn><mo>+</mo><mn>3</mn><mspace width="0.1em"/><mi>cos</mi><mspace width="0.1em"/><mi>t</mi><mo>,</mo><mn>1</mn><mo>+</mo><mn>3</mn><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>t</mi><mo>)</mo></math>. Isolér cosinus og sinus, og brug <math><msup><mi>cos</mi><mn>2</mn></msup><mspace width="0.05em"/><mi>t</mi><mo>+</mo><msup><mi>sin</mi><mn>2</mn></msup><mspace width="0.05em"/><mi>t</mi><mo>=</mo><mn>1</mn></math>:</p>
+  <div class="formula"><math><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mi>y</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>9</mn></math></div>
+</div>
+
+<h2>Bevægelse</h2>
+<p>Bevæger et punkt sig efter <math><mo>(</mo><mi>x</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>,</mo><mi>y</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>)</mo></math>, er hastighedsvektoren</p>
+<div class="formula"><math><mover accent="true"><mi>v</mi><mo>→</mo></mover><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mo>(</mo><msup><mi>x</mi><mo>′</mo></msup><mo>(</mo><mi>t</mi><mo>)</mo><mo>,</mo><msup><mi>y</mi><mo>′</mo></msup><mo>(</mo><mi>t</mi><mo>)</mo><mo>)</mo><mo>,</mo><mspace width="1em"/><mo>|</mo><mover accent="true"><mi>v</mi><mo>→</mo></mover><mo>(</mo><mi>t</mi><mo>)</mo><mo>|</mo><mo>=</mo><msqrt><mrow><msup><mrow><mo>(</mo><msup><mi>x</mi><mo>′</mo></msup><mo>(</mo><mi>t</mi><mo>)</mo><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msup><mi>y</mi><mo>′</mo></msup><mo>(</mo><mi>t</mi><mo>)</mo><mo>)</mo></mrow><mn>2</mn></msup></mrow></msqrt></math></div>
+<p>For <math><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo><mo>=</mo><mo>(</mo><mn>1</mn><mo>+</mo><mn>3</mn><mi>t</mi><mo>,</mo><mn>2</mn><mo>−</mo><mi>t</mi><mo>)</mo></math> er hastigheden konstant <math><msqrt><mn>10</mn></msqrt></math>.</p>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Parameteren <math><mi>t</mi></math> er ikke hældningen. For en linje er retningsvektoren <math><mo>(</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>)</mo></math> det afgørende.</li>
+    <li>Parameterintervallet er en del af svaret: <math><mi>t</mi><mo>∈</mo><mo>[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>π</mi><mo>[</mo></math> giver hele cirklen, mens <math><mi>t</mi><mo>∈</mo><mo>[</mo><mn>0</mn><mo>,</mo><mi>π</mi><mo>]</mo></math> kun giver den øverste halvdel.</li>
+    <li>Ved elimination af parameteren kan man miste eller tilføje punkter, hvis man dividerer med et udtryk, der kan være 0.</li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Plangeometri</title>
+</head>
+<body>
+
+<h1>Plangeometri</h1>
+
+<h2>Trekanter og firkanter</h2>
+<table class="compact">
+<caption>Areal og omkreds</caption>
+<tr><th>Figur</th><th>Areal</th><th>Omkreds</th></tr>
+<tr><td>Trekant</td><td><math><mi>T</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><mo>·</mo><mi>h</mi></math></td><td><math><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></math></td></tr>
+<tr><td>Rektangel</td><td><math><mi>T</mi><mo>=</mo><mi>l</mi><mo>·</mo><mi>b</mi></math></td><td><math><mn>2</mn><mo>(</mo><mi>l</mi><mo>+</mo><mi>b</mi><mo>)</mo></math></td></tr>
+<tr><td>Parallelogram</td><td><math><mi>T</mi><mo>=</mo><mi>g</mi><mo>·</mo><mi>h</mi></math></td><td><math><mn>2</mn><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></math></td></tr>
+<tr><td>Trapez</td><td><math><mi>T</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>·</mo><mi>h</mi></math></td><td>sum af de fire sider</td></tr>
+<tr><td>Cirkel</td><td><math><mi>T</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></math></td><td><math><mi>O</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi></math></td></tr>
+</table>
+<p>I en trekant gælder arealformlen også som <math><mi>T</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mi>b</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>C</mi></math>, hvor <math><mi>C</mi></math> er vinklen mellem siderne <math><mi>a</mi></math> og <math><mi>b</mi></math>.</p>
+
+<h2>Ensvinklede trekanter</h2>
+<div class="box rule">
+  <span class="label">Målestoksforhold</span>
+  <p>Er to trekanter ensvinklede med skalafaktor <math><mi>k</mi></math>, gælder</p>
+  <div class="formula"><math><mfrac><msub><mi>a</mi><mn>2</mn></msub><msub><mi>a</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>b</mi><mn>2</mn></msub><msub><mi>b</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>c</mi><mn>2</mn></msub><msub><mi>c</mi><mn>1</mn></msub></mfrac><mo>=</mo><mi>k</mi><mspace width="1em"/><mtext>og</mtext><mspace width="1em"/><mfrac><msub><mi>T</mi><mn>2</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><msup><mi>k</mi><mn>2</mn></msup></math></div>
+  <p class="where">Længder skaleres med <math><mi>k</mi></math>, arealer med <math><msup><mi>k</mi><mn>2</mn></msup></math>.</p>
+</div>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="64mm" height="46mm" viewBox="0 0 64 46" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<circle cx="30" cy="26" r="20" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="30" y1="26" x2="50" y2="26" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="30" y1="26" x2="40" y2="8.7" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 40 8.68 A 20 20 0 0 1 50 26" stroke="#1c5f9e" fill="none" stroke-width="0.65" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 34 19.07 A 8 8 0 0 1 38 26" stroke="#8f98a2" fill="none" stroke-width="0.3"/><text x="39.7" y="20.4" font-size="2.4" fill="#1b1b1b" text-anchor="middle" dominant-baseline="middle">v</text>
+<text x="40" y="29.5" font-size="2.8" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">r</text>
+<circle cx="30" cy="26" r="0.8" fill="#1b1b1b" stroke="none"/>
+<text x="30" y="31.5" font-size="2.1" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">centrum</text>
+</svg>
+<figcaption>Cirkeludsnit med radius r og centervinkel v; buelængden er r · v, når v måles i radianer.</figcaption>
+</figure>
+
+<h2>Cirkeludsnit og buelængde</h2>
+<p>Et cirkeludsnit med centervinkel <math><mi>v</mi></math> målt i radianer har</p>
+<div class="formula"><math><mi>b</mi><mo>=</mo><mi>r</mi><mo>·</mo><mi>v</mi><mspace width="1em"/><mtext>og</mtext><mspace width="1em"/><msub><mi>T</mi><mtext>udsnit</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mi>r</mi><mn>2</mn></msup><mi>v</mi></math></div>
+<p>Måles vinklen i grader, erstattes <math><mi>v</mi></math> med <math><mfrac><mrow><mi>v</mi><mi>π</mi></mrow><mn>180</mn></mfrac></math>. Korden fra udsnittets endepunkter har længden <math><mn>2</mn><mi>r</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mfrac><mi>v</mi><mn>2</mn></mfrac></math>.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — cirkeludsnit</span>
+  <p>Et udsnit har radius <math><mi>r</mi><mo>=</mo><mn>6</mn></math> og centervinkel <math><mn>60</mn><mo>°</mo><mo>=</mo><mfrac><mi>π</mi><mn>3</mn></mfrac></math>.</p>
+  <div class="formula left">
+    <math><mi>b</mi><mo>=</mo><mn>6</mn><mo>·</mo><mfrac><mi>π</mi><mn>3</mn></mfrac><mo>=</mo><mn>2</mn><mi>π</mi><mo>≈</mo><mn>6,28</mn><mo>,</mo><mspace width="1em"/><msub><mi>T</mi><mtext>udsnit</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mn>36</mn><mo>·</mo><mfrac><mi>π</mi><mn>3</mn></mfrac><mo>=</mo><mn>6</mn><mi>π</mi><mo>≈</mo><mn>18,85</mn></math>
+  </div>
+  <p class="where">Hele cirklens areal er <math><mn>36</mn><mi>π</mi></math>; udsnittet er <math><mfrac><mn>1</mn><mn>6</mn></mfrac></math> af cirklen.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Radius og diameter forveksles: <math><mi>d</mi><mo>=</mo><mn>2</mn><mi>r</mi></math>, og omkredsen er <math><mn>2</mn><mi>π</mi><mi>r</mi></math>, ikke <math><mi>π</mi><mi>r</mi></math>.</li>
+    <li>Ved ensvinklede figurer skaleres arealet med <math><msup><mi>k</mi><mn>2</mn></msup></math>, ikke med <math><mi>k</mi></math>.</li>
+    <li>Højden i en trekant skal stå vinkelret på grundlinjen; ellers er <math><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><mi>h</mi></math> ikke arealet.</li>
+    <li>Buelængdeformlen <math><mi>b</mi><mo>=</mo><mi>r</mi><mi>v</mi></math> kræver, at <math><mi>v</mi></math> er i radianer.</li>
+  </ul>
+</div>
+
+</body>
+</html>

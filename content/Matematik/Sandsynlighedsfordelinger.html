@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Sandsynlighedsfordelinger</title>
+</head>
+<body>
+
+<h1>Sandsynlighedsfordelinger</h1>
+
+<h2>Binomialfordelingen</h2>
+<div class="box rule">
+  <span class="label">X ~ Bin(n, p)</span>
+  <div class="formula"><math><mi>P</mi><mo>(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo>)</mo><mo>=</mo><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>k</mi><mo>)</mo><msup><mi>p</mi><mi>k</mi></msup><msup><mrow><mo>(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo>)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup></math></div>
+  <p class="where"><math><mi>n</mi></math> forsøg · succesandsynlighed <math><mi>p</mi></math> · <math><mi>E</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><mi>n</mi><mi>p</mi></math> · <math><mi>σ</mi><mo>=</mo><msqrt><mrow><mi>n</mi><mi>p</mi><mo>(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo>)</mo></mrow></msqrt></math></p>
+</div>
+<p>Fordelingen er diskret og højre-skæv for små <math><mi>p</mi></math>, venstre-skæv for store <math><mi>p</mi></math>. For store <math><mi>n</mi></math> og <math><mi>np</mi><mo>(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo>)</mo></math> tilstrækkeligt stor kan den tilnærmes med en normalfordeling.</p>
+
+<h2>Normalfordelingen</h2>
+<div class="box rule">
+  <span class="label">X ~ N(μ, σ²)</span>
+  <div class="formula"><math><mi>φ</mi><mo>(</mo><mi>z</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow></mfrac><msup><mi>e</mi><mrow><mo>−</mo><msup><mi>z</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></msup></math></div>
+  <p class="where">Standardnormalfordelingen har <math><mi>μ</mi><mo>=</mo><mn>0</mn></math> og <math><mi>σ</mi><mo>=</mo><mn>1</mn></math>.</p>
+</div>
+<p>Standardisering: er <math><mi>X</mi><mo>~</mo><mi>N</mi><mo>(</mo><mi>μ</mi><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo>)</mo></math>, er <math><mi>Z</mi><mo>=</mo><mfrac><mrow><mi>X</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac><mo>~</mo><mi>N</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>. Sandsynligheder aflæses som arealer under tæthedskurven.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="76mm" height="42mm" viewBox="0 0 76 42" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<defs><clipPath id="clipf17e6f9f"><rect x="11" y="3" width="61" height="28.9"/></clipPath></defs>
+<rect x="11" y="3" width="61" height="28.9" fill="none" stroke="#dde2e7" stroke-width="0.3"/>
+<line x1="11" y1="3" x2="11" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="18.62" y1="3" x2="18.62" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="26.25" y1="3" x2="26.25" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="33.88" y1="3" x2="33.88" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="49.12" y1="3" x2="49.12" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="56.75" y1="3" x2="56.75" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="64.38" y1="3" x2="64.38" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="72" y1="3" x2="72" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="25.48" x2="72" y2="25.48" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="19.06" x2="72" y2="19.06" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="12.63" x2="72" y2="12.63" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="6.21" x2="72" y2="6.21" stroke="#dde2e7" stroke-width="0.25"/>
+<path d="M 11 31.89 L 11.1 31.89 L 11.2 31.89 L 11.3 31.89 L 11.41 31.89 L 11.51 31.89 L 11.61 31.89 L 11.71 31.89 L 11.81 31.89 L 11.92 31.89 L 12.02 31.89 L 12.12 31.88 L 12.22 31.88 L 12.32 31.88 L 12.42 31.88 L 12.53 31.88 L 12.63 31.88 L 12.73 31.88 L 12.83 31.88 L 12.93 31.88 L 13.03 31.88 L 13.14 31.87 L 13.24 31.87 L 13.34 31.87 L 13.44 31.87 L 13.54 31.87 L 13.64 31.87 L 13.74 31.87 L 13.85 31.86 L 13.95 31.86 L 14.05 31.86 L 14.15 31.86 L 14.25 31.86 L 14.36 31.85 L 14.46 31.85 L 14.56 31.85 L 14.66 31.85 L 14.76 31.85 L 14.86 31.84 L 14.96 31.84 L 15.07 31.84 L 15.17 31.83 L 15.27 31.83 L 15.37 31.83 L 15.47 31.82 L 15.58 31.82 L 15.68 31.82 L 15.78 31.81 L 15.88 31.81 L 15.98 31.81 L 16.08 31.8 L 16.19 31.8 L 16.29 31.79 L 16.39 31.79 L 16.49 31.78 L 16.59 31.78 L 16.69 31.77 L 16.79 31.77 L 16.9 31.76 L 17 31.75 L 17.1 31.75 L 17.2 31.74 L 17.3 31.73 L 17.41 31.73 L 17.51 31.72 L 17.61 31.71 L 17.71 31.7 L 17.81 31.69 L 17.91 31.69 L 18.02 31.68 L 18.12 31.67 L 18.22 31.66 L 18.32 31.65 L 18.42 31.64 L 18.52 31.63 L 18.62 31.62 L 18.73 31.6 L 18.83 31.59 L 18.93 31.58 L 19.03 31.57 L 19.13 31.55 L 19.23 31.54 L 19.34 31.53 L 19.44 31.51 L 19.54 31.49 L 19.64 31.48 L 19.74 31.46 L 19.84 31.45 L 19.95 31.43 L 20.05 31.41 L 20.15 31.39 L 20.25 31.37 L 20.35 31.35 L 20.46 31.33 L 20.56 31.31 L 20.66 31.29 L 20.76 31.27 L 20.86 31.24 L 20.96 31.22 L 21.07 31.19 L 21.17 31.17 L 21.27 31.14 L 21.37 31.11 L 21.47 31.09 L 21.57 31.06 L 21.67 31.03 L 21.78 31 L 21.88 30.97 L 21.98 30.93 L 22.08 30.9 L 22.18 30.86 L 22.29 30.83 L 22.39 30.79 L 22.49 30.76 L 22.59 30.72 L 22.69 30.68 L 22.79 30.64 L 22.89 30.59 L 23 30.55 L 23.1 30.51 L 23.2 30.46 L 23.3 30.42 L 23.4 30.37 L 23.5 30.32 L 23.61 30.27 L 23.71 30.22 L 23.81 30.16 L 23.91 30.11 L 24.01 30.05 L 24.11 30 L 24.22 29.94 L 24.32 29.88 L 24.42 29.82 L 24.52 29.75 L 24.62 29.69 L 24.72 29.62 L 24.83 29.55 L 24.93 29.48 L 25.03 29.41 L 25.13 29.34 L 25.23 29.27 L 25.34 29.19 L 25.44 29.11 L 25.54 29.04 L 25.64 28.95 L 25.74 28.87 L 25.84 28.79 L 25.95 28.7 L 26.05 28.61 L 26.15 28.52 L 26.25 28.43 L 26.35 28.34 L 26.45 28.24 L 26.55 28.15 L 26.66 28.05 L 26.76 27.95 L 26.86 27.84 L 26.96 27.74 L 27.06 27.63 L 27.16 27.52 L 27.27 27.41 L 27.37 27.3 L 27.47 27.19 L 27.57 27.07 L 27.67 26.95 L 27.78 26.83 L 27.88 26.71 L 27.98 26.58 L 28.08 26.46 L 28.18 26.33 L 28.28 26.2 L 28.38 26.06 L 28.49 25.93 L 28.59 25.79 L 28.69 25.65 L 28.79 25.51 L 28.89 25.37 L 28.99 25.22 L 29.1 25.08 L 29.2 24.93 L 29.3 24.78 L 29.4 24.62 L 29.5 24.47 L 29.61 24.31 L 29.71 24.15 L 29.81 23.99 L 29.91 23.83 L 30.01 23.67 L 30.11 23.5 L 30.21 23.33 L 30.32 23.16 L 30.42 22.99 L 30.52 22.82 L 30.62 22.64 L 30.72 22.46 L 30.82 22.28 L 30.93 22.1 L 31.03 21.92 L 31.13 21.74 L 31.23 21.55 L 31.33 21.37 L 31.44 21.18 L 31.54 20.99 L 31.64 20.8 L 31.74 20.61 L 31.84 20.41 L 31.94 20.22 L 32.05 20.02 L 32.15 19.83 L 32.25 19.63 L 32.35 19.43 L 32.45 19.23 L 32.55 19.03 L 32.66 18.83 L 32.76 18.62 L 32.86 18.42 L 32.96 18.22 L 33.06 18.01 L 33.16 17.81 L 33.27 17.6 L 33.37 17.39 L 33.47 17.19 L 33.57 16.98 L 33.67 16.77 L 33.77 16.57 L 33.88 16.36 L 33.98 16.15 L 34.08 15.95 L 34.18 15.74 L 34.28 15.53 L 34.38 15.33 L 34.48 15.12 L 34.59 14.91 L 34.69 14.71 L 34.79 14.5 L 34.89 14.3 L 34.99 14.1 L 35.09 13.9 L 35.2 13.69 L 35.3 13.49 L 35.4 13.3 L 35.5 13.1 L 35.6 12.9 L 35.7 12.71 L 35.81 12.51 L 35.91 12.32 L 36.01 12.13 L 36.11 11.94 L 36.21 11.75 L 36.31 11.57 L 36.42 11.38 L 36.52 11.2 L 36.62 11.02 L 36.72 10.85 L 36.82 10.67 L 36.92 10.5 L 37.03 10.33 L 37.13 10.16 L 37.23 10 L 37.33 9.84 L 37.43 9.68 L 37.53 9.52 L 37.64 9.37 L 37.74 9.21 L 37.84 9.07 L 37.94 8.92 L 38.04 8.78 L 38.14 8.64 L 38.25 8.51 L 38.35 8.38 L 38.45 8.25 L 38.55 8.12 L 38.65 8 L 38.76 7.89 L 38.86 7.77 L 38.96 7.66 L 39.06 7.56 L 39.16 7.46 L 39.26 7.36 L 39.37 7.26 L 39.47 7.17 L 39.57 7.09 L 39.67 7.01 L 39.77 6.93 L 39.87 6.86 L 39.97 6.79 L 40.08 6.72 L 40.18 6.66 L 40.28 6.6 L 40.38 6.55 L 40.48 6.51 L 40.59 6.46 L 40.69 6.42 L 40.79 6.39 L 40.89 6.36 L 40.99 6.34 L 41.09 6.32 L 41.2 6.3 L 41.3 6.29 L 41.4 6.28 L 41.5 6.28 L 41.6 6.28 L 41.7 6.29 L 41.8 6.3 L 41.91 6.32 L 42.01 6.34 L 42.11 6.36 L 42.21 6.39 L 42.31 6.42 L 42.41 6.46 L 42.52 6.51 L 42.62 6.55 L 42.72 6.6 L 42.82 6.66 L 42.92 6.72 L 43.02 6.79 L 43.13 6.86 L 43.23 6.93 L 43.33 7.01 L 43.43 7.09 L 43.53 7.17 L 43.64 7.26 L 43.74 7.36 L 43.84 7.46 L 43.94 7.56 L 44.04 7.66 L 44.14 7.77 L 44.25 7.89 L 44.35 8 L 44.45 8.12 L 44.55 8.25 L 44.65 8.38 L 44.75 8.51 L 44.86 8.64 L 44.96 8.78 L 45.06 8.92 L 45.16 9.07 L 45.26 9.21 L 45.36 9.37 L 45.46 9.52 L 45.57 9.68 L 45.67 9.84 L 45.77 10 L 45.87 10.16 L 45.97 10.33 L 46.07 10.5 L 46.18 10.67 L 46.28 10.85 L 46.38 11.02 L 46.48 11.2 L 46.58 11.38 L 46.68 11.57 L 46.79 11.75 L 46.89 11.94 L 46.99 12.13 L 47.09 12.32 L 47.19 12.51 L 47.3 12.71 L 47.4 12.9 L 47.5 13.1 L 47.6 13.3 L 47.7 13.49 L 47.8 13.69 L 47.91 13.9 L 48.01 14.1 L 48.11 14.3 L 48.21 14.5 L 48.31 14.71 L 48.41 14.91 L 48.52 15.12 L 48.62 15.33 L 48.72 15.53 L 48.82 15.74 L 48.92 15.95 L 49.02 16.15 L 49.12 16.36 L 49.23 16.57 L 49.33 16.77 L 49.43 16.98 L 49.53 17.19 L 49.63 17.39 L 49.73 17.6 L 49.84 17.81 L 49.94 18.01 L 50.04 18.22 L 50.14 18.42 L 50.24 18.62 L 50.34 18.83 L 50.45 19.03 L 50.55 19.23 L 50.65 19.43 L 50.75 19.63 L 50.85 19.83 L 50.95 20.02 L 51.06 20.22 L 51.16 20.41 L 51.26 20.61 L 51.36 20.8 L 51.46 20.99 L 51.57 21.18 L 51.67 21.37 L 51.77 21.55 L 51.87 21.74 L 51.97 21.92 L 52.07 22.1 L 52.18 22.28 L 52.28 22.46 L 52.38 22.64 L 52.48 22.82 L 52.58 22.99 L 52.68 23.16 L 52.79 23.33 L 52.89 23.5 L 52.99 23.67 L 53.09 23.83 L 53.19 23.99 L 53.29 24.15 L 53.39 24.31 L 53.5 24.47 L 53.6 24.62 L 53.7 24.78 L 53.8 24.93 L 53.9 25.08 L 54 25.22 L 54.11 25.37 L 54.21 25.51 L 54.31 25.65 L 54.41 25.79 L 54.51 25.93 L 54.61 26.06 L 54.72 26.2 L 54.82 26.33 L 54.92 26.46 L 55.02 26.58 L 55.12 26.71 L 55.23 26.83 L 55.33 26.95 L 55.43 27.07 L 55.53 27.19 L 55.63 27.3 L 55.73 27.41 L 55.84 27.52 L 55.94 27.63 L 56.04 27.74 L 56.14 27.84 L 56.24 27.95 L 56.34 28.05 L 56.45 28.15 L 56.55 28.24 L 56.65 28.34 L 56.75 28.43 L 56.85 28.52 L 56.95 28.61 L 57.05 28.7 L 57.16 28.79 L 57.26 28.87 L 57.36 28.95 L 57.46 29.04 L 57.56 29.11 L 57.66 29.19 L 57.77 29.27 L 57.87 29.34 L 57.97 29.41 L 58.07 29.48 L 58.17 29.55 L 58.27 29.62 L 58.38 29.69 L 58.48 29.75 L 58.58 29.82 L 58.68 29.88 L 58.78 29.94 L 58.89 30 L 58.99 30.05 L 59.09 30.11 L 59.19 30.16 L 59.29 30.22 L 59.39 30.27 L 59.5 30.32 L 59.6 30.37 L 59.7 30.42 L 59.8 30.46 L 59.9 30.51 L 60 30.55 L 60.11 30.59 L 60.21 30.64 L 60.31 30.68 L 60.41 30.72 L 60.51 30.76 L 60.61 30.79 L 60.71 30.83 L 60.82 30.86 L 60.92 30.9 L 61.02 30.93 L 61.12 30.97 L 61.22 31 L 61.32 31.03 L 61.43 31.06 L 61.53 31.09 L 61.63 31.11 L 61.73 31.14 L 61.83 31.17 L 61.93 31.19 L 62.04 31.22 L 62.14 31.24 L 62.24 31.27 L 62.34 31.29 L 62.44 31.31 L 62.55 31.33 L 62.65 31.35 L 62.75 31.37 L 62.85 31.39 L 62.95 31.41 L 63.05 31.43 L 63.16 31.45 L 63.26 31.46 L 63.36 31.48 L 63.46 31.49 L 63.56 31.51 L 63.66 31.53 L 63.77 31.54 L 63.87 31.55 L 63.97 31.57 L 64.07 31.58 L 64.17 31.59 L 64.27 31.6 L 64.38 31.62 L 64.48 31.63 L 64.58 31.64 L 64.68 31.65 L 64.78 31.66 L 64.88 31.67 L 64.98 31.68 L 65.09 31.69 L 65.19 31.69 L 65.29 31.7 L 65.39 31.71 L 65.49 31.72 L 65.59 31.73 L 65.7 31.73 L 65.8 31.74 L 65.9 31.75 L 66 31.75 L 66.1 31.76 L 66.2 31.77 L 66.31 31.77 L 66.41 31.78 L 66.51 31.78 L 66.61 31.79 L 66.71 31.79 L 66.81 31.8 L 66.92 31.8 L 67.02 31.81 L 67.12 31.81 L 67.22 31.81 L 67.32 31.82 L 67.43 31.82 L 67.53 31.82 L 67.63 31.83 L 67.73 31.83 L 67.83 31.83 L 67.93 31.84 L 68.03 31.84 L 68.14 31.84 L 68.24 31.85 L 68.34 31.85 L 68.44 31.85 L 68.54 31.85 L 68.64 31.85 L 68.75 31.86 L 68.85 31.86 L 68.95 31.86 L 69.05 31.86 L 69.15 31.86 L 69.25 31.87 L 69.36 31.87 L 69.46 31.87 L 69.56 31.87 L 69.66 31.87 L 69.76 31.87 L 69.86 31.87 L 69.97 31.88 L 70.07 31.88 L 70.17 31.88 L 70.27 31.88 L 70.37 31.88 L 70.47 31.88 L 70.58 31.88 L 70.68 31.88 L 70.78 31.88 L 70.88 31.88 L 70.98 31.89 L 71.09 31.89 L 71.19 31.89 L 71.29 31.89 L 71.39 31.89 L 71.49 31.89 L 71.59 31.89 L 71.69 31.89 L 71.8 31.89 L 71.9 31.89 L 72 31.89" fill="none" stroke="#1c5f9e" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clipf17e6f9f)"/>
+<line x1="11" y1="31.9" x2="11" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="11" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-4</text>
+<line x1="18.62" y1="31.9" x2="18.62" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="18.62" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-3</text>
+<line x1="26.25" y1="31.9" x2="26.25" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="26.25" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-2</text>
+<line x1="33.88" y1="31.9" x2="33.88" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="33.88" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-1</text>
+<line x1="41.5" y1="31.9" x2="41.5" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="41.5" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0</text>
+<line x1="49.12" y1="31.9" x2="49.12" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="49.12" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">1</text>
+<line x1="56.75" y1="31.9" x2="56.75" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="56.75" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="64.38" y1="31.9" x2="64.38" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="64.38" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">3</text>
+<line x1="72" y1="31.9" x2="72" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="72" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">4</text>
+<line x1="41.5" y1="31.9" x2="41.5" y2="3" stroke="#1b1b1b" stroke-width="0.45"/>
+<polygon points="41.5,3 42.1,4.48 40.9,4.48" fill="#1b1b1b" stroke="none"/>
+<line x1="40.4" y1="31.9" x2="41.5" y2="31.9" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="40.4" y1="25.48" x2="41.5" y2="25.48" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="39.7" y="25.48" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,1</text>
+<line x1="40.4" y1="19.06" x2="41.5" y2="19.06" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="39.7" y="19.06" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,2</text>
+<line x1="40.4" y1="12.63" x2="41.5" y2="12.63" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="39.7" y="12.63" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,3</text>
+<line x1="40.4" y1="6.21" x2="41.5" y2="6.21" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="39.7" y="6.21" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,4</text>
+<text x="41.5" y="40.6" font-size="2.4" fill="#5b6470" text-anchor="middle">z</text>
+<text x="2.6" y="17.45" font-size="2.4" fill="#5b6470" text-anchor="middle" transform="rotate(-90 2.6 17.45)">φ(z)</text>
+</svg>
+<figcaption>Tætheden for standardnormalfordelingen φ(z) = e^(−z²/2)/√(2π).</figcaption>
+</figure>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — binomial</span>
+  <p><math><mi>X</mi><mo>~</mo><mi>Bin</mi><mo>(</mo><mn>10</mn><mo>,</mo><mn>0,3</mn><mo>)</mo></math>. Sandsynligheden for præcis 3 succeser:</p>
+  <div class="formula left">
+    <math><mi>P</mi><mo>(</mo><mi>X</mi><mo>=</mo><mn>3</mn><mo>)</mo><mo>=</mo><mi>C</mi><mo>(</mo><mn>10</mn><mo>,</mo><mn>3</mn><mo>)</mo><msup><mn>0,3</mn><mn>3</mn></msup><msup><mn>0,7</mn><mn>7</mn></msup><mo>=</mo><mn>120</mn><mo>·</mo><mn>0,027</mn><mo>·</mo><mn>0,08235</mn><mo>≈</mo><mn>0,267</mn></math>
+  </div>
+</div>
+<div class="box">
+  <span class="label">Eksempel — normal</span>
+  <p>Højden af voksne mænd er tilnærmelsesvis <math><mi>N</mi><mo>(</mo><mn>180</mn><mo>,</mo><msup><mn>10</mn><mn>2</mn></msup><mo>)</mo></math> i cm. Sandsynligheden for højst 195&nbsp;cm:</p>
+  <div class="formula left">
+    <math><mi>z</mi><mo>=</mo><mfrac><mrow><mn>195</mn><mo>−</mo><mn>180</mn></mrow><mn>10</mn></mfrac><mo>=</mo><mn>1,5</mn><mspace width="0.6em"/><mo>⇒</mo><mspace width="0.6em"/><mi>P</mi><mo>(</mo><mi>X</mi><mo>≤</mo><mn>195</mn><mo>)</mo><mo>=</mo><mi>Φ</mi><mo>(</mo><mn>1,5</mn><mo>)</mo><mo>≈</mo><mn>0,933</mn></math>
+  </div>
+  <p class="where">Ca. 93&nbsp;% ligger under 195&nbsp;cm.</p>
+</div>
+
+<h2>Tommelfingerregler</h2>
+<table class="compact">
+<caption>Normalfordelinger</caption>
+<tr><th>Interval</th><th>Sandsynlighed</th></tr>
+<tr><td><math><mi>μ</mi><mo>±</mo><mi>σ</mi></math></td><td>ca. 68&nbsp;%</td></tr>
+<tr><td><math><mi>μ</mi><mo>±</mo><mn>2</mn><mi>σ</mi></math></td><td>ca. 95&nbsp;%</td></tr>
+<tr><td><math><mi>μ</mi><mo>±</mo><mn>3</mn><mi>σ</mi></math></td><td>ca. 99,7&nbsp;%</td></tr>
+</table>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Binomialfordelingen er diskret: <math><mi>P</mi><mo>(</mo><mi>X</mi><mo>≥</mo><mi>k</mi><mo>)</mo></math> fås ved at summere led, ikke ved et enkelt led.</li>
+    <li>Ved standardisering skal man trække middelværdien fra <em>før</em> division med spredningen.</li>
+    <li>Normalfordelingen er symmetrisk om <math><mi>μ</mi></math>; <math><mi>P</mi><mo>(</mo><mi>X</mi><mo>≤</mo><mi>μ</mi><mo>)</mo><mo>=</mo><mn>0,5</mn></math>.</li>
+    <li>Normaltilnærmelsen af binomialfordelingen kræver tilstrækkeligt mange forsøg; kontroller betingelserne.</li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Betinget sandsynlighed</title>
+</head>
+<body>
+
+<h1>Betinget sandsynlighed</h1>
+
+<h2>Definition</h2>
+<div class="box rule">
+  <span class="label">Betinget sandsynlighed</span>
+  <div class="formula"><math><mi>P</mi><mo>(</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo>(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>)</mo></mrow><mrow><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mfrac><mo>,</mo><mspace width="0.8em"/><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo><mo>&gt;</mo><mn>0</mn></math></div>
+  <p class="where">Sandsynligheden for <math><mi>A</mi></math>, når det vides, at <math><mi>B</mi></math> er indtruffet. Udfaldsrummet indskrænkes til <math><mi>B</mi></math>.</p>
+</div>
+<p>Af definitionen følger produktreglen <math><mi>P</mi><mo>(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>)</mo><mo>=</mo><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo><mo>·</mo><mi>P</mi><mo>(</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>)</mo></math>. Er <math><mi>A</mi></math> og <math><mi>B</mi></math> uafhængige, er <math><mi>P</mi><mo>(</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>)</mo><mo>=</mo><mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo></math>.</p>
+
+<h2>To-vejs-tabel</h2>
+<p>En tabel over to kategorier gør betingede sandsynligheder overskuelige. Læs altid rækken eller søjlen som det nye udfaldsrum.</p>
+<table class="compact">
+<caption>100 elever fordelt på køn og matematikvalg</caption>
+<tr><th>Køn</th><th class="num">Vælger matematik</th><th class="num">Vælger ikke</th><th class="num">I alt</th></tr>
+<tr><td><strong>Pige</strong></td><td class="num">24</td><td class="num">36</td><td class="num">60</td></tr>
+<tr><td><strong>Dreng</strong></td><td class="num">16</td><td class="num">24</td><td class="num">40</td></tr>
+<tr><td><strong>I alt</strong></td><td class="num">40</td><td class="num">60</td><td class="num">100</td></tr>
+</table>
+<div class="formula"><math><mi>P</mi><mo>(</mo><mtext>pige</mtext><mo>|</mo><mtext>matematik</mtext><mo>)</mo><mo>=</mo><mfrac><mn>24</mn><mn>40</mn></mfrac><mo>=</mo><mn>0,6</mn><mo>,</mo><mspace width="1em"/><mi>P</mi><mo>(</mo><mtext>matematik</mtext><mo>|</mo><mtext>pige</mtext><mo>)</mo><mo>=</mo><mfrac><mn>24</mn><mn>60</mn></mfrac><mo>=</mo><mn>0,4</mn></math></div>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="44mm" viewBox="0 0 80 44" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<circle cx="8" cy="22" r="1.2" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="8" y="26.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">1</text>
+<line x1="8" y1="22" x2="28" y2="10" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="8" y1="22" x2="28" y2="34" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="28" cy="10" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="28" cy="34" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="28" y="6.6" font-size="2.3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">syg</text>
+<text x="28" y="38" font-size="2.3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">rask</text>
+<text x="17" y="15.6" font-size="2" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">0,01</text>
+<text x="17" y="29.4" font-size="2" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">0,99</text>
+<line x1="28" y1="10" x2="54" y2="5" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="28" y1="10" x2="54" y2="15" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="28" y1="34" x2="54" y2="29" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="28" y1="34" x2="54" y2="39" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="54" cy="5" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="54" cy="15" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="54" cy="29" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="54" cy="39" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="57" y="5.8" font-size="2.2" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle">+ 0,0095</text>
+<text x="57" y="15.8" font-size="2.2" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle">− 0,0005</text>
+<text x="57" y="29.8" font-size="2.2" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle">+ 0,0495</text>
+<text x="57" y="39.8" font-size="2.2" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle">− 0,9405</text>
+</svg>
+<figcaption>Trædiagram for testen. + og − er testresultatet; P(syg | +) = 0,0095/(0,0095 + 0,0495) ≈ 0,161.</figcaption>
+</figure>
+
+
+
+<h2>Bayes' sætning</h2>
+<div class="box">
+  <span class="label">Omvendt betingning</span>
+  <div class="formula"><math><mi>P</mi><mo>(</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo>(</mo><mi>B</mi><mo>|</mo><mi>A</mi><mo>)</mo><mo>·</mo><mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo></mrow><mrow><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mfrac></math></div>
+  <p class="where">Bruges, når <math><mi>P</mi><mo>(</mo><mi>B</mi><mo>|</mo><mi>A</mi><mo>)</mo></math> kendes, men <math><mi>P</mi><mo>(</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>)</mo></math> skal findes.</p>
+</div>
+<p>Den samlede sandsynlighed for <math><mi>B</mi></math> findes ved at opdele i tilfælde: <math><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo><mo>=</mo><mi>P</mi><mo>(</mo><mi>B</mi><mo>|</mo><mi>A</mi><mo>)</mo><mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>+</mo><mi>P</mi><mo>(</mo><mi>B</mi><mo>|</mo><msup><mi>A</mi><mo>¯</mo></msup><mo>)</mo><mi>P</mi><mo>(</mo><msup><mi>A</mi><mo>¯</mo></msup><mo>)</mo></math>.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — test</span>
+  <p>En sygdom rammer 1&nbsp;% af befolkningen. Testen er positiv hos 95&nbsp;% af de syge og hos 5&nbsp;% af de raske. Sandsynligheden for at være syg, når testen er positiv:</p>
+  <div class="formula left">
+    <math><mi>P</mi><mo>(</mo><mtext>syg</mtext><mo>|</mo><mo>+</mo><mo>)</mo><mo>=</mo><mfrac><mrow><mn>0,95</mn><mo>·</mo><mn>0,01</mn></mrow><mrow><mn>0,95</mn><mo>·</mo><mn>0,01</mn><mo>+</mo><mn>0,05</mn><mo>·</mo><mn>0,99</mn></mrow></mfrac><mo>=</mo><mfrac><mn>0,0095</mn><mrow><mn>0,0095</mn><mo>+</mo><mn>0,0495</mn></mrow></mfrac><mo>≈</mo><mn>0,161</mn></math>
+  </div>
+  <p class="where">Kun ca. 16&nbsp;% — de mange falske positive blandt de raske dominerer, fordi sygdommen er sjælden.</p>
+</div>
+
+<h2>Uafhængighed</h2>
+<p>To hændelser er uafhængige, netop når <math><mi>P</mi><mo>(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>)</mo><mo>=</mo><mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>·</mo><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo></math>, hvilket er ækvivalent med <math><mi>P</mi><mo>(</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>)</mo><mo>=</mo><mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo></math>, når <math><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo><mo>&gt;</mo><mn>0</mn></math>.</p>
+<div class="box">
+  <span class="label">Eksempel — terning</span>
+  <p><math><mi>A</mi></math>: lige antal øjne, <math><mi>B</mi></math>: mere end 3 øjne. <math><mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, <math><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></math> og <math><mi>P</mi><mo>(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></math>. Da <math><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>≠</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></math>, er hændelserne ikke uafhængige.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li><math><mi>P</mi><mo>(</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>)</mo><mo>≠</mo><mi>P</mi><mo>(</mo><mi>B</mi><mo>|</mo><mi>A</mi><mo>)</mo></math>. Betingningen er ikke symmetrisk.</li>
+    <li>Ved Bayes' sætning skal nævneren være den samlede sandsynlighed for <math><mi>B</mi></math>, ikke kun et af leddene.</li>
+    <li>Grundraten (hvor almindelig hændelsen er) påvirker resultatet stærkt.</li>
+    <li>Betinget sandsynlighed ændrer ikke udfaldsrummets hændelser, men indskrænker det til <math><mi>B</mi></math>.</li>
+  </ul>
+</div>
+
+</body>
+</html>

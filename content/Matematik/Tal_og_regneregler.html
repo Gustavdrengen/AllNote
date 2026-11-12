@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Tal og regneregler</title>
+</head>
+<body>
+
+<h1>Tal og regneregler</h1>
+
+<h2>Talmængder</h2>
+<table class="compact">
+<caption>Talmængderne og deres symboler</caption>
+<tr><th>Symbol</th><th>Mængde</th><th>Eksempler</th><th>Lukket under</th></tr>
+<tr><td>ℕ</td><td>naturlige tal</td><td>0, 1, 2, 3, …</td><td>+ og ·</td></tr>
+<tr><td>ℤ</td><td>hele tal</td><td>…, −2, −1, 0, 1, 2, …</td><td>+, − og ·</td></tr>
+<tr><td>ℚ</td><td>rationale tal</td><td><math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, −3, 0,25</td><td>+, −, · og :</td></tr>
+<tr><td>ℝ</td><td>reelle tal</td><td><math><msqrt><mn>2</mn></msqrt></math>, π, −1,5</td><td>+, −, · og :</td></tr>
+<tr><td>ℂ</td><td>komplekse tal</td><td><math><mi>i</mi></math>, 2 + 3<math><mi>i</mi></math></td><td>alle regnearter</td></tr>
+</table>
+
+<p><math><mi>ℕ</mi><mo>⊂</mo><mi>ℤ</mi><mo>⊂</mo><mi>ℚ</mi><mo>⊂</mo><mi>ℝ</mi><mo>⊂</mo><mi>ℂ</mi></math>. Et rationalt tal kan skrives som en brøk <math><mfrac><mi>a</mi><mi>b</mi></mfrac></math> med <math><mi>b</mi><mo>≠</mo><mn>0</mn></math>; irrationale tal som <math><msqrt><mn>2</mn></msqrt></math> og π kan ikke.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="70mm" height="24mm" viewBox="0 0 70 24" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<rect x="4" y="3" width="62" height="3.8" rx="0" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="8" y="8" width="54" height="3.8" rx="0" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="12" y="13" width="46" height="3.8" rx="0" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="16" y="18" width="38" height="3.8" rx="0" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="6" y="5" font-size="2.5" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle" font-style="italic">R</text>
+<text x="10" y="10" font-size="2.5" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle" font-style="italic">Q</text>
+<text x="14" y="15" font-size="2.5" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle" font-style="italic">Z</text>
+<text x="18" y="20" font-size="2.5" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle" font-style="italic">N</text>
+<text x="64" y="5" font-size="2.2" fill="#1b1b1b" text-anchor="end" font-weight="400" dominant-baseline="middle">…, −√2, π, e</text>
+<text x="60" y="10" font-size="2.2" fill="#1b1b1b" text-anchor="end" font-weight="400" dominant-baseline="middle">1/2, −3/4, 0,25</text>
+<text x="56" y="15" font-size="2.2" fill="#1b1b1b" text-anchor="end" font-weight="400" dominant-baseline="middle">−3, −2, −1</text>
+<text x="52" y="20" font-size="2.2" fill="#1b1b1b" text-anchor="end" font-weight="400" dominant-baseline="middle">0, 1, 2, …</text>
+</svg>
+<figcaption>Talmængderne N ⊂ Z ⊂ Q ⊂ R. Bjælkerne bliver kortere, fordi hver mængde er en delmængde af den næste.</figcaption>
+</figure>
+
+
+
+<h2>Regnearternes orden</h2>
+<ol class="tight">
+<li>Parenteser, indefra og ud. Brøkstreg og rodtegn virker som parenteser.</li>
+<li>Potenser og rødder.</li>
+<li>Gange og dele, venstre mod højre.</li>
+<li>Plus og minus, venstre mod højre.</li>
+</ol>
+
+<h2>Brøkregler</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Addition og subtraktion</span>
+    <div class="formula"><math><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>±</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi><mi>d</mi><mo>±</mo><mi>b</mi><mi>c</mi></mrow><mrow><mi>b</mi><mi>d</mi></mrow></mfrac></math></div>
+    <p class="where"><math><mi>b</mi><mo>,</mo><mi>d</mi><mo>≠</mo><mn>0</mn></math></p>
+  </div>
+  <div class="box">
+    <span class="label">Multiplikation og division</span>
+    <div class="formula"><math><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>·</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi><mi>c</mi></mrow><mrow><mi>b</mi><mi>d</mi></mrow></mfrac><mo>,</mo><mspace width="0.6em"/><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>:</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi><mi>d</mi></mrow><mrow><mi>b</mi><mi>c</mi></mrow></mfrac></math></div>
+    <p class="where">Divider med en brøk: gang med den omvendte.</p>
+  </div>
+</div>
+<p>Forkortning: <math><mfrac><mrow><mi>a</mi><mi>c</mi></mrow><mrow><mi>b</mi><mi>c</mi></mrow></mfrac><mo>=</mo><mfrac><mi>a</mi><mi>b</mi></mfrac></math> for <math><mi>c</mi><mo>≠</mo><mn>0</mn></math>. Forlængning ændrer ikke brøkens værdi.</p>
+
+<h2>Fortegn og parenteser</h2>
+<div class="formula left">
+  <math><mo>−</mo><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>=</mo><mo>−</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo>,</mo><mspace width="1em"/><mo>−</mo><mo>(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo>)</mo><mo>=</mo><mo>−</mo><mi>a</mi><mo>+</mo><mi>b</mi></math><br>
+  <math><mo>(</mo><mo>−</mo><mi>a</mi><mo>)</mo><mo>(</mo><mo>−</mo><mi>b</mi><mo>)</mo><mo>=</mo><mi>a</mi><mi>b</mi><mo>,</mo><mspace width="1em"/><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><mo>−</mo><mo>(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>)</mo><mo>,</mo><mspace width="1em"/><msup><mrow><mo>(</mo><mo>−</mo><mi>a</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup></math><br>
+  <math><mi>a</mi><mo>(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>)</mo><mo>=</mo><mi>a</mi><mi>b</mi><mo>+</mo><mi>a</mi><mi>c</mi><mo>,</mo><mspace width="1em"/><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>(</mo><mi>c</mi><mo>+</mo><mi>d</mi><mo>)</mo><mo>=</mo><mi>a</mi><mi>c</mi><mo>+</mo><mi>a</mi><mi>d</mi><mo>+</mo><mi>b</mi><mi>c</mi><mo>+</mo><mi>b</mi><mi>d</mi></math>
+</div>
+
+<h2>Divisibilitet</h2>
+<table class="compact">
+<caption>Delighedsregler</caption>
+<tr><th>Tallet går op i …</th><th>Netop når</th></tr>
+<tr><td class="nowrap">3</td><td>tværsummen er delelig med 3</td></tr>
+<tr><td class="nowrap">9</td><td>tværsummen er delelig med 9</td></tr>
+<tr><td class="nowrap">4</td><td>de sidste to cifre danner et tal deleligt med 4</td></tr>
+<tr><td class="nowrap">6</td><td>tallet er deleligt med både 2 og 3</td></tr>
+</table>
+<p>Primtalsopløsning: <math><mn>360</mn><mo>=</mo><msup><mn>2</mn><mn>3</mn></msup><mo>·</mo><msup><mn>3</mn><mn>2</mn></msup><mo>·</mo><mn>5</mn></math>. Hvert helt tal større end 1 har en entydig primtalsopløsning bortset fra faktorernes orden.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box rule">
+  <span class="label">Eksempel</span>
+  <div class="formula left">
+    <math><mn>3</mn><mo>+</mo><mfrac><mrow><mn>2</mn><mo>·</mo><msup><mrow><mo>(</mo><mn>5</mn><mo>−</mo><mn>7</mn><mo>)</mo></mrow><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>=</mo><mn>3</mn><mo>+</mo><mfrac><mrow><mn>2</mn><mo>·</mo><msup><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>=</mo><mn>3</mn><mo>+</mo><mfrac><mrow><mn>2</mn><mo>·</mo><mn>4</mn></mrow><mn>4</mn></mfrac><mo>=</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>5</mn></math>
+  </div>
+  <p class="where">Parentes → potens → gange → division → addition.</p>
+</div>
+
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li><math><mo>−</mo><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mo>−</mo><mn>9</mn></math>, men <math><msup><mrow><mo>(</mo><mo>−</mo><mn>3</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>9</mn></math>. Minusset hører til, når det står uden for parentesen.</li>
+    <li><math><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mi>c</mi></mfrac><mo>≠</mo><mfrac><mi>a</mi><mi>c</mi></mfrac><mo>+</mo><mfrac><mi>b</mi><mi>c</mi></mfrac></math> er netop tilladt; men <math><mfrac><mn>1</mn><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></mfrac><mo>≠</mo><mfrac><mn>1</mn><mi>a</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>b</mi></mfrac></math>.</li>
+    <li>Division med 0 er ikke defineret; <math><mfrac><mn>0</mn><mn>0</mn></mfrac></math> er ubestemt.</li>
+    <li>Brøker forkortes ved at fjerne en fælles faktor i hele tælleren og hele nævneren — ikke enkelte led.</li>
+  </ul>
+</div>
+
+</body>
+</html>

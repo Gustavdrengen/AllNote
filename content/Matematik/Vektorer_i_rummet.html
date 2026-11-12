@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Vektorer i rummet</title>
+</head>
+<body>
+
+<h1>Vektorer i rummet</h1>
+
+<h2>Koordinater og længde</h2>
+<div class="box rule">
+  <span class="label">Vektor i rummet</span>
+  <div class="formula"><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><msub><mi>a</mi><mn>3</mn></msub><mo>)</mo><mo>,</mo><mspace width="0.8em"/><mo>|</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>|</mo><mo>=</mo><msqrt><mrow><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>a</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>a</mi><mn>3</mn><mn>2</mn></msubsup></mrow></msqrt></math></div>
+  <p class="where">Addition og skalarmultiplikation foregår koordinatvis som i planen.</p>
+</div>
+<div class="formula"><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>·</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><msub><mi>b</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><msub><mi>b</mi><mn>2</mn></msub><mo>+</mo><msub><mi>a</mi><mn>3</mn></msub><msub><mi>b</mi><mn>3</mn></msub><mo>,</mo><mspace width="1em"/><mi>cos</mi><mspace width="0.1em"/><mi>v</mi><mo>=</mo><mfrac><mrow><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>·</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover></mrow><mrow><mo>|</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>|</mo><mo>·</mo><mo>|</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>|</mo></mrow></mfrac></math></div>
+
+<h2>Krydsprodukt</h2>
+<div class="box rule">
+  <span class="label">Krydsprodukt</span>
+  <div class="formula"><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>×</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><msub><mi>a</mi><mn>2</mn></msub><msub><mi>b</mi><mn>3</mn></msub><mo>−</mo><msub><mi>a</mi><mn>3</mn></msub><msub><mi>b</mi><mn>2</mn></msub><mo>,</mo><mspace width="0.3em"/><msub><mi>a</mi><mn>3</mn></msub><msub><mi>b</mi><mn>1</mn></msub><mo>−</mo><msub><mi>a</mi><mn>1</mn></msub><msub><mi>b</mi><mn>3</mn></msub><mo>,</mo><mspace width="0.3em"/><msub><mi>a</mi><mn>1</mn></msub><msub><mi>b</mi><mn>2</mn></msub><mo>−</mo><msub><mi>a</mi><mn>2</mn></msub><msub><mi>b</mi><mn>1</mn></msub><mo>)</mo></math></div>
+  <p class="where"><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>×</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>⊥</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover></math> og <math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>×</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>⊥</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover></math> · <math><mo>|</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>×</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>|</mo></math> er arealet af det udspændte parallelogram</p>
+</div>
+<p>Krydsproduktet er antikommutativt: <math><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>×</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>=</mo><mo>−</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>×</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover></math>. Er <math><mover accent="true"><mi>a</mi><mo>→</mo></mover></math> og <math><mover accent="true"><mi>b</mi><mo>→</mo></mover></math> parallelle, er krydsproduktet nulvektoren.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="64mm" height="48mm" viewBox="0 0 64 48" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="20" y1="40" x2="56" y2="40" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/><polygon points="56,40 54.42,40.64 54.42,39.36" fill="#1b1b1b" stroke="none"/>
+<line x1="20" y1="40" x2="10" y2="29" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/><polygon points="10,29 11.53,29.74 10.59,30.59" fill="#1b1b1b" stroke="none"/>
+<line x1="20" y1="40" x2="20" y2="10" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/><polygon points="20,10 20.64,11.58 19.36,11.58" fill="#1b1b1b" stroke="none"/>
+<line x1="20" y1="40" x2="44" y2="4" stroke="#1c5f9e" fill="none" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/><polygon points="44,4 43.66,5.66 42.6,4.96" fill="#1c5f9e" stroke="none"/>
+<text x="57" y="43" font-size="2.8" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">x</text>
+<text x="7.5" y="28" font-size="2.8" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">y</text>
+<text x="18" y="8" font-size="2.8" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">z</text>
+<text x="45.5" y="5" font-size="3" fill="#1c5f9e" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">a</text>
+<circle cx="20" cy="40" r="0.9" fill="#1b1b1b" stroke="none"/><text x="17.6" y="43.2" font-size="2.5" fill="#1b1b1b" text-anchor="start">O</text>
+</svg>
+<figcaption>Rumligt koordinatsystem med vektoren a = (1, 1, 1).</figcaption>
+</figure>
+
+<h2>Linjer og planer</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Linje i rummet</span>
+    <div class="formula"><math><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>)</mo><mo>=</mo><mo>(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo>,</mo><msub><mi>z</mi><mn>0</mn></msub><mo>)</mo><mo>+</mo><mi>t</mi><mo>·</mo><mover accent="true"><mi>d</mi><mo>→</mo></mover></math></div>
+    <p class="where">Punkt plus parameter gange retningsvektor.</p>
+  </div>
+  <div class="box">
+    <span class="label">Plan</span>
+    <div class="formula"><math><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>+</mo><mi>c</mi><mi>z</mi><mo>+</mo><mi>d</mi><mo>=</mo><mn>0</mn></math></div>
+    <p class="where">Normalvektor <math><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>)</mo></math>.</p>
+  </div>
+</div>
+<p>Afstanden fra <math><mo>(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo>,</mo><msub><mi>z</mi><mn>0</mn></msub><mo>)</mo></math> til planen er <math><mfrac><mrow><mo>|</mo><mi>a</mi><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mi>b</mi><msub><mi>y</mi><mn>0</mn></msub><mo>+</mo><mi>c</mi><msub><mi>z</mi><mn>0</mn></msub><mo>+</mo><mi>d</mi><mo>|</mo></mrow><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mfrac></math>.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <p><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo>)</mo></math> og <math><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>.</p>
+  <div class="formula left">
+    <math><mo>|</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>|</mo><mo>=</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn></mrow></msqrt><mo>=</mo><mn>3</mn><mo>,</mo><mspace width="1em"/><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>·</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>=</mo><mn>2</mn><mo>−</mo><mn>2</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>0</mn></math><br>
+    <math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>×</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><mn>2</mn><mo>·</mo><mn>0</mn><mo>−</mo><mn>2</mn><mo>·</mo><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo><mo>,</mo><mspace width="0.3em"/><mn>2</mn><mo>·</mo><mn>2</mn><mo>−</mo><mn>1</mn><mo>·</mo><mn>0</mn><mo>,</mo><mspace width="0.3em"/><mn>1</mn><mo>·</mo><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo><mo>−</mo><mn>2</mn><mo>·</mo><mn>2</mn><mo>)</mo><mo>=</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mo>−</mo><mn>5</mn><mo>)</mo></math>
+  </div>
+  <p class="where"><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>⊥</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover></math>, og parallelogrammets areal er <math><mo>|</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mo>−</mo><mn>5</mn><mo>)</mo><mo>|</mo><mo>=</mo><msqrt><mrow><mn>4</mn><mo>+</mo><mn>16</mn><mo>+</mo><mn>25</mn></mrow></msqrt><mo>=</mo><msqrt><mn>45</mn></msqrt><mo>=</mo><mn>3</mn><msqrt><mn>5</mn></msqrt></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>×</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover></math> og <math><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>×</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover></math> har modsatte fortegn; rækkefølgen er afgørende.</li>
+    <li>Prikproduktet giver et tal, krydsproduktet en vektor.</li>
+    <li>Normalvektoren til en plan aflæses direkte som koefficienterne til <math><mi>x</mi></math>, <math><mi>y</mi></math> og <math><mi>z</mi></math>; den er ikke en retningsvektor i planen.</li>
+  </ul>
+</div>
+
+</body>
+</html>

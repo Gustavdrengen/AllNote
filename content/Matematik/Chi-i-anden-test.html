@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Chi-i-anden-test</title>
+</head>
+<body>
+
+<h1>Chi-i-anden-test</h1>
+
+<h2>Teststørrelsen</h2>
+<div class="box rule">
+  <span class="label">χ²-test</span>
+  <div class="formula"><math><msup><mi>χ</mi><mn>2</mn></msup><mo>=</mo><munder><mo>∑</mo><mtext>alle celler</mtext></munder><mfrac><msup><mrow><mo>(</mo><mi>O</mi><mo>−</mo><mi>E</mi><mo>)</mo></mrow><mn>2</mn></msup><mi>E</mi></mfrac></math></div>
+  <p class="where"><math><mi>O</mi></math>: observeret antal · <math><mi>E</mi></math>: forventet antal under <math><msub><mi>H</mi><mn>0</mn></msub></math></p>
+</div>
+<p>Teststørrelsen måler, hvor langt de observerede tal ligger fra de forventede. Store værdier taler imod <math><msub><mi>H</mi><mn>0</mn></msub></math>. Fordelingen er tilnærmelsesvis <math><msup><mi>χ</mi><mn>2</mn></msup></math> med et antal frihedsgrader, der afhænger af testen.</p>
+
+<h2>To anvendelser</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Goodness of fit</span>
+    <p>Passer en observeret fordeling med en forventet fordeling? Frihedsgrader: <math><mi>k</mi><mo>−</mo><mn>1</mn></math>, hvor <math><mi>k</mi></math> er antallet af kategorier.</p>
+  </div>
+  <div class="box">
+    <span class="label">Uafhængighed</span>
+    <p>Er to kategoriske variable uafhængige? Frihedsgrader: <math><mo>(</mo><mi>r</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>c</mi><mo>−</mo><mn>1</mn><mo>)</mo></math> for en tabel med <math><mi>r</mi></math> rækker og <math><mi>c</mi></math> søjler.</p>
+  </div>
+</div>
+<p>Forventede antal i uafhængighedstesten: <math><mi>E</mi><mo>=</mo><mfrac><mrow><mtext>rækkesum</mtext><mo>·</mo><mtext>søjlesum</mtext></mrow><mtext>total</mtext></mfrac></math>. Som tommelfingerregel skal alle forventede antal være mindst 5.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="68mm" height="36mm" viewBox="0 0 68 36" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<defs><clipPath id="clip9ea6dd4d"><rect x="11" y="3" width="53" height="22.9"/></clipPath></defs>
+<rect x="11" y="3" width="53" height="22.9" fill="none" stroke="#dde2e7" stroke-width="0.3"/>
+<line x1="20.29" y1="3" x2="20.29" y2="25.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="31.22" y1="3" x2="31.22" y2="25.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="42.14" y1="3" x2="42.14" y2="25.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="53.07" y1="3" x2="53.07" y2="25.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="64" y1="3" x2="64" y2="25.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="23.04" x2="64" y2="23.04" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="20.18" x2="64" y2="20.18" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="17.31" x2="64" y2="17.31" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="14.45" x2="64" y2="14.45" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="11.59" x2="64" y2="11.59" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="8.73" x2="64" y2="8.73" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="5.86" x2="64" y2="5.86" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="3" x2="64" y2="3" stroke="#dde2e7" stroke-width="0.25"/>
+<path d="M 11 7.95 L 11.09 8.56 L 11.18 9.12 L 11.27 9.65 L 11.35 10.14 L 11.44 10.6 L 11.53 11.04 L 11.62 11.45 L 11.71 11.84 L 11.79 12.21 L 11.88 12.56 L 11.97 12.89 L 12.06 13.21 L 12.15 13.51 L 12.24 13.8 L 12.32 14.08 L 12.41 14.35 L 12.5 14.6 L 12.59 14.85 L 12.68 15.08 L 12.77 15.31 L 12.86 15.53 L 12.94 15.74 L 13.03 15.94 L 13.12 16.14 L 13.21 16.33 L 13.3 16.51 L 13.38 16.69 L 13.47 16.87 L 13.56 17.03 L 13.65 17.2 L 13.74 17.35 L 13.83 17.51 L 13.91 17.65 L 14 17.8 L 14.09 17.94 L 14.18 18.08 L 14.27 18.21 L 14.36 18.34 L 14.45 18.47 L 14.53 18.59 L 14.62 18.71 L 14.71 18.83 L 14.8 18.94 L 14.89 19.05 L 14.97 19.16 L 15.06 19.27 L 15.15 19.37 L 15.24 19.47 L 15.33 19.57 L 15.42 19.67 L 15.5 19.76 L 15.59 19.86 L 15.68 19.95 L 15.77 20.03 L 15.86 20.12 L 15.95 20.21 L 16.04 20.29 L 16.12 20.37 L 16.21 20.45 L 16.3 20.53 L 16.39 20.61 L 16.48 20.68 L 16.56 20.76 L 16.65 20.83 L 16.74 20.9 L 16.83 20.97 L 16.92 21.04 L 17.01 21.1 L 17.09 21.17 L 17.18 21.23 L 17.27 21.3 L 17.36 21.36 L 17.45 21.42 L 17.54 21.48 L 17.62 21.54 L 17.71 21.6 L 17.8 21.66 L 17.89 21.71 L 17.98 21.77 L 18.07 21.82 L 18.16 21.87 L 18.24 21.93 L 18.33 21.98 L 18.42 22.03 L 18.51 22.08 L 18.6 22.13 L 18.68 22.18 L 18.77 22.22 L 18.86 22.27 L 18.95 22.32 L 19.04 22.36 L 19.13 22.41 L 19.21 22.45 L 19.3 22.49 L 19.39 22.53 L 19.48 22.58 L 19.57 22.62 L 19.66 22.66 L 19.75 22.7 L 19.83 22.74 L 19.92 22.78 L 20.01 22.81 L 20.1 22.85 L 20.19 22.89 L 20.27 22.92 L 20.36 22.96 L 20.45 22.99 L 20.54 23.03 L 20.63 23.06 L 20.72 23.1 L 20.8 23.13 L 20.89 23.16 L 20.98 23.2 L 21.07 23.23 L 21.16 23.26 L 21.25 23.29 L 21.33 23.32 L 21.42 23.35 L 21.51 23.38 L 21.6 23.41 L 21.69 23.44 L 21.78 23.47 L 21.87 23.5 L 21.95 23.52 L 22.04 23.55 L 22.13 23.58 L 22.22 23.6 L 22.31 23.63 L 22.4 23.66 L 22.48 23.68 L 22.57 23.71 L 22.66 23.73 L 22.75 23.76 L 22.84 23.78 L 22.93 23.81 L 23.01 23.83 L 23.1 23.85 L 23.19 23.88 L 23.28 23.9 L 23.37 23.92 L 23.45 23.94 L 23.54 23.96 L 23.63 23.99 L 23.72 24.01 L 23.81 24.03 L 23.9 24.05 L 23.98 24.07 L 24.07 24.09 L 24.16 24.11 L 24.25 24.13 L 24.34 24.15 L 24.43 24.17 L 24.52 24.19 L 24.6 24.21 L 24.69 24.22 L 24.78 24.24 L 24.87 24.26 L 24.96 24.28 L 25.05 24.3 L 25.13 24.31 L 25.22 24.33 L 25.31 24.35 L 25.4 24.36 L 25.49 24.38 L 25.57 24.4 L 25.66 24.41 L 25.75 24.43 L 25.84 24.44 L 25.93 24.46 L 26.02 24.48 L 26.1 24.49 L 26.19 24.51 L 26.28 24.52 L 26.37 24.54 L 26.46 24.55 L 26.55 24.56 L 26.63 24.58 L 26.72 24.59 L 26.81 24.61 L 26.9 24.62 L 26.99 24.63 L 27.08 24.65 L 27.16 24.66 L 27.25 24.67 L 27.34 24.69 L 27.43 24.7 L 27.52 24.71 L 27.61 24.72 L 27.7 24.74 L 27.78 24.75 L 27.87 24.76 L 27.96 24.77 L 28.05 24.78 L 28.14 24.79 L 28.22 24.81 L 28.31 24.82 L 28.4 24.83 L 28.49 24.84 L 28.58 24.85 L 28.67 24.86 L 28.75 24.87 L 28.84 24.88 L 28.93 24.89 L 29.02 24.9 L 29.11 24.91 L 29.2 24.92 L 29.29 24.93 L 29.37 24.94 L 29.46 24.95 L 29.55 24.96 L 29.64 24.97 L 29.73 24.98 L 29.81 24.99 L 29.9 25 L 29.99 25.01 L 30.08 25.02 L 30.17 25.03 L 30.26 25.04 L 30.34 25.05 L 30.43 25.05 L 30.52 25.06 L 30.61 25.07 L 30.7 25.08 L 30.79 25.09 L 30.88 25.1 L 30.96 25.1 L 31.05 25.11 L 31.14 25.12 L 31.23 25.13 L 31.32 25.14 L 31.4 25.14 L 31.49 25.15 L 31.58 25.16 L 31.67 25.17 L 31.76 25.17 L 31.85 25.18 L 31.93 25.19 L 32.02 25.2 L 32.11 25.2 L 32.2 25.21 L 32.29 25.22 L 32.38 25.22 L 32.47 25.23 L 32.55 25.24 L 32.64 25.24 L 32.73 25.25 L 32.82 25.26 L 32.91 25.26 L 32.99 25.27 L 33.08 25.27 L 33.17 25.28 L 33.26 25.29 L 33.35 25.29 L 33.44 25.3 L 33.52 25.31 L 33.61 25.31 L 33.7 25.32 L 33.79 25.32 L 33.88 25.33 L 33.97 25.33 L 34.05 25.34 L 34.14 25.34 L 34.23 25.35 L 34.32 25.36 L 34.41 25.36 L 34.5 25.37 L 34.58 25.37 L 34.67 25.38 L 34.76 25.38 L 34.85 25.39 L 34.94 25.39 L 35.03 25.4 L 35.12 25.4 L 35.2 25.41 L 35.29 25.41 L 35.38 25.42 L 35.47 25.42 L 35.56 25.43 L 35.64 25.43 L 35.73 25.43 L 35.82 25.44 L 35.91 25.44 L 36 25.45 L 36.09 25.45 L 36.17 25.46 L 36.26 25.46 L 36.35 25.47 L 36.44 25.47 L 36.53 25.47 L 36.62 25.48 L 36.7 25.48 L 36.79 25.49 L 36.88 25.49 L 36.97 25.49 L 37.06 25.5 L 37.15 25.5 L 37.23 25.51 L 37.32 25.51 L 37.41 25.51 L 37.5 25.52 L 37.59 25.52 L 37.68 25.52 L 37.77 25.53 L 37.85 25.53 L 37.94 25.53 L 38.03 25.54 L 38.12 25.54 L 38.21 25.55 L 38.3 25.55 L 38.38 25.55 L 38.47 25.56 L 38.56 25.56 L 38.65 25.56 L 38.74 25.57 L 38.83 25.57 L 38.91 25.57 L 39 25.57 L 39.09 25.58 L 39.18 25.58 L 39.27 25.58 L 39.36 25.59 L 39.44 25.59 L 39.53 25.59 L 39.62 25.6 L 39.71 25.6 L 39.8 25.6 L 39.88 25.6 L 39.97 25.61 L 40.06 25.61 L 40.15 25.61 L 40.24 25.62 L 40.33 25.62 L 40.41 25.62 L 40.5 25.62 L 40.59 25.63 L 40.68 25.63 L 40.77 25.63 L 40.86 25.63 L 40.94 25.64 L 41.03 25.64 L 41.12 25.64 L 41.21 25.64 L 41.3 25.65 L 41.39 25.65 L 41.47 25.65 L 41.56 25.65 L 41.65 25.66 L 41.74 25.66 L 41.83 25.66 L 41.92 25.66 L 42.01 25.66 L 42.09 25.67 L 42.18 25.67 L 42.27 25.67 L 42.36 25.67 L 42.45 25.68 L 42.53 25.68 L 42.62 25.68 L 42.71 25.68 L 42.8 25.68 L 42.89 25.69 L 42.98 25.69 L 43.06 25.69 L 43.15 25.69 L 43.24 25.69 L 43.33 25.7 L 43.42 25.7 L 43.51 25.7 L 43.59 25.7 L 43.68 25.7 L 43.77 25.7 L 43.86 25.71 L 43.95 25.71 L 44.04 25.71 L 44.12 25.71 L 44.21 25.71 L 44.3 25.72 L 44.39 25.72 L 44.48 25.72 L 44.57 25.72 L 44.66 25.72 L 44.74 25.72 L 44.83 25.73 L 44.92 25.73 L 45.01 25.73 L 45.1 25.73 L 45.18 25.73 L 45.27 25.73 L 45.36 25.73 L 45.45 25.74 L 45.54 25.74 L 45.63 25.74 L 45.71 25.74 L 45.8 25.74 L 45.89 25.74 L 45.98 25.75 L 46.07 25.75 L 46.16 25.75 L 46.24 25.75 L 46.33 25.75 L 46.42 25.75 L 46.51 25.75 L 46.6 25.76 L 46.69 25.76 L 46.77 25.76 L 46.86 25.76 L 46.95 25.76 L 47.04 25.76 L 47.13 25.76 L 47.22 25.76 L 47.3 25.77 L 47.39 25.77 L 47.48 25.77 L 47.57 25.77 L 47.66 25.77 L 47.75 25.77 L 47.84 25.77 L 47.92 25.77 L 48.01 25.78 L 48.1 25.78 L 48.19 25.78 L 48.28 25.78 L 48.36 25.78 L 48.45 25.78 L 48.54 25.78 L 48.63 25.78 L 48.72 25.78 L 48.81 25.78 L 48.89 25.79 L 48.98 25.79 L 49.07 25.79 L 49.16 25.79 L 49.25 25.79 L 49.34 25.79 L 49.42 25.79 L 49.51 25.79 L 49.6 25.79 L 49.69 25.8 L 49.78 25.8 L 49.87 25.8 L 49.95 25.8 L 50.04 25.8 L 50.13 25.8 L 50.22 25.8 L 50.31 25.8 L 50.4 25.8 L 50.48 25.8 L 50.57 25.8 L 50.66 25.81 L 50.75 25.81 L 50.84 25.81 L 50.93 25.81 L 51.01 25.81 L 51.1 25.81 L 51.19 25.81 L 51.28 25.81 L 51.37 25.81 L 51.46 25.81 L 51.54 25.81 L 51.63 25.81 L 51.72 25.81 L 51.81 25.82 L 51.9 25.82 L 51.99 25.82 L 52.08 25.82 L 52.16 25.82 L 52.25 25.82 L 52.34 25.82 L 52.43 25.82 L 52.52 25.82 L 52.6 25.82 L 52.69 25.82 L 52.78 25.82 L 52.87 25.82 L 52.96 25.83 L 53.05 25.83 L 53.13 25.83 L 53.22 25.83 L 53.31 25.83 L 53.4 25.83 L 53.49 25.83 L 53.58 25.83 L 53.66 25.83 L 53.75 25.83 L 53.84 25.83 L 53.93 25.83 L 54.02 25.83 L 54.11 25.83 L 54.19 25.83 L 54.28 25.83 L 54.37 25.84 L 54.46 25.84 L 54.55 25.84 L 54.64 25.84 L 54.73 25.84 L 54.81 25.84 L 54.9 25.84 L 54.99 25.84 L 55.08 25.84 L 55.17 25.84 L 55.25 25.84 L 55.34 25.84 L 55.43 25.84 L 55.52 25.84 L 55.61 25.84 L 55.7 25.84 L 55.78 25.84 L 55.87 25.84 L 55.96 25.85 L 56.05 25.85 L 56.14 25.85 L 56.23 25.85 L 56.31 25.85 L 56.4 25.85 L 56.49 25.85 L 56.58 25.85 L 56.67 25.85 L 56.76 25.85 L 56.84 25.85 L 56.93 25.85 L 57.02 25.85 L 57.11 25.85 L 57.2 25.85 L 57.29 25.85 L 57.38 25.85 L 57.46 25.85 L 57.55 25.85 L 57.64 25.85 L 57.73 25.85 L 57.82 25.85 L 57.91 25.85 L 57.99 25.86 L 58.08 25.86 L 58.17 25.86 L 58.26 25.86 L 58.35 25.86 L 58.44 25.86 L 58.52 25.86 L 58.61 25.86 L 58.7 25.86 L 58.79 25.86 L 58.88 25.86 L 58.96 25.86 L 59.05 25.86 L 59.14 25.86 L 59.23 25.86 L 59.32 25.86 L 59.41 25.86 L 59.49 25.86 L 59.58 25.86 L 59.67 25.86 L 59.76 25.86 L 59.85 25.86 L 59.94 25.86 L 60.02 25.86 L 60.11 25.86 L 60.2 25.86 L 60.29 25.86 L 60.38 25.86 L 60.47 25.87 L 60.55 25.87 L 60.64 25.87 L 60.73 25.87 L 60.82 25.87 L 60.91 25.87 L 61 25.87 L 61.08 25.87 L 61.17 25.87 L 61.26 25.87 L 61.35 25.87 L 61.44 25.87 L 61.53 25.87 L 61.61 25.87 L 61.7 25.87 L 61.79 25.87 L 61.88 25.87 L 61.97 25.87 L 62.06 25.87 L 62.14 25.87 L 62.23 25.87 L 62.32 25.87 L 62.41 25.87 L 62.5 25.87 L 62.59 25.87 L 62.67 25.87 L 62.76 25.87 L 62.85 25.87 L 62.94 25.87 L 63.03 25.87 L 63.12 25.87 L 63.2 25.87 L 63.29 25.87 L 63.38 25.87 L 63.47 25.87 L 63.56 25.87 L 63.65 25.87 L 63.73 25.88 L 63.82 25.88 L 63.91 25.88 L 64 25.88" fill="none" stroke="#1c5f9e" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clip9ea6dd4d)"/>
+<line x1="30.34" y1="3" x2="30.34" y2="25.9" stroke="#8f98a2" stroke-width="0.4" stroke-dasharray="1.2 1.1"/>
+<line x1="20.29" y1="25.9" x2="20.29" y2="27" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="20.29" y="29.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="31.22" y1="25.9" x2="31.22" y2="27" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="31.22" y="29.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">4</text>
+<line x1="42.14" y1="25.9" x2="42.14" y2="27" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="42.14" y="29.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">6</text>
+<line x1="53.07" y1="25.9" x2="53.07" y2="27" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="53.07" y="29.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">8</text>
+<line x1="64" y1="25.9" x2="64" y2="27" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="64" y="29.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">10</text>
+<line x1="9.9" y1="25.9" x2="11" y2="25.9" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="9.9" y1="23.04" x2="11" y2="23.04" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="23.04" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,1</text>
+<line x1="9.9" y1="20.18" x2="11" y2="20.18" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="20.18" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,2</text>
+<line x1="9.9" y1="17.31" x2="11" y2="17.31" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="17.31" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,3</text>
+<line x1="9.9" y1="14.45" x2="11" y2="14.45" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="14.45" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,4</text>
+<line x1="9.9" y1="11.59" x2="11" y2="11.59" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="11.59" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,5</text>
+<line x1="9.9" y1="8.73" x2="11" y2="8.73" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="8.73" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,6</text>
+<line x1="9.9" y1="5.86" x2="11" y2="5.86" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="5.86" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,7</text>
+<line x1="9.9" y1="3" x2="11" y2="3" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="3" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,8</text>
+<text x="37.5" y="34.6" font-size="2.4" fill="#5b6470" text-anchor="middle">χ²</text>
+<text x="2.6" y="14.45" font-size="2.4" fill="#5b6470" text-anchor="middle" transform="rotate(-90 2.6 14.45)">tæthed</text>
+</svg>
+<figcaption>χ²-fordelingen med 1 frihedsgrad. 5 %-fraktilen er 3,84; store værdier taler imod H₀.</figcaption>
+</figure>
+
+
+<h2>Kritiske værdier</h2>
+<table class="compact">
+<caption>χ²-fordelingen ved 5&nbsp;% signifikansniveau</caption>
+<tr><th>Frihedsgrader</th><th class="num">1</th><th class="num">2</th><th class="num">3</th><th class="num">4</th><th class="num">5</th><th class="num">6</th></tr>
+<tr><td>Kritisk værdi</td><td class="num">3,84</td><td class="num">5,99</td><td class="num">7,81</td><td class="num">9,49</td><td class="num">11,07</td><td class="num">12,59</td></tr>
+</table>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — goodness of fit</span>
+  <p>En terning kastes 60 gange med resultatet 12, 8, 10, 14, 6, 10. Under <math><msub><mi>H</mi><mn>0</mn></msub></math> er alle seks udfald lige sandsynlige, så <math><mi>E</mi><mo>=</mo><mn>10</mn></math> i hver kategori.</p>
+  <div class="formula left">
+    <math><msup><mi>χ</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><msup><mrow><mo>(</mo><mn>12</mn><mo>−</mo><mn>10</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mn>8</mn><mo>−</mo><mn>10</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mo>…</mo><mo>+</mo><msup><mrow><mo>(</mo><mn>10</mn><mo>−</mo><mn>10</mn><mo>)</mo></mrow><mn>2</mn></msup></mrow><mn>10</mn></mfrac><mo>=</mo><mfrac><mn>40</mn><mn>10</mn></mfrac><mo>=</mo><mn>4,0</mn></math>
+  </div>
+  <p class="where">Frihedsgrader <math><mn>6</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>5</mn></math>; kritisk værdi 11,07. Da <math><mn>4,0</mn><mo>&lt;</mo><mn>11,07</mn></math>, forkastes <math><msub><mi>H</mi><mn>0</mn></msub></math> ikke. Der er ikke statistisk belæg for, at terningen er skæv.</p>
+</div>
+<div class="box note">
+  <span class="label">Tolkning</span>
+  <p>En lille <math><msup><mi>χ</mi><mn>2</mn></msup></math>-værdi betyder god overensstemmelse med <math><msub><mi>H</mi><mn>0</mn></msub></math>. Testen siger ikke, at <math><msub><mi>H</mi><mn>0</mn></msub></math> er bevist — kun at data ikke giver tilstrækkeligt grund til at forkaste den.</p>
+</div>
+
+<h2>Uafhængighedstest</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <table class="compact">
+  <tr><th>Gruppe</th><th class="num">A</th><th class="num">B</th><th class="num">I alt</th></tr>
+  <tr><td><strong>Gruppe 1</strong></td><td class="num">30</td><td class="num">20</td><td class="num">50</td></tr>
+  <tr><td><strong>Gruppe 2</strong></td><td class="num">20</td><td class="num">30</td><td class="num">50</td></tr>
+  <tr><td><strong>I alt</strong></td><td class="num">50</td><td class="num">50</td><td class="num">100</td></tr>
+  </table>
+  <p>Forventet antal i hver celle er <math><mi>E</mi><mo>=</mo><mfrac><mrow><mn>50</mn><mo>·</mo><mn>50</mn></mrow><mn>100</mn></mfrac><mo>=</mo><mn>25</mn></math>. Dermed</p>
+  <div class="formula"><math><msup><mi>χ</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><mo>·</mo><mfrac><msup><mrow><mo>(</mo><mn>30</mn><mo>−</mo><mn>25</mn><mo>)</mo></mrow><mn>2</mn></msup><mn>25</mn></mfrac><mo>=</mo><mn>4</mn><mo>·</mo><mn>1</mn><mo>=</mo><mn>4,0</mn></math></div>
+  <p class="where">Frihedsgrader <math><mo>(</mo><mn>2</mn><mo>−</mo><mn>1</mn><mo>)</mo><mo>(</mo><mn>2</mn><mo>−</mo><mn>1</mn><mo>)</mo><mo>=</mo><mn>1</mn></math>; kritisk værdi 3,84. Da <math><mn>4,0</mn><mo>&gt;</mo><mn>3,84</mn></math>, forkastes <math><msub><mi>H</mi><mn>0</mn></msub></math>: der er statistisk belæg for en sammenhæng.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Frihedsgraderne vælges forkert; de afhænger af testtypen og tabelstørrelsen.</li>
+    <li>Forventede antal under 5 gør tilnærmelsen usikker; slå kategorier sammen eller brug en anden test.</li>
+    <li>Ved uafhængighedstesten beregnes <math><mi>E</mi></math> ud fra række- og søjlesummer, ikke ud fra en formodet 50/50-fordeling.</li>
+    <li>En sammenhæng i data er ikke det samme som en årsagssammenhæng.</li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Bevisførelse</title>
+</head>
+<body>
+
+<h1>Bevisførelse</h1>
+
+<h2>Bevisets struktur</h2>
+<div class="box rule">
+  <span class="label">Et matematisk bevis</span>
+  <p>Et bevis er en kæde af logisk gyldige slutninger fra det givne og allerede beviste sætninger til påstanden. Det skal vise, at påstanden gælder i <em>alle</em> tilfælde, som forudsætningerne tillader.</p>
+</div>
+<ol class="tight">
+<li>Skriv præcist, hvad der antages, og hvad der skal vises.</li>
+<li>Angiv bevismetode.</li>
+<li>Før argumentet trin for trin, hvor hvert trin følger af det foregående.</li>
+<li>Afslut med den ønskede konklusion.</li>
+</ol>
+
+<h2>Bevismetoder</h2>
+<table class="compact">
+<caption>Valg af metode</caption>
+<tr><th>Metode</th><th>Fremgangsmåde</th><th>Egnet når</th></tr>
+<tr><td>Direkte bevis</td><td>antag <math><mi>P</mi></math>, udled <math><mi>Q</mi></math></td><td>der er en naturlig kæde af implikationer</td></tr>
+<tr><td>Kontraposition</td><td>vis <math><mo>¬</mo><mi>Q</mi><mo>⇒</mo><mo>¬</mo><mi>P</mi></math></td><td>det negative er lettere at arbejde med</td></tr>
+<tr><td>Modstridsbevis</td><td>antag <math><mo>¬</mo><mi>P</mi></math>, og udled en modstrid</td><td>antagelsen om det modsatte giver stærke konsekvenser</td></tr>
+<tr><td>Induktion</td><td>vis basistilfælde, og vis at <math><mi>n</mi></math> medfører <math><mi>n</mi><mo>+</mo><mn>1</mn></math></td><td>påstande om alle naturlige tal</td></tr>
+<tr><td>Modeksempel</td><td>find ét tilfælde, hvor påstanden er falsk</td><td>man vil afvise en påstand</td></tr>
+</table>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="70mm" height="32mm" viewBox="0 0 70 32" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<rect x="8" y="5" width="54" height="7" rx="1.5" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="8" y="21" width="54" height="7" rx="1.5" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="35" y="9.8" font-size="3.4" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">P ⇒ Q</text>
+<text x="35" y="25.8" font-size="3.4" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">¬Q ⇒ ¬P</text>
+<text x="35" y="19.2" font-size="4" fill="#b3402a" text-anchor="middle" font-weight="400" dominant-baseline="middle">⇔</text>
+<text x="40" y="19.8" font-size="2.2" fill="#b3402a" text-anchor="start" font-weight="400" dominant-baseline="middle">ækvivalent</text>
+</svg>
+<figcaption>At bevise P ⇒ Q er ækvivalent med at bevise kontrapositionen ¬Q ⇒ ¬P.</figcaption>
+</figure>
+
+
+
+<h2>Eksempler</h2>
+<div class="box">
+  <span class="label">Direkte bevis</span>
+  <p><strong>Påstand:</strong> Summen af to ulige tal er lige.</p>
+  <p><strong>Bevis:</strong> Lad de to tal være <math><mi>a</mi><mo>=</mo><mn>2</mn><mi>m</mi><mo>+</mo><mn>1</mn></math> og <math><mi>b</mi><mo>=</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></math> med <math><mi>m</mi><mo>,</mo><mi>n</mi><mo>∈</mo><mi>ℤ</mi></math>. Så er <math><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>2</mn><mi>m</mi><mo>+</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>2</mn><mo>(</mo><mi>m</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></math>, som er delelig med 2.</p>
+</div>
+<div class="box">
+  <span class="label">Modstridsbevis</span>
+  <p><strong>Påstand:</strong> <math><msqrt><mn>2</mn></msqrt></math> er irrational.</p>
+  <p><strong>Bevis:</strong> Antag <math><msqrt><mn>2</mn></msqrt><mo>=</mo><mfrac><mi>a</mi><mi>b</mi></mfrac></math> med <math><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mi>ℤ</mi></math> og brøken forkortet. Så er <math><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><msup><mi>b</mi><mn>2</mn></msup></math>, så <math><mi>a</mi></math> er lige, <math><mi>a</mi><mo>=</mo><mn>2</mn><mi>k</mi></math>. Indsættes: <math><mn>4</mn><msup><mi>k</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><msup><mi>b</mi><mn>2</mn></msup></math>, altså <math><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><msup><mi>k</mi><mn>2</mn></msup></math>, så også <math><mi>b</mi></math> er lige. Det modsiger, at brøken var forkortet.</p>
+</div>
+<div class="box">
+  <span class="label">Induktion</span>
+  <p><strong>Påstand:</strong> <math><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mo>…</mo><mo>+</mo><mi>n</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></mfrac></math> for alle <math><mi>n</mi><mo>≥</mo><mn>1</mn></math>.</p>
+  <p><strong>Basis:</strong> <math><mi>n</mi><mo>=</mo><mn>1</mn></math>: venstre side 1, højre side <math><mfrac><mrow><mn>1</mn><mo>·</mo><mn>2</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>1</mn></math>.</p>
+  <p><strong>Induktionstrin:</strong> Antag formlen for <math><mi>n</mi></math>. Så er summen til <math><mi>n</mi><mo>+</mo><mn>1</mn></math> lig <math><mfrac><mrow><mi>n</mi><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></mfrac><mo>+</mo><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>=</mo><mfrac><mrow><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>n</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow><mn>2</mn></mfrac></math>. Dermed gælder formlen også for <math><mi>n</mi><mo>+</mo><mn>1</mn></math>.</p>
+</div>
+
+<h2>Kontraposition</h2>
+<p>I stedet for at bevise <math><mi>P</mi><mo>⇒</mo><mi>Q</mi></math> kan man bevise den ækvivalente kontraposition <math><mo>¬</mo><mi>Q</mi><mo>⇒</mo><mo>¬</mo><mi>P</mi></math>.</p>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <p><strong>Påstand:</strong> Er <math><msup><mi>n</mi><mn>2</mn></msup></math> lige, så er <math><mi>n</mi></math> lige.</p>
+  <p><strong>Kontraposition:</strong> Er <math><mi>n</mi></math> ulige, så er <math><msup><mi>n</mi><mn>2</mn></msup></math> ulige.</p>
+  <p>Skriv <math><mi>n</mi><mo>=</mo><mn>2</mn><mi>k</mi><mo>+</mo><mn>1</mn></math>. Så er <math><msup><mi>n</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><msup><mi>k</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>k</mi><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn><mo>(</mo><mn>2</mn><msup><mi>k</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>k</mi><mo>)</mo><mo>+</mo><mn>1</mn></math>, som er ulige.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Et eksempel er ikke et bevis. At påstanden holder for <math><mi>n</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></math>, viser ikke, at den holder for alle <math><mi>n</mi></math>.</li>
+    <li>Ved induktion skal både basis og induktionstrin bevises; et manglende basistilfælde gør beviset ugyldigt.</li>
+    <li>Cirkulært bevis: man må ikke bruge den påstand, der skal bevises, som en del af argumentet.</li>
+    <li>At bevise den omvendte implikation er ikke det samme som at bevise den oprindelige.</li>
+  </ul>
+</div>
+
+</body>
+</html>

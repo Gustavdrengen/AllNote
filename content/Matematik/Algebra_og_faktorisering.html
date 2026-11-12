@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Algebra og faktorisering</title>
+</head>
+<body>
+
+<h1>Algebra og faktorisering</h1>
+
+<h2>Kvadratsætninger</h2>
+<table>
+<caption>De tre kvadratsætninger</caption>
+<tr><th>Navn</th><th>Udtryk</th><th>Faktoriseret</th></tr>
+<tr><td>Første kvadratsætning</td><td><math><msup><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math></td><td><math><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow><mn>2</mn></msup></math></td></tr>
+<tr><td>Anden kvadratsætning</td><td><math><msup><mrow><mo>(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math></td><td><math><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mrow><mo>(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo>)</mo></mrow><mn>2</mn></msup></math></td></tr>
+<tr><td>Tredje kvadratsætning</td><td><math><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo>)</mo><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup></math></td><td><math><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo>)</mo></math></td></tr>
+</table>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="50mm" height="44mm" viewBox="0 0 50 44" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<rect x="8" y="4" width="34" height="34" rx="0" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="8" y1="23" x2="42" y2="23" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="27" y1="4" x2="27" y2="38" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="17.5" y="15.5" font-size="3.2" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">a²</text>
+<text x="34.5" y="15.5" font-size="3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">ab</text>
+<text x="17.5" y="31.5" font-size="3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">ab</text>
+<text x="34.5" y="31.5" font-size="3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">b²</text>
+<text x="17.5" y="41.2" font-size="2.6" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">a</text>
+<text x="34.5" y="41.2" font-size="2.6" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">b</text>
+<text x="5.2" y="13" font-size="2.6" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic" transform="rotate(-90 5.2 13)">a</text>
+<text x="5.2" y="30" font-size="2.6" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic" transform="rotate(-90 5.2 30)">b</text>
+</svg>
+<figcaption>(a + b)² = a² + 2ab + b². De fire rektangler har arealerne a², ab, ab og b².</figcaption>
+</figure>
+
+
+<h2>Faktoriseringsmetoder</h2>
+<ol class="tight">
+<li><strong>Fælles faktor:</strong> <math><mi>a</mi><mi>b</mi><mo>+</mo><mi>a</mi><mi>c</mi><mo>=</mo><mi>a</mi><mo>(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>)</mo></math>. Find den største fælles faktor i alle led.</li>
+<li><strong>Kvadratsætning:</strong> genkend mønsteret <math><msup><mi>a</mi><mn>2</mn></msup><mo>±</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math> eller <math><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup></math>.</li>
+<li><strong>Gruppering:</strong> <math><mi>a</mi><mi>x</mi><mo>+</mo><mi>a</mi><mi>y</mi><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>=</mo><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>)</mo></math>.</li>
+<li><strong>Rødder:</strong> et andengradspolynomium faktoriseres via sine rødder, se nedenfor.</li>
+</ol>
+
+<h2>Faktorisering af andengradspolynomier</h2>
+<div class="box rule">
+  <span class="label">Sætning</span>
+  <div class="formula"><math><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mi>a</mi><mo>(</mo><mi>x</mi><mo>−</mo><msub><mi>r</mi><mn>1</mn></msub><mo>)</mo><mo>(</mo><mi>x</mi><mo>−</mo><msub><mi>r</mi><mn>2</mn></msub><mo>)</mo></math></div>
+  <p class="where"><math><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub></math>: polynomiets rødder · kræver <math><mi>D</mi><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi><mo>≥</mo><mn>0</mn></math></p>
+</div>
+<p>Rødderne opfylder <math><msub><mi>r</mi><mn>1</mn></msub><mo>+</mo><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mo>−</mo><mfrac><mi>b</mi><mi>a</mi></mfrac></math> og <math><msub><mi>r</mi><mn>1</mn></msub><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mfrac><mi>c</mi><mi>a</mi></mfrac></math>. Ved <math><mi>D</mi><mo>=</mo><mn>0</mn></math> er der en dobbeltrod, og <math><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mi>a</mi><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><msub><mi>r</mi><mn>1</mn></msub><mo>)</mo></mrow><mn>2</mn></msup></math>.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <div class="formula left">
+    <math><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>8</mn><mi>x</mi><mo>+</mo><mn>6</mn><mo>=</mo><mn>2</mn><mo>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo>)</mo><mo>=</mo><mn>2</mn><mo>(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo>)</mo></math>
+  </div>
+  <p class="where">Fælles faktor 2; derefter rødderne 1 og 3, da <math><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>4</mn></math> og <math><mn>1</mn><mo>·</mo><mn>3</mn><mo>=</mo><mn>3</mn></math>.</p>
+</div>
+<div class="formula left">
+  <math><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>9</mn><mo>=</mo><msup><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>,</mo><mspace width="1em"/><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn><mo>=</mo><mo>(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mo>)</mo><mo>(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo>)</mo></math><br>
+  <math><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mi>x</mi><mo>=</mo><mi>x</mi><mo>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo>)</mo><mo>=</mo><mi>x</mi><mo>(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>,</mo><mspace width="1em"/><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn><mo>=</mo><mo>(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo>)</mo></math>
+</div>
+
+<h2>Nulreglen</h2>
+<div class="box rule">
+  <span class="label">Nulreglen</span>
+  <div class="formula"><math><mi>a</mi><mi>b</mi><mo>=</mo><mn>0</mn><mspace width="0.6em"/><mo>⇔</mo><mspace width="0.4em"/><mi>a</mi><mo>=</mo><mn>0</mn><mspace width="0.4em"/><mtext>eller</mtext><mspace width="0.4em"/><mi>b</mi><mo>=</mo><mn>0</mn></math></div>
+  <p class="where">Et produkt er 0, netop når mindst én faktor er 0.</p>
+</div>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <p><math><mo>(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo><mo>=</mo><mn>0</mn></math> giver <math><mi>x</mi><mo>=</mo><mn>2</mn></math> eller <math><mi>x</mi><mo>=</mo><mo>−</mo><mn>5</mn></math>. Faktorisering er derfor et værktøj til at løse ligninger uden at gætte.</p>
+</div>
+<p>Brøkudtryk forkortes ved at fjerne fælles faktorer i tæller og nævner. Nævneren må ikke være 0, og definitionsmængden skal fastlægges, før der forkortes.</p>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li><math><msup><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>≠</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math>. Det midterste led <math><mn>2</mn><mi>a</mi><mi>b</mi></math> forsvinder ikke.</li>
+    <li>Der må ikke forkortes ledvist: <math><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mi>a</mi></mfrac><mo>≠</mo><mn>1</mn><mo>+</mo><mi>b</mi></math>.</li>
+    <li>Et polynomium af grad <math><mi>n</mi></math> har højst <math><mi>n</mi></math> rødder; en faktorisering er entydig op til rækkefølgen.</li>
+  </ul>
+</div>
+
+</body>
+</html>

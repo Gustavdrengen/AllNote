@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Differentialregning</title>
+</head>
+<body>
+
+<h1>Differentialregning</h1>
+
+<h2>Differentialkvotienten</h2>
+<div class="box rule">
+  <span class="label">Definition</span>
+  <div class="formula"><math><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><munder><mi>lim</mi><mrow><mi>h</mi><mo>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo>)</mo><mo>−</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mi>h</mi></mfrac></math></div>
+  <p class="where"><math><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo></math> er tangentens hældning i <math><mo>(</mo><mi>x</mi><mo>,</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo></math></p>
+</div>
+<p>Differentiabel i <math><mi>a</mi></math> betyder, at grænseværdien findes. Differentiabilitet medfører kontinuitet, men ikke omvendt. Betegnelser: <math><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo></math>, <math><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac></math> og <math><mfrac><mrow><mi>d</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math>.</p>
+
+<h2>Regneregler</h2>
+<table>
+<caption>Differentiering af sammensatte udtryk</caption>
+<tr><th>Regel</th><th>Udtryk</th></tr>
+<tr><td>Konstant</td><td><math><mo>(</mo><mi>k</mi><mo>)</mo><mo>′</mo><mo>=</mo><mn>0</mn></math></td></tr>
+<tr><td>Potens</td><td><math><mo>(</mo><msup><mi>x</mi><mi>n</mi></msup><mo>)</mo><mo>′</mo><mo>=</mo><mi>n</mi><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></math></td></tr>
+<tr><td>Sum</td><td><math><mo>(</mo><mi>f</mi><mo>+</mo><mi>g</mi><mo>)</mo><mo>′</mo><mo>=</mo><msup><mi>f</mi><mo>′</mo></msup><mo>+</mo><msup><mi>g</mi><mo>′</mo></msup></math></td></tr>
+<tr><td>Konstant gange funktion</td><td><math><mo>(</mo><mi>k</mi><mo>·</mo><mi>f</mi><mo>)</mo><mo>′</mo><mo>=</mo><mi>k</mi><mo>·</mo><msup><mi>f</mi><mo>′</mo></msup></math></td></tr>
+<tr><td>Produkt</td><td><math><mo>(</mo><mi>f</mi><mo>·</mo><mi>g</mi><mo>)</mo><mo>′</mo><mo>=</mo><msup><mi>f</mi><mo>′</mo></msup><mi>g</mi><mo>+</mo><mi>f</mi><msup><mi>g</mi><mo>′</mo></msup></math></td></tr>
+<tr><td>Kvotient</td><td><math><mo>(</mo><mfrac><mi>f</mi><mi>g</mi></mfrac><mo>)</mo><mo>′</mo><mo>=</mo><mfrac><mrow><msup><mi>f</mi><mo>′</mo></msup><mi>g</mi><mo>−</mo><mi>f</mi><msup><mi>g</mi><mo>′</mo></msup></mrow><msup><mi>g</mi><mn>2</mn></msup></mfrac></math></td></tr>
+<tr><td>Kæderegel</td><td><math><mo>(</mo><mi>f</mi><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo><mo>)</mo><mo>′</mo><mo>=</mo><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo><mo>·</mo><msup><mi>g</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo></math></td></tr>
+</table>
+
+<h2>Standardderivater</h2>
+<table class="compact">
+<caption>De mest anvendte funktioner</caption>
+<tr><th><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></th><th><math><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo></math></th><th>Definitionsmængde</th></tr>
+<tr><td><math><msup><mi>x</mi><mi>n</mi></msup></math></td><td><math><mi>n</mi><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></math></td><td>alt efter <math><mi>n</mi></math></td></tr>
+<tr><td><math><msqrt><mi>x</mi></msqrt></math></td><td><math><mfrac><mn>1</mn><mrow><mn>2</mn><msqrt><mi>x</mi></msqrt></mrow></mfrac></math></td><td><math><mi>x</mi><mo>&gt;</mo><mn>0</mn></math></td></tr>
+<tr><td><math><mfrac><mn>1</mn><mi>x</mi></mfrac></math></td><td><math><mo>−</mo><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></math></td><td><math><mi>x</mi><mo>≠</mo><mn>0</mn></math></td></tr>
+<tr><td><math><msup><mi>e</mi><mi>x</mi></msup></math></td><td><math><msup><mi>e</mi><mi>x</mi></msup></math></td><td><math><mi>ℝ</mi></math></td></tr>
+<tr><td><math><mi>ln</mi><mspace width="0.2em"/><mi>x</mi></math></td><td><math><mfrac><mn>1</mn><mi>x</mi></mfrac></math></td><td><math><mi>x</mi><mo>&gt;</mo><mn>0</mn></math></td></tr>
+<tr><td><math><mi>sin</mi><mspace width="0.1em"/><mi>x</mi></math></td><td><math><mi>cos</mi><mspace width="0.1em"/><mi>x</mi></math></td><td><math><mi>ℝ</mi></math></td></tr>
+<tr><td><math><mi>cos</mi><mspace width="0.1em"/><mi>x</mi></math></td><td><math><mo>−</mo><mi>sin</mi><mspace width="0.1em"/><mi>x</mi></math></td><td><math><mi>ℝ</mi></math></td></tr>
+</table>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="74mm" height="46mm" viewBox="0 0 74 46" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<defs><clipPath id="clipa47e2f96"><rect x="11" y="3" width="59" height="32.9"/></clipPath></defs>
+<rect x="11" y="3" width="59" height="32.9" fill="none" stroke="#dde2e7" stroke-width="0.3"/>
+<line x1="11" y1="3" x2="11" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="22.8" y1="3" x2="22.8" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="46.4" y1="3" x2="46.4" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="58.2" y1="3" x2="58.2" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="70" y1="3" x2="70" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="35.9" x2="70" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="27.68" x2="70" y2="27.68" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="11.22" x2="70" y2="11.22" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="3" x2="70" y2="3" stroke="#dde2e7" stroke-width="0.25"/>
+<path d="M 11 22.74 L 11.1 22.62 L 11.2 22.5 L 11.29 22.38 L 11.39 22.26 L 11.49 22.14 L 11.59 22.02 L 11.69 21.91 L 11.79 21.8 L 11.88 21.68 L 11.98 21.57 L 12.08 21.46 L 12.18 21.36 L 12.28 21.25 L 12.38 21.14 L 12.47 21.04 L 12.57 20.94 L 12.67 20.84 L 12.77 20.74 L 12.87 20.64 L 12.97 20.54 L 13.07 20.44 L 13.16 20.35 L 13.26 20.25 L 13.36 20.16 L 13.46 20.07 L 13.56 19.98 L 13.66 19.89 L 13.75 19.8 L 13.85 19.72 L 13.95 19.63 L 14.05 19.55 L 14.15 19.46 L 14.24 19.38 L 14.34 19.3 L 14.44 19.22 L 14.54 19.14 L 14.64 19.07 L 14.74 18.99 L 14.83 18.91 L 14.93 18.84 L 15.03 18.77 L 15.13 18.7 L 15.23 18.63 L 15.33 18.56 L 15.43 18.49 L 15.52 18.42 L 15.62 18.36 L 15.72 18.29 L 15.82 18.23 L 15.92 18.17 L 16.02 18.1 L 16.11 18.04 L 16.21 17.98 L 16.31 17.93 L 16.41 17.87 L 16.51 17.81 L 16.61 17.76 L 16.7 17.7 L 16.8 17.65 L 16.9 17.6 L 17 17.55 L 17.1 17.5 L 17.2 17.45 L 17.29 17.4 L 17.39 17.36 L 17.49 17.31 L 17.59 17.26 L 17.69 17.22 L 17.79 17.18 L 17.88 17.14 L 17.98 17.09 L 18.08 17.05 L 18.18 17.02 L 18.28 16.98 L 18.38 16.94 L 18.47 16.9 L 18.57 16.87 L 18.67 16.84 L 18.77 16.8 L 18.87 16.77 L 18.96 16.74 L 19.06 16.71 L 19.16 16.68 L 19.26 16.65 L 19.36 16.62 L 19.46 16.59 L 19.55 16.57 L 19.65 16.54 L 19.75 16.52 L 19.85 16.49 L 19.95 16.47 L 20.05 16.45 L 20.14 16.43 L 20.24 16.41 L 20.34 16.39 L 20.44 16.37 L 20.54 16.35 L 20.64 16.34 L 20.73 16.32 L 20.83 16.3 L 20.93 16.29 L 21.03 16.28 L 21.13 16.26 L 21.23 16.25 L 21.33 16.24 L 21.42 16.23 L 21.52 16.22 L 21.62 16.21 L 21.72 16.2 L 21.82 16.2 L 21.91 16.19 L 22.01 16.18 L 22.11 16.18 L 22.21 16.17 L 22.31 16.17 L 22.41 16.17 L 22.51 16.16 L 22.6 16.16 L 22.7 16.16 L 22.8 16.16 L 22.9 16.16 L 23 16.16 L 23.09 16.16 L 23.19 16.17 L 23.29 16.17 L 23.39 16.17 L 23.49 16.18 L 23.59 16.18 L 23.69 16.19 L 23.78 16.19 L 23.88 16.2 L 23.98 16.21 L 24.08 16.22 L 24.18 16.22 L 24.27 16.23 L 24.37 16.24 L 24.47 16.25 L 24.57 16.27 L 24.67 16.28 L 24.77 16.29 L 24.87 16.3 L 24.96 16.32 L 25.06 16.33 L 25.16 16.34 L 25.26 16.36 L 25.36 16.37 L 25.46 16.39 L 25.55 16.41 L 25.65 16.43 L 25.75 16.44 L 25.85 16.46 L 25.95 16.48 L 26.05 16.5 L 26.14 16.52 L 26.24 16.54 L 26.34 16.56 L 26.44 16.58 L 26.54 16.6 L 26.63 16.62 L 26.73 16.65 L 26.83 16.67 L 26.93 16.69 L 27.03 16.72 L 27.13 16.74 L 27.23 16.77 L 27.32 16.79 L 27.42 16.82 L 27.52 16.84 L 27.62 16.87 L 27.72 16.9 L 27.82 16.93 L 27.91 16.95 L 28.01 16.98 L 28.11 17.01 L 28.21 17.04 L 28.31 17.07 L 28.41 17.1 L 28.5 17.13 L 28.6 17.16 L 28.7 17.19 L 28.8 17.22 L 28.9 17.25 L 29 17.28 L 29.09 17.31 L 29.19 17.35 L 29.29 17.38 L 29.39 17.41 L 29.49 17.45 L 29.59 17.48 L 29.68 17.51 L 29.78 17.55 L 29.88 17.58 L 29.98 17.62 L 30.08 17.65 L 30.18 17.69 L 30.27 17.72 L 30.37 17.76 L 30.47 17.79 L 30.57 17.83 L 30.67 17.87 L 30.77 17.9 L 30.86 17.94 L 30.96 17.98 L 31.06 18.01 L 31.16 18.05 L 31.26 18.09 L 31.36 18.13 L 31.45 18.17 L 31.55 18.2 L 31.65 18.24 L 31.75 18.28 L 31.85 18.32 L 31.95 18.36 L 32.04 18.4 L 32.14 18.44 L 32.24 18.48 L 32.34 18.52 L 32.44 18.56 L 32.53 18.6 L 32.63 18.64 L 32.73 18.68 L 32.83 18.72 L 32.93 18.76 L 33.03 18.8 L 33.12 18.84 L 33.22 18.88 L 33.32 18.92 L 33.42 18.96 L 33.52 19 L 33.62 19.04 L 33.72 19.08 L 33.81 19.12 L 33.91 19.16 L 34.01 19.2 L 34.11 19.24 L 34.21 19.29 L 34.31 19.33 L 34.4 19.37 L 34.5 19.41 L 34.6 19.45 L 34.7 19.49 L 34.8 19.53 L 34.89 19.57 L 34.99 19.61 L 35.09 19.66 L 35.19 19.7 L 35.29 19.74 L 35.39 19.78 L 35.48 19.82 L 35.58 19.86 L 35.68 19.9 L 35.78 19.94 L 35.88 19.98 L 35.98 20.02 L 36.08 20.06 L 36.17 20.1 L 36.27 20.14 L 36.37 20.18 L 36.47 20.22 L 36.57 20.26 L 36.66 20.3 L 36.76 20.34 L 36.86 20.38 L 36.96 20.42 L 37.06 20.46 L 37.16 20.5 L 37.26 20.54 L 37.35 20.58 L 37.45 20.62 L 37.55 20.66 L 37.65 20.7 L 37.75 20.73 L 37.84 20.77 L 37.94 20.81 L 38.04 20.85 L 38.14 20.89 L 38.24 20.92 L 38.34 20.96 L 38.44 21 L 38.53 21.03 L 38.63 21.07 L 38.73 21.11 L 38.83 21.14 L 38.93 21.18 L 39.03 21.21 L 39.12 21.25 L 39.22 21.28 L 39.32 21.32 L 39.42 21.35 L 39.52 21.39 L 39.61 21.42 L 39.71 21.45 L 39.81 21.49 L 39.91 21.52 L 40.01 21.55 L 40.11 21.59 L 40.2 21.62 L 40.3 21.65 L 40.4 21.68 L 40.5 21.71 L 40.6 21.74 L 40.7 21.77 L 40.8 21.8 L 40.89 21.83 L 40.99 21.86 L 41.09 21.89 L 41.19 21.92 L 41.29 21.95 L 41.39 21.97 L 41.48 22 L 41.58 22.03 L 41.68 22.06 L 41.78 22.08 L 41.88 22.11 L 41.98 22.13 L 42.07 22.16 L 42.17 22.18 L 42.27 22.21 L 42.37 22.23 L 42.47 22.25 L 42.56 22.28 L 42.66 22.3 L 42.76 22.32 L 42.86 22.34 L 42.96 22.36 L 43.06 22.38 L 43.16 22.4 L 43.25 22.42 L 43.35 22.44 L 43.45 22.46 L 43.55 22.47 L 43.65 22.49 L 43.74 22.51 L 43.84 22.53 L 43.94 22.54 L 44.04 22.56 L 44.14 22.57 L 44.24 22.58 L 44.34 22.6 L 44.43 22.61 L 44.53 22.62 L 44.63 22.63 L 44.73 22.65 L 44.83 22.66 L 44.93 22.67 L 45.02 22.68 L 45.12 22.68 L 45.22 22.69 L 45.32 22.7 L 45.42 22.71 L 45.52 22.71 L 45.61 22.72 L 45.71 22.72 L 45.81 22.73 L 45.91 22.73 L 46.01 22.73 L 46.11 22.74 L 46.2 22.74 L 46.3 22.74 L 46.4 22.74 L 46.5 22.74 L 46.6 22.74 L 46.7 22.74 L 46.79 22.73 L 46.89 22.73 L 46.99 22.73 L 47.09 22.72 L 47.19 22.72 L 47.29 22.71 L 47.38 22.7 L 47.48 22.7 L 47.58 22.69 L 47.68 22.68 L 47.78 22.67 L 47.88 22.66 L 47.97 22.65 L 48.07 22.64 L 48.17 22.62 L 48.27 22.61 L 48.37 22.6 L 48.47 22.58 L 48.56 22.56 L 48.66 22.55 L 48.76 22.53 L 48.86 22.51 L 48.96 22.49 L 49.06 22.47 L 49.15 22.45 L 49.25 22.43 L 49.35 22.41 L 49.45 22.38 L 49.55 22.36 L 49.65 22.33 L 49.74 22.31 L 49.84 22.28 L 49.94 22.25 L 50.04 22.22 L 50.14 22.19 L 50.24 22.16 L 50.33 22.13 L 50.43 22.1 L 50.53 22.06 L 50.63 22.03 L 50.73 22 L 50.83 21.96 L 50.92 21.92 L 51.02 21.88 L 51.12 21.85 L 51.22 21.81 L 51.32 21.76 L 51.41 21.72 L 51.51 21.68 L 51.61 21.64 L 51.71 21.59 L 51.81 21.54 L 51.91 21.5 L 52.01 21.45 L 52.1 21.4 L 52.2 21.35 L 52.3 21.3 L 52.4 21.25 L 52.5 21.2 L 52.59 21.14 L 52.69 21.09 L 52.79 21.03 L 52.89 20.97 L 52.99 20.92 L 53.09 20.86 L 53.19 20.8 L 53.28 20.73 L 53.38 20.67 L 53.48 20.61 L 53.58 20.54 L 53.68 20.48 L 53.78 20.41 L 53.87 20.34 L 53.97 20.27 L 54.07 20.2 L 54.17 20.13 L 54.27 20.06 L 54.37 19.99 L 54.46 19.91 L 54.56 19.83 L 54.66 19.76 L 54.76 19.68 L 54.86 19.6 L 54.96 19.52 L 55.05 19.44 L 55.15 19.35 L 55.25 19.27 L 55.35 19.18 L 55.45 19.1 L 55.55 19.01 L 55.64 18.92 L 55.74 18.83 L 55.84 18.74 L 55.94 18.65 L 56.04 18.55 L 56.14 18.46 L 56.23 18.36 L 56.33 18.26 L 56.43 18.16 L 56.53 18.06 L 56.63 17.96 L 56.73 17.86 L 56.82 17.76 L 56.92 17.65 L 57.02 17.54 L 57.12 17.44 L 57.22 17.33 L 57.31 17.22 L 57.41 17.1 L 57.51 16.99 L 57.61 16.88 L 57.71 16.76 L 57.81 16.64 L 57.91 16.52 L 58 16.4 L 58.1 16.28 L 58.2 16.16 L 58.3 16.04 L 58.4 15.91 L 58.5 15.78 L 58.59 15.66 L 58.69 15.53 L 58.79 15.39 L 58.89 15.26 L 58.99 15.13 L 59.09 14.99 L 59.18 14.86 L 59.28 14.72 L 59.38 14.58 L 59.48 14.44 L 59.58 14.3 L 59.68 14.15 L 59.77 14.01 L 59.87 13.86 L 59.97 13.71 L 60.07 13.56 L 60.17 13.41 L 60.27 13.26 L 60.36 13.1 L 60.46 12.95 L 60.56 12.79 L 60.66 12.63 L 60.76 12.47 L 60.85 12.31 L 60.95 12.15 L 61.05 11.98 L 61.15 11.82 L 61.25 11.65 L 61.35 11.48 L 61.45 11.31 L 61.54 11.14 L 61.64 10.96 L 61.74 10.79 L 61.84 10.61 L 61.94 10.43 L 62.04 10.25 L 62.13 10.07 L 62.23 9.88 L 62.33 9.7 L 62.43 9.51 L 62.53 9.32 L 62.62 9.13 L 62.72 8.94 L 62.82 8.75 L 62.92 8.55 L 63.02 8.36 L 63.12 8.16 L 63.22 7.96 L 63.31 7.76 L 63.41 7.55 L 63.51 7.35 L 63.61 7.14 L 63.71 6.93 L 63.8 6.72 L 63.9 6.51 L 64 6.3 L 64.1 6.08 L 64.2 5.87 L 64.3 5.65 L 64.4 5.43 L 64.49 5.21 L 64.59 4.98 L 64.69 4.76 L 64.79 4.53 L 64.89 4.3 L 64.99 4.07 L 65.08 3.84 L 65.18 3.6 L 65.28 3.37 L 65.38 3.13 L 65.48 2.89 L 65.58 2.65 L 65.67 2.41 L 65.77 2.16 L 65.87 1.91 L 65.97 1.67 L 66.07 1.42 L 66.16 1.16 L 66.26 0.91 L 66.36 0.65 L 66.46 0.4 L 66.56 0.14 L 66.66 -0.13 L 66.75 -0.39 L 66.85 -0.65 L 66.95 -0.92 L 67.05 -1.19 L 67.15 -1.46 L 67.25 -1.73 L 67.34 -2.01 L 67.44 -2.28 L 67.54 -2.56 L 67.64 -2.84 L 67.74 -3.13 L 67.84 -3.41 L 67.94 -3.7 L 68.03 -3.98 L 68.13 -4.27 L 68.23 -4.57 L 68.33 -4.86 L 68.43 -5.16 L 68.53 -5.45 L 68.62 -5.75 L 68.72 -6.05 L 68.82 -6.36 L 68.92 -6.66 L 69.02 -6.97 L 69.12 -7.28 L 69.21 -7.59 L 69.31 -7.91 L 69.41 -8.22 L 69.51 -8.54 L 69.61 -8.86 L 69.7 -9.18 L 69.8 -9.51 L 69.9 -9.83 L 70 -10.16" fill="none" stroke="#1c5f9e" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clipa47e2f96)"/>
+<path d="M 11 75.38 L 11.1 75.26 L 11.2 75.13 L 11.29 75.01 L 11.39 74.89 L 11.49 74.76 L 11.59 74.64 L 11.69 74.52 L 11.79 74.39 L 11.88 74.27 L 11.98 74.15 L 12.08 74.02 L 12.18 73.9 L 12.28 73.78 L 12.38 73.65 L 12.47 73.53 L 12.57 73.41 L 12.67 73.28 L 12.77 73.16 L 12.87 73.04 L 12.97 72.91 L 13.07 72.79 L 13.16 72.67 L 13.26 72.54 L 13.36 72.42 L 13.46 72.3 L 13.56 72.17 L 13.66 72.05 L 13.75 71.93 L 13.85 71.8 L 13.95 71.68 L 14.05 71.56 L 14.15 71.43 L 14.24 71.31 L 14.34 71.19 L 14.44 71.06 L 14.54 70.94 L 14.64 70.82 L 14.74 70.69 L 14.83 70.57 L 14.93 70.45 L 15.03 70.32 L 15.13 70.2 L 15.23 70.07 L 15.33 69.95 L 15.43 69.83 L 15.52 69.7 L 15.62 69.58 L 15.72 69.46 L 15.82 69.33 L 15.92 69.21 L 16.02 69.09 L 16.11 68.96 L 16.21 68.84 L 16.31 68.72 L 16.41 68.59 L 16.51 68.47 L 16.61 68.35 L 16.7 68.22 L 16.8 68.1 L 16.9 67.98 L 17 67.85 L 17.1 67.73 L 17.2 67.61 L 17.29 67.48 L 17.39 67.36 L 17.49 67.24 L 17.59 67.11 L 17.69 66.99 L 17.79 66.87 L 17.88 66.74 L 17.98 66.62 L 18.08 66.5 L 18.18 66.37 L 18.28 66.25 L 18.38 66.13 L 18.47 66 L 18.57 65.88 L 18.67 65.76 L 18.77 65.63 L 18.87 65.51 L 18.96 65.39 L 19.06 65.26 L 19.16 65.14 L 19.26 65.02 L 19.36 64.89 L 19.46 64.77 L 19.55 64.65 L 19.65 64.52 L 19.75 64.4 L 19.85 64.28 L 19.95 64.15 L 20.05 64.03 L 20.14 63.91 L 20.24 63.78 L 20.34 63.66 L 20.44 63.54 L 20.54 63.41 L 20.64 63.29 L 20.73 63.17 L 20.83 63.04 L 20.93 62.92 L 21.03 62.8 L 21.13 62.67 L 21.23 62.55 L 21.33 62.43 L 21.42 62.3 L 21.52 62.18 L 21.62 62.06 L 21.72 61.93 L 21.82 61.81 L 21.91 61.69 L 22.01 61.56 L 22.11 61.44 L 22.21 61.32 L 22.31 61.19 L 22.41 61.07 L 22.51 60.95 L 22.6 60.82 L 22.7 60.7 L 22.8 60.58 L 22.9 60.45 L 23 60.33 L 23.09 60.2 L 23.19 60.08 L 23.29 59.96 L 23.39 59.83 L 23.49 59.71 L 23.59 59.59 L 23.69 59.46 L 23.78 59.34 L 23.88 59.22 L 23.98 59.09 L 24.08 58.97 L 24.18 58.85 L 24.27 58.72 L 24.37 58.6 L 24.47 58.48 L 24.57 58.35 L 24.67 58.23 L 24.77 58.11 L 24.87 57.98 L 24.96 57.86 L 25.06 57.74 L 25.16 57.61 L 25.26 57.49 L 25.36 57.37 L 25.46 57.24 L 25.55 57.12 L 25.65 57 L 25.75 56.87 L 25.85 56.75 L 25.95 56.63 L 26.05 56.5 L 26.14 56.38 L 26.24 56.26 L 26.34 56.13 L 26.44 56.01 L 26.54 55.89 L 26.63 55.76 L 26.73 55.64 L 26.83 55.52 L 26.93 55.39 L 27.03 55.27 L 27.13 55.15 L 27.23 55.02 L 27.32 54.9 L 27.42 54.78 L 27.52 54.65 L 27.62 54.53 L 27.72 54.41 L 27.82 54.28 L 27.91 54.16 L 28.01 54.04 L 28.11 53.91 L 28.21 53.79 L 28.31 53.67 L 28.41 53.54 L 28.5 53.42 L 28.6 53.3 L 28.7 53.17 L 28.8 53.05 L 28.9 52.93 L 29 52.8 L 29.09 52.68 L 29.19 52.56 L 29.29 52.43 L 29.39 52.31 L 29.49 52.19 L 29.59 52.06 L 29.68 51.94 L 29.78 51.82 L 29.88 51.69 L 29.98 51.57 L 30.08 51.45 L 30.18 51.32 L 30.27 51.2 L 30.37 51.08 L 30.47 50.95 L 30.57 50.83 L 30.67 50.7 L 30.77 50.58 L 30.86 50.46 L 30.96 50.33 L 31.06 50.21 L 31.16 50.09 L 31.26 49.96 L 31.36 49.84 L 31.45 49.72 L 31.55 49.59 L 31.65 49.47 L 31.75 49.35 L 31.85 49.22 L 31.95 49.1 L 32.04 48.98 L 32.14 48.85 L 32.24 48.73 L 32.34 48.61 L 32.44 48.48 L 32.53 48.36 L 32.63 48.24 L 32.73 48.11 L 32.83 47.99 L 32.93 47.87 L 33.03 47.74 L 33.12 47.62 L 33.22 47.5 L 33.32 47.37 L 33.42 47.25 L 33.52 47.13 L 33.62 47 L 33.72 46.88 L 33.81 46.76 L 33.91 46.63 L 34.01 46.51 L 34.11 46.39 L 34.21 46.26 L 34.31 46.14 L 34.4 46.02 L 34.5 45.89 L 34.6 45.77 L 34.7 45.65 L 34.8 45.52 L 34.89 45.4 L 34.99 45.28 L 35.09 45.15 L 35.19 45.03 L 35.29 44.91 L 35.39 44.78 L 35.48 44.66 L 35.58 44.54 L 35.68 44.41 L 35.78 44.29 L 35.88 44.17 L 35.98 44.04 L 36.08 43.92 L 36.17 43.8 L 36.27 43.67 L 36.37 43.55 L 36.47 43.43 L 36.57 43.3 L 36.66 43.18 L 36.76 43.06 L 36.86 42.93 L 36.96 42.81 L 37.06 42.69 L 37.16 42.56 L 37.26 42.44 L 37.35 42.32 L 37.45 42.19 L 37.55 42.07 L 37.65 41.95 L 37.75 41.82 L 37.84 41.7 L 37.94 41.58 L 38.04 41.45 L 38.14 41.33 L 38.24 41.21 L 38.34 41.08 L 38.44 40.96 L 38.53 40.84 L 38.63 40.71 L 38.73 40.59 L 38.83 40.46 L 38.93 40.34 L 39.03 40.22 L 39.12 40.09 L 39.22 39.97 L 39.32 39.85 L 39.42 39.72 L 39.52 39.6 L 39.61 39.48 L 39.71 39.35 L 39.81 39.23 L 39.91 39.11 L 40.01 38.98 L 40.11 38.86 L 40.2 38.74 L 40.3 38.61 L 40.4 38.49 L 40.5 38.37 L 40.6 38.24 L 40.7 38.12 L 40.8 38 L 40.89 37.87 L 40.99 37.75 L 41.09 37.63 L 41.19 37.5 L 41.29 37.38 L 41.39 37.26 L 41.48 37.13 L 41.58 37.01 L 41.68 36.89 L 41.78 36.76 L 41.88 36.64 L 41.98 36.52 L 42.07 36.39 L 42.17 36.27 L 42.27 36.15 L 42.37 36.02 L 42.47 35.9 L 42.56 35.78 L 42.66 35.65 L 42.76 35.53 L 42.86 35.41 L 42.96 35.28 L 43.06 35.16 L 43.16 35.04 L 43.25 34.91 L 43.35 34.79 L 43.45 34.67 L 43.55 34.54 L 43.65 34.42 L 43.74 34.3 L 43.84 34.17 L 43.94 34.05 L 44.04 33.93 L 44.14 33.8 L 44.24 33.68 L 44.34 33.56 L 44.43 33.43 L 44.53 33.31 L 44.63 33.19 L 44.73 33.06 L 44.83 32.94 L 44.93 32.82 L 45.02 32.69 L 45.12 32.57 L 45.22 32.45 L 45.32 32.32 L 45.42 32.2 L 45.52 32.08 L 45.61 31.95 L 45.71 31.83 L 45.81 31.71 L 45.91 31.58 L 46.01 31.46 L 46.11 31.34 L 46.2 31.21 L 46.3 31.09 L 46.4 30.96 L 46.5 30.84 L 46.6 30.72 L 46.7 30.59 L 46.79 30.47 L 46.89 30.35 L 46.99 30.22 L 47.09 30.1 L 47.19 29.98 L 47.29 29.85 L 47.38 29.73 L 47.48 29.61 L 47.58 29.48 L 47.68 29.36 L 47.78 29.24 L 47.88 29.11 L 47.97 28.99 L 48.07 28.87 L 48.17 28.74 L 48.27 28.62 L 48.37 28.5 L 48.47 28.37 L 48.56 28.25 L 48.66 28.13 L 48.76 28 L 48.86 27.88 L 48.96 27.76 L 49.06 27.63 L 49.15 27.51 L 49.25 27.39 L 49.35 27.26 L 49.45 27.14 L 49.55 27.02 L 49.65 26.89 L 49.74 26.77 L 49.84 26.65 L 49.94 26.52 L 50.04 26.4 L 50.14 26.28 L 50.24 26.15 L 50.33 26.03 L 50.43 25.91 L 50.53 25.78 L 50.63 25.66 L 50.73 25.54 L 50.83 25.41 L 50.92 25.29 L 51.02 25.17 L 51.12 25.04 L 51.22 24.92 L 51.32 24.8 L 51.41 24.67 L 51.51 24.55 L 51.61 24.43 L 51.71 24.3 L 51.81 24.18 L 51.91 24.06 L 52.01 23.93 L 52.1 23.81 L 52.2 23.69 L 52.3 23.56 L 52.4 23.44 L 52.5 23.32 L 52.59 23.19 L 52.69 23.07 L 52.79 22.95 L 52.89 22.82 L 52.99 22.7 L 53.09 22.58 L 53.19 22.45 L 53.28 22.33 L 53.38 22.21 L 53.48 22.08 L 53.58 21.96 L 53.68 21.84 L 53.78 21.71 L 53.87 21.59 L 53.97 21.47 L 54.07 21.34 L 54.17 21.22 L 54.27 21.1 L 54.37 20.97 L 54.46 20.85 L 54.56 20.72 L 54.66 20.6 L 54.76 20.48 L 54.86 20.35 L 54.96 20.23 L 55.05 20.11 L 55.15 19.98 L 55.25 19.86 L 55.35 19.74 L 55.45 19.61 L 55.55 19.49 L 55.64 19.37 L 55.74 19.24 L 55.84 19.12 L 55.94 19 L 56.04 18.87 L 56.14 18.75 L 56.23 18.63 L 56.33 18.5 L 56.43 18.38 L 56.53 18.26 L 56.63 18.13 L 56.73 18.01 L 56.82 17.89 L 56.92 17.76 L 57.02 17.64 L 57.12 17.52 L 57.22 17.39 L 57.31 17.27 L 57.41 17.15 L 57.51 17.02 L 57.61 16.9 L 57.71 16.78 L 57.81 16.65 L 57.91 16.53 L 58 16.41 L 58.1 16.28 L 58.2 16.16 L 58.3 16.04 L 58.4 15.91 L 58.5 15.79 L 58.59 15.67 L 58.69 15.54 L 58.79 15.42 L 58.89 15.3 L 58.99 15.17 L 59.09 15.05 L 59.18 14.93 L 59.28 14.8 L 59.38 14.68 L 59.48 14.56 L 59.58 14.43 L 59.68 14.31 L 59.77 14.19 L 59.87 14.06 L 59.97 13.94 L 60.07 13.82 L 60.17 13.69 L 60.27 13.57 L 60.36 13.45 L 60.46 13.32 L 60.56 13.2 L 60.66 13.08 L 60.76 12.95 L 60.85 12.83 L 60.95 12.71 L 61.05 12.58 L 61.15 12.46 L 61.25 12.34 L 61.35 12.21 L 61.45 12.09 L 61.54 11.97 L 61.64 11.84 L 61.74 11.72 L 61.84 11.6 L 61.94 11.47 L 62.04 11.35 L 62.13 11.23 L 62.23 11.1 L 62.33 10.98 L 62.43 10.85 L 62.53 10.73 L 62.62 10.61 L 62.72 10.48 L 62.82 10.36 L 62.92 10.24 L 63.02 10.11 L 63.12 9.99 L 63.22 9.87 L 63.31 9.74 L 63.41 9.62 L 63.51 9.5 L 63.61 9.37 L 63.71 9.25 L 63.8 9.13 L 63.9 9 L 64 8.88 L 64.1 8.76 L 64.2 8.63 L 64.3 8.51 L 64.4 8.39 L 64.49 8.26 L 64.59 8.14 L 64.69 8.02 L 64.79 7.89 L 64.89 7.77 L 64.99 7.65 L 65.08 7.52 L 65.18 7.4 L 65.28 7.28 L 65.38 7.15 L 65.48 7.03 L 65.58 6.91 L 65.67 6.78 L 65.77 6.66 L 65.87 6.54 L 65.97 6.41 L 66.07 6.29 L 66.16 6.17 L 66.26 6.04 L 66.36 5.92 L 66.46 5.8 L 66.56 5.67 L 66.66 5.55 L 66.75 5.43 L 66.85 5.3 L 66.95 5.18 L 67.05 5.06 L 67.15 4.93 L 67.25 4.81 L 67.34 4.69 L 67.44 4.56 L 67.54 4.44 L 67.64 4.32 L 67.74 4.19 L 67.84 4.07 L 67.94 3.95 L 68.03 3.82 L 68.13 3.7 L 68.23 3.58 L 68.33 3.45 L 68.43 3.33 L 68.53 3.21 L 68.62 3.08 L 68.72 2.96 L 68.82 2.84 L 68.92 2.71 L 69.02 2.59 L 69.12 2.47 L 69.21 2.34 L 69.31 2.22 L 69.41 2.1 L 69.51 1.97 L 69.61 1.85 L 69.7 1.73 L 69.8 1.6 L 69.9 1.48 L 70 1.35" fill="none" stroke="#b3402a" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clipa47e2f96)"/>
+<line x1="11" y1="19.45" x2="70" y2="19.45" stroke="#1b1b1b" stroke-width="0.45"/>
+<polygon points="70,19.45 68.52,20.05 68.52,18.85" fill="#1b1b1b" stroke="none"/>
+<line x1="11" y1="19.45" x2="11" y2="20.55" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="11" y="23.45" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-2</text>
+<line x1="22.8" y1="19.45" x2="22.8" y2="20.55" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="22.8" y="23.45" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-1</text>
+<line x1="34.6" y1="19.45" x2="34.6" y2="20.55" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="46.4" y1="19.45" x2="46.4" y2="20.55" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="46.4" y="23.45" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">1</text>
+<line x1="58.2" y1="19.45" x2="58.2" y2="20.55" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="58.2" y="23.45" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="70" y1="19.45" x2="70" y2="20.55" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="70" y="23.45" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">3</text>
+<line x1="34.6" y1="35.9" x2="34.6" y2="3" stroke="#1b1b1b" stroke-width="0.45"/>
+<polygon points="34.6,3 35.2,4.48 34,4.48" fill="#1b1b1b" stroke="none"/>
+<line x1="33.5" y1="35.9" x2="34.6" y2="35.9" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="32.8" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-10</text>
+<line x1="33.5" y1="27.68" x2="34.6" y2="27.68" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="32.8" y="27.68" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-5</text>
+<line x1="33.5" y1="19.45" x2="34.6" y2="19.45" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="33.5" y1="11.22" x2="34.6" y2="11.22" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="32.8" y="11.22" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">5</text>
+<line x1="33.5" y1="3" x2="34.6" y2="3" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="32.8" y="3" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">10</text>
+<circle cx="58.2" cy="16.16" r="0.85" fill="#1b1b1b" stroke="none"/>
+<rect x="36.1" y="4.6" width="32.3" height="7.2" fill="#fff" stroke="#dde2e7" stroke-width="0.25" rx="0.8"/>
+<line x1="37.7" y1="6.6" x2="42.5" y2="6.6" stroke="#1c5f9e" stroke-width="0.55"/>
+<text x="43.5" y="6.6" font-size="2.3" fill="#1b1b1b" dominant-baseline="middle">f(x) = x³ − 3x</text>
+<line x1="37.7" y1="9.6" x2="42.5" y2="9.6" stroke="#b3402a" stroke-width="0.55"/>
+<text x="43.5" y="9.6" font-size="2.3" fill="#1b1b1b" dominant-baseline="middle">tangent i x = 2</text>
+<text x="40.5" y="44.6" font-size="2.4" fill="#5b6470" text-anchor="middle">x</text>
+<text x="2.6" y="19.45" font-size="2.4" fill="#5b6470" text-anchor="middle" transform="rotate(-90 2.6 19.45)">y</text>
+</svg>
+<figcaption>Tangenten til f(x) = x³ − 3x i x = 2 har hældningen f′(2) = 9.</figcaption>
+</figure>
+
+<h2>Tangentens ligning</h2>
+<div class="box rule">
+  <span class="label">Tangent i <math><mi>a</mi></math></span>
+  <div class="formula"><math><mi>y</mi><mo>=</mo><mi>f</mi><mo>(</mo><mi>a</mi><mo>)</mo><mo>+</mo><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>a</mi><mo>)</mo><mo>·</mo><mo>(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo>)</mo></math></div>
+  <p class="where"><math><mi>f</mi><mo>(</mo><mi>a</mi><mo>)</mo></math>: røringspunktets y-værdi · <math><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>a</mi><mo>)</mo></math>: tangentens hældning</p>
+</div>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <p><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi></math>. Så er <math><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn></math>.</p>
+  <div class="formula left">
+    <math><mi>f</mi><mo>(</mo><mn>2</mn><mo>)</mo><mo>=</mo><mn>8</mn><mo>−</mo><mn>6</mn><mo>=</mo><mn>2</mn><mo>,</mo><mspace width="1em"/><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mn>2</mn><mo>)</mo><mo>=</mo><mn>12</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>9</mn></math><br>
+    <math><mi>y</mi><mo>=</mo><mn>2</mn><mo>+</mo><mn>9</mn><mo>(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>)</mo><mo>=</mo><mn>9</mn><mi>x</mi><mo>−</mo><mn>16</mn></math>
+  </div>
+  <p class="where">Tangenten i <math><mi>x</mi><mo>=</mo><mn>2</mn></math> har ligningen <math><mi>y</mi><mo>=</mo><mn>9</mn><mi>x</mi><mo>−</mo><mn>16</mn></math>.</p>
+</div>
+<div class="box">
+  <span class="label">Eksempel — kædereglen</span>
+  <p><math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mrow><mo>(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow><mn>5</mn></msup></math> har</p>
+  <div class="formula left"><math><msup><mi>g</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>5</mn><msup><mrow><mo>(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow><mn>4</mn></msup><mo>·</mo><mn>2</mn><mo>=</mo><mn>10</mn><msup><mrow><mo>(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow><mn>4</mn></msup></math></div>
+  <p class="where">Den indre funktion <math><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></math> differentieres også.</p>
+</div>
+
+<h2>Anden afledte</h2>
+<p>Den anden afledte er den afledte af <math><msup><mi>f</mi><mo>′</mo></msup></math> og beskriver, hvordan hældningen ændrer sig:</p>
+<div class="formula"><math><msup><mi>f</mi><mo>″</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>f</mi><mo>′</mo><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo><mo>′</mo></math></div>
+<p><math><msup><mi>f</mi><mo>″</mo></msup><mo>&gt;</mo><mn>0</mn></math>: grafen er konveks (vender opad). <math><msup><mi>f</mi><mo>″</mo></msup><mo>&lt;</mo><mn>0</mn></math>: grafen er konkav (vender nedad). Et vendepunkt kræver et fortegnsskift i <math><msup><mi>f</mi><mo>″</mo></msup></math>.</p>
+<div class="box">
+  <span class="label">Eksempel — polynomium</span>
+  <p><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></math>.</p>
+  <div class="formula left">
+    <math><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>,</mo><mspace width="1em"/><msup><mi>f</mi><mo>″</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>6</mn><mi>x</mi><mo>−</mo><mn>6</mn></math>
+  </div>
+  <p class="where"><math><msup><mi>f</mi><mo>″</mo></msup><mo>=</mo><mn>0</mn></math> i <math><mi>x</mi><mo>=</mo><mn>1</mn></math>; fortegnsskift fra − til +, så <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></math> er vendepunkt.</p>
+</div>
+
+<h2>Væksthastighed</h2>
+<p>Er <math><mi>s</mi><mo>(</mo><mi>t</mi><mo>)</mo></math> en position, er <math><msup><mi>s</mi><mo>′</mo></msup><mo>(</mo><mi>t</mi><mo>)</mo></math> hastigheden og <math><msup><mi>s</mi><mo>″</mo></msup><mo>(</mo><mi>t</mi><mo>)</mo></math> accelerationen. Enheden for den afledte er enheden for <math><mi>y</mi></math> divideret med enheden for <math><mi>x</mi></math>.</p>
+<div class="box">
+  <span class="label">Eksempel — bevægelse</span>
+  <p><math><mi>s</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mn>3</mn><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><msup><mi>t</mi><mn>3</mn></msup></math> meter efter <math><mi>t</mi></math> sekunder.</p>
+  <div class="formula left">
+    <math><mi>v</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mn>6</mn><mi>t</mi><mo>−</mo><mn>3</mn><msup><mi>t</mi><mn>2</mn></msup><mo>,</mo><mspace width="1em"/><mi>a</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mn>6</mn><mo>−</mo><mn>6</mn><mi>t</mi></math>
+  </div>
+  <p class="where">Ved <math><mi>t</mi><mo>=</mo><mn>2</mn></math>: <math><mi>v</mi><mo>=</mo><mn>0</mn></math> og <math><mi>a</mi><mo>=</mo><mo>−</mo><mn>6</mn><mspace width="0.25em"/><mtext>m/s²</mtext></math>; positionen er <math><mi>s</mi><mo>(</mo><mn>2</mn><mo>)</mo><mo>=</mo><mn>4</mn></math>&nbsp;m.</p>
+</div>
+
+<h2>Grafens form</h2>
+<table class="compact">
+<caption>Fortegn for de to afledte</caption>
+<tr><th><math><msup><mi>f</mi><mo>′</mo></msup></math></th><th><math><msup><mi>f</mi><mo>″</mo></msup></math></th><th>Grafen</th></tr>
+<tr><td><math><mo>+</mo></math></td><td><math><mo>+</mo></math></td><td>voksende og konveks</td></tr>
+<tr><td><math><mo>+</mo></math></td><td><math><mo>−</mo></math></td><td>voksende og konkav</td></tr>
+<tr><td><math><mo>−</mo></math></td><td><math><mo>+</mo></math></td><td>aftagende og konveks</td></tr>
+<tr><td><math><mo>−</mo></math></td><td><math><mo>−</mo></math></td><td>aftagende og konkav</td></tr>
+<tr><td><math><mn>0</mn></math></td><td><math><mo>+</mo></math></td><td>lokalt minimum</td></tr>
+<tr><td><math><mn>0</mn></math></td><td><math><mo>−</mo></math></td><td>lokalt maksimum</td></tr>
+</table>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li><math><mo>(</mo><mi>f</mi><mo>·</mo><mi>g</mi><mo>)</mo><mo>′</mo><mo>≠</mo><msup><mi>f</mi><mo>′</mo></msup><mo>·</mo><msup><mi>g</mi><mo>′</mo></msup></math>. Produktreglen kræves.</li>
+    <li>Ved kædereglen glemmes den indre afledte: <math><mo>(</mo><mi>f</mi><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo><mo>)</mo><mo>′</mo><mo>=</mo><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo><mo>·</mo><msup><mi>g</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo></math>.</li>
+    <li>En konstant differentieres til 0, ikke til 1.</li>
+    <li><math><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>a</mi><mo>)</mo></math> er hældningen, ikke funktionsværdien; tangenten går gennem <math><mo>(</mo><mi>a</mi><mo>,</mo><mi>f</mi><mo>(</mo><mi>a</mi><mo>)</mo><mo>)</mo></math>.</li>
+  </ul>
+</div>
+
+</body>
+</html>

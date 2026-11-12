@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Mængdelære og logik</title>
+</head>
+<body>
+
+<h1>Mængdelære og logik</h1>
+
+<h2>Mængder</h2>
+<div class="box rule">
+  <span class="label">Grundbegreber</span>
+  <dl class="kv">
+    <dt><math><mi>x</mi><mo>∈</mo><mi>A</mi></math></dt><dd><math><mi>x</mi></math> er element i <math><mi>A</mi></math></dd>
+    <dt><math><mi>A</mi><mo>⊆</mo><mi>B</mi></math></dt><dd><math><mi>A</mi></math> er en delmængde af <math><mi>B</mi></math></dd>
+    <dt><math><mi>A</mi><mo>∪</mo><mi>B</mi></math></dt><dd>foreningsmængde: elementer i <math><mi>A</mi></math> eller <math><mi>B</mi></math></dd>
+    <dt><math><mi>A</mi><mo>∩</mo><mi>B</mi></math></dt><dd>fællesmængde: elementer i både <math><mi>A</mi></math> og <math><mi>B</mi></math></dd>
+    <dt><math><msup><mi>A</mi><mo>¯</mo></msup></math></dt><dd>komplementet til <math><mi>A</mi></math> i den valgte grundmængde</dd>
+  </dl>
+</div>
+<p>Den tomme mængde skrives <math><mi>∅</mi></math>. Mængdedifferens: <math><mi>A</mi><mo>\</mo><mi>B</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mo>|</mo><mi>x</mi><mo>∉</mo><mi>B</mi><mo>}</mo></math>. Kardinalitet <math><mo>|</mo><mi>A</mi><mo>|</mo></math> er antallet af elementer.</p>
+<div class="formula"><math><mi>|</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mo>|</mo><mo>=</mo><mo>|</mo><mi>A</mi><mo>|</mo><mo>+</mo><mo>|</mo><mi>B</mi><mo>|</mo><mo>−</mo><mo>|</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>|</mo></math></div>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="62mm" height="38mm" viewBox="0 0 62 38" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<rect x="3" y="4" width="56" height="29" rx="1" stroke="#8f98a2" fill="none" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.2 1"/>
+<circle cx="23" cy="19" r="11.5" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="39" cy="19" r="11.5" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="14" y="10.2" font-size="3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">A</text>
+<text x="48" y="10.2" font-size="3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">B</text>
+<text x="31" y="20.2" font-size="2.2" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">A ∩ B</text>
+<text x="56.5" y="7" font-size="2.3" fill="#1b1b1b" text-anchor="end" font-weight="400" dominant-baseline="middle" font-style="italic">U</text>
+</svg>
+<figcaption>Venn-diagram. A ∪ B er alt i mindst én mængde; A ∩ B er fællesmængden.</figcaption>
+</figure>
+
+
+<h2>Mængdeidentiteter</h2>
+<table class="compact">
+<caption>De Morgans love og distributive love</caption>
+<tr><th>Identitet</th><th>Udtryk</th></tr>
+<tr><td>De Morgan</td><td><math><mover accent="true"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo>¯</mo></mover><mo>=</mo><mover accent="true"><mi>A</mi><mo>¯</mo></mover><mo>∩</mo><mover accent="true"><mi>B</mi><mo>¯</mo></mover></math></td></tr>
+<tr><td>De Morgan</td><td><math><mover accent="true"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>¯</mo></mover><mo>=</mo><mover accent="true"><mi>A</mi><mo>¯</mo></mover><mo>∪</mo><mover accent="true"><mi>B</mi><mo>¯</mo></mover></math></td></tr>
+<tr><td>Distributiv</td><td><math><mi>A</mi><mo>∩</mo><mo>(</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>)</mo><mo>∪</mo><mo>(</mo><mi>A</mi><mo>∩</mo><mi>C</mi><mo>)</mo></math></td></tr>
+<tr><td>Distributiv</td><td><math><mi>A</mi><mo>∪</mo><mo>(</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo>)</mo><mo>∩</mo><mo>(</mo><mi>A</mi><mo>∪</mo><mi>C</mi><mo>)</mo></math></td></tr>
+</table>
+
+<h2>Logik</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Konnektiver</span>
+    <dl class="kv">
+      <dt><math><mo>¬</mo><mi>P</mi></math></dt><dd>ikke <math><mi>P</mi></math></dd>
+      <dt><math><mi>P</mi><mo>∧</mo><mi>Q</mi></math></dt><dd><math><mi>P</mi></math> og <math><mi>Q</mi></math></dd>
+      <dt><math><mi>P</mi><mo>∨</mo><mi>Q</mi></math></dt><dd><math><mi>P</mi></math> eller <math><mi>Q</mi></math> (inklusivt)</dd>
+      <dt><math><mi>P</mi><mo>⇒</mo><mi>Q</mi></math></dt><dd>hvis <math><mi>P</mi></math>, så <math><mi>Q</mi></math></dd>
+      <dt><math><mi>P</mi><mo>⇔</mo><mi>Q</mi></math></dt><dd><math><mi>P</mi></math> hvis og kun hvis <math><mi>Q</mi></math></dd>
+    </dl>
+  </div>
+  <div class="box">
+    <span class="label">Kvantorer</span>
+    <dl class="kv">
+      <dt><math><mo>∀</mo><mi>x</mi></math></dt><dd>for alle <math><mi>x</mi></math></dd>
+      <dt><math><mo>∃</mo><mi>x</mi></math></dt><dd>der findes et <math><mi>x</mi></math></dd>
+      <dt><math><mo>¬</mo><mo>(</mo><mo>∀</mo><mi>x</mi><mo>:</mo><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo></math></dt><dd><math><mo>∃</mo><mi>x</mi><mo>:</mo><mo>¬</mo><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></dd>
+    </dl>
+  </div>
+</div>
+<table class="compact">
+<caption>Sandhedstabell for implikation</caption>
+<tr><th><math><mi>P</mi></math></th><th><math><mi>Q</mi></math></th><th><math><mi>P</mi><mo>⇒</mo><mi>Q</mi></math></th></tr>
+<tr><td>S</td><td>S</td><td>S</td></tr>
+<tr><td>S</td><td>F</td><td>F</td></tr>
+<tr><td>F</td><td>S</td><td>S</td></tr>
+<tr><td>F</td><td>F</td><td>S</td></tr>
+</table>
+<p>Implikationen er kun falsk, når <math><mi>P</mi></math> er sand og <math><mi>Q</mi></math> falsk. Den omvendte implikation <math><mi>Q</mi><mo>⇒</mo><mi>P</mi></math> er ikke ækvivalent med <math><mi>P</mi><mo>⇒</mo><mi>Q</mi></math>; kontrapositionen <math><mo>¬</mo><mi>Q</mi><mo>⇒</mo><mo>¬</mo><mi>P</mi></math> er derimod ækvivalent.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <p><math><mi>A</mi><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>}</mo></math> og <math><mi>B</mi><mo>=</mo><mo>{</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>}</mo></math>.</p>
+  <div class="formula left">
+    <math><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>}</mo><mo>,</mo><mspace width="1em"/><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mo>{</mo><mn>3</mn><mo>}</mo><mo>,</mo><mspace width="1em"/><mi>A</mi><mo>\</mo><mi>B</mi><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>}</mo></math>
+  </div>
+  <p class="where"><math><mo>|</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo>|</mo><mo>=</mo><mn>4</mn></math>, hvilket stemmer med <math><mn>3</mn><mo>+</mo><mn>2</mn><mo>−</mo><mn>1</mn></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>«Eller» i matematik er inklusivt: <math><mi>P</mi><mo>∨</mo><mi>Q</mi></math> er også sand, når begge er sande.</li>
+    <li><math><mi>P</mi><mo>⇒</mo><mi>Q</mi></math> og <math><mi>Q</mi><mo>⇒</mo><mi>P</mi></math> er forskellige udsagn.</li>
+    <li><math><mi>A</mi><mo>⊆</mo><mi>B</mi></math> tillader <math><mi>A</mi><mo>=</mo><mi>B</mi></math>; ægte delmængde skrives <math><mi>A</mi><mo>⊂</mo><mi>B</mi></math>.</li>
+    <li>Nægtelsen af «for alle» er «der findes mindst ét», ikke «for ingen».</li>
+  </ul>
+</div>
+
+</body>
+</html>

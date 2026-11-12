@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Vektorer i planen</title>
+</head>
+<body>
+
+<h1>Vektorer i planen</h1>
+
+<h2>Koordinater og længde</h2>
+<div class="box rule">
+  <span class="label">Vektor</span>
+  <div class="formula"><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>)</mo><mo>,</mo><mspace width="0.8em"/><mo>|</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>|</mo><mo>=</mo><msqrt><mrow><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>a</mi><mn>2</mn><mn>2</mn></msubsup></mrow></msqrt></math></div>
+  <p class="where">Vektoren fra <math><mi>A</mi></math> til <math><mi>B</mi></math>: <math><mover accent="true"><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover><mo>=</mo><mo>(</mo><msub><mi>x</mi><mi>B</mi></msub><mo>−</mo><msub><mi>x</mi><mi>A</mi></msub><mo>,</mo><msub><mi>y</mi><mi>B</mi></msub><mo>−</mo><msub><mi>y</mi><mi>A</mi></msub><mo>)</mo></math></p>
+</div>
+<p>En vektor har længde og retning, men ikke noget fast angrebspunkt. To vektorer er ens, når koordinaterne er ens. Enhedsvektoren i samme retning som <math><mover accent="true"><mi>a</mi><mo>→</mo></mover></math> er <math><mfrac><mover accent="true"><mi>a</mi><mo>→</mo></mover><mrow><mo>|</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>|</mo></mrow></mfrac></math>.</p>
+
+<h2>Regneoperationer</h2>
+<table class="compact">
+<caption>Vektorregning i planen</caption>
+<tr><th>Operation</th><th>Koordinatform</th><th>Geometrisk betydning</th></tr>
+<tr><td>Addition</td><td><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>+</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>+</mo><msub><mi>b</mi><mn>2</mn></msub><mo>)</mo></math></td><td>diagonal i parallelogrammet</td></tr>
+<tr><td>Subtraktion</td><td><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>−</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>−</mo><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>−</mo><msub><mi>b</mi><mn>2</mn></msub><mo>)</mo></math></td><td>vektoren fra <math><mi>b</mi></math> til <math><mi>a</mi></math></td></tr>
+<tr><td>Skalarmultiplikation</td><td><math><mi>k</mi><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><mi>k</mi><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>k</mi><msub><mi>a</mi><mn>2</mn></msub><mo>)</mo></math></td><td>samme retning for <math><mi>k</mi><mo>&gt;</mo><mn>0</mn></math>, modsat for <math><mi>k</mi><mo>&lt;</mo><mn>0</mn></math></td></tr>
+<tr><td>Prikprodukt</td><td><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>·</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><msub><mi>b</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><msub><mi>b</mi><mn>2</mn></msub></math></td><td>et tal, ikke en vektor</td></tr>
+<tr><td>Determinant</td><td><math><mi>det</mi><mo>(</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>,</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>)</mo><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><msub><mi>b</mi><mn>2</mn></msub><mo>−</mo><msub><mi>a</mi><mn>2</mn></msub><msub><mi>b</mi><mn>1</mn></msub></math></td><td>fortegnet areal af parallelogrammet</td></tr>
+</table>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="62mm" height="42mm" viewBox="0 0 62 42" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="10" y1="34" x2="36" y2="34" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/><polygon points="36,34 34.42,34.64 34.42,33.36" fill="#1b1b1b" stroke="none"/>
+<line x1="10" y1="34" x2="24" y2="14" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/><polygon points="24,14 23.62,15.66 22.57,14.93" fill="#1b1b1b" stroke="none"/>
+<line x1="10" y1="34" x2="50" y2="14" stroke="#1c5f9e" fill="none" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/><polygon points="50,14 48.87,15.27 48.31,14.14" fill="#1c5f9e" stroke="none"/>
+<line x1="36" y1="34" x2="50" y2="14" stroke="#1b1b1b" fill="none" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.4 1.2"/>
+<line x1="24" y1="14" x2="50" y2="14" stroke="#1b1b1b" fill="none" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.4 1.2"/>
+<text x="22" y="37.6" font-size="3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">a</text>
+<text x="14.5" y="23.5" font-size="3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">b</text>
+<text x="42" y="10.5" font-size="2.8" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">a + b</text>
+<circle cx="10" cy="34" r="0.9" fill="#1b1b1b" stroke="none"/><text x="7.6" y="37.2" font-size="2.5" fill="#1b1b1b" text-anchor="start">O</text>
+</svg>
+<figcaption>Vektoraddition: a + b er diagonalen i parallelogrammet udspændt af a og b.</figcaption>
+</figure>
+
+<h2>Vinkel og ortogonalitet</h2>
+<div class="formula"><math><mi>cos</mi><mspace width="0.1em"/><mi>v</mi><mo>=</mo><mfrac><mrow><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>·</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover></mrow><mrow><mo>|</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>|</mo><mo>·</mo><mo>|</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>|</mo></mrow></mfrac><mo>,</mo><mspace width="1em"/><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>⊥</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>⇔</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>·</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>=</mo><mn>0</mn></math></div>
+<p>Arealet af parallelogrammet udspændt af <math><mover accent="true"><mi>a</mi><mo>→</mo></mover></math> og <math><mover accent="true"><mi>b</mi><mo>→</mo></mover></math> er <math><mo>|</mo><mi>det</mi><mo>(</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>,</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>)</mo><mo>|</mo></math>; trekanten med samme sider har arealet halvdelen.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <p><math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>)</mo></math> og <math><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><mo>−</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>)</mo></math>.</p>
+  <div class="formula left">
+    <math><mo>|</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>|</mo><mo>=</mo><msqrt><mrow><mn>9</mn><mo>+</mo><mn>16</mn></mrow></msqrt><mo>=</mo><mn>5</mn><mo>,</mo><mspace width="1em"/><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>·</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>=</mo><mn>3</mn><mo>·</mo><mo>(</mo><mo>−</mo><mn>2</mn><mo>)</mo><mo>+</mo><mn>4</mn><mo>·</mo><mn>5</mn><mo>=</mo><mn>14</mn></math><br>
+    <math><mi>det</mi><mo>(</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>,</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>)</mo><mo>=</mo><mn>3</mn><mo>·</mo><mn>5</mn><mo>−</mo><mn>4</mn><mo>·</mo><mo>(</mo><mo>−</mo><mn>2</mn><mo>)</mo><mo>=</mo><mn>23</mn></math>
+  </div>
+  <p class="where">Arealet af det udspændte parallelogram er 23; trekanten er 11,5. Vinklen er <math><mi>cos</mi><mspace width="0.1em"/><mi>v</mi><mo>=</mo><mfrac><mn>14</mn><mrow><mn>5</mn><msqrt><mn>29</mn></msqrt></mrow></mfrac><mo>≈</mo><mn>0,52</mn></math>, altså <math><mi>v</mi><mo>≈</mo><mn>58,7</mn><mo>°</mo></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Prikproduktet er et tal, ikke en vektor. <math><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>·</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover></math> kan ikke tegnes som en vektor.</li>
+    <li><math><mo>|</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>+</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>|</mo><mo>≠</mo><mo>|</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>|</mo><mo>+</mo><mo>|</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>|</mo></math> i almindelighed; der gælder trekantsuligheden.</li>
+    <li>Fortegnet i determinanten afhænger af rækkefølgen: <math><mi>det</mi><mo>(</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>,</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>)</mo><mo>=</mo><mo>−</mo><mi>det</mi><mo>(</mo><mover accent="true"><mi>a</mi><mo>→</mo></mover><mo>,</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mo>)</mo></math>.</li>
+  </ul>
+</div>
+
+</body>
+</html>

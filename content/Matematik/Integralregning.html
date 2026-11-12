@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Integralregning</title>
+</head>
+<body>
+
+<h1>Integralregning</h1>
+
+<h2>Stamfunktion</h2>
+<div class="box rule">
+  <span class="label">Stamfunktion</span>
+  <div class="formula"><math><msup><mi>F</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mspace width="1em"/><mo>⇔</mo><mspace width="1em"/><mo>∫</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>=</mo><mi>F</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>C</mi></math></div>
+  <p class="where">To stamfunktioner adskiller sig kun ved en konstant.</p>
+</div>
+<table class="compact">
+<caption>Stamfunktioner</caption>
+<tr><th><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></th><th><math><mi>F</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></th><th>Bemærkning</th></tr>
+<tr><td><math><msup><mi>x</mi><mi>n</mi></msup></math>, <math><mi>n</mi><mo>≠</mo><mo>−</mo><mn>1</mn></math></td><td><math><mfrac><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></math></td><td>potensreglen</td></tr>
+<tr><td><math><mfrac><mn>1</mn><mi>x</mi></mfrac></math></td><td><math><mi>ln</mi><mspace width="0.2em"/><mo>|</mo><mi>x</mi><mo>|</mo></math></td><td><math><mi>x</mi><mo>≠</mo><mn>0</mn></math></td></tr>
+<tr><td><math><msup><mi>e</mi><mi>x</mi></msup></math></td><td><math><msup><mi>e</mi><mi>x</mi></msup></math></td><td>—</td></tr>
+<tr><td><math><mi>sin</mi><mspace width="0.1em"/><mi>x</mi></math></td><td><math><mo>−</mo><mi>cos</mi><mspace width="0.1em"/><mi>x</mi></math></td><td>—</td></tr>
+<tr><td><math><mi>cos</mi><mspace width="0.1em"/><mi>x</mi></math></td><td><math><mi>sin</mi><mspace width="0.1em"/><mi>x</mi></math></td><td>—</td></tr>
+</table>
+
+<h2>Regneregler</h2>
+<div class="formula"><math><mo>∫</mo><mi>k</mi><mo>·</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>=</mo><mi>k</mi><mo>∫</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>,</mo><mspace width="1em"/><mo>∫</mo><mo>(</mo><mi>f</mi><mo>+</mo><mi>g</mi><mo>)</mo><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>=</mo><mo>∫</mo><mi>f</mi><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>+</mo><mo>∫</mo><mi>g</mi><mspace width="0.2em"/><mi>d</mi><mi>x</mi></math></div>
+<div class="box">
+  <span class="label">Substitution</span>
+  <div class="formula"><math><mo>∫</mo><mi>f</mi><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo><mo>·</mo><msup><mi>g</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>=</mo><mi>F</mi><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo><mo>+</mo><mi>C</mi></math></div>
+  <p class="where">Sæt <math><mi>u</mi><mo>=</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math>, så <math><mi>d</mi><mi>u</mi><mo>=</mo><msup><mi>g</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mspace width="0.2em"/><mi>d</mi><mi>x</mi></math>.</p>
+</div>
+
+<h2>Bestemt integral</h2>
+<div class="box rule">
+  <span class="label">Hovedsætningen</span>
+  <div class="formula"><math><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>=</mo><mo>[</mo><mi>F</mi><mo>(</mo><mi>x</mi><mo>)</mo><msubsup><mo>]</mo><mi>a</mi><mi>b</mi></msubsup><mo>=</mo><mi>F</mi><mo>(</mo><mi>b</mi><mo>)</mo><mo>−</mo><mi>F</mi><mo>(</mo><mi>a</mi><mo>)</mo></math></div>
+  <p class="where">Er <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>≥</mo><mn>0</mn></math>, er integralet arealet under grafen mellem <math><mi>a</mi></math> og <math><mi>b</mi></math>.</p>
+</div>
+<p>Er <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>&lt;</mo><mn>0</mn></math>, tælles arealet negativt. Integralet er et fortegnsbestemt areal; det geometriske areal er <math><mo>∫</mo><mo>|</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>|</mo><mspace width="0.2em"/><mi>d</mi><mi>x</mi></math>.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="66mm" height="42mm" viewBox="0 0 66 42" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<defs><clipPath id="clip23c9c86e"><rect x="11" y="3" width="51" height="28.9"/></clipPath></defs>
+<rect x="11" y="3" width="51" height="28.9" fill="none" stroke="#dde2e7" stroke-width="0.3"/>
+<line x1="22.59" y1="3" x2="22.59" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="34.18" y1="3" x2="34.18" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="45.77" y1="3" x2="45.77" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="57.36" y1="3" x2="57.36" y2="31.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="26.12" x2="62" y2="26.12" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="20.34" x2="62" y2="20.34" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="14.56" x2="62" y2="14.56" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="8.78" x2="62" y2="8.78" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="3" x2="62" y2="3" stroke="#dde2e7" stroke-width="0.25"/>
+<path d="M 11 31.9 L 11.09 31.9 L 11.17 31.9 L 11.26 31.9 L 11.34 31.9 L 11.43 31.9 L 11.51 31.9 L 11.6 31.9 L 11.68 31.9 L 11.77 31.89 L 11.85 31.89 L 11.94 31.89 L 12.02 31.89 L 12.11 31.89 L 12.19 31.88 L 12.28 31.88 L 12.36 31.88 L 12.45 31.88 L 12.53 31.87 L 12.62 31.87 L 12.7 31.87 L 12.79 31.87 L 12.87 31.86 L 12.96 31.86 L 13.04 31.86 L 13.12 31.85 L 13.21 31.85 L 13.29 31.84 L 13.38 31.84 L 13.46 31.83 L 13.55 31.83 L 13.63 31.83 L 13.72 31.82 L 13.8 31.82 L 13.89 31.81 L 13.97 31.8 L 14.06 31.8 L 14.14 31.79 L 14.23 31.79 L 14.31 31.78 L 14.4 31.78 L 14.48 31.77 L 14.57 31.76 L 14.65 31.76 L 14.74 31.75 L 14.83 31.74 L 14.91 31.74 L 14.99 31.73 L 15.08 31.72 L 15.16 31.71 L 15.25 31.71 L 15.34 31.7 L 15.42 31.69 L 15.5 31.68 L 15.59 31.67 L 15.68 31.66 L 15.76 31.66 L 15.84 31.65 L 15.93 31.64 L 16.02 31.63 L 16.1 31.62 L 16.19 31.61 L 16.27 31.6 L 16.36 31.59 L 16.44 31.58 L 16.52 31.57 L 16.61 31.56 L 16.7 31.55 L 16.78 31.54 L 16.86 31.53 L 16.95 31.52 L 17.04 31.51 L 17.12 31.5 L 17.21 31.49 L 17.29 31.47 L 17.38 31.46 L 17.46 31.45 L 17.54 31.44 L 17.63 31.43 L 17.71 31.42 L 17.8 31.4 L 17.89 31.39 L 17.97 31.38 L 18.05 31.36 L 18.14 31.35 L 18.23 31.34 L 18.31 31.33 L 18.39 31.31 L 18.48 31.3 L 18.57 31.28 L 18.65 31.27 L 18.73 31.26 L 18.82 31.24 L 18.91 31.23 L 18.99 31.21 L 19.08 31.2 L 19.16 31.18 L 19.24 31.17 L 19.33 31.15 L 19.41 31.14 L 19.5 31.12 L 19.59 31.11 L 19.67 31.09 L 19.76 31.08 L 19.84 31.06 L 19.93 31.04 L 20.01 31.03 L 20.09 31.01 L 20.18 30.99 L 20.27 30.98 L 20.35 30.96 L 20.44 30.94 L 20.52 30.93 L 20.61 30.91 L 20.69 30.89 L 20.77 30.87 L 20.86 30.85 L 20.95 30.84 L 21.03 30.82 L 21.12 30.8 L 21.2 30.78 L 21.29 30.76 L 21.37 30.74 L 21.45 30.72 L 21.54 30.71 L 21.62 30.69 L 21.71 30.67 L 21.8 30.65 L 21.88 30.63 L 21.96 30.61 L 22.05 30.59 L 22.13 30.57 L 22.22 30.55 L 22.3 30.53 L 22.39 30.5 L 22.48 30.48 L 22.56 30.46 L 22.65 30.44 L 22.73 30.42 L 22.81 30.4 L 22.9 30.38 L 22.98 30.36 L 23.07 30.33 L 23.16 30.31 L 23.24 30.29 L 23.32 30.27 L 23.41 30.24 L 23.49 30.22 L 23.58 30.2 L 23.66 30.17 L 23.75 30.15 L 23.84 30.13 L 23.92 30.1 L 24.01 30.08 L 24.09 30.06 L 24.17 30.03 L 24.26 30.01 L 24.34 29.98 L 24.43 29.96 L 24.52 29.94 L 24.6 29.91 L 24.69 29.89 L 24.77 29.86 L 24.85 29.84 L 24.94 29.81 L 25.02 29.78 L 25.11 29.76 L 25.2 29.73 L 25.28 29.71 L 25.37 29.68 L 25.45 29.65 L 25.54 29.63 L 25.62 29.6 L 25.7 29.57 L 25.79 29.55 L 25.88 29.52 L 25.96 29.49 L 26.05 29.47 L 26.13 29.44 L 26.21 29.41 L 26.3 29.38 L 26.38 29.35 L 26.47 29.33 L 26.55 29.3 L 26.64 29.27 L 26.73 29.24 L 26.81 29.21 L 26.9 29.18 L 26.98 29.15 L 27.07 29.12 L 27.15 29.09 L 27.23 29.07 L 27.32 29.04 L 27.4 29.01 L 27.49 28.98 L 27.57 28.95 L 27.66 28.91 L 27.75 28.88 L 27.83 28.85 L 27.91 28.82 L 28 28.79 L 28.09 28.76 L 28.17 28.73 L 28.25 28.7 L 28.34 28.67 L 28.43 28.63 L 28.51 28.6 L 28.59 28.57 L 28.68 28.54 L 28.76 28.51 L 28.85 28.47 L 28.93 28.44 L 29.02 28.41 L 29.11 28.37 L 29.19 28.34 L 29.28 28.31 L 29.36 28.27 L 29.45 28.24 L 29.53 28.21 L 29.61 28.17 L 29.7 28.14 L 29.79 28.1 L 29.87 28.07 L 29.95 28.04 L 30.04 28 L 30.12 27.97 L 30.21 27.93 L 30.29 27.9 L 30.38 27.86 L 30.46 27.82 L 30.55 27.79 L 30.64 27.75 L 30.72 27.72 L 30.8 27.68 L 30.89 27.64 L 30.97 27.61 L 31.06 27.57 L 31.14 27.54 L 31.23 27.5 L 31.32 27.46 L 31.4 27.42 L 31.48 27.39 L 31.57 27.35 L 31.65 27.31 L 31.74 27.27 L 31.82 27.24 L 31.91 27.2 L 32 27.16 L 32.08 27.12 L 32.17 27.08 L 32.25 27.04 L 32.34 27 L 32.42 26.97 L 32.5 26.93 L 32.59 26.89 L 32.67 26.85 L 32.76 26.81 L 32.84 26.77 L 32.93 26.73 L 33.02 26.69 L 33.1 26.65 L 33.19 26.61 L 33.27 26.57 L 33.36 26.52 L 33.44 26.48 L 33.52 26.44 L 33.61 26.4 L 33.7 26.36 L 33.78 26.32 L 33.86 26.28 L 33.95 26.24 L 34.03 26.19 L 34.12 26.15 L 34.2 26.11 L 34.29 26.07 L 34.38 26.02 L 34.46 25.98 L 34.55 25.94 L 34.63 25.89 L 34.72 25.85 L 34.8 25.81 L 34.88 25.76 L 34.97 25.72 L 35.05 25.68 L 35.14 25.63 L 35.22 25.59 L 35.31 25.54 L 35.4 25.5 L 35.48 25.45 L 35.56 25.41 L 35.65 25.36 L 35.73 25.32 L 35.82 25.27 L 35.91 25.23 L 35.99 25.18 L 36.08 25.14 L 36.16 25.09 L 36.25 25.05 L 36.33 25 L 36.41 24.95 L 36.5 24.91 L 36.59 24.86 L 36.67 24.81 L 36.75 24.77 L 36.84 24.72 L 36.92 24.67 L 37.01 24.62 L 37.09 24.58 L 37.18 24.53 L 37.27 24.48 L 37.35 24.43 L 37.44 24.38 L 37.52 24.34 L 37.6 24.29 L 37.69 24.24 L 37.77 24.19 L 37.86 24.14 L 37.95 24.09 L 38.03 24.04 L 38.12 23.99 L 38.2 23.94 L 38.28 23.89 L 38.37 23.84 L 38.45 23.79 L 38.54 23.74 L 38.62 23.69 L 38.71 23.64 L 38.8 23.59 L 38.88 23.54 L 38.97 23.49 L 39.05 23.44 L 39.13 23.39 L 39.22 23.33 L 39.3 23.28 L 39.39 23.23 L 39.48 23.18 L 39.56 23.13 L 39.65 23.07 L 39.73 23.02 L 39.81 22.97 L 39.9 22.92 L 39.98 22.86 L 40.07 22.81 L 40.16 22.76 L 40.24 22.7 L 40.33 22.65 L 40.41 22.6 L 40.5 22.54 L 40.58 22.49 L 40.66 22.43 L 40.75 22.38 L 40.84 22.33 L 40.92 22.27 L 41 22.22 L 41.09 22.16 L 41.17 22.11 L 41.26 22.05 L 41.34 22 L 41.43 21.94 L 41.52 21.88 L 41.6 21.83 L 41.69 21.77 L 41.77 21.72 L 41.85 21.66 L 41.94 21.6 L 42.03 21.55 L 42.11 21.49 L 42.2 21.43 L 42.28 21.38 L 42.37 21.32 L 42.45 21.26 L 42.53 21.2 L 42.62 21.15 L 42.7 21.09 L 42.79 21.03 L 42.88 20.97 L 42.96 20.91 L 43.05 20.86 L 43.13 20.8 L 43.22 20.74 L 43.3 20.68 L 43.38 20.62 L 43.47 20.56 L 43.55 20.5 L 43.64 20.44 L 43.73 20.38 L 43.81 20.32 L 43.9 20.26 L 43.98 20.2 L 44.06 20.14 L 44.15 20.08 L 44.23 20.02 L 44.32 19.96 L 44.41 19.9 L 44.49 19.84 L 44.58 19.78 L 44.66 19.71 L 44.75 19.65 L 44.83 19.59 L 44.91 19.53 L 45 19.47 L 45.09 19.4 L 45.17 19.34 L 45.25 19.28 L 45.34 19.22 L 45.42 19.15 L 45.51 19.09 L 45.59 19.03 L 45.68 18.96 L 45.77 18.9 L 45.85 18.84 L 45.94 18.77 L 46.02 18.71 L 46.1 18.65 L 46.19 18.58 L 46.28 18.52 L 46.36 18.45 L 46.45 18.39 L 46.53 18.32 L 46.62 18.26 L 46.7 18.19 L 46.78 18.13 L 46.87 18.06 L 46.95 18 L 47.04 17.93 L 47.12 17.86 L 47.21 17.8 L 47.3 17.73 L 47.38 17.66 L 47.47 17.6 L 47.55 17.53 L 47.63 17.46 L 47.72 17.4 L 47.8 17.33 L 47.89 17.26 L 47.98 17.2 L 48.06 17.13 L 48.14 17.06 L 48.23 16.99 L 48.31 16.92 L 48.4 16.86 L 48.48 16.79 L 48.57 16.72 L 48.66 16.65 L 48.74 16.58 L 48.83 16.51 L 48.91 16.44 L 49 16.37 L 49.08 16.3 L 49.16 16.23 L 49.25 16.16 L 49.34 16.09 L 49.42 16.02 L 49.51 15.95 L 49.59 15.88 L 49.67 15.81 L 49.76 15.74 L 49.84 15.67 L 49.93 15.6 L 50.02 15.53 L 50.1 15.46 L 50.19 15.39 L 50.27 15.31 L 50.36 15.24 L 50.44 15.17 L 50.53 15.1 L 50.61 15.03 L 50.7 14.95 L 50.78 14.88 L 50.87 14.81 L 50.95 14.73 L 51.03 14.66 L 51.12 14.59 L 51.2 14.51 L 51.29 14.44 L 51.38 14.37 L 51.46 14.29 L 51.55 14.22 L 51.63 14.14 L 51.72 14.07 L 51.8 14 L 51.88 13.92 L 51.97 13.85 L 52.05 13.77 L 52.14 13.7 L 52.22 13.62 L 52.31 13.55 L 52.39 13.47 L 52.48 13.39 L 52.57 13.32 L 52.65 13.24 L 52.73 13.17 L 52.82 13.09 L 52.91 13.01 L 52.99 12.94 L 53.07 12.86 L 53.16 12.78 L 53.25 12.71 L 53.33 12.63 L 53.42 12.55 L 53.5 12.47 L 53.58 12.39 L 53.67 12.32 L 53.76 12.24 L 53.84 12.16 L 53.92 12.08 L 54.01 12 L 54.09 11.93 L 54.18 11.85 L 54.27 11.77 L 54.35 11.69 L 54.44 11.61 L 54.52 11.53 L 54.61 11.45 L 54.69 11.37 L 54.77 11.29 L 54.86 11.21 L 54.95 11.13 L 55.03 11.05 L 55.12 10.97 L 55.2 10.89 L 55.28 10.81 L 55.37 10.73 L 55.45 10.64 L 55.54 10.56 L 55.62 10.48 L 55.71 10.4 L 55.8 10.32 L 55.88 10.24 L 55.97 10.15 L 56.05 10.07 L 56.13 9.99 L 56.22 9.91 L 56.3 9.82 L 56.39 9.74 L 56.47 9.66 L 56.56 9.57 L 56.64 9.49 L 56.73 9.41 L 56.82 9.32 L 56.9 9.24 L 56.98 9.16 L 57.07 9.07 L 57.16 8.99 L 57.24 8.9 L 57.32 8.82 L 57.41 8.73 L 57.5 8.65 L 57.58 8.56 L 57.67 8.48 L 57.75 8.39 L 57.83 8.31 L 57.92 8.22 L 58 8.14 L 58.09 8.05 L 58.17 7.96 L 58.26 7.88 L 58.34 7.79 L 58.43 7.7 L 58.52 7.62 L 58.6 7.53 L 58.68 7.44 L 58.77 7.36 L 58.85 7.27 L 58.94 7.18 L 59.02 7.09 L 59.11 7.01 L 59.2 6.92 L 59.28 6.83 L 59.37 6.74 L 59.45 6.65 L 59.53 6.56 L 59.62 6.47 L 59.71 6.39 L 59.79 6.3 L 59.88 6.21 L 59.96 6.12 L 60.05 6.03 L 60.13 5.94 L 60.22 5.85 L 60.3 5.76 L 60.38 5.67 L 60.47 5.58 L 60.56 5.49 L 60.64 5.4 L 60.72 5.31 L 60.81 5.22 L 60.89 5.12 L 60.98 5.03 L 61.06 4.94 L 61.15 4.85 L 61.23 4.76 L 61.32 4.67 L 61.41 4.57 L 61.49 4.48 L 61.57 4.39 L 61.66 4.3 L 61.74 4.2 L 61.83 4.11 L 61.91 4.02 L 62 3.92" fill="none" stroke="#1c5f9e" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clip23c9c86e)"/>
+<line x1="57.36" y1="3" x2="57.36" y2="31.9" stroke="#8f98a2" stroke-width="0.4" stroke-dasharray="1.2 1.1"/>
+<line x1="11" y1="31.9" x2="11" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="11" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0</text>
+<line x1="22.59" y1="31.9" x2="22.59" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="22.59" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,5</text>
+<line x1="34.18" y1="31.9" x2="34.18" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="34.18" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">1</text>
+<line x1="45.77" y1="31.9" x2="45.77" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="45.77" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">1,5</text>
+<line x1="57.36" y1="31.9" x2="57.36" y2="33" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="57.36" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="9.9" y1="31.9" x2="11" y2="31.9" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="9.9" y1="26.12" x2="11" y2="26.12" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="26.12" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">1</text>
+<line x1="9.9" y1="20.34" x2="11" y2="20.34" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="20.34" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="9.9" y1="14.56" x2="11" y2="14.56" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="14.56" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">3</text>
+<line x1="9.9" y1="8.78" x2="11" y2="8.78" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="8.78" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">4</text>
+<line x1="9.9" y1="3" x2="11" y2="3" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="3" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">5</text>
+<text x="36.5" y="40.6" font-size="2.4" fill="#5b6470" text-anchor="middle">x</text>
+<text x="2.6" y="17.45" font-size="2.4" fill="#5b6470" text-anchor="middle" transform="rotate(-90 2.6 17.45)">f(x)</text>
+</svg>
+<figcaption>Arealet under f(x) = x² fra 0 til 2 er ∫₀² x² dx = 8/3.</figcaption>
+</figure>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <div class="formula left">
+    <math><msubsup><mo>∫</mo><mn>0</mn><mn>2</mn></msubsup><msup><mi>x</mi><mn>2</mn></msup><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>=</mo><msubsup><mo>[</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac><msubsup><mo>]</mo><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mfrac><mn>8</mn><mn>3</mn></mfrac><mo>−</mo><mn>0</mn><mo>=</mo><mfrac><mn>8</mn><mn>3</mn></mfrac><mo>≈</mo><mn>2,67</mn></math><br>
+    <math><msubsup><mo>∫</mo><mn>1</mn><mi>e</mi></msubsup><mfrac><mn>1</mn><mi>x</mi></mfrac><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>=</mo><mo>[</mo><mi>ln</mi><mspace width="0.2em"/><mi>x</mi><msubsup><mo>]</mo><mn>1</mn><mi>e</mi></msubsup><mo>=</mo><mn>1</mn><mo>−</mo><mn>0</mn><mo>=</mo><mn>1</mn></math>
+  </div>
+  <p class="where">Ved det andet integral bruges <math><mi>ln</mi><mspace width="0.2em"/><mn>1</mn><mo>=</mo><mn>0</mn></math> og <math><mi>ln</mi><mspace width="0.2em"/><mi>e</mi><mo>=</mo><mn>1</mn></math>.</p>
+</div>
+<div class="box">
+  <span class="label">Eksempel — substitution</span>
+  <div class="formula left">
+    <math><mo>∫</mo><mn>2</mn><mi>x</mi><msup><mrow><mo>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>)</mo></mrow><mn>3</mn></msup><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><msup><mrow><mo>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>)</mo></mrow><mn>4</mn></msup><mo>+</mo><mi>C</mi></math>
+  </div>
+  <p class="where">Med <math><mi>u</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></math> er <math><mi>d</mi><mi>u</mi><mo>=</mo><mn>2</mn><mi>x</mi><mspace width="0.2em"/><mi>d</mi><mi>x</mi></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Konstanten <math><mi>C</mi></math> glemmes ved ubestemt integration.</li>
+    <li><math><mo>∫</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>≠</mo><mo>∫</mo><mi>f</mi><mspace width="0.2em"/><mi>d</mi><mi>x</mi><mo>·</mo><mo>∫</mo><mi>g</mi><mspace width="0.2em"/><mi>d</mi><mi>x</mi></math>.</li>
+    <li>Ved bestemt integral skal den øvre grænse indsættes først: <math><mi>F</mi><mo>(</mo><mi>b</mi><mo>)</mo><mo>−</mo><mi>F</mi><mo>(</mo><mi>a</mi><mo>)</mo></math>.</li>
+    <li>Et integral kan være 0, selv om arealet ikke er 0, når grafen ligger både over og under aksen.</li>
+  </ul>
+</div>
+
+</body>
+</html>

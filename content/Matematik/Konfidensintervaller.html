@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Konfidensintervaller</title>
+</head>
+<body>
+
+<h1>Konfidensintervaller</h1>
+
+<h2>Fra stikprøve til population</h2>
+<p>En stikprøve giver et estimat <math><mover accent="true"><mi>p</mi><mo>^</mo></mover></math> af en ukendt andel <math><mi>p</mi></math> i populationen, eller <math><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math> af en ukendt middelværdi <math><mi>μ</mi></math>. Et konfidensinterval angiver et interval af plausible værdier for parameteren.</p>
+<div class="box rule">
+  <span class="label">Konfidensinterval for en andel</span>
+  <div class="formula"><math><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo>±</mo><mi>z</mi><mo>·</mo><msqrt><mrow><mfrac><mrow><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo>(</mo><mn>1</mn><mo>−</mo><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo>)</mo></mrow><mi>n</mi></mfrac></mrow></msqrt></math></div>
+  <p class="where"><math><mi>n</mi></math>: stikprøvestørrelse · <math><mi>z</mi></math>: kritisk værdi fra normalfordelingen</p>
+</div>
+<table class="compact">
+<caption>Kritiske z-værdier for tosidet interval</caption>
+<tr><th>Konfidens</th><th class="num">90&nbsp;%</th><th class="num">95&nbsp;%</th><th class="num">99&nbsp;%</th></tr>
+<tr><td><math><mi>z</mi></math></td><td class="num">1,645</td><td class="num">1,960</td><td class="num">2,576</td></tr>
+</table>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="78mm" height="42mm" viewBox="0 0 78 42" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="39" y1="4" x2="39" y2="38" stroke="#b3402a" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.4 1"/>
+<text x="39" y="3" font-size="2.9" fill="#b3402a" text-anchor="middle" font-weight="400" dominant-baseline="middle">μ</text>
+<text x="8" y="3" font-size="2.3" fill="#8f98a2" text-anchor="start" font-weight="400" dominant-baseline="middle">95 %-intervaller</text>
+<line x1="32.5" y1="7" x2="45.5" y2="7" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="32.5" y1="6" x2="32.5" y2="8" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="45.5" y1="6" x2="45.5" y2="8" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="35.5" y1="9.7" x2="48.5" y2="9.7" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="35.5" y1="8.7" x2="35.5" y2="10.7" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="48.5" y1="8.7" x2="48.5" y2="10.7" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="28.5" y1="12.4" x2="41.5" y2="12.4" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="28.5" y1="11.4" x2="28.5" y2="13.4" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="41.5" y1="11.4" x2="41.5" y2="13.4" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="34.5" y1="15.1" x2="47.5" y2="15.1" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="34.5" y1="14.1" x2="34.5" y2="16.1" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="47.5" y1="14.1" x2="47.5" y2="16.1" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="30.5" y1="17.8" x2="43.5" y2="17.8" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="30.5" y1="16.8" x2="30.5" y2="18.8" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="43.5" y1="16.8" x2="43.5" y2="18.8" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="37.5" y1="20.5" x2="50.5" y2="20.5" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="37.5" y1="19.5" x2="37.5" y2="21.5" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="50.5" y1="19.5" x2="50.5" y2="21.5" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="27.5" y1="23.2" x2="40.5" y2="23.2" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="27.5" y1="22.2" x2="27.5" y2="24.2" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="40.5" y1="22.2" x2="40.5" y2="24.2" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="33.5" y1="25.9" x2="46.5" y2="25.9" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="33.5" y1="24.9" x2="33.5" y2="26.9" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="46.5" y1="24.9" x2="46.5" y2="26.9" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="20.5" y1="28.6" x2="33.5" y2="28.6" stroke="#b3402a" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="20.5" y1="27.6" x2="20.5" y2="29.6" stroke="#b3402a" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="33.5" y1="27.6" x2="33.5" y2="29.6" stroke="#b3402a" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="36.5" y1="31.3" x2="49.5" y2="31.3" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="36.5" y1="30.3" x2="36.5" y2="32.3" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="49.5" y1="30.3" x2="49.5" y2="32.3" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="32.5" y1="34" x2="45.5" y2="34" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="32.5" y1="33" x2="32.5" y2="35" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="45.5" y1="33" x2="45.5" y2="35" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="29.5" y1="36.7" x2="42.5" y2="36.7" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="29.5" y1="35.7" x2="29.5" y2="37.7" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="42.5" y1="35.7" x2="42.5" y2="37.7" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
+<figcaption>Tolv 95 %-konfidensintervaller for samme μ. Elleve indeholder μ; det tolvte gør ikke.</figcaption>
+</figure>
+
+
+
+<h2>Fortolkning</h2>
+<div class="box note">
+  <span class="label">Hvad 95&nbsp;% betyder</span>
+  <p>Ved gentagne stikprøver vil ca. 95&nbsp;% af de beregnede intervaller indeholde den sande parameter. Det enkelte interval indeholder parameteren eller gør ikke — sandsynligheden 95&nbsp;% knytter sig til metoden, ikke til det konkrete interval.</p>
+</div>
+<p>Bredden aftager, når stikprøven vokser: halveres usikkerheden, kræves ca. fire gange så mange observationer. Et højere konfidensniveau giver et bredere interval.</p>
+
+<h2>Konfidensinterval for en middelværdi</h2>
+<div class="formula"><math><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>±</mo><mi>z</mi><mo>·</mo><mfrac><mi>σ</mi><mrow><msqrt><mi>n</mi></msqrt></mrow></mfrac></math></div>
+<p class="where">Når spredningen <math><mi>σ</mi></math> i populationen kendes, eller når <math><mi>n</mi></math> er stor nok til, at stikprøvens spredning <math><mi>s</mi></math> kan bruges som erstatning.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — andel</span>
+  <p>Af 300 tilfældigt valgte elever svarer 180 ja. Estimatet er <math><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo>=</mo><mfrac><mn>180</mn><mn>300</mn></mfrac><mo>=</mo><mn>0,6</mn></math>. Et 95&nbsp;% konfidensinterval:</p>
+  <div class="formula left">
+    <math><mn>0,6</mn><mo>±</mo><mn>1,96</mn><mo>·</mo><msqrt><mrow><mfrac><mrow><mn>0,6</mn><mo>·</mo><mn>0,4</mn></mrow><mn>300</mn></mfrac></mrow></msqrt><mo>=</mo><mn>0,6</mn><mo>±</mo><mn>1,96</mn><mo>·</mo><mn>0,0283</mn><mo>≈</mo><mn>0,6</mn><mo>±</mo><mn>0,055</mn></math>
+  </div>
+  <p class="where">Intervallet er <math><mo>[</mo><mn>0,545</mn><mo>,</mo><mn>0,655</mn><mo>]</mo></math>, altså ca. 54,5&nbsp;% til 65,5&nbsp;%.</p>
+</div>
+
+<h2>Valg af stikprøvestørrelse</h2>
+<p>Skal halvbredden højst være <math><mi>d</mi></math>, kræves</p>
+<div class="formula"><math><mi>n</mi><mo>≥</mo><msup><mrow><mo>(</mo><mfrac><mi>z</mi><mi>d</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo>(</mo><mn>1</mn><mo>−</mo><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo>)</mo></math></div>
+<p>Uden et kendt estimat vælges det værst tænkelige tilfælde <math><mover accent="true"><mi>p</mi><mo>^</mo></mover><mo>=</mo><mn>0,5</mn></math>, hvor produktet er størst. Ønskes en halvbredde på 3 procentpoint ved 95&nbsp;% konfidens, kræves <math><mi>n</mi><mo>≈</mo><msup><mrow><mo>(</mo><mfrac><mn>1,96</mn><mn>0,03</mn></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>·</mo><mn>0,25</mn><mo>≈</mo><mn>1068</mn></math>.</p>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At sige «der er 95&nbsp;% sandsynlighed for, at <math><mi>p</mi></math> ligger i dette interval» er forkert i den klassiske fortolkning.</li>
+    <li>Formlen kræver en tilnærmelsesvis normalfordelt estimater; kontroller, at der er tilstrækkeligt mange observationer i begge grupper.</li>
+    <li>Stikprøven skal være tilfældig og repræsentativ; ellers er intervallet meningsløst.</li>
+    <li>Større konfidens giver bredere interval — ikke et mere præcist punktestimat.</li>
+  </ul>
+</div>
+
+</body>
+</html>

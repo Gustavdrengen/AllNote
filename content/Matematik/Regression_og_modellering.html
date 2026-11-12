@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Regression og modellering</title>
+</head>
+<body>
+
+<h1>Regression og modellering</h1>
+
+<h2>Modeltyper</h2>
+<table class="compact">
+<caption>De fire standardmodeller</caption>
+<tr><th>Model</th><th>Forskrift</th><th>Kendetegn</th><th>Lineærisering</th></tr>
+<tr><td>Lineær</td><td><math><mi>y</mi><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi></math></td><td>konstant tilvækst</td><td><math><mi>y</mi></math> mod <math><mi>x</mi></math></td></tr>
+<tr><td>Eksponentiel</td><td><math><mi>y</mi><mo>=</mo><mi>b</mi><msup><mi>a</mi><mi>x</mi></msup></math></td><td>fast relativ vækst</td><td><math><mi>ln</mi><mspace width="0.2em"/><mi>y</mi></math> mod <math><mi>x</mi></math></td></tr>
+<tr><td>Potens</td><td><math><mi>y</mi><mo>=</mo><mi>b</mi><msup><mi>x</mi><mi>a</mi></msup></math></td><td>relativ vækst aftager med <math><mi>x</mi></math></td><td><math><mi>ln</mi><mspace width="0.2em"/><mi>y</mi></math> mod <math><mi>ln</mi><mspace width="0.2em"/><mi>x</mi></math></td></tr>
+<tr><td>Polynomium</td><td><math><mi>y</mi><mo>=</mo><msub><mi>a</mi><mi>n</mi></msub><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><mo>…</mo><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub></math></td><td>flere vendinger</td><td>ingen i almindelighed</td></tr>
+</table>
+
+<h2>Regressionsanalyse</h2>
+<p>Ved mindste kvadraters metode vælges parametrene, så summen af de kvadrerede afvigelser mellem de målte værdier <math><msub><mi>y</mi><mi>i</mi></msub></math> og modellens værdier <math><mi>f</mi><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>)</mo></math> bliver mindst mulig:</p>
+<div class="formula"><math><munder><mo>∑</mo><mi>i</mi></munder><msup><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><mi>f</mi><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>)</mo><mo>)</mo></mrow><mn>2</mn></msup><mspace width="0.5em"/><mtext>minimal</mtext></math></div>
+<p>Forklaringsgraden <math><msup><mi>r</mi><mn>2</mn></msup></math> angiver, hvor stor en del af variationen i data, modellen forklarer. <math><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></math> betyder perfekt tilpasning; <math><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn></math> betyder, at modellen ikke forklarer noget.</p>
+<div class="box note">
+  <span class="label">Rækkefølge</span>
+  <ol class="tight">
+    <li>Plot data, og vælg ud fra formen og faglig viden en eller få kandidatmodeller.</li>
+    <li>Lav regression, og notér parametrenes værdi og enhed.</li>
+    <li>Vurder residualerne: systematisk mønster betyder, at modellen er forkert.</li>
+    <li>Vurder <math><msup><mi>r</mi><mn>2</mn></msup></math> og modellens forudsigelser inden for datagrænserne.</li>
+  </ol>
+</div>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="74mm" height="46mm" viewBox="0 0 74 46" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<defs><clipPath id="clipd5870129"><rect x="11" y="3" width="59" height="32.9"/></clipPath></defs>
+<rect x="11" y="3" width="59" height="32.9" fill="none" stroke="#dde2e7" stroke-width="0.3"/>
+<line x1="24.11" y1="3" x2="24.11" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="37.22" y1="3" x2="37.22" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="50.33" y1="3" x2="50.33" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="63.44" y1="3" x2="63.44" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="29.32" x2="70" y2="29.32" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="22.74" x2="70" y2="22.74" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="16.16" x2="70" y2="16.16" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="9.58" x2="70" y2="9.58" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="3" x2="70" y2="3" stroke="#dde2e7" stroke-width="0.25"/>
+<path d="M 11 29.32 L 11.1 29.3 L 11.2 29.28 L 11.29 29.27 L 11.39 29.25 L 11.49 29.23 L 11.59 29.21 L 11.69 29.19 L 11.79 29.17 L 11.88 29.16 L 11.98 29.14 L 12.08 29.12 L 12.18 29.1 L 12.28 29.08 L 12.38 29.06 L 12.47 29.04 L 12.57 29.03 L 12.67 29.01 L 12.77 28.99 L 12.87 28.97 L 12.97 28.95 L 13.06 28.93 L 13.16 28.91 L 13.26 28.89 L 13.36 28.87 L 13.46 28.85 L 13.56 28.84 L 13.66 28.82 L 13.75 28.8 L 13.85 28.78 L 13.95 28.76 L 14.05 28.74 L 14.15 28.72 L 14.24 28.7 L 14.34 28.68 L 14.44 28.66 L 14.54 28.64 L 14.64 28.62 L 14.74 28.6 L 14.83 28.58 L 14.93 28.56 L 15.03 28.54 L 15.13 28.52 L 15.23 28.5 L 15.33 28.48 L 15.43 28.46 L 15.52 28.44 L 15.62 28.42 L 15.72 28.4 L 15.82 28.38 L 15.92 28.36 L 16.02 28.34 L 16.11 28.31 L 16.21 28.29 L 16.31 28.27 L 16.41 28.25 L 16.51 28.23 L 16.61 28.21 L 16.7 28.19 L 16.8 28.17 L 16.9 28.15 L 17 28.13 L 17.1 28.1 L 17.2 28.08 L 17.29 28.06 L 17.39 28.04 L 17.49 28.02 L 17.59 28 L 17.69 27.98 L 17.79 27.95 L 17.88 27.93 L 17.98 27.91 L 18.08 27.89 L 18.18 27.87 L 18.28 27.84 L 18.38 27.82 L 18.47 27.8 L 18.57 27.78 L 18.67 27.76 L 18.77 27.73 L 18.87 27.71 L 18.96 27.69 L 19.06 27.67 L 19.16 27.64 L 19.26 27.62 L 19.36 27.6 L 19.46 27.58 L 19.55 27.55 L 19.65 27.53 L 19.75 27.51 L 19.85 27.48 L 19.95 27.46 L 20.05 27.44 L 20.14 27.41 L 20.24 27.39 L 20.34 27.37 L 20.44 27.34 L 20.54 27.32 L 20.64 27.3 L 20.73 27.27 L 20.83 27.25 L 20.93 27.23 L 21.03 27.2 L 21.13 27.18 L 21.23 27.16 L 21.32 27.13 L 21.42 27.11 L 21.52 27.08 L 21.62 27.06 L 21.72 27.03 L 21.82 27.01 L 21.91 26.99 L 22.01 26.96 L 22.11 26.94 L 22.21 26.91 L 22.31 26.89 L 22.41 26.86 L 22.5 26.84 L 22.6 26.81 L 22.7 26.79 L 22.8 26.76 L 22.9 26.74 L 23 26.71 L 23.09 26.69 L 23.19 26.66 L 23.29 26.64 L 23.39 26.61 L 23.49 26.59 L 23.59 26.56 L 23.69 26.54 L 23.78 26.51 L 23.88 26.49 L 23.98 26.46 L 24.08 26.43 L 24.18 26.41 L 24.27 26.38 L 24.37 26.36 L 24.47 26.33 L 24.57 26.3 L 24.67 26.28 L 24.77 26.25 L 24.87 26.22 L 24.96 26.2 L 25.06 26.17 L 25.16 26.14 L 25.26 26.12 L 25.36 26.09 L 25.45 26.06 L 25.55 26.04 L 25.65 26.01 L 25.75 25.98 L 25.85 25.96 L 25.95 25.93 L 26.05 25.9 L 26.14 25.87 L 26.24 25.85 L 26.34 25.82 L 26.44 25.79 L 26.54 25.76 L 26.63 25.74 L 26.73 25.71 L 26.83 25.68 L 26.93 25.65 L 27.03 25.62 L 27.13 25.6 L 27.23 25.57 L 27.32 25.54 L 27.42 25.51 L 27.52 25.48 L 27.62 25.45 L 27.72 25.43 L 27.81 25.4 L 27.91 25.37 L 28.01 25.34 L 28.11 25.31 L 28.21 25.28 L 28.31 25.25 L 28.4 25.22 L 28.5 25.19 L 28.6 25.16 L 28.7 25.13 L 28.8 25.11 L 28.9 25.08 L 29 25.05 L 29.09 25.02 L 29.19 24.99 L 29.29 24.96 L 29.39 24.93 L 29.49 24.9 L 29.59 24.87 L 29.68 24.84 L 29.78 24.81 L 29.88 24.78 L 29.98 24.75 L 30.08 24.71 L 30.17 24.68 L 30.27 24.65 L 30.37 24.62 L 30.47 24.59 L 30.57 24.56 L 30.67 24.53 L 30.77 24.5 L 30.86 24.47 L 30.96 24.44 L 31.06 24.4 L 31.16 24.37 L 31.26 24.34 L 31.36 24.31 L 31.45 24.28 L 31.55 24.25 L 31.65 24.21 L 31.75 24.18 L 31.85 24.15 L 31.94 24.12 L 32.04 24.09 L 32.14 24.05 L 32.24 24.02 L 32.34 23.99 L 32.44 23.96 L 32.53 23.92 L 32.63 23.89 L 32.73 23.86 L 32.83 23.82 L 32.93 23.79 L 33.03 23.76 L 33.12 23.73 L 33.22 23.69 L 33.32 23.66 L 33.42 23.62 L 33.52 23.59 L 33.62 23.56 L 33.72 23.52 L 33.81 23.49 L 33.91 23.46 L 34.01 23.42 L 34.11 23.39 L 34.21 23.35 L 34.3 23.32 L 34.4 23.28 L 34.5 23.25 L 34.6 23.22 L 34.7 23.18 L 34.8 23.15 L 34.89 23.11 L 34.99 23.08 L 35.09 23.04 L 35.19 23.01 L 35.29 22.97 L 35.39 22.93 L 35.48 22.9 L 35.58 22.86 L 35.68 22.83 L 35.78 22.79 L 35.88 22.76 L 35.98 22.72 L 36.08 22.68 L 36.17 22.65 L 36.27 22.61 L 36.37 22.58 L 36.47 22.54 L 36.57 22.5 L 36.66 22.47 L 36.76 22.43 L 36.86 22.39 L 36.96 22.35 L 37.06 22.32 L 37.16 22.28 L 37.25 22.24 L 37.35 22.21 L 37.45 22.17 L 37.55 22.13 L 37.65 22.09 L 37.75 22.06 L 37.84 22.02 L 37.94 21.98 L 38.04 21.94 L 38.14 21.9 L 38.24 21.86 L 38.34 21.83 L 38.43 21.79 L 38.53 21.75 L 38.63 21.71 L 38.73 21.67 L 38.83 21.63 L 38.93 21.59 L 39.03 21.55 L 39.12 21.51 L 39.22 21.48 L 39.32 21.44 L 39.42 21.4 L 39.52 21.36 L 39.62 21.32 L 39.71 21.28 L 39.81 21.24 L 39.91 21.2 L 40.01 21.16 L 40.11 21.12 L 40.2 21.08 L 40.3 21.03 L 40.4 20.99 L 40.5 20.95 L 40.6 20.91 L 40.7 20.87 L 40.8 20.83 L 40.89 20.79 L 40.99 20.75 L 41.09 20.71 L 41.19 20.66 L 41.29 20.62 L 41.38 20.58 L 41.48 20.54 L 41.58 20.5 L 41.68 20.45 L 41.78 20.41 L 41.88 20.37 L 41.97 20.33 L 42.07 20.28 L 42.17 20.24 L 42.27 20.2 L 42.37 20.16 L 42.47 20.11 L 42.56 20.07 L 42.66 20.03 L 42.76 19.98 L 42.86 19.94 L 42.96 19.9 L 43.06 19.85 L 43.16 19.81 L 43.25 19.76 L 43.35 19.72 L 43.45 19.68 L 43.55 19.63 L 43.65 19.59 L 43.74 19.54 L 43.84 19.5 L 43.94 19.45 L 44.04 19.41 L 44.14 19.36 L 44.24 19.32 L 44.34 19.27 L 44.43 19.23 L 44.53 19.18 L 44.63 19.13 L 44.73 19.09 L 44.83 19.04 L 44.92 19 L 45.02 18.95 L 45.12 18.9 L 45.22 18.86 L 45.32 18.81 L 45.42 18.76 L 45.51 18.72 L 45.61 18.67 L 45.71 18.62 L 45.81 18.57 L 45.91 18.53 L 46.01 18.48 L 46.11 18.43 L 46.2 18.38 L 46.3 18.34 L 46.4 18.29 L 46.5 18.24 L 46.6 18.19 L 46.7 18.14 L 46.79 18.09 L 46.89 18.05 L 46.99 18 L 47.09 17.95 L 47.19 17.9 L 47.28 17.85 L 47.38 17.8 L 47.48 17.75 L 47.58 17.7 L 47.68 17.65 L 47.78 17.6 L 47.88 17.55 L 47.97 17.5 L 48.07 17.45 L 48.17 17.4 L 48.27 17.35 L 48.37 17.3 L 48.46 17.25 L 48.56 17.2 L 48.66 17.14 L 48.76 17.09 L 48.86 17.04 L 48.96 16.99 L 49.05 16.94 L 49.15 16.89 L 49.25 16.83 L 49.35 16.78 L 49.45 16.73 L 49.55 16.68 L 49.64 16.62 L 49.74 16.57 L 49.84 16.52 L 49.94 16.47 L 50.04 16.41 L 50.14 16.36 L 50.23 16.31 L 50.33 16.25 L 50.43 16.2 L 50.53 16.14 L 50.63 16.09 L 50.73 16.04 L 50.83 15.98 L 50.92 15.93 L 51.02 15.87 L 51.12 15.82 L 51.22 15.76 L 51.32 15.71 L 51.41 15.65 L 51.51 15.6 L 51.61 15.54 L 51.71 15.49 L 51.81 15.43 L 51.91 15.37 L 52 15.32 L 52.1 15.26 L 52.2 15.2 L 52.3 15.15 L 52.4 15.09 L 52.5 15.03 L 52.59 14.98 L 52.69 14.92 L 52.79 14.86 L 52.89 14.8 L 52.99 14.75 L 53.09 14.69 L 53.18 14.63 L 53.28 14.57 L 53.38 14.51 L 53.48 14.46 L 53.58 14.4 L 53.68 14.34 L 53.77 14.28 L 53.87 14.22 L 53.97 14.16 L 54.07 14.1 L 54.17 14.04 L 54.27 13.98 L 54.37 13.92 L 54.46 13.86 L 54.56 13.8 L 54.66 13.74 L 54.76 13.68 L 54.86 13.62 L 54.95 13.56 L 55.05 13.5 L 55.15 13.43 L 55.25 13.37 L 55.35 13.31 L 55.45 13.25 L 55.55 13.19 L 55.64 13.13 L 55.74 13.06 L 55.84 13 L 55.94 12.94 L 56.04 12.87 L 56.13 12.81 L 56.23 12.75 L 56.33 12.69 L 56.43 12.62 L 56.53 12.56 L 56.63 12.49 L 56.72 12.43 L 56.82 12.37 L 56.92 12.3 L 57.02 12.24 L 57.12 12.17 L 57.22 12.11 L 57.31 12.04 L 57.41 11.98 L 57.51 11.91 L 57.61 11.85 L 57.71 11.78 L 57.81 11.71 L 57.91 11.65 L 58 11.58 L 58.1 11.51 L 58.2 11.45 L 58.3 11.38 L 58.4 11.31 L 58.49 11.25 L 58.59 11.18 L 58.69 11.11 L 58.79 11.04 L 58.89 10.97 L 58.99 10.91 L 59.09 10.84 L 59.18 10.77 L 59.28 10.7 L 59.38 10.63 L 59.48 10.56 L 59.58 10.49 L 59.67 10.42 L 59.77 10.35 L 59.87 10.28 L 59.97 10.21 L 60.07 10.14 L 60.17 10.07 L 60.26 10 L 60.36 9.93 L 60.46 9.86 L 60.56 9.79 L 60.66 9.72 L 60.76 9.65 L 60.86 9.57 L 60.95 9.5 L 61.05 9.43 L 61.15 9.36 L 61.25 9.28 L 61.35 9.21 L 61.45 9.14 L 61.54 9.06 L 61.64 8.99 L 61.74 8.92 L 61.84 8.84 L 61.94 8.77 L 62.03 8.69 L 62.13 8.62 L 62.23 8.55 L 62.33 8.47 L 62.43 8.4 L 62.53 8.32 L 62.62 8.24 L 62.72 8.17 L 62.82 8.09 L 62.92 8.02 L 63.02 7.94 L 63.12 7.86 L 63.21 7.79 L 63.31 7.71 L 63.41 7.63 L 63.51 7.56 L 63.61 7.48 L 63.71 7.4 L 63.8 7.32 L 63.9 7.24 L 64 7.17 L 64.1 7.09 L 64.2 7.01 L 64.3 6.93 L 64.39 6.85 L 64.49 6.77 L 64.59 6.69 L 64.69 6.61 L 64.79 6.53 L 64.89 6.45 L 64.98 6.37 L 65.08 6.29 L 65.18 6.21 L 65.28 6.13 L 65.38 6.04 L 65.48 5.96 L 65.57 5.88 L 65.67 5.8 L 65.77 5.72 L 65.87 5.63 L 65.97 5.55 L 66.07 5.47 L 66.16 5.38 L 66.26 5.3 L 66.36 5.22 L 66.46 5.13 L 66.56 5.05 L 66.66 4.96 L 66.75 4.88 L 66.85 4.79 L 66.95 4.71 L 67.05 4.62 L 67.15 4.54 L 67.25 4.45 L 67.34 4.37 L 67.44 4.28 L 67.54 4.19 L 67.64 4.11 L 67.74 4.02 L 67.84 3.93 L 67.94 3.84 L 68.03 3.76 L 68.13 3.67 L 68.23 3.58 L 68.33 3.49 L 68.43 3.4 L 68.53 3.31 L 68.62 3.22 L 68.72 3.13 L 68.82 3.04 L 68.92 2.95 L 69.02 2.86 L 69.12 2.77 L 69.21 2.68 L 69.31 2.59 L 69.41 2.5 L 69.51 2.41 L 69.61 2.32 L 69.7 2.23 L 69.8 2.13 L 69.9 2.04 L 70 1.95" fill="none" stroke="#1c5f9e" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clipd5870129)"/>
+<line x1="11" y1="35.9" x2="11" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="11" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0</text>
+<line x1="24.11" y1="35.9" x2="24.11" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="24.11" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="37.22" y1="35.9" x2="37.22" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="37.22" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">4</text>
+<line x1="50.33" y1="35.9" x2="50.33" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="50.33" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">6</text>
+<line x1="63.44" y1="35.9" x2="63.44" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="63.44" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">8</text>
+<line x1="9.9" y1="35.9" x2="11" y2="35.9" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="9.9" y1="29.32" x2="11" y2="29.32" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="29.32" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">5</text>
+<line x1="9.9" y1="22.74" x2="11" y2="22.74" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="22.74" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">10</text>
+<line x1="9.9" y1="16.16" x2="11" y2="16.16" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="16.16" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">15</text>
+<line x1="9.9" y1="9.58" x2="11" y2="9.58" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="9.58" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">20</text>
+<line x1="9.9" y1="3" x2="11" y2="3" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="3" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">25</text>
+<circle cx="11" cy="29.32" r="0.85" fill="#1b1b1b" stroke="none"/>
+<circle cx="24.11" cy="26.42" r="0.85" fill="#1b1b1b" stroke="none"/>
+<circle cx="37.22" cy="22.21" r="0.85" fill="#1b1b1b" stroke="none"/>
+<circle cx="50.33" cy="16.16" r="0.85" fill="#1b1b1b" stroke="none"/>
+<circle cx="63.44" cy="7.47" r="0.85" fill="#1b1b1b" stroke="none"/>
+<text x="40.5" y="44.6" font-size="2.4" fill="#5b6470" text-anchor="middle">x / timer</text>
+<text x="2.6" y="19.45" font-size="2.4" fill="#5b6470" text-anchor="middle" transform="rotate(-90 2.6 19.45)">y / antal</text>
+</svg>
+<figcaption>Målte punkter og den eksponentielle model y = 5,0 · 1,20^x.</figcaption>
+</figure>
+
+<h2>Regneeksempel</h2>
+<div class="box rule">
+  <span class="label">Eksempel — eksponentiel regression</span>
+  <table class="compact">
+  <tr><th><math><mi>x</mi></math> / timer</th><td class="num">0</td><td class="num">2</td><td class="num">4</td><td class="num">6</td><td class="num">8</td></tr>
+  <tr><th><math><mi>y</mi></math> / antal</th><td class="num">5,0</td><td class="num">7,2</td><td class="num">10,4</td><td class="num">15,0</td><td class="num">21,6</td></tr>
+  </table>
+  <p>Regression med eksponentiel model giver</p>
+  <div class="formula"><math><mi>y</mi><mo>=</mo><mn>5,0</mn><mo>·</mo><msup><mn>1,20</mn><mi>x</mi></msup><mo>,</mo><mspace width="0.8em"/><msup><mi>r</mi><mn>2</mn></msup><mo>≈</mo><mn>1,00</mn></math></div>
+  <p class="where">Vækst 20&nbsp;% per time · fordoblingstid <math><mfrac><mrow><mi>ln</mi><mspace width="0.2em"/><mn>2</mn></mrow><mrow><mi>ln</mi><mspace width="0.2em"/><mn>1,20</mn></mrow></mfrac><mo>≈</mo><mn>3,8</mn></math> timer</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Ekstrapolation langt uden for dataområdet er usikker; modellen kan skifte adfærd uden for de målte værdier.</li>
+    <li>Høj <math><msup><mi>r</mi><mn>2</mn></msup></math> beviser ikke årsagssammenhæng, og en lav <math><msup><mi>r</mi><mn>2</mn></msup></math> kan skyldes et dårligt valgt <math><mi>x</mi></math>-interval.</li>
+    <li>En potensmodel kræver positive <math><mi>x</mi></math> og <math><mi>y</mi></math>; ellers kan lineæriseringen ikke bruges.</li>
+    <li>Parametrene skal have enheder og fortolkes i sammenhæng: <math><mi>b</mi></math> er startværdi i den eksponentielle model, men værdien i <math><mi>x</mi><mo>=</mo><mn>1</mn></math> i potensmodellen.</li>
+  </ul>
+</div>
+
+</body>
+</html>

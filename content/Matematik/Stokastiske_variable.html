@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Stokastiske variable</title>
+</head>
+<body>
+
+<h1>Stokastiske variable</h1>
+
+<h2>Definition</h2>
+<div class="box rule">
+  <span class="label">Stokastisk variabel</span>
+  <p>En stokastisk variabel <math><mi>X</mi></math> tildeler hvert udfald i udfaldsrummet en talværdi. Sandsynlighedsfordelingen angiver <math><mi>P</mi><mo>(</mo><mi>X</mi><mo>=</mo><mi>x</mi><mo>)</mo></math> for hver mulig værdi <math><mi>x</mi></math>.</p>
+  <p class="where">Summen af alle sandsynligheder er 1.</p>
+</div>
+<p>Diskrete variable har endeligt eller tælleligt mange værdier; kontinuerte variable kan antage alle værdier i et interval og beskrives ved en tæthedsfunktion.</p>
+
+<h2>Middelværdi og spredning</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Middelværdi</span>
+    <div class="formula"><math><mi>E</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>x</mi><mo>·</mo><mi>P</mi><mo>(</mo><mi>X</mi><mo>=</mo><mi>x</mi><mo>)</mo></math></div>
+    <p class="where">Det vægtede gennemsnit af værdierne.</p>
+  </div>
+  <div class="box">
+    <span class="label">Varians og spredning</span>
+    <div class="formula"><math><mi>Var</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><mi>E</mi><mo>(</mo><msup><mi>X</mi><mn>2</mn></msup><mo>)</mo><mo>−</mo><msup><mrow><mo>(</mo><mi>E</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>)</mo></mrow><mn>2</mn></msup></math></div>
+    <p class="where">Spredning <math><mi>σ</mi><mo>=</mo><msqrt><mrow><mi>Var</mi><mo>(</mo><mi>X</mi><mo>)</mo></mrow></msqrt></math> har samme enhed som <math><mi>X</mi></math>.</p>
+  </div>
+</div>
+
+<h2>Binomialfordelingen</h2>
+<div class="box">
+  <span class="label">X ~ Bin(n, p)</span>
+  <div class="formula"><math><mi>P</mi><mo>(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo>)</mo><mo>=</mo><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>k</mi><mo>)</mo><msup><mi>p</mi><mi>k</mi></msup><msup><mrow><mo>(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo>)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup><mo>,</mo><mspace width="0.8em"/><mi>k</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>…</mo><mo>,</mo><mi>n</mi></math></div>
+  <p class="where"><math><mi>E</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><mi>n</mi><mi>p</mi></math> · <math><mi>Var</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><mi>n</mi><mi>p</mi><mo>(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo>)</mo></math></p>
+</div>
+<p>Forudsætninger: <math><mi>n</mi></math> uafhængige forsøg, samme succesandsynlighed <math><mi>p</mi></math> i hvert forsøg, og præcis to udfald (succes/ikke-succes).</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="78mm" height="40mm" viewBox="0 0 78 40" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="8" y1="34" x2="74" y2="34" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/><polygon points="74,34 72.42,34.64 72.42,33.36" fill="#1b1b1b" stroke="none"/>
+<line x1="8" y1="36" x2="8" y2="6" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/><polygon points="8,6 8.64,7.58 7.36,7.58" fill="#1b1b1b" stroke="none"/>
+<rect x="9.7" y="33.75" width="4.6" height="0.25" rx="0" stroke="#1c5f9e" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="12" y="37.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">0</text>
+<rect x="15.7" y="33.22" width="4.6" height="0.78" rx="0" stroke="#1c5f9e" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="18" y="37.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">1</text>
+<rect x="21.7" y="30.48" width="4.6" height="3.52" rx="0" stroke="#1c5f9e" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="24" y="37.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">2</text>
+<rect x="27.7" y="24.62" width="4.6" height="9.38" rx="0" stroke="#1c5f9e" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="30" y="37.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">3</text>
+<rect x="33.7" y="17.59" width="4.6" height="16.41" rx="0" stroke="#1c5f9e" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="36" y="37.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">4</text>
+<rect x="39.7" y="14.31" width="4.6" height="19.69" rx="0" stroke="#1c5f9e" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="42" y="37.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">5</text>
+<rect x="45.7" y="17.59" width="4.6" height="16.41" rx="0" stroke="#1c5f9e" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="48" y="37.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">6</text>
+<rect x="51.7" y="24.62" width="4.6" height="9.38" rx="0" stroke="#1c5f9e" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="54" y="37.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">7</text>
+<rect x="57.7" y="30.48" width="4.6" height="3.52" rx="0" stroke="#1c5f9e" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="60" y="37.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">8</text>
+<rect x="63.7" y="33.22" width="4.6" height="0.78" rx="0" stroke="#1c5f9e" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="66" y="37.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">9</text>
+<rect x="69.7" y="33.75" width="4.6" height="0.25" rx="0" stroke="#1c5f9e" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="72" y="37.2" font-size="2.1" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">10</text>
+<text x="72" y="37.2" font-size="2.4" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">k</text>
+<text x="11" y="4.8" font-size="2.2" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle">P(X = k)</text>
+<text x="7" y="34.6" font-size="2" fill="#1b1b1b" text-anchor="end" font-weight="400" dominant-baseline="middle">0</text>
+<text x="7" y="26.6" font-size="2" fill="#1b1b1b" text-anchor="end" font-weight="400" dominant-baseline="middle">0,1</text>
+<text x="7" y="18.6" font-size="2" fill="#1b1b1b" text-anchor="end" font-weight="400" dominant-baseline="middle">0,2</text>
+</svg>
+<figcaption>X ~ Bin(10, 0,5). Søjlernes højde er P(X = k); fordelingen er symmetrisk omkring 5.</figcaption>
+</figure>
+
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — terning</span>
+  <p>En terning kastes én gang, og <math><mi>X</mi></math> er antal øjne. Alle værdier 1–6 har sandsynlighed <math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>.</p>
+  <div class="formula left">
+    <math><mi>E</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>6</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mn>3,5</mn><mo>,</mo><mspace width="1em"/><mi>Var</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><mfrac><mn>35</mn><mn>12</mn></mfrac><mo>≈</mo><mn>2,92</mn></math>
+  </div>
+  <p class="where">Middelværdien 3,5 er ikke et muligt udfald, men det langsigtede gennemsnit.</p>
+</div>
+<div class="box">
+  <span class="label">Eksempel — binomial</span>
+  <p>Ved 10 kast med en mønt, <math><mi>p</mi><mo>=</mo><mn>0,5</mn></math>: <math><mi>E</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><mn>5</mn></math> og <math><mi>σ</mi><mo>=</mo><msqrt><mrow><mn>10</mn><mo>·</mo><mn>0,5</mn><mo>·</mo><mn>0,5</mn></mrow></msqrt><mo>≈</mo><mn>1,58</mn></math>. Sandsynligheden for præcis 6 kroner er <math><mi>C</mi><mo>(</mo><mn>10</mn><mo>,</mo><mn>6</mn><mo>)</mo><msup><mn>0,5</mn><mn>10</mn></msup><mo>≈</mo><mn>0,205</mn></math>.</p>
+</div>
+
+<h2>Lineære transformationer</h2>
+<div class="box rule">
+  <span class="label">Regler</span>
+  <div class="formula"><math><mi>E</mi><mo>(</mo><mi>a</mi><mi>X</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>=</mo><mi>a</mi><mi>E</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>+</mo><mi>b</mi><mo>,</mo><mspace width="1em"/><mi>Var</mi><mo>(</mo><mi>a</mi><mi>X</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mi>Var</mi><mo>(</mo><mi>X</mi><mo>)</mo></math></div>
+  <p class="where">Spredningen ganges med <math><mo>|</mo><mi>a</mi><mo>|</mo></math>; en konstant forskydning ændrer ikke spredningen.</p>
+</div>
+<p>For terningen med <math><mi>E</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><mn>3,5</mn></math> og <math><mi>Var</mi><mo>(</mo><mi>X</mi><mo>)</mo><mo>=</mo><mfrac><mn>35</mn><mn>12</mn></mfrac></math> giver <math><mi>Y</mi><mo>=</mo><mn>2</mn><mi>X</mi><mo>+</mo><mn>1</mn></math>: <math><mi>E</mi><mo>(</mo><mi>Y</mi><mo>)</mo><mo>=</mo><mn>8</mn></math> og <math><mi>Var</mi><mo>(</mo><mi>Y</mi><mo>)</mo><mo>=</mo><mn>4</mn><mo>·</mo><mfrac><mn>35</mn><mn>12</mn></mfrac><mo>=</mo><mfrac><mn>35</mn><mn>3</mn></mfrac><mo>≈</mo><mn>11,67</mn></math>.</p>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Middelværdien er ikke den mest sandsynlige værdi og behøver ikke være et muligt udfald.</li>
+    <li>Variansen har enhed i anden; brug spredningen, når enheden skal matche data.</li>
+    <li>Binomialfordelingen kræver uafhængige forsøg med samme <math><mi>p</mi></math>; trækning uden tilbagelægning ændrer <math><mi>p</mi></math>.</li>
+    <li><math><mi>P</mi><mo>(</mo><mi>X</mi><mo>≥</mo><mi>k</mi><mo>)</mo></math> er ikke det samme som <math><mi>P</mi><mo>(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo>)</mo></math>; opsummer de relevante led eller brug komplementet.</li>
+  </ul>
+</div>
+
+</body>
+</html>

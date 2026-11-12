@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Rationelle funktioner</title>
+</head>
+<body>
+
+<h1>Rationelle funktioner</h1>
+
+<h2>Definition</h2>
+<div class="box rule">
+  <span class="label">Rational funktion</span>
+  <div class="formula"><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mi>Q</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mfrac></math></div>
+  <p class="where"><math><mi>P</mi></math> og <math><mi>Q</mi></math> er polynomier · <math><msub><mi>D</mi><mtext>m</mtext></msub><mo>=</mo><mo>{</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>|</mo><mi>Q</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>≠</mo><mn>0</mn><mo>}</mo></math></p>
+</div>
+<p>Nulpunkt: <math><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>0</mn></math>, forudsat at <math><mi>Q</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>≠</mo><mn>0</mn></math>. Definitionsmængden skal fastlægges først; alle senere forklaringer gælder kun på den.</p>
+
+<h2>Asymptoter</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Lodret asymptote</span>
+    <p>Ved <math><mi>x</mi><mo>=</mo><mi>a</mi></math>, når <math><mi>Q</mi><mo>(</mo><mi>a</mi><mo>)</mo><mo>=</mo><mn>0</mn></math> efter forkortning af fælles faktorer.</p>
+  </div>
+  <div class="box">
+    <span class="label">Vandret asymptote</span>
+    <p><math><mi>y</mi><mo>=</mo><mfrac><msub><mi>p</mi><mi>n</mi></msub><msub><mi>q</mi><mi>n</mi></msub></mfrac></math>, når <math><mi>P</mi></math> og <math><mi>Q</mi></math> har samme grad; <math><mi>y</mi><mo>=</mo><mn>0</mn></math>, når grad <math><mi>P</mi></math> er mindre end grad <math><mi>Q</mi></math>.</p>
+  </div>
+</div>
+<table class="compact">
+<caption>Sammenligning af grader</caption>
+<tr><th>Gradforhold</th><th>Adfærd for store <math><mo>|</mo><mi>x</mi><mo>|</mo></math></th></tr>
+<tr><td><math><mi>gr</mi><mspace width="0.15em"/><mi>P</mi><mo>&lt;</mo><mi>gr</mi><mspace width="0.15em"/><mi>Q</mi></math></td><td><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>→</mo><mn>0</mn></math>; vandret asymptote <math><mi>y</mi><mo>=</mo><mn>0</mn></math></td></tr>
+<tr><td><math><mi>gr</mi><mspace width="0.15em"/><mi>P</mi><mo>=</mo><mi>gr</mi><mspace width="0.15em"/><mi>Q</mi></math></td><td>vandret asymptote <math><mi>y</mi><mo>=</mo><mfrac><msub><mi>p</mi><mi>n</mi></msub><msub><mi>q</mi><mi>n</mi></msub></mfrac></math></td></tr>
+<tr><td><math><mi>gr</mi><mspace width="0.15em"/><mi>P</mi><mo>=</mo><mi>gr</mi><mspace width="0.15em"/><mi>Q</mi><mo>+</mo><mn>1</mn></math></td><td>skrå asymptote; findes ved polynomiumsdivision</td></tr>
+</table>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <p><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></math>.</p>
+  <ul class="tight">
+    <li><math><msub><mi>D</mi><mtext>m</mtext></msub><mo>=</mo><mi>ℝ</mi><mo>\</mo><mo>{</mo><mn>2</mn><mo>}</mo></math>; lodret asymptote <math><mi>x</mi><mo>=</mo><mn>2</mn></math>.</li>
+    <li>Nulpunkt <math><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></math>; <math><mi>f</mi><mo>(</mo><mn>0</mn><mo>)</mo><mo>=</mo><mo>−</mo><mn>0,5</mn></math>.</li>
+    <li>Samme grad i tæller og nævner: vandret asymptote <math><mi>y</mi><mo>=</mo><mn>1</mn></math>.</li>
+    <li>Fortegn: positiv for <math><mi>x</mi><mo>&lt;</mo><mo>−</mo><mn>1</mn></math>, negativ for <math><mo>−</mo><mn>1</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>2</mn></math>, positiv for <math><mi>x</mi><mo>&gt;</mo><mn>2</mn></math>.</li>
+  </ul>
+</div>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="76mm" height="46mm" viewBox="0 0 76 46" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<defs><clipPath id="clip7c6467a9"><rect x="11" y="3" width="61" height="32.9"/></clipPath></defs>
+<rect x="11" y="3" width="61" height="32.9" fill="none" stroke="#dde2e7" stroke-width="0.3"/>
+<line x1="11" y1="3" x2="11" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="21.17" y1="3" x2="21.17" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="41.5" y1="3" x2="41.5" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="51.67" y1="3" x2="51.67" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="61.83" y1="3" x2="61.83" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="72" y1="3" x2="72" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="35.9" x2="72" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="31.2" x2="72" y2="31.2" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="26.5" x2="72" y2="26.5" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="17.1" x2="72" y2="17.1" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="12.4" x2="72" y2="12.4" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="7.7" x2="72" y2="7.7" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="3" x2="72" y2="3" stroke="#dde2e7" stroke-width="0.25"/>
+<path d="M 11 20.62 L 11.1 20.63 L 11.2 20.63 L 11.3 20.64 L 11.41 20.64 L 11.51 20.64 L 11.61 20.65 L 11.71 20.65 L 11.81 20.66 L 11.92 20.66 L 12.02 20.67 L 12.12 20.67 L 12.22 20.67 L 12.32 20.68 L 12.42 20.68 L 12.52 20.69 L 12.63 20.69 L 12.73 20.7 L 12.83 20.7 L 12.93 20.7 L 13.03 20.71 L 13.13 20.71 L 13.24 20.72 L 13.34 20.72 L 13.44 20.73 L 13.54 20.73 L 13.64 20.74 L 13.75 20.74 L 13.85 20.75 L 13.95 20.75 L 14.05 20.76 L 14.15 20.76 L 14.25 20.77 L 14.36 20.77 L 14.46 20.78 L 14.56 20.78 L 14.66 20.79 L 14.76 20.79 L 14.86 20.8 L 14.97 20.8 L 15.07 20.81 L 15.17 20.81 L 15.27 20.82 L 15.37 20.82 L 15.47 20.83 L 15.57 20.83 L 15.68 20.84 L 15.78 20.84 L 15.88 20.85 L 15.98 20.85 L 16.08 20.86 L 16.18 20.87 L 16.29 20.87 L 16.39 20.88 L 16.49 20.88 L 16.59 20.89 L 16.69 20.89 L 16.79 20.9 L 16.9 20.91 L 17 20.91 L 17.1 20.92 L 17.2 20.92 L 17.3 20.93 L 17.4 20.94 L 17.51 20.94 L 17.61 20.95 L 17.71 20.96 L 17.81 20.96 L 17.91 20.97 L 18.02 20.98 L 18.12 20.98 L 18.22 20.99 L 18.32 21 L 18.42 21 L 18.52 21.01 L 18.62 21.02 L 18.73 21.02 L 18.83 21.03 L 18.93 21.04 L 19.03 21.05 L 19.13 21.05 L 19.23 21.06 L 19.34 21.07 L 19.44 21.07 L 19.54 21.08 L 19.64 21.09 L 19.74 21.1 L 19.84 21.1 L 19.95 21.11 L 20.05 21.12 L 20.15 21.13 L 20.25 21.14 L 20.35 21.14 L 20.46 21.15 L 20.56 21.16 L 20.66 21.17 L 20.76 21.18 L 20.86 21.19 L 20.96 21.2 L 21.06 21.2 L 21.17 21.21 L 21.27 21.22 L 21.37 21.23 L 21.47 21.24 L 21.57 21.25 L 21.68 21.26 L 21.78 21.27 L 21.88 21.28 L 21.98 21.29 L 22.08 21.3 L 22.18 21.31 L 22.29 21.32 L 22.39 21.33 L 22.49 21.34 L 22.59 21.35 L 22.69 21.36 L 22.79 21.37 L 22.89 21.38 L 23 21.39 L 23.1 21.4 L 23.2 21.41 L 23.3 21.42 L 23.4 21.43 L 23.5 21.44 L 23.61 21.45 L 23.71 21.46 L 23.81 21.48 L 23.91 21.49 L 24.01 21.5 L 24.12 21.51 L 24.22 21.52 L 24.32 21.54 L 24.42 21.55 L 24.52 21.56 L 24.62 21.57 L 24.73 21.59 L 24.83 21.6 L 24.93 21.61 L 25.03 21.63 L 25.13 21.64 L 25.23 21.65 L 25.34 21.67 L 25.44 21.68 L 25.54 21.7 L 25.64 21.71 L 25.74 21.72 L 25.84 21.74 L 25.95 21.75 L 26.05 21.77 L 26.15 21.78 L 26.25 21.8 L 26.35 21.82 L 26.45 21.83 L 26.55 21.85 L 26.66 21.86 L 26.76 21.88 L 26.86 21.9 L 26.96 21.92 L 27.06 21.93 L 27.16 21.95 L 27.27 21.97 L 27.37 21.99 L 27.47 22 L 27.57 22.02 L 27.67 22.04 L 27.77 22.06 L 27.88 22.08 L 27.98 22.1 L 28.08 22.12 L 28.18 22.14 L 28.28 22.16 L 28.38 22.18 L 28.49 22.2 L 28.59 22.23 L 28.69 22.25 L 28.79 22.27 L 28.89 22.29 L 28.99 22.32 L 29.1 22.34 L 29.2 22.36 L 29.3 22.39 L 29.4 22.41 L 29.5 22.44 L 29.61 22.46 L 29.71 22.49 L 29.81 22.52 L 29.91 22.54 L 30.01 22.57 L 30.11 22.6 L 30.21 22.63 L 30.32 22.65 L 30.42 22.68 L 30.52 22.71 L 30.62 22.74 L 30.72 22.78 L 30.82 22.81 L 30.93 22.84 L 31.03 22.87 L 31.13 22.91 L 31.23 22.94 L 31.33 22.98 L 31.43 23.01 L 31.54 23.05 L 31.64 23.08 L 31.74 23.12 L 31.84 23.16 L 31.94 23.2 L 32.05 23.24 L 32.15 23.28 L 32.25 23.32 L 32.35 23.37 L 32.45 23.41 L 32.55 23.46 L 32.66 23.5 L 32.76 23.55 L 32.86 23.6 L 32.96 23.65 L 33.06 23.7 L 33.16 23.75 L 33.27 23.8 L 33.37 23.86 L 33.47 23.91 L 33.57 23.97 L 33.67 24.03 L 33.77 24.09 L 33.88 24.15 L 33.98 24.21 L 34.08 24.28 L 34.18 24.35 L 34.28 24.41 L 34.38 24.49 L 34.48 24.56 L 34.59 24.63 L 34.69 24.71 L 34.79 24.79 L 34.89 24.87 L 34.99 24.96 L 35.09 25.05 L 35.2 25.14 L 35.3 25.23 L 35.4 25.32 L 35.5 25.42 L 35.6 25.53 L 35.7 25.63 L 35.81 25.74 L 35.91 25.86 L 36.01 25.98 L 36.11 26.1 L 36.21 26.23 L 36.31 26.36 L 36.42 26.5 L 36.52 26.64 L 36.62 26.79 L 36.72 26.95 L 36.82 27.11 L 36.92 27.28 L 37.03 27.46 L 37.13 27.65 L 37.23 27.84 L 37.33 28.05 L 37.43 28.26 L 37.53 28.49 L 37.64 28.73 L 37.74 28.98 L 37.84 29.24 L 37.94 29.52 L 38.04 29.82 L 38.14 30.13 L 38.25 30.47 L 38.35 30.82 L 38.45 31.2 L 38.55 31.61 L 38.65 32.04 L 38.75 32.51 L 38.86 33.01 L 38.96 33.55 L 39.06 34.14 L 39.16 34.78 L 39.26 35.47 L 39.36 36.24 L 39.47 37.07 L 39.57 38 L 39.67 39.03 L 39.77 40.19 L 39.87 41.48 L 39.97 42.95 L 40.08 44.63 L 40.18 46.57 L 40.28 48.82 L 40.38 51.5 L 40.48 54.7 L 40.59 58.62 L 40.69 63.51 L 40.79 69.81 L 40.89 78.2 L 40.99 89.95 L 41.09 107.57" fill="none" stroke="#1c5f9e" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clip7c6467a9)"/>
+<path d="M 41.91 -68.67 L 42.01 -51.05 L 42.11 -39.3 L 42.21 -30.91 L 42.31 -24.61 L 42.41 -19.72 L 42.52 -15.8 L 42.62 -12.6 L 42.72 -9.92 L 42.82 -7.67 L 42.92 -5.73 L 43.02 -4.05 L 43.13 -2.58 L 43.23 -1.29 L 43.33 -0.13 L 43.43 0.9 L 43.53 1.83 L 43.63 2.66 L 43.74 3.43 L 43.84 4.12 L 43.94 4.76 L 44.04 5.35 L 44.14 5.89 L 44.24 6.39 L 44.35 6.86 L 44.45 7.29 L 44.55 7.7 L 44.65 8.08 L 44.75 8.43 L 44.85 8.77 L 44.96 9.08 L 45.06 9.38 L 45.16 9.66 L 45.26 9.92 L 45.36 10.17 L 45.46 10.41 L 45.57 10.64 L 45.67 10.85 L 45.77 11.06 L 45.87 11.25 L 45.97 11.44 L 46.08 11.62 L 46.18 11.79 L 46.28 11.95 L 46.38 12.11 L 46.48 12.26 L 46.58 12.4 L 46.68 12.54 L 46.79 12.67 L 46.89 12.8 L 46.99 12.92 L 47.09 13.04 L 47.19 13.16 L 47.29 13.27 L 47.4 13.37 L 47.5 13.48 L 47.6 13.58 L 47.7 13.67 L 47.8 13.76 L 47.9 13.85 L 48.01 13.94 L 48.11 14.03 L 48.21 14.11 L 48.31 14.19 L 48.41 14.27 L 48.52 14.34 L 48.62 14.41 L 48.72 14.49 L 48.82 14.55 L 48.92 14.62 L 49.02 14.69 L 49.12 14.75 L 49.23 14.81 L 49.33 14.87 L 49.43 14.93 L 49.53 14.99 L 49.63 15.04 L 49.73 15.1 L 49.84 15.15 L 49.94 15.2 L 50.04 15.25 L 50.14 15.3 L 50.24 15.35 L 50.34 15.4 L 50.45 15.44 L 50.55 15.49 L 50.65 15.53 L 50.75 15.58 L 50.85 15.62 L 50.95 15.66 L 51.06 15.7 L 51.16 15.74 L 51.26 15.78 L 51.36 15.82 L 51.46 15.85 L 51.56 15.89 L 51.67 15.93 L 51.77 15.96 L 51.87 15.99 L 51.97 16.03 L 52.07 16.06 L 52.17 16.09 L 52.28 16.12 L 52.38 16.16 L 52.48 16.19 L 52.58 16.22 L 52.68 16.25 L 52.79 16.27 L 52.89 16.3 L 52.99 16.33 L 53.09 16.36 L 53.19 16.38 L 53.29 16.41 L 53.39 16.44 L 53.5 16.46 L 53.6 16.49 L 53.7 16.51 L 53.8 16.54 L 53.9 16.56 L 54.01 16.58 L 54.11 16.61 L 54.21 16.63 L 54.31 16.65 L 54.41 16.67 L 54.51 16.7 L 54.61 16.72 L 54.72 16.74 L 54.82 16.76 L 54.92 16.78 L 55.02 16.8 L 55.12 16.82 L 55.22 16.84 L 55.33 16.86 L 55.43 16.88 L 55.53 16.9 L 55.63 16.91 L 55.73 16.93 L 55.84 16.95 L 55.94 16.97 L 56.04 16.98 L 56.14 17 L 56.24 17.02 L 56.34 17.04 L 56.44 17.05 L 56.55 17.07 L 56.65 17.08 L 56.75 17.1 L 56.85 17.12 L 56.95 17.13 L 57.05 17.15 L 57.16 17.16 L 57.26 17.18 L 57.36 17.19 L 57.46 17.2 L 57.56 17.22 L 57.66 17.23 L 57.77 17.25 L 57.87 17.26 L 57.97 17.27 L 58.07 17.29 L 58.17 17.3 L 58.27 17.31 L 58.38 17.33 L 58.48 17.34 L 58.58 17.35 L 58.68 17.36 L 58.78 17.38 L 58.88 17.39 L 58.99 17.4 L 59.09 17.41 L 59.19 17.42 L 59.29 17.44 L 59.39 17.45 L 59.49 17.46 L 59.6 17.47 L 59.7 17.48 L 59.8 17.49 L 59.9 17.5 L 60 17.51 L 60.1 17.52 L 60.21 17.53 L 60.31 17.54 L 60.41 17.55 L 60.51 17.56 L 60.61 17.57 L 60.71 17.58 L 60.82 17.59 L 60.92 17.6 L 61.02 17.61 L 61.12 17.62 L 61.22 17.63 L 61.32 17.64 L 61.43 17.65 L 61.53 17.66 L 61.63 17.67 L 61.73 17.68 L 61.83 17.69 L 61.93 17.7 L 62.04 17.7 L 62.14 17.71 L 62.24 17.72 L 62.34 17.73 L 62.44 17.74 L 62.55 17.75 L 62.65 17.76 L 62.75 17.76 L 62.85 17.77 L 62.95 17.78 L 63.05 17.79 L 63.15 17.8 L 63.26 17.8 L 63.36 17.81 L 63.46 17.82 L 63.56 17.83 L 63.66 17.83 L 63.77 17.84 L 63.87 17.85 L 63.97 17.85 L 64.07 17.86 L 64.17 17.87 L 64.27 17.88 L 64.38 17.88 L 64.48 17.89 L 64.58 17.9 L 64.68 17.9 L 64.78 17.91 L 64.88 17.92 L 64.98 17.92 L 65.09 17.93 L 65.19 17.94 L 65.29 17.94 L 65.39 17.95 L 65.49 17.96 L 65.59 17.96 L 65.7 17.97 L 65.8 17.98 L 65.9 17.98 L 66 17.99 L 66.1 17.99 L 66.2 18 L 66.31 18.01 L 66.41 18.01 L 66.51 18.02 L 66.61 18.02 L 66.71 18.03 L 66.81 18.03 L 66.92 18.04 L 67.02 18.05 L 67.12 18.05 L 67.22 18.06 L 67.32 18.06 L 67.42 18.07 L 67.53 18.07 L 67.63 18.08 L 67.73 18.08 L 67.83 18.09 L 67.93 18.09 L 68.03 18.1 L 68.14 18.1 L 68.24 18.11 L 68.34 18.11 L 68.44 18.12 L 68.54 18.12 L 68.64 18.13 L 68.75 18.13 L 68.85 18.14 L 68.95 18.14 L 69.05 18.15 L 69.15 18.15 L 69.25 18.16 L 69.36 18.16 L 69.46 18.17 L 69.56 18.17 L 69.66 18.18 L 69.76 18.18 L 69.86 18.19 L 69.97 18.19 L 70.07 18.2 L 70.17 18.2 L 70.27 18.2 L 70.37 18.21 L 70.47 18.21 L 70.58 18.22 L 70.68 18.22 L 70.78 18.23 L 70.88 18.23 L 70.98 18.23 L 71.09 18.24 L 71.19 18.24 L 71.29 18.25 L 71.39 18.25 L 71.49 18.26 L 71.59 18.26 L 71.69 18.26 L 71.8 18.27 L 71.9 18.27 L 72 18.27" fill="none" stroke="#1c5f9e" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clip7c6467a9)"/>
+<line x1="41.5" y1="3" x2="41.5" y2="35.9" stroke="#8f98a2" stroke-width="0.4" stroke-dasharray="1.2 1.1"/>
+<line x1="11" y1="19.45" x2="72" y2="19.45" stroke="#8f98a2" stroke-width="0.4" stroke-dasharray="1.2 1.1"/>
+<line x1="11" y1="21.8" x2="72" y2="21.8" stroke="#1b1b1b" stroke-width="0.45"/>
+<polygon points="72,21.8 70.52,22.4 70.52,21.2" fill="#1b1b1b" stroke="none"/>
+<line x1="11" y1="21.8" x2="11" y2="22.9" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="11" y="25.8" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-4</text>
+<line x1="21.17" y1="21.8" x2="21.17" y2="22.9" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="21.17" y="25.8" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-2</text>
+<line x1="31.33" y1="21.8" x2="31.33" y2="22.9" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="41.5" y1="21.8" x2="41.5" y2="22.9" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="41.5" y="25.8" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="51.67" y1="21.8" x2="51.67" y2="22.9" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="51.67" y="25.8" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">4</text>
+<line x1="61.83" y1="21.8" x2="61.83" y2="22.9" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="61.83" y="25.8" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">6</text>
+<line x1="72" y1="21.8" x2="72" y2="22.9" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="72" y="25.8" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">8</text>
+<line x1="31.33" y1="35.9" x2="31.33" y2="3" stroke="#1b1b1b" stroke-width="0.45"/>
+<polygon points="31.33,3 31.93,4.48 30.73,4.48" fill="#1b1b1b" stroke="none"/>
+<line x1="30.23" y1="35.9" x2="31.33" y2="35.9" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="29.53" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-6</text>
+<line x1="30.23" y1="31.2" x2="31.33" y2="31.2" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="29.53" y="31.2" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-4</text>
+<line x1="30.23" y1="26.5" x2="31.33" y2="26.5" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="29.53" y="26.5" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-2</text>
+<line x1="30.23" y1="21.8" x2="31.33" y2="21.8" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="30.23" y1="17.1" x2="31.33" y2="17.1" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="29.53" y="17.1" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="30.23" y1="12.4" x2="31.33" y2="12.4" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="29.53" y="12.4" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">4</text>
+<line x1="30.23" y1="7.7" x2="31.33" y2="7.7" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="29.53" y="7.7" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">6</text>
+<line x1="30.23" y1="3" x2="31.33" y2="3" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="29.53" y="3" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">8</text>
+<text x="41.5" y="44.6" font-size="2.4" fill="#5b6470" text-anchor="middle">x</text>
+<text x="2.6" y="19.45" font-size="2.4" fill="#5b6470" text-anchor="middle" transform="rotate(-90 2.6 19.45)">f(x)</text>
+</svg>
+<figcaption>f(x) = (x + 1)/(x − 2): lodret asymptote x = 2 og vandret asymptote y = 1.</figcaption>
+</figure>
+
+<h2>Hul i grafen</h2>
+<p>Forkortes en fælles faktor, forsvinder en lodret asymptote, men punktet er stadig udelukket:</p>
+<div class="formula"><math><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>,</mo><mspace width="0.8em"/><mi>x</mi><mo>≠</mo><mn>1</mn></math></div>
+<p>Grafen er linjen <math><mi>y</mi><mo>=</mo><mi>x</mi><mo>+</mo><mn>1</mn></math> med et hul i <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>. Der er ingen lodret asymptote, fordi nævneren kun er 0 i det udelukkede punkt.</p>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Der forkortes, før asymptoterne bestemmes; ellers får man en lodret asymptote, hvor der i virkeligheden er et hul.</li>
+    <li>Definitionsmængden udvides ved forkortning: <math><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></math> er ikke defineret i <math><mi>x</mi><mo>=</mo><mn>1</mn></math>, selv om udtrykket forkortes til <math><mi>x</mi><mo>+</mo><mn>1</mn></math>.</li>
+    <li>En vandret asymptote er en grænseværdi for <math><mi>x</mi><mo>→</mo><mo>±</mo><mo>∞</mo></math>, ikke en værdi grafen nødvendigvis antager.</li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Analytisk plangeometri</title>
+</head>
+<body>
+
+<h1>Analytisk plangeometri</h1>
+
+<h2>Linjens ligning</h2>
+<div class="box rule">
+  <span class="label">Linje</span>
+  <div class="formula"><math><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></math></div>
+  <p class="where">Normalvektor <math><mover accent="true"><mi>n</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></math> · retningsvektor <math><mover accent="true"><mi>r</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><mo>−</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo>)</mo></math></p>
+</div>
+<p>Normalvektoren står vinkelret på linjen; retningsvektoren er parallel med den. Linjen gennem <math><mo>(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo>)</mo></math> med normalvektor <math><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></math>:</p>
+<div class="formula"><math><mi>a</mi><mo>(</mo><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub><mo>)</mo><mo>+</mo><mi>b</mi><mo>(</mo><mi>y</mi><mo>−</mo><msub><mi>y</mi><mn>0</mn></msub><mo>)</mo><mo>=</mo><mn>0</mn></math></div>
+<p>To linjer er parallelle, når normalvektorerne er parallelle, og vinkelrette, når <math><msub><mi>a</mi><mn>1</mn></msub><msub><mi>a</mi><mn>2</mn></msub><mo>+</mo><msub><mi>b</mi><mn>1</mn></msub><msub><mi>b</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn></math>.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="64mm" height="40mm" viewBox="0 0 64 40" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="6" y1="30" x2="58" y2="30" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="30" y1="30" x2="30" y2="10" stroke="#b3402a" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="30,10 30.64,11.58 29.36,11.58" fill="#b3402a" stroke="none"/>
+<line x1="38" y1="30" x2="50" y2="30" stroke="#1c5f9e" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="50,30 48.42,30.64 48.42,29.36" fill="#1c5f9e" stroke="none"/>
+<rect x="30" y="27" width="3" height="3" rx="0" stroke="#1b1b1b" fill="none" stroke-width="0.25" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="30" cy="30" r="0.9" fill="#1b1b1b" stroke="none"/>
+<text x="31.8" y="13" font-size="3" fill="#b3402a" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">n</text>
+<text x="45" y="27" font-size="3" fill="#1c5f9e" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">r</text>
+<text x="28" y="34.5" font-size="2.6" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">P</text>
+</svg>
+<figcaption>Linjen har retningsvektor r; normalvektoren n står vinkelret på linjen.</figcaption>
+</figure>
+
+<h2>Afstand og cirkler</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Afstand fra punkt til linje</span>
+    <div class="formula"><math><mi>d</mi><mo>=</mo><mfrac><mrow><mo>|</mo><mi>a</mi><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mi>b</mi><msub><mi>y</mi><mn>0</mn></msub><mo>+</mo><mi>c</mi><mo>|</mo></mrow><mrow><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></math></div>
+    <p class="where">Afstanden måles vinkelret på linjen.</p>
+  </div>
+  <div class="box">
+    <span class="label">Cirkel</span>
+    <div class="formula"><math><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mi>y</mi><mo>−</mo><msub><mi>y</mi><mn>0</mn></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></math></div>
+    <p class="where">Centrum <math><mo>(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo>)</mo></math>, radius <math><mi>r</mi></math>.</p>
+  </div>
+</div>
+<p>Skæring mellem linje og cirkel findes ved at isolere <math><mi>y</mi></math> (eller <math><mi>x</mi></math>) i linjens ligning og indsætte i cirklens. Antallet af løsninger afgør, om linjen er sekant, tangent eller går uden om cirklen.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — linje gennem to punkter</span>
+  <p>Gennem <math><mi>A</mi><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math> og <math><mi>B</mi><mo>(</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>)</mo></math>.</p>
+  <div class="formula left">
+    <math><mover accent="true"><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover><mo>=</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>)</mo><mspace width="0.4em"/><mo>⇒</mo><mspace width="0.4em"/><mover accent="true"><mi>n</mi><mo>→</mo></mover><mo>=</mo><mo>(</mo><mn>4</mn><mo>,</mo><mo>−</mo><mn>2</mn><mo>)</mo><mo>∼</mo><mo>(</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo>)</mo></math><br>
+    <math><mn>2</mn><mo>(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>−</mo><mo>(</mo><mi>y</mi><mo>−</mo><mn>2</mn><mo>)</mo><mo>=</mo><mn>0</mn><mo>⇔</mo><mn>2</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>0</mn></math>
+  </div>
+  <p class="where">Afstanden fra <math><mo>(</mo><mn>5</mn><mo>,</mo><mn>5</mn><mo>)</mo></math> til linjen: <math><mfrac><mrow><mo>|</mo><mn>10</mn><mo>−</mo><mn>5</mn><mo>|</mo></mrow><msqrt><mn>5</mn></msqrt></mfrac><mo>=</mo><msqrt><mn>5</mn></msqrt><mo>≈</mo><mn>2,24</mn></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Normalvektor og retningsvektor byttes: <math><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>)</mo></math> er normal til <math><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></math>.</li>
+    <li>I cirklens ligning er radius kvadreret: <math><msup><mi>r</mi><mn>2</mn></msup></math> står til højre, ikke <math><mi>r</mi></math>.</li>
+    <li>Afstandsformlen kræver linjens ligning på formen <math><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></math>; flyt alt over på venstre side.</li>
+    <li>En linje med positiv hældning har negativ normalvektor i y-koordinaten; fortegnene skal passe sammen med ligningen.</li>
+  </ul>
+</div>
+
+</body>
+</html>

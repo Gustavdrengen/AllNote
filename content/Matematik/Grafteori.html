@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Grafteori</title>
+</head>
+<body>
+
+<h1>Grafteori</h1>
+
+<h2>Grundbegreber</h2>
+<div class="box rule">
+  <span class="label">Graf</span>
+  <p>En graf består af knuder (vertices) og kanter (edges), der forbinder par af knuder. En graf er <strong>simpel</strong>, når der højst er én kant mellem to knuder og ingen løkker.</p>
+  <p class="where">Knudens <strong>grad</strong> er antallet af kanter, der mødes i den. En <strong>sti</strong> er en følge af forbundne kanter; en <strong>cyklus</strong> er en sti, der starter og slutter samme sted.</p>
+</div>
+<p>En graf er <strong>sammenhængende</strong>, når der findes en sti mellem enhver to knuder. Et <strong>træ</strong> er en sammenhængende graf uden cykler; et træ med <math><mi>n</mi></math> knuder har netop <math><mi>n</mi><mo>−</mo><mn>1</mn></math> kanter.</p>
+
+<h2>Kanter og grader</h2>
+<div class="box">
+  <span class="label">Håndtrykslemmaet</span>
+  <div class="formula"><math><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mi>V</mi></mrow></munder><mi>deg</mi><mo>(</mo><mi>v</mi><mo>)</mo><mo>=</mo><mn>2</mn><mo>·</mo><mo>|</mo><mi>E</mi><mo>|</mo></math></div>
+  <p class="where">Summen af alle graders lige tal; antallet af knuder med ulige grad er derfor lige.</p>
+</div>
+<p>Den komplette graf <math><msub><mi>K</mi><mi>n</mi></msub></math> har en kant mellem hvert par af knuder. Antallet af kanter er</p>
+<div class="formula"><math><mo>|</mo><mi>E</mi><mo>|</mo><mo>=</mo><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mn>2</mn><mo>)</mo><mo>=</mo><mfrac><mrow><mi>n</mi><mo>(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></mfrac></math></div>
+
+<h2>Euler- og Hamiltonveje</h2>
+<table class="compact">
+<caption>Veje der bruger alle kanter eller alle knuder</caption>
+<tr><th>Begreb</th><th>Krav</th><th>Eksistens</th></tr>
+<tr><td>Eulervej</td><td>bruger hver kant præcis én gang</td><td>0 eller 2 knuder med ulige grad</td></tr>
+<tr><td>Eulerkredsløb</td><td>Eulervej, der slutter ved startknuden</td><td>alle knuder har lige grad, og grafen er sammenhængende</td></tr>
+<tr><td>Hamiltonvej</td><td>besøger hver knude præcis én gang</td><td>ingen simpel nødvendig og tilstrækkelig betingelse</td></tr>
+</table>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="64mm" height="40mm" viewBox="0 0 64 40" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="12" y1="30" x2="30" y2="12" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="30" y1="12" x2="52" y2="18" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="52" y1="18" x2="44" y2="35" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="44" y1="35" x2="18" y2="34" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="18" y1="34" x2="12" y2="30" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="30" y1="12" x2="18" y2="34" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="12" cy="30" r="3.2" stroke="#1b1b1b" fill="#ffffff" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="30" cy="12" r="3.2" stroke="#1b1b1b" fill="#ffffff" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="52" cy="18" r="3.2" stroke="#1b1b1b" fill="#ffffff" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="44" cy="35" r="3.2" stroke="#1b1b1b" fill="#ffffff" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="18" cy="34" r="3.2" stroke="#1b1b1b" fill="#ffffff" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="12" y="30.8" font-size="2.4" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">1</text>
+<text x="30" y="12.8" font-size="2.4" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">2</text>
+<text x="52" y="18.8" font-size="2.4" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">3</text>
+<text x="44" y="35.8" font-size="2.4" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">4</text>
+<text x="18" y="34.8" font-size="2.4" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">5</text>
+</svg>
+<figcaption>Graf med fem knuder og seks kanter; knuderne 2 og 4 har grad 3.</figcaption>
+</figure>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — K₅</span>
+  <p>Den komplette graf med 5 knuder har <math><mi>C</mi><mo>(</mo><mn>5</mn><mo>,</mo><mn>2</mn><mo>)</mo><mo>=</mo><mn>10</mn></math> kanter. Hver knude er forbundet med de fire andre, så alle grader er 4.</p>
+  <div class="formula left">
+    <math><munder><mo>∑</mo><mi>v</mi></munder><mi>deg</mi><mo>(</mo><mi>v</mi><mo>)</mo><mo>=</mo><mn>5</mn><mo>·</mo><mn>4</mn><mo>=</mo><mn>20</mn><mo>=</mo><mn>2</mn><mo>·</mo><mn>10</mn></math>
+  </div>
+  <p class="where">Alle grader er lige, og grafen er sammenhængende; der findes et Eulerkredsløb. Der findes også en Hamiltoncyklus, da man kan besøge alle fem knuder og vende tilbage.</p>
+</div>
+<div class="box">
+  <span class="label">Eksempel — træ</span>
+  <p>Et træ med 8 knuder har <math><mn>8</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>7</mn></math> kanter. Tilføjes en kant mere, opstår der en cyklus; fjernes en kant, bliver grafen ikke sammenhængende.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Eulervej og Hamiltonvej forveksles: den første handler om kanter, den anden om knuder.</li>
+    <li>Et træ med <math><mi>n</mi></math> knuder har <math><mi>n</mi><mo>−</mo><mn>1</mn></math> kanter — ikke <math><mi>n</mi></math>.</li>
+    <li>Ved Eulerkredsløb skal <em>alle</em> knuder have lige grad, og grafen skal være sammenhængende.</li>
+    <li>En tegning af en graf er ikke entydig; knudernes placering betyder intet, kun forbindelserne.</li>
+  </ul>
+</div>
+
+</body>
+</html>

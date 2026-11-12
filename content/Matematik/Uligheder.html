@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Uligheder</title>
+</head>
+<body>
+
+<h1>Uligheder</h1>
+
+<h2>Regler</h2>
+<div class="box rule">
+  <span class="label">Ækvivalente operationer</span>
+  <ul class="tight">
+    <li>Addition og subtraktion bevarer ulighedstegnet.</li>
+    <li>Multiplikation og division med et <strong>positivt</strong> tal bevarer tegnet.</li>
+    <li>Multiplikation og division med et <strong>negativt</strong> tal <strong>vender</strong> tegnet: <math><mi>a</mi><mo>&lt;</mo><mi>b</mi><mo>⇔</mo><mo>−</mo><mi>a</mi><mo>&gt;</mo><mo>−</mo><mi>b</mi></math>.</li>
+    <li>Omvendte tal vender tegnet, når begge er positive eller begge negative: <math><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mi>b</mi><mo>⇔</mo><mfrac><mn>1</mn><mi>a</mi></mfrac><mo>&gt;</mo><mfrac><mn>1</mn><mi>b</mi></mfrac></math>.</li>
+  </ul>
+</div>
+
+<h2>Intervaller</h2>
+<table class="compact">
+<caption>Notation for løsningsmængder</caption>
+<tr><th>Ulighed</th><th>Interval</th><th>Betydning</th></tr>
+<tr><td><math><mi>a</mi><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mi>b</mi></math></td><td><math><mo>]</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>[</mo></math></td><td>åbent interval, endepunkterne medregnes ikke</td></tr>
+<tr><td><math><mi>a</mi><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>b</mi></math></td><td><math><mo>[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>]</mo></math></td><td>lukket interval</td></tr>
+<tr><td><math><mi>x</mi><mo>&gt;</mo><mi>a</mi></math></td><td><math><mo>]</mo><mi>a</mi><mo>,</mo><mo>∞</mo><mo>[</mo></math></td><td>alle tal større end <math><mi>a</mi></math></td></tr>
+<tr><td><math><mi>x</mi><mo>≤</mo><mi>a</mi></math></td><td><math><mo>]</mo><mo>−</mo><mo>∞</mo><mo>,</mo><mi>a</mi><mo>]</mo></math></td><td>alle tal højst <math><mi>a</mi></math></td></tr>
+</table>
+
+<h2>Lineære uligheder</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <div class="formula left">
+    <math><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mo>≥</mo><mn>5</mn><mspace width="0.5em"/><mo>⇔</mo><mspace width="0.5em"/><mn>2</mn><mi>x</mi><mo>≥</mo><mn>8</mn><mspace width="0.5em"/><mo>⇔</mo><mspace width="0.5em"/><mi>x</mi><mo>≥</mo><mn>4</mn></math>
+  </div>
+  <p class="where">Løsningsmængden er <math><mo>[</mo><mn>4</mn><mo>,</mo><mo>∞</mo><mo>[</mo></math>.</p>
+</div>
+
+<h2>Andengradsuligheder</h2>
+<p>Løs først ligningen <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>0</mn></math>, og brug parablens fortegn. For <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></math> med rødder <math><msub><mi>r</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>r</mi><mn>2</mn></msub></math>:</p>
+<table class="compact">
+<caption>Fortegn for andengradspolynomiet</caption>
+<tr><th>Ulighed</th><th><math><mi>a</mi><mo>&gt;</mo><mn>0</mn></math> (glad parabola)</th><th><math><mi>a</mi><mo>&lt;</mo><mn>0</mn></math> (sur parabola)</th></tr>
+<tr><td><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>&lt;</mo><mn>0</mn></math></td><td><math><mo>]</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub><mo>[</mo></math></td><td><math><mo>]</mo><mo>−</mo><mo>∞</mo><mo>,</mo><msub><mi>r</mi><mn>1</mn></msub><mo>[</mo><mo>∪</mo><mo>]</mo><msub><mi>r</mi><mn>2</mn></msub><mo>,</mo><mo>∞</mo><mo>[</mo></math></td></tr>
+<tr><td><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>&gt;</mo><mn>0</mn></math></td><td><math><mo>]</mo><mo>−</mo><mo>∞</mo><mo>,</mo><msub><mi>r</mi><mn>1</mn></msub><mo>[</mo><mo>∪</mo><mo>]</mo><msub><mi>r</mi><mn>2</mn></msub><mo>,</mo><mo>∞</mo><mo>[</mo></math></td><td><math><mo>]</mo><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub><mo>[</mo></math></td></tr>
+</table>
+<p>Har ligningen ingen rødder, har <math><mi>f</mi></math> samme fortegn som <math><mi>a</mi></math> overalt.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box rule">
+  <span class="label">Eksempel</span>
+  <div class="formula left">
+    <math><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>6</mn><mo>&lt;</mo><mn>0</mn><mspace width="0.5em"/><mo>⇔</mo><mspace width="0.5em"/><mo>(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo><mo>&lt;</mo><mn>0</mn></math>
+  </div>
+  <p>Rødderne er <math><mn>3</mn></math> og <math><mo>−</mo><mn>2</mn></math>. Parablen vender opad, så den er negativ mellem rødderne:</p>
+  <div class="formula"><math><mi>x</mi><mo>∈</mo><mo>]</mo><mo>−</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>[</mo></math></div>
+</div>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="84mm" height="30mm" viewBox="0 0 84 30" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="6" y1="21" x2="79" y2="21" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="4.5" y="21" font-size="2.6" fill="#1b1b1b" text-anchor="end" font-weight="400" dominant-baseline="middle">x</text>
+<line x1="29" y1="18.5" x2="29" y2="23.5" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="55" y1="18.5" x2="55" y2="23.5" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="29" cy="21" r="1.1" stroke="#1b1b1b" fill="#ffffff" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="55" cy="21" r="1.1" stroke="#1b1b1b" fill="#ffffff" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="29" y="26.2" font-size="2.5" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">−2</text>
+<text x="55" y="26.2" font-size="2.5" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">3</text>
+<text x="17" y="13.5" font-size="4.6" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">+</text>
+<text x="42" y="13.5" font-size="4.6" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">−</text>
+<text x="67.5" y="13.5" font-size="4.6" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">+</text>
+<text x="8" y="6" font-size="2.3" fill="#5b6470" text-anchor="start" font-weight="400" dominant-baseline="middle">fortegn for f(x)</text>
+<text x="42" y="6" font-size="2.3" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">nuller i x = −2 og x = 3</text>
+<text x="80" y="6" font-size="2.3" fill="#5b6470" text-anchor="end" font-weight="400" dominant-baseline="middle">x</text>
+</svg>
+<figcaption>Fortegnslinje for f(x) = x² − x − 6 = (x − 3)(x + 2).</figcaption>
+</figure>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At glemme at vende tegnet ved division med et negativt tal: <math><mo>−</mo><mn>2</mn><mi>x</mi><mo>&lt;</mo><mn>6</mn><mo>⇔</mo><mi>x</mi><mo>&gt;</mo><mo>−</mo><mn>3</mn></math>.</li>
+    <li><math><msup><mi>x</mi><mn>2</mn></msup><mo>&gt;</mo><mn>4</mn></math> giver <math><mi>x</mi><mo>&lt;</mo><mo>−</mo><mn>2</mn></math> eller <math><mi>x</mi><mo>&gt;</mo><mn>2</mn></math> — ikke blot <math><mi>x</mi><mo>&gt;</mo><mn>2</mn></math>.</li>
+    <li>Ved rationelle uligheder må man ikke gange med nævneren uden at kende dens fortegn. Brug fortegnslinje.</li>
+    <li>Åbne og lukkede intervaller blandes sammen; et endepunkt, hvor nævneren er 0, er altid udelukket.</li>
+  </ul>
+</div>
+
+</body>
+</html>

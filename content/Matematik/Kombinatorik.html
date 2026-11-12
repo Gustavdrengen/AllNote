@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Kombinatorik</title>
+</head>
+<body>
+
+<h1>Kombinatorik</h1>
+
+<h2>Multiplikationsprincippet</h2>
+<div class="box rule">
+  <span class="label">Grundregel</span>
+  <p>Kan et valg udføres på <math><msub><mi>n</mi><mn>1</mn></msub></math> måder, og et andet valg på <math><msub><mi>n</mi><mn>2</mn></msub></math> måder, er det samlede antal måder <math><msub><mi>n</mi><mn>1</mn></msub><mo>·</mo><msub><mi>n</mi><mn>2</mn></msub></math>. Reglen gentages for flere valg.</p>
+</div>
+<p><strong>Fakultet:</strong> <math><mi>n</mi><mo>!</mo><mo>=</mo><mn>1</mn><mo>·</mo><mn>2</mn><mo>·</mo><mn>3</mn><mo>·</mo><mo>…</mo><mo>·</mo><mi>n</mi></math> for <math><mi>n</mi><mo>≥</mo><mn>1</mn></math>, og <math><mn>0</mn><mo>!</mo><mo>=</mo><mn>1</mn></math>. Antallet af måder at arrangere <math><mi>n</mi></math> forskellige objekter i rækkefølge er <math><mi>n</mi><mo>!</mo></math>.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="76mm" height="42mm" viewBox="0 0 76 42" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="10" y1="21" x2="32" y2="8" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="32" cy="8" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="32" y1="8" x2="56" y2="3.5" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="56" cy="3.5" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="32" y1="8" x2="56" y2="12.5" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="56" cy="12.5" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="10" y1="21" x2="32" y2="21" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="32" cy="21" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="32" y1="21" x2="56" y2="16.5" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="56" cy="16.5" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="32" y1="21" x2="56" y2="25.5" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="56" cy="25.5" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="10" y1="21" x2="32" y2="34" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="32" cy="34" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="32" y1="34" x2="56" y2="29.5" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="56" cy="29.5" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="32" y1="34" x2="56" y2="38.5" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="56" cy="38.5" r="1" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="10" cy="21" r="1.2" stroke="#1b1b1b" fill="#1b1b1b" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="10" y="25.6" font-size="2.2" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">3 valg</text>
+<text x="32" y="5" font-size="2.2" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">T₁</text>
+<text x="32" y="18" font-size="2.2" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">T₂</text>
+<text x="32" y="31" font-size="2.2" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">T₃</text>
+<text x="44" y="3.4" font-size="2" fill="#8f98a2" text-anchor="start" font-weight="400" dominant-baseline="middle">2 valg</text>
+<text x="67" y="21.5" font-size="2.6" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">3 · 2 = 6</text>
+</svg>
+<figcaption>Multiplikationsprincippet: 3 trøjer og 2 bukser giver 3 · 2 = 6 forskellige sæt.</figcaption>
+</figure>
+
+
+<h2>De fire grundtilfælde</h2>
+<table>
+<caption>Valg af r elementer blandt n</caption>
+<tr><th>Valg</th><th>Rækkefølgen betyder noget</th><th>Rækkefølgen betyder intet</th></tr>
+<tr><td><strong>Uden gentagelse</strong></td><td><math><mi>P</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>r</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mo>(</mo><mi>n</mi><mo>−</mo><mi>r</mi><mo>)</mo><mo>!</mo></mrow></mfrac></math></td><td><math><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>r</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mi>r</mi><mo>!</mo><mo>(</mo><mi>n</mi><mo>−</mo><mi>r</mi><mo>)</mo><mo>!</mo></mrow></mfrac></math></td></tr>
+<tr><td><strong>Med gentagelse</strong></td><td><math><msup><mi>n</mi><mi>r</mi></msup></math></td><td><math><mi>C</mi><mo>(</mo><mi>n</mi><mo>+</mo><mi>r</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>r</mi><mo>)</mo></math></td></tr>
+</table>
+<p><math><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>r</mi><mo>)</mo></math> kaldes binomialkoefficienten. Den aflæses i Pascals trekant, hvor hvert tal er summen af de to ovenover.</p>
+<div class="formula"><math><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>r</mi><mo>)</mo><mo>=</mo><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>n</mi><mo>−</mo><mi>r</mi><mo>)</mo><mo>,</mo><mspace width="1em"/><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mn>0</mn><mo>)</mo><mo>=</mo><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>n</mi><mo>)</mo><mo>=</mo><mn>1</mn></math></div>
+
+<h2>Binomialformlen</h2>
+<div class="box">
+  <span class="label">Binomialudvidelse</span>
+  <div class="formula"><math><msup><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow><mi>n</mi></msup><mo>=</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>k</mi><mo>)</mo><msup><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup><msup><mi>b</mi><mi>k</mi></msup></math></div>
+  <p class="where">Koefficienterne er netop tallene i Pascals trekant.</p>
+</div>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — udvalg</span>
+  <p>Af 8 elever skal vælges 3 til et udvalg. Rækkefølgen betyder intet:</p>
+  <div class="formula"><math><mi>C</mi><mo>(</mo><mn>8</mn><mo>,</mo><mn>3</mn><mo>)</mo><mo>=</mo><mfrac><mrow><mn>8</mn><mo>!</mo></mrow><mrow><mn>3</mn><mo>!</mo><mo>·</mo><mn>5</mn><mo>!</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>8</mn><mo>·</mo><mn>7</mn><mo>·</mo><mn>6</mn></mrow><mrow><mn>3</mn><mo>·</mo><mn>2</mn><mo>·</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>56</mn></math></div>
+</div>
+<div class="box">
+  <span class="label">Eksempel — kode</span>
+  <p>En 4-cifret kode med cifrene 0–9: med gentagelse <math><msup><mn>10</mn><mn>4</mn></msup><mo>=</mo><mn>10</mn><mspace width="0.1em"/><mn>000</mn></math> muligheder; uden gentagelse <math><mn>10</mn><mo>·</mo><mn>9</mn><mo>·</mo><mn>8</mn><mo>·</mo><mn>7</mn><mo>=</mo><mn>5040</mn></math>.</p>
+</div>
+<p>Antallet af måder at arrangere bogstaverne i et ord med gentagne bogstaver divideres med fakulteterne af hver gentagelse: ordet <span class="mono">MISSISSIPPI</span> har <math><mfrac><mrow><mn>11</mn><mo>!</mo></mrow><mrow><mn>4</mn><mo>!</mo><mo>·</mo><mn>4</mn><mo>!</mo><mo>·</mo><mn>2</mn><mo>!</mo></mrow></mfrac></math> arrangementer.</p>
+
+<h2>Udvalg med gentagelse</h2>
+<p>Skal man vælge <math><mi>r</mi></math> elementer blandt <math><mi>n</mi></math> mulige, og må det samme element vælges flere gange, er antallet af forskellige udvalg</p>
+<div class="formula"><math><mi>C</mi><mo>(</mo><mi>n</mi><mo>+</mo><mi>r</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>r</mi><mo>)</mo></math></div>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <p>Der vælges 3 kugler blandt 5 farver, og samme farve må gentages: <math><mi>C</mi><mo>(</mo><mn>7</mn><mo>,</mo><mn>3</mn><mo>)</mo><mo>=</mo><mn>35</mn></math> mulige farvekombinationer.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Spørgsmålet «betyder rækkefølgen noget?» afgør, om man skal bruge <math><mi>P</mi></math> eller <math><mi>C</mi></math>.</li>
+    <li><math><mn>0</mn><mo>!</mo><mo>=</mo><mn>1</mn></math> pr. definition; det er ikke 0.</li>
+    <li>Ved valg med gentagelse må antallet af muligheder ikke reduceres for hvert valg.</li>
+    <li><math><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>r</mi><mo>)</mo></math> tæller delmængder, ikke rækkefølger; <math><mi>P</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>r</mi><mo>)</mo><mo>=</mo><mi>r</mi><mo>!</mo><mo>·</mo><mi>C</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>r</mi><mo>)</mo></math>.</li>
+  </ul>
+</div>
+
+</body>
+</html>

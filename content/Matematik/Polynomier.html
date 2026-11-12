@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Polynomier</title>
+</head>
+<body>
+
+<h1>Polynomier</h1>
+
+<h2>Definition og grad</h2>
+<div class="box rule">
+  <span class="label">Polynomium</span>
+  <div class="formula"><math><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msub><mi>a</mi><mi>n</mi></msub><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mo>…</mo><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><mi>x</mi><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub></math></div>
+  <p class="where"><math><mi>n</mi><mo>∈</mo><mi>ℕ</mi></math>: graden · <math><msub><mi>a</mi><mi>n</mi></msub><mo>≠</mo><mn>0</mn></math>: ledende koefficient · <math><msub><mi>a</mi><mn>0</mn></msub></math>: konstantled</p>
+</div>
+<p>Et polynomium af grad <math><mi>n</mi></math> har højst <math><mi>n</mi></math> reelle rødder. Rødder kan have multiplicitet: en dobbeltrod rører aksen uden at skifte fortegn. Eksempler: <math><mn>3</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>7</mn></math> har grad 4; <math><msup><mi>x</mi><mn>3</mn></msup></math> har grad 3.</p>
+
+<h2>Endeadfærd</h2>
+<table class="compact">
+<caption>Forløb for store <math><mo>|</mo><mi>x</mi><mo>|</mo></math></caption>
+<tr><th>Grad</th><th>Ledende koefficient</th><th><math><mi>x</mi><mo>→</mo><mo>−</mo><mo>∞</mo></math></th><th><math><mi>x</mi><mo>→</mo><mo>∞</mo></math></th></tr>
+<tr><td>lige</td><td><math><msub><mi>a</mi><mi>n</mi></msub><mo>&gt;</mo><mn>0</mn></math></td><td><math><mo>∞</mo></math></td><td><math><mo>∞</mo></math></td></tr>
+<tr><td>lige</td><td><math><msub><mi>a</mi><mi>n</mi></msub><mo>&lt;</mo><mn>0</mn></math></td><td><math><mo>−</mo><mo>∞</mo></math></td><td><math><mo>−</mo><mo>∞</mo></math></td></tr>
+<tr><td>ulige</td><td><math><msub><mi>a</mi><mi>n</mi></msub><mo>&gt;</mo><mn>0</mn></math></td><td><math><mo>−</mo><mo>∞</mo></math></td><td><math><mo>∞</mo></math></td></tr>
+<tr><td>ulige</td><td><math><msub><mi>a</mi><mi>n</mi></msub><mo>&lt;</mo><mn>0</mn></math></td><td><math><mo>∞</mo></math></td><td><math><mo>−</mo><mo>∞</mo></math></td></tr>
+</table>
+<p>For store <math><mo>|</mo><mi>x</mi><mo>|</mo></math> dominerer det led, der har højest grad. Endeadfærden bestemmes derfor alene af <math><msub><mi>a</mi><mi>n</mi></msub><msup><mi>x</mi><mi>n</mi></msup></math>.</p>
+
+<h2>Rødder og faktorisering</h2>
+<div class="box">
+  <span class="label">Faktorsætningen</span>
+  <div class="formula"><math><mi>P</mi><mo>(</mo><mi>r</mi><mo>)</mo><mo>=</mo><mn>0</mn><mspace width="0.6em"/><mo>⇔</mo><mspace width="0.6em"/><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>x</mi><mo>−</mo><mi>r</mi><mo>)</mo><mo>·</mo><mi>Q</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></div>
+  <p class="where"><math><mi>Q</mi></math> er et polynomium af grad <math><mi>n</mi><mo>−</mo><mn>1</mn></math>.</p>
+</div>
+<p>Ved polynomiumsdivision: <math><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>x</mi><mo>−</mo><mi>r</mi><mo>)</mo><mo>·</mo><mi>Q</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>P</mi><mo>(</mo><mi>r</mi><mo>)</mo></math>. Resten ved division med <math><mi>x</mi><mo>−</mo><mi>r</mi></math> er altså <math><mi>P</mi><mo>(</mo><mi>r</mi><mo>)</mo></math>. Er resten 0, er <math><mi>r</mi></math> en rod.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="72mm" height="48mm" viewBox="0 0 72 48" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<defs><clipPath id="clip9371e531"><rect x="11" y="3" width="57" height="34.9"/></clipPath></defs>
+<rect x="11" y="3" width="57" height="34.9" fill="none" stroke="#dde2e7" stroke-width="0.3"/>
+<line x1="11" y1="3" x2="11" y2="37.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="18.12" y1="3" x2="18.12" y2="37.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="32.38" y1="3" x2="32.38" y2="37.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="39.5" y1="3" x2="39.5" y2="37.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="46.62" y1="3" x2="46.62" y2="37.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="53.75" y1="3" x2="53.75" y2="37.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="60.88" y1="3" x2="60.88" y2="37.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="68" y1="3" x2="68" y2="37.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="37.9" x2="68" y2="37.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="32.91" x2="68" y2="32.91" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="27.93" x2="68" y2="27.93" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="17.96" x2="68" y2="17.96" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="12.97" x2="68" y2="12.97" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="7.99" x2="68" y2="7.99" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="3" x2="68" y2="3" stroke="#dde2e7" stroke-width="0.25"/>
+<path d="M 11 52.86 L 11.1 52.49 L 11.19 52.13 L 11.29 51.77 L 11.38 51.42 L 11.47 51.06 L 11.57 50.71 L 11.66 50.36 L 11.76 50.02 L 11.86 49.67 L 11.95 49.33 L 12.04 48.99 L 12.14 48.66 L 12.23 48.33 L 12.33 48 L 12.42 47.67 L 12.52 47.34 L 12.61 47.02 L 12.71 46.7 L 12.8 46.38 L 12.9 46.06 L 13 45.75 L 13.09 45.44 L 13.18 45.13 L 13.28 44.83 L 13.38 44.52 L 13.47 44.22 L 13.56 43.93 L 13.66 43.63 L 13.76 43.34 L 13.85 43.05 L 13.95 42.76 L 14.04 42.47 L 14.13 42.19 L 14.23 41.9 L 14.33 41.63 L 14.42 41.35 L 14.52 41.07 L 14.61 40.8 L 14.71 40.53 L 14.8 40.27 L 14.89 40 L 14.99 39.74 L 15.08 39.48 L 15.18 39.22 L 15.28 38.96 L 15.37 38.71 L 15.46 38.46 L 15.56 38.21 L 15.66 37.96 L 15.75 37.72 L 15.85 37.47 L 15.94 37.23 L 16.04 36.99 L 16.13 36.76 L 16.23 36.52 L 16.32 36.29 L 16.41 36.06 L 16.51 35.84 L 16.61 35.61 L 16.7 35.39 L 16.8 35.17 L 16.89 34.95 L 16.98 34.73 L 17.08 34.52 L 17.18 34.3 L 17.27 34.09 L 17.37 33.88 L 17.46 33.68 L 17.55 33.47 L 17.65 33.27 L 17.75 33.07 L 17.84 32.87 L 17.94 32.68 L 18.03 32.48 L 18.12 32.29 L 18.22 32.1 L 18.31 31.91 L 18.41 31.73 L 18.5 31.54 L 18.6 31.36 L 18.7 31.18 L 18.79 31 L 18.88 30.83 L 18.98 30.65 L 19.07 30.48 L 19.17 30.31 L 19.27 30.14 L 19.36 29.97 L 19.45 29.81 L 19.55 29.64 L 19.64 29.48 L 19.74 29.32 L 19.84 29.17 L 19.93 29.01 L 20.02 28.86 L 20.12 28.7 L 20.21 28.55 L 20.31 28.4 L 20.41 28.26 L 20.5 28.11 L 20.59 27.97 L 20.69 27.83 L 20.79 27.69 L 20.88 27.55 L 20.98 27.42 L 21.07 27.28 L 21.16 27.15 L 21.26 27.02 L 21.36 26.89 L 21.45 26.76 L 21.55 26.63 L 21.64 26.51 L 21.73 26.39 L 21.83 26.27 L 21.93 26.15 L 22.02 26.03 L 22.12 25.91 L 22.21 25.8 L 22.3 25.69 L 22.4 25.58 L 22.49 25.47 L 22.59 25.36 L 22.68 25.25 L 22.78 25.15 L 22.88 25.04 L 22.97 24.94 L 23.06 24.84 L 23.16 24.74 L 23.25 24.65 L 23.35 24.55 L 23.45 24.46 L 23.54 24.36 L 23.64 24.27 L 23.73 24.18 L 23.83 24.09 L 23.92 24.01 L 24.02 23.92 L 24.11 23.84 L 24.2 23.76 L 24.3 23.68 L 24.39 23.6 L 24.49 23.52 L 24.59 23.44 L 24.68 23.37 L 24.77 23.29 L 24.87 23.22 L 24.96 23.15 L 25.06 23.08 L 25.16 23.01 L 25.25 22.94 L 25.34 22.88 L 25.44 22.81 L 25.54 22.75 L 25.63 22.69 L 25.73 22.63 L 25.82 22.57 L 25.91 22.51 L 26.01 22.45 L 26.11 22.4 L 26.2 22.34 L 26.29 22.29 L 26.39 22.24 L 26.48 22.19 L 26.58 22.14 L 26.68 22.09 L 26.77 22.04 L 26.86 22 L 26.96 21.95 L 27.05 21.91 L 27.15 21.87 L 27.24 21.83 L 27.34 21.79 L 27.43 21.75 L 27.53 21.71 L 27.62 21.67 L 27.72 21.64 L 27.81 21.6 L 27.91 21.57 L 28 21.54 L 28.1 21.51 L 28.2 21.48 L 28.29 21.45 L 28.38 21.42 L 28.48 21.39 L 28.57 21.37 L 28.67 21.34 L 28.77 21.32 L 28.86 21.3 L 28.96 21.27 L 29.05 21.25 L 29.15 21.23 L 29.24 21.21 L 29.34 21.2 L 29.43 21.18 L 29.53 21.16 L 29.62 21.15 L 29.71 21.13 L 29.81 21.12 L 29.91 21.11 L 30 21.1 L 30.1 21.09 L 30.19 21.08 L 30.29 21.07 L 30.38 21.06 L 30.48 21.05 L 30.57 21.05 L 30.66 21.04 L 30.76 21.04 L 30.86 21.03 L 30.95 21.03 L 31.05 21.03 L 31.14 21.02 L 31.23 21.02 L 31.33 21.02 L 31.43 21.02 L 31.52 21.03 L 31.62 21.03 L 31.71 21.03 L 31.8 21.04 L 31.9 21.04 L 32 21.05 L 32.09 21.05 L 32.19 21.06 L 32.28 21.07 L 32.38 21.07 L 32.47 21.08 L 32.56 21.09 L 32.66 21.1 L 32.75 21.11 L 32.85 21.12 L 32.95 21.13 L 33.04 21.15 L 33.13 21.16 L 33.23 21.17 L 33.33 21.19 L 33.42 21.2 L 33.52 21.22 L 33.61 21.23 L 33.7 21.25 L 33.8 21.27 L 33.89 21.29 L 33.99 21.3 L 34.09 21.32 L 34.18 21.34 L 34.27 21.36 L 34.37 21.38 L 34.47 21.4 L 34.56 21.42 L 34.66 21.44 L 34.75 21.47 L 34.84 21.49 L 34.94 21.51 L 35.03 21.53 L 35.13 21.56 L 35.22 21.58 L 35.32 21.61 L 35.41 21.63 L 35.51 21.66 L 35.6 21.68 L 35.7 21.71 L 35.8 21.73 L 35.89 21.76 L 35.98 21.79 L 36.08 21.82 L 36.17 21.84 L 36.27 21.87 L 36.37 21.9 L 36.46 21.93 L 36.55 21.96 L 36.65 21.99 L 36.75 22.01 L 36.84 22.04 L 36.94 22.07 L 37.03 22.1 L 37.12 22.13 L 37.22 22.17 L 37.31 22.2 L 37.41 22.23 L 37.51 22.26 L 37.6 22.29 L 37.7 22.32 L 37.79 22.35 L 37.89 22.39 L 37.98 22.42 L 38.08 22.45 L 38.17 22.48 L 38.27 22.51 L 38.36 22.55 L 38.45 22.58 L 38.55 22.61 L 38.64 22.64 L 38.74 22.68 L 38.84 22.71 L 38.93 22.74 L 39.02 22.78 L 39.12 22.81 L 39.22 22.84 L 39.31 22.88 L 39.41 22.91 L 39.5 22.94 L 39.59 22.98 L 39.69 23.01 L 39.78 23.04 L 39.88 23.08 L 39.97 23.11 L 40.07 23.14 L 40.17 23.18 L 40.26 23.21 L 40.36 23.24 L 40.45 23.27 L 40.55 23.31 L 40.64 23.34 L 40.73 23.37 L 40.83 23.4 L 40.92 23.44 L 41.02 23.47 L 41.11 23.5 L 41.21 23.53 L 41.3 23.56 L 41.4 23.6 L 41.5 23.63 L 41.59 23.66 L 41.69 23.69 L 41.78 23.72 L 41.88 23.75 L 41.97 23.78 L 42.06 23.81 L 42.16 23.84 L 42.25 23.87 L 42.35 23.9 L 42.44 23.93 L 42.54 23.96 L 42.64 23.99 L 42.73 24.01 L 42.83 24.04 L 42.92 24.07 L 43.02 24.1 L 43.11 24.12 L 43.2 24.15 L 43.3 24.18 L 43.4 24.2 L 43.49 24.23 L 43.59 24.25 L 43.68 24.28 L 43.77 24.3 L 43.87 24.33 L 43.97 24.35 L 44.06 24.37 L 44.16 24.4 L 44.25 24.42 L 44.34 24.44 L 44.44 24.46 L 44.54 24.48 L 44.63 24.51 L 44.73 24.53 L 44.82 24.54 L 44.91 24.56 L 45.01 24.58 L 45.11 24.6 L 45.2 24.62 L 45.3 24.64 L 45.39 24.65 L 45.48 24.67 L 45.58 24.68 L 45.67 24.7 L 45.77 24.71 L 45.87 24.73 L 45.96 24.74 L 46.05 24.75 L 46.15 24.76 L 46.24 24.77 L 46.34 24.78 L 46.44 24.79 L 46.53 24.8 L 46.62 24.81 L 46.72 24.82 L 46.81 24.83 L 46.91 24.83 L 47.01 24.84 L 47.1 24.85 L 47.2 24.85 L 47.29 24.85 L 47.38 24.86 L 47.48 24.86 L 47.58 24.86 L 47.67 24.86 L 47.77 24.86 L 47.86 24.86 L 47.95 24.86 L 48.05 24.86 L 48.14 24.85 L 48.24 24.85 L 48.34 24.85 L 48.43 24.84 L 48.52 24.83 L 48.62 24.83 L 48.71 24.82 L 48.81 24.81 L 48.91 24.8 L 49 24.79 L 49.09 24.78 L 49.19 24.77 L 49.28 24.75 L 49.38 24.74 L 49.48 24.72 L 49.57 24.71 L 49.66 24.69 L 49.76 24.67 L 49.85 24.65 L 49.95 24.63 L 50.05 24.61 L 50.14 24.59 L 50.23 24.57 L 50.33 24.54 L 50.42 24.52 L 50.52 24.49 L 50.61 24.47 L 50.71 24.44 L 50.8 24.41 L 50.9 24.38 L 50.99 24.35 L 51.09 24.32 L 51.18 24.28 L 51.28 24.25 L 51.38 24.21 L 51.47 24.18 L 51.56 24.14 L 51.66 24.1 L 51.75 24.06 L 51.85 24.02 L 51.95 23.98 L 52.04 23.93 L 52.13 23.89 L 52.23 23.84 L 52.32 23.8 L 52.42 23.75 L 52.52 23.7 L 52.61 23.65 L 52.7 23.6 L 52.8 23.54 L 52.89 23.49 L 52.99 23.43 L 53.08 23.38 L 53.18 23.32 L 53.27 23.26 L 53.37 23.2 L 53.46 23.14 L 53.56 23.07 L 53.66 23.01 L 53.75 22.94 L 53.84 22.88 L 53.94 22.81 L 54.04 22.74 L 54.13 22.67 L 54.23 22.59 L 54.32 22.52 L 54.42 22.44 L 54.51 22.37 L 54.61 22.29 L 54.7 22.21 L 54.8 22.13 L 54.89 22.05 L 54.98 21.96 L 55.08 21.88 L 55.18 21.79 L 55.27 21.7 L 55.37 21.61 L 55.46 21.52 L 55.55 21.43 L 55.65 21.34 L 55.75 21.24 L 55.84 21.14 L 55.94 21.04 L 56.03 20.94 L 56.12 20.84 L 56.22 20.74 L 56.32 20.63 L 56.41 20.53 L 56.51 20.42 L 56.6 20.31 L 56.7 20.2 L 56.79 20.09 L 56.89 19.97 L 56.98 19.86 L 57.08 19.74 L 57.17 19.62 L 57.27 19.5 L 57.36 19.38 L 57.45 19.25 L 57.55 19.13 L 57.65 19 L 57.74 18.87 L 57.84 18.74 L 57.93 18.61 L 58.02 18.47 L 58.12 18.33 L 58.22 18.2 L 58.31 18.06 L 58.41 17.92 L 58.5 17.77 L 58.59 17.63 L 58.69 17.48 L 58.79 17.33 L 58.88 17.18 L 58.98 17.03 L 59.07 16.88 L 59.16 16.72 L 59.26 16.56 L 59.36 16.4 L 59.45 16.24 L 59.55 16.08 L 59.64 15.91 L 59.73 15.75 L 59.83 15.58 L 59.92 15.41 L 60.02 15.24 L 60.12 15.06 L 60.21 14.88 L 60.3 14.71 L 60.4 14.53 L 60.49 14.34 L 60.59 14.16 L 60.69 13.97 L 60.78 13.78 L 60.88 13.59 L 60.97 13.4 L 61.06 13.21 L 61.16 13.01 L 61.26 12.81 L 61.35 12.61 L 61.45 12.41 L 61.54 12.21 L 61.63 12 L 61.73 11.79 L 61.83 11.58 L 61.92 11.37 L 62.02 11.16 L 62.11 10.94 L 62.2 10.72 L 62.3 10.5 L 62.39 10.28 L 62.49 10.05 L 62.59 9.82 L 62.68 9.59 L 62.77 9.36 L 62.87 9.13 L 62.96 8.89 L 63.06 8.65 L 63.16 8.41 L 63.25 8.17 L 63.34 7.93 L 63.44 7.68 L 63.53 7.43 L 63.63 7.18 L 63.73 6.92 L 63.82 6.67 L 63.91 6.41 L 64.01 6.15 L 64.1 5.89 L 64.2 5.62 L 64.3 5.35 L 64.39 5.08 L 64.48 4.81 L 64.58 4.54 L 64.67 4.26 L 64.77 3.98 L 64.86 3.7 L 64.96 3.42 L 65.06 3.13 L 65.15 2.84 L 65.25 2.55 L 65.34 2.26 L 65.44 1.96 L 65.53 1.66 L 65.62 1.36 L 65.72 1.06 L 65.81 0.75 L 65.91 0.44 L 66 0.13 L 66.1 -0.18 L 66.19 -0.49 L 66.29 -0.81 L 66.38 -1.13 L 66.48 -1.46 L 66.57 -1.78 L 66.67 -2.11 L 66.77 -2.44 L 66.86 -2.77 L 66.95 -3.11 L 67.05 -3.45 L 67.14 -3.79 L 67.24 -4.13 L 67.33 -4.48 L 67.43 -4.83 L 67.53 -5.18 L 67.62 -5.53 L 67.72 -5.89 L 67.81 -6.25 L 67.91 -6.61 L 68 -6.97" fill="none" stroke="#1c5f9e" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clip9371e531)"/>
+<line x1="11" y1="22.94" x2="68" y2="22.94" stroke="#1b1b1b" stroke-width="0.45"/>
+<polygon points="68,22.94 66.52,23.54 66.52,22.34" fill="#1b1b1b" stroke="none"/>
+<line x1="11" y1="22.94" x2="11" y2="24.04" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="11" y="26.94" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-1</text>
+<line x1="18.12" y1="22.94" x2="18.12" y2="24.04" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="18.12" y="26.94" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-0,5</text>
+<line x1="25.25" y1="22.94" x2="25.25" y2="24.04" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="32.38" y1="22.94" x2="32.38" y2="24.04" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="32.38" y="26.94" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0,5</text>
+<line x1="39.5" y1="22.94" x2="39.5" y2="24.04" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="39.5" y="26.94" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">1</text>
+<line x1="46.62" y1="22.94" x2="46.62" y2="24.04" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="46.62" y="26.94" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">1,5</text>
+<line x1="53.75" y1="22.94" x2="53.75" y2="24.04" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="53.75" y="26.94" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="60.88" y1="22.94" x2="60.88" y2="24.04" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="60.88" y="26.94" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2,5</text>
+<line x1="68" y1="22.94" x2="68" y2="24.04" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="68" y="26.94" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">3</text>
+<line x1="25.25" y1="37.9" x2="25.25" y2="3" stroke="#1b1b1b" stroke-width="0.45"/>
+<polygon points="25.25,3 25.85,4.48 24.65,4.48" fill="#1b1b1b" stroke="none"/>
+<line x1="24.15" y1="37.9" x2="25.25" y2="37.9" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="23.45" y="37.9" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-3</text>
+<line x1="24.15" y1="32.91" x2="25.25" y2="32.91" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="23.45" y="32.91" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-2</text>
+<line x1="24.15" y1="27.93" x2="25.25" y2="27.93" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="23.45" y="27.93" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-1</text>
+<line x1="24.15" y1="22.94" x2="25.25" y2="22.94" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="24.15" y1="17.96" x2="25.25" y2="17.96" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="23.45" y="17.96" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">1</text>
+<line x1="24.15" y1="12.97" x2="25.25" y2="12.97" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="23.45" y="12.97" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="24.15" y1="7.99" x2="25.25" y2="7.99" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="23.45" y="7.99" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">3</text>
+<line x1="24.15" y1="3" x2="25.25" y2="3" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="23.45" y="3" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">4</text>
+<circle cx="25.25" cy="22.94" r="0.85" fill="#1b1b1b" stroke="none"/>
+<circle cx="39.5" cy="22.94" r="0.85" fill="#1b1b1b" stroke="none"/>
+<circle cx="53.75" cy="22.94" r="0.85" fill="#1b1b1b" stroke="none"/>
+<text x="39.5" y="46.6" font-size="2.4" fill="#5b6470" text-anchor="middle">x</text>
+<text x="2.6" y="20.45" font-size="2.4" fill="#5b6470" text-anchor="middle" transform="rotate(-90 2.6 20.45)">P(x)</text>
+</svg>
+<figcaption>P(x) = x³ − 3x² + 2x = x(x − 1)(x − 2) har tre reelle rødder.</figcaption>
+</figure>
+
+<h2>Regneeksempel</h2>
+<div class="box rule">
+  <span class="label">Eksempel</span>
+  <p><math><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi></math>.</p>
+  <div class="formula left">
+    <math><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>x</mi><mo>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo><mo>=</mo><mi>x</mi><mo>(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>)</mo></math>
+  </div>
+  <p class="where">Rødder <math><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></math> · grad 3 og ledende koefficient 1, så <math><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>→</mo><mo>∞</mo></math> for <math><mi>x</mi><mo>→</mo><mo>∞</mo></math> og <math><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>→</mo><mo>−</mo><mo>∞</mo></math> for <math><mi>x</mi><mo>→</mo><mo>−</mo><mo>∞</mo></math></p>
+</div>
+<p>For at finde rødder i et polynomium af højere grad end 2: gæt en rod blandt divisorerne til konstantleddet, divider ud, og gentag på restpolynomiet. For grad 2 bruges diskriminantformlen; der findes ikke en generel formel med rødder for grad 5 og derover.</p>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Graden er ikke antallet af led: <math><msup><mi>x</mi><mn>5</mn></msup><mo>+</mo><mn>1</mn></math> har grad 5, ikke 2.</li>
+    <li>Et polynomium af grad <math><mi>n</mi></math> har højst <math><mi>n</mi></math> rødder, men kan have færre — eller ingen reelle.</li>
+    <li>Ved en dobbeltrod skifter grafen ikke fortegn; den rører aksen.</li>
+    <li>Konstanten 0 er ikke et polynomium af grad 0; nulpolynomiet har ingen grad.</li>
+  </ul>
+</div>
+
+</body>
+</html>

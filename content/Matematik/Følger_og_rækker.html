@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Følger og rækker</title>
+</head>
+<body>
+
+<h1>Følger og rækker</h1>
+
+<h2>Følger</h2>
+<p>En følge er en nummereret liste af tal <math><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><msub><mi>a</mi><mn>3</mn></msub><mo>,</mo><mo>…</mo></math>. En følge kan angives ved en forskrift <math><msub><mi>a</mi><mi>n</mi></msub></math> eller rekursivt, hvor hvert led beregnes ud fra de foregående.</p>
+
+<h2>Aritmetisk følge og række</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Aritmetisk følge</span>
+    <div class="formula"><math><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mo>(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>)</mo><mi>d</mi></math></div>
+    <p class="where"><math><mi>d</mi></math>: fast differens · <math><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mi>d</mi></math></p>
+  </div>
+  <div class="box">
+    <span class="label">Sum af de første n led</span>
+    <div class="formula"><math><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac><mi>n</mi><mn>2</mn></mfrac><mo>(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub><mo>)</mo><mo>=</mo><mfrac><mi>n</mi><mn>2</mn></mfrac><mo>(</mo><mn>2</mn><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mo>(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>)</mo><mi>d</mi><mo>)</mo></math></div>
+    <p class="where">Gennemsnittet af første og sidste led gange antallet af led.</p>
+  </div>
+</div>
+
+<h2>Geometrisk følge og række</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Geometrisk følge</span>
+    <div class="formula"><math><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>·</mo><msup><mi>k</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></math></div>
+    <p class="where"><math><mi>k</mi></math>: fast kvotient · <math><mfrac><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>a</mi><mi>n</mi></msub></mfrac><mo>=</mo><mi>k</mi></math></p>
+  </div>
+  <div class="box">
+    <span class="label">Sum af de første n led</span>
+    <div class="formula"><math><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>·</mo><mfrac><mrow><msup><mi>k</mi><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></mfrac></math></div>
+    <p class="where"><math><mi>k</mi><mo>≠</mo><mn>1</mn></math></p>
+  </div>
+</div>
+<div class="box note">
+  <span class="label">Uendelig geometrisk række</span>
+  <div class="formula"><math><msub><mi>S</mi><mo>∞</mo></msub><mo>=</mo><mfrac><msub><mi>a</mi><mn>1</mn></msub><mrow><mn>1</mn><mo>−</mo><mi>k</mi></mrow></mfrac><mspace width="1em"/><mtext>for</mtext><mspace width="0.4em"/><mo>|</mo><mi>k</mi><mo>|</mo><mo>&lt;</mo><mn>1</mn></math></div>
+  <p class="where">Divergerer for <math><mo>|</mo><mi>k</mi><mo>|</mo><mo>≥</mo><mn>1</mn></math>.</p>
+</div>
+<p>Summen skrives med sigmanotation: <math><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>a</mi><mi>i</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><mo>+</mo><mo>…</mo><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub></math>.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="26mm" viewBox="0 0 80 26" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="6" y1="14" x2="76" y2="14" stroke="#1b1b1b" fill="none" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="10" cy="14" r="1.1" fill="#1b1b1b" stroke="none"/><text x="8.5" y="18.5" font-size="2.5" fill="#1b1b1b" text-anchor="start">a₁</text>
+<circle cx="21.6" cy="14" r="1.1" fill="#1b1b1b" stroke="none"/><text x="20.1" y="18.5" font-size="2.5" fill="#1b1b1b" text-anchor="start">a₂</text>
+<circle cx="33.2" cy="14" r="1.1" fill="#1b1b1b" stroke="none"/><text x="31.7" y="18.5" font-size="2.5" fill="#1b1b1b" text-anchor="start">a₃</text>
+<circle cx="44.8" cy="14" r="1.1" fill="#1b1b1b" stroke="none"/><text x="43.3" y="18.5" font-size="2.5" fill="#1b1b1b" text-anchor="start">a₄</text>
+<circle cx="56.4" cy="14" r="1.1" fill="#1b1b1b" stroke="none"/><text x="54.9" y="18.5" font-size="2.5" fill="#1b1b1b" text-anchor="start">a₅</text>
+<circle cx="68" cy="14" r="1.1" fill="#1b1b1b" stroke="none"/><text x="66.5" y="18.5" font-size="2.5" fill="#1b1b1b" text-anchor="start">a₆</text>
+<text x="15.8" y="8" font-size="2.2" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">+3</text>
+<text x="27.4" y="8" font-size="2.2" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">+3</text>
+<text x="39" y="8" font-size="2.2" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">+3</text>
+<text x="50.6" y="8" font-size="2.2" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">+3</text>
+<text x="62.2" y="8" font-size="2.2" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">+3</text>
+</svg>
+<figcaption>Den aritmetiske følge 2, 5, 8, 11, 14, 17 med konstant differens 3.</figcaption>
+</figure>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — aritmetisk</span>
+  <p>Følgen 2, 5, 8, 11, … har <math><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn></math> og <math><mi>d</mi><mo>=</mo><mn>3</mn></math>.</p>
+  <div class="formula left">
+    <math><msub><mi>a</mi><mn>10</mn></msub><mo>=</mo><mn>2</mn><mo>+</mo><mn>9</mn><mo>·</mo><mn>3</mn><mo>=</mo><mn>29</mn><mo>,</mo><mspace width="1em"/><msub><mi>S</mi><mn>10</mn></msub><mo>=</mo><mfrac><mn>10</mn><mn>2</mn></mfrac><mo>(</mo><mn>2</mn><mo>+</mo><mn>29</mn><mo>)</mo><mo>=</mo><mn>5</mn><mo>·</mo><mn>31</mn><mo>=</mo><mn>155</mn></math>
+  </div>
+</div>
+<div class="box">
+  <span class="label">Eksempel — geometrisk</span>
+  <p>Følgen 3, 6, 12, 24, … har <math><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn></math> og <math><mi>k</mi><mo>=</mo><mn>2</mn></math>.</p>
+  <div class="formula left">
+    <math><msub><mi>a</mi><mn>8</mn></msub><mo>=</mo><mn>3</mn><mo>·</mo><msup><mn>2</mn><mn>7</mn></msup><mo>=</mo><mn>384</mn><mo>,</mo><mspace width="1em"/><msub><mi>S</mi><mn>8</mn></msub><mo>=</mo><mn>3</mn><mo>·</mo><mfrac><mrow><msup><mn>2</mn><mn>8</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>3</mn><mo>·</mo><mn>255</mn><mo>=</mo><mn>765</mn></math>
+  </div>
+</div>
+<p>Den uendelige række <math><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>+</mo><mo>…</mo></math> har <math><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></math> og <math><mi>k</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, så summen er <math><mfrac><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mrow><mn>1</mn><mo>−</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mn>1</mn></math>.</p>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Aritmetisk følge bruger <math><mi>n</mi><mo>−</mo><mn>1</mn></math> i eksponenten/faktoren; <math><msub><mi>a</mi><mn>1</mn></msub></math> er det første led, ikke led nummer 0.</li>
+    <li>En geometrisk række konvergerer kun for <math><mo>|</mo><mi>k</mi><mo>|</mo><mo>&lt;</mo><mn>1</mn></math>; ellers findes <math><msub><mi>S</mi><mo>∞</mo></msub></math> ikke.</li>
+    <li>Ved <math><mi>k</mi><mo>=</mo><mn>1</mn></math> er sumformlen <math><mfrac><mrow><msup><mi>k</mi><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></mfrac></math> ikke brugbar; summen er da <math><mi>n</mi><msub><mi>a</mi><mn>1</mn></msub></math>.</li>
+  </ul>
+</div>
+
+</body>
+</html>

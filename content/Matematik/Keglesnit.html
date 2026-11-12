@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Keglesnit</title>
+</head>
+<body>
+
+<h1>Keglesnit</h1>
+
+<h2>De fire keglesnit</h2>
+<p>Et keglesnit fremkommer ved at skære en dobbeltkegle med en plan. Skæringens form afhænger af planens vinkel i forhold til keglens akse.</p>
+<table>
+<caption>Keglesnittene og deres ligninger</caption>
+<tr><th>Keglesnit</th><th>Ligning</th><th>Kendetegn</th></tr>
+<tr><td>Cirkel</td><td><math><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></math></td><td>plan vinkelret på aksen</td></tr>
+<tr><td>Ellipse</td><td><math><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></math></td><td>lukket kurve, to brændpunkter</td></tr>
+<tr><td>Parabel</td><td><math><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><mi>a</mi><mi>x</mi></math></td><td>ét brændpunkt og én styrelinje</td></tr>
+<tr><td>Hyperbel</td><td><math><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>−</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></math></td><td>to grene, to asymptoter</td></tr>
+</table>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="82mm" height="34mm" viewBox="0 0 82 34" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="27.5" y1="6" x2="27.5" y2="27" stroke="#dde2e7" fill="none" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1 1"/>
+<line x1="54.5" y1="6" x2="54.5" y2="27" stroke="#dde2e7" fill="none" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1 1"/>
+<ellipse cx="14" cy="17" rx="9" ry="5.5" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 33,8 Q 41,30 49,8" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 62,8 Q 70,17 62,26" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 72,8 Q 64,17 72,26" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="14" y="30.5" font-size="2.3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">ellipse</text>
+<text x="41" y="30.5" font-size="2.3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">parabel</text>
+<text x="67" y="30.5" font-size="2.3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">hyperbel</text>
+</svg>
+<figcaption>De tre centrale keglesnit: ellipse, parabel og hyperbel.</figcaption>
+</figure>
+
+
+<h2>Ellipsen</h2>
+<div class="box rule">
+  <span class="label">Ellipse</span>
+  <div class="formula"><math><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="0.8em"/><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup></math></div>
+  <p class="where"><math><mi>a</mi></math>: halve storakse · <math><mi>b</mi></math>: halve lilleakse · <math><mi>c</mi></math>: afstand fra centrum til brændpunkt · <math><mi>e</mi><mo>=</mo><mfrac><mi>c</mi><mi>a</mi></mfrac></math>: excentricitet</p>
+</div>
+<p>For <math><mi>a</mi><mo>&gt;</mo><mi>b</mi></math> ligger brændpunkterne i <math><mo>(</mo><mo>±</mo><mi>c</mi><mo>,</mo><mn>0</mn><mo>)</mo></math>. Er <math><mi>a</mi><mo>=</mo><mi>b</mi></math>, er ellipsen en cirkel med <math><mi>c</mi><mo>=</mo><mn>0</mn></math>. For hvert punkt på ellipsen er summen af afstandene til de to brændpunkter konstant <math><mn>2</mn><mi>a</mi></math>.</p>
+
+<h2>Hyperblen</h2>
+<div class="box">
+  <span class="label">Hyperbel</span>
+  <div class="formula"><math><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>−</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="0.8em"/><mi>y</mi><mo>=</mo><mo>±</mo><mfrac><mi>b</mi><mi>a</mi></mfrac><mi>x</mi></math></div>
+  <p class="where">Asymptoterne er de to linjer, grenene nærmer sig for store <math><mo>|</mo><mi>x</mi><mo>|</mo></math>.</p>
+</div>
+<p>For hyperblen gælder <math><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math>; brændpunkterne ligger i <math><mo>(</mo><mo>±</mo><mi>c</mi><mo>,</mo><mn>0</mn><mo>)</mo></math>. Forskellen mellem afstandene til de to brændpunkter er konstant <math><mn>2</mn><mi>a</mi></math>.</p>
+
+<h2>Parablen</h2>
+<p><math><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><mi>a</mi><mi>x</mi></math> har brændpunkt <math><mo>(</mo><mi>a</mi><mo>,</mo><mn>0</mn><mo>)</mo></math> og styrelinje <math><mi>x</mi><mo>=</mo><mo>−</mo><mi>a</mi></math>. Hvert punkt på parablen har samme afstand til brændpunktet som til styrelinjen. Funktionen <math><mi>y</mi><mo>=</mo><mi>k</mi><msup><mi>x</mi><mn>2</mn></msup></math> er også en parabel, blot med lodret akse.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — ellipse</span>
+  <p><math><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>25</mn></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><mn>9</mn></mfrac><mo>=</mo><mn>1</mn></math>.</p>
+  <div class="formula left">
+    <math><mi>a</mi><mo>=</mo><mn>5</mn><mo>,</mo><mspace width="0.4em"/><mi>b</mi><mo>=</mo><mn>3</mn><mo>,</mo><mspace width="0.4em"/><mi>c</mi><mo>=</mo><msqrt><mrow><mn>25</mn><mo>−</mo><mn>9</mn></mrow></msqrt><mo>=</mo><mn>4</mn><mo>,</mo><mspace width="0.4em"/><mi>e</mi><mo>=</mo><mfrac><mn>4</mn><mn>5</mn></mfrac><mo>=</mo><mn>0,8</mn></math>
+  </div>
+  <p class="where">Brændpunkter <math><mo>(</mo><mo>±</mo><mn>4</mn><mo>,</mo><mn>0</mn><mo>)</mo></math> · skæring med x-aksen <math><mo>±</mo><mn>5</mn></math> · skæring med y-aksen <math><mo>±</mo><mn>3</mn></math></p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>For ellipsen er <math><mi>a</mi></math> altid den største halvakse; <math><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup></math>, ikke <math><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math>.</li>
+    <li>Hyperblens ligning har minus mellem leddene; ellipsen har plus.</li>
+    <li>Excentriciteten ligger mellem 0 og 1 for en ellipse; <math><mi>e</mi><mo>=</mo><mn>0</mn></math> er en cirkel.</li>
+    <li>Ligningen <math><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></math> har centrum i <math><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>; forskydes centrum, skal <math><mi>x</mi></math> og <math><mi>y</mi></math> erstattes med <math><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub></math> og <math><mi>y</mi><mo>−</mo><msub><mi>y</mi><mn>0</mn></msub></math>.</li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Trigonometriske funktioner</title>
+</head>
+<body>
+
+<h1>Trigonometriske funktioner</h1>
+
+<h2>Buelængde og enhedscirklen</h2>
+<p>En vinkel måles i radianer som buelængden på enhedscirklen. <math><mn>360</mn><mo>°</mo><mo>=</mo><mn>2</mn><mi>π</mi></math>, altså <math><mn>180</mn><mo>°</mo><mo>=</mo><mi>π</mi></math> og <math><mn>1</mn><mo>°</mo><mo>=</mo><mfrac><mi>π</mi><mn>180</mn></mfrac></math>.</p>
+<div class="box rule">
+  <span class="label">Definition på enhedscirklen</span>
+  <p>For en vinkel <math><mi>v</mi></math> er <math><mo>(</mo><mi>cos</mi><mspace width="0.1em"/><mi>v</mi><mo>,</mo><mi>sin</mi><mspace width="0.1em"/><mi>v</mi><mo>)</mo></math> det punkt, hvor vinklens anden stråle rammer enhedscirklen.</p>
+  <div class="formula"><math><mi>tan</mi><mspace width="0.1em"/><mi>v</mi><mo>=</mo><mfrac><mrow><mi>sin</mi><mspace width="0.1em"/><mi>v</mi></mrow><mrow><mi>cos</mi><mspace width="0.1em"/><mi>v</mi></mrow></mfrac><mo>,</mo><mspace width="0.8em"/><mi>cos</mi><mspace width="0.1em"/><mi>v</mi><mo>≠</mo><mn>0</mn></math></div>
+  <p class="where">Deraf <math><msup><mi>sin</mi><mn>2</mn></msup><mspace width="0.05em"/><mi>v</mi><mo>+</mo><msup><mi>cos</mi><mn>2</mn></msup><mspace width="0.05em"/><mi>v</mi><mo>=</mo><mn>1</mn></math>.</p>
+</div>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="66mm" height="52mm" viewBox="0 0 66 52" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="8" y1="27" x2="58" y2="27" stroke="#1b1b1b" fill="none" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="32" y1="4" x2="32" y2="50" stroke="#1b1b1b" fill="none" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="8" y1="27" x2="61" y2="27" stroke="#1b1b1b" fill="none" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="round"/><polygon points="61,27 59.7,27.52 59.7,26.48" fill="#1b1b1b" stroke="none"/>
+<line x1="32" y1="50" x2="32" y2="1.5" stroke="#1b1b1b" fill="none" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="round"/><polygon points="32,1.5 32.52,2.8 31.48,2.8" fill="#1b1b1b" stroke="none"/>
+<circle cx="32" cy="27" r="20" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="32" y1="27" x2="47.3" y2="14.2" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="47.3" y1="14.2" x2="47.3" y2="27" stroke="#1b1b1b" fill="none" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.2 1"/>
+<line x1="32" y1="27" x2="47.3" y2="27" stroke="#1b1b1b" fill="none" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.2 1"/>
+<circle cx="47.3" cy="14.2" r="1" fill="#1b1b1b" stroke="none"/>
+<path d="M 38.89 21.21 A 9 9 0 0 1 41 27" stroke="#8f98a2" fill="none" stroke-width="0.3"/><text x="43.46" y="22.83" font-size="2.4" fill="#1b1b1b" text-anchor="middle" dominant-baseline="middle">v</text>
+<text x="39.5" y="30.5" font-size="2.4" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle">cos v</text>
+<text x="49" y="21" font-size="2.4" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle">sin v</text>
+<text x="53" y="30" font-size="2.3" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">1</text>
+<text x="30.2" y="6.5" font-size="2.3" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">1</text>
+</svg>
+<figcaption>Enhedscirklen: punktet (cos v, sin v) bestemmer vinklen v.</figcaption>
+</figure>
+
+<h2>Eksakte værdier</h2>
+<table class="compact">
+<caption>Værdier i første kvadrant</caption>
+<tr><th><math><mi>v</mi></math></th><th class="num">0</th><th class="num"><math><mfrac><mi>π</mi><mn>6</mn></mfrac></math></th><th class="num"><math><mfrac><mi>π</mi><mn>4</mn></mfrac></math></th><th class="num"><math><mfrac><mi>π</mi><mn>3</mn></mfrac></math></th><th class="num"><math><mfrac><mi>π</mi><mn>2</mn></mfrac></math></th></tr>
+<tr><th><math><mi>sin</mi><mspace width="0.1em"/><mi>v</mi></math></th><td class="num">0</td><td class="num"><math><mfrac><mn>1</mn><mn>2</mn></mfrac></math></td><td class="num"><math><mfrac><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac></math></td><td class="num"><math><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></math></td><td class="num">1</td></tr>
+<tr><th><math><mi>cos</mi><mspace width="0.1em"/><mi>v</mi></math></th><td class="num">1</td><td class="num"><math><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></math></td><td class="num"><math><mfrac><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac></math></td><td class="num"><math><mfrac><mn>1</mn><mn>2</mn></mfrac></math></td><td class="num">0</td></tr>
+</table>
+<p>Fortegnene følger kvadranten: <math><mi>cos</mi></math> er negativ i 2. og 3. kvadrant, <math><mi>sin</mi></math> er negativ i 3. og 4. kvadrant. <math><mi>tan</mi></math> er negativ i 2. og 4. kvadrant og udefineret ved <math><mi>v</mi><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi></math>.</p>
+
+<h2>Periodicitet</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Sinus og cosinus</span>
+    <p><math><mi>sin</mi><mspace width="0.1em"/><mo>(</mo><mi>v</mi><mo>+</mo><mn>2</mn><mi>π</mi><mo>)</mo><mo>=</mo><mi>sin</mi><mspace width="0.1em"/><mi>v</mi></math><br>
+    <math><mi>cos</mi><mspace width="0.1em"/><mo>(</mo><mi>v</mi><mo>+</mo><mn>2</mn><mi>π</mi><mo>)</mo><mo>=</mo><mi>cos</mi><mspace width="0.1em"/><mi>v</mi></math></p>
+    <p class="where">Periode <math><mn>2</mn><mi>π</mi></math> · værdimængde <math><mo>[</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>]</mo></math></p>
+  </div>
+  <div class="box">
+    <span class="label">Tangens</span>
+    <p><math><mi>tan</mi><mspace width="0.1em"/><mo>(</mo><mi>v</mi><mo>+</mo><mi>π</mi><mo>)</mo><mo>=</mo><mi>tan</mi><mspace width="0.1em"/><mi>v</mi></math></p>
+    <p class="where">Periode <math><mi>π</mi></math> · værdimængde <math><mi>ℝ</mi></math></p>
+  </div>
+</div>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="40mm" viewBox="0 0 80 40" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<defs><clipPath id="clip55170352"><rect x="11" y="3" width="65" height="26.9"/></clipPath></defs>
+<rect x="11" y="3" width="65" height="26.9" fill="none" stroke="#dde2e7" stroke-width="0.3"/>
+<line x1="11" y1="3" x2="11" y2="29.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="27.25" y1="3" x2="27.25" y2="29.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="59.75" y1="3" x2="59.75" y2="29.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="76" y1="3" x2="76" y2="29.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="25.42" x2="76" y2="25.42" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="7.48" x2="76" y2="7.48" stroke="#dde2e7" stroke-width="0.25"/>
+<path d="M 11 16.42 L 11.11 16.23 L 11.22 16.05 L 11.33 15.86 L 11.43 15.67 L 11.54 15.48 L 11.65 15.3 L 11.76 15.11 L 11.87 14.93 L 11.97 14.74 L 12.08 14.56 L 12.19 14.38 L 12.3 14.19 L 12.41 14.01 L 12.52 13.83 L 12.62 13.65 L 12.73 13.48 L 12.84 13.3 L 12.95 13.12 L 13.06 12.95 L 13.17 12.78 L 13.27 12.61 L 13.38 12.44 L 13.49 12.27 L 13.6 12.11 L 13.71 11.94 L 13.82 11.78 L 13.92 11.62 L 14.03 11.47 L 14.14 11.31 L 14.25 11.16 L 14.36 11.01 L 14.47 10.86 L 14.58 10.71 L 14.68 10.57 L 14.79 10.43 L 14.9 10.29 L 15.01 10.16 L 15.12 10.03 L 15.22 9.9 L 15.33 9.77 L 15.44 9.65 L 15.55 9.53 L 15.66 9.41 L 15.77 9.29 L 15.88 9.18 L 15.98 9.07 L 16.09 8.97 L 16.2 8.87 L 16.31 8.77 L 16.42 8.67 L 16.52 8.58 L 16.63 8.49 L 16.74 8.41 L 16.85 8.33 L 16.96 8.25 L 17.07 8.17 L 17.18 8.1 L 17.28 8.04 L 17.39 7.97 L 17.5 7.92 L 17.61 7.86 L 17.72 7.81 L 17.83 7.76 L 17.93 7.72 L 18.04 7.67 L 18.15 7.64 L 18.26 7.61 L 18.37 7.58 L 18.47 7.55 L 18.58 7.53 L 18.69 7.51 L 18.8 7.5 L 18.91 7.49 L 19.02 7.48 L 19.12 7.48 L 19.23 7.49 L 19.34 7.49 L 19.45 7.5 L 19.56 7.52 L 19.67 7.53 L 19.77 7.56 L 19.88 7.58 L 19.99 7.61 L 20.1 7.65 L 20.21 7.68 L 20.32 7.72 L 20.42 7.77 L 20.53 7.82 L 20.64 7.87 L 20.75 7.93 L 20.86 7.99 L 20.97 8.05 L 21.08 8.12 L 21.18 8.19 L 21.29 8.27 L 21.4 8.35 L 21.51 8.43 L 21.62 8.51 L 21.73 8.6 L 21.83 8.69 L 21.94 8.79 L 22.05 8.89 L 22.16 8.99 L 22.27 9.1 L 22.37 9.21 L 22.48 9.32 L 22.59 9.43 L 22.7 9.55 L 22.81 9.67 L 22.92 9.8 L 23.02 9.93 L 23.13 10.06 L 23.24 10.19 L 23.35 10.32 L 23.46 10.46 L 23.57 10.6 L 23.67 10.75 L 23.78 10.89 L 23.89 11.04 L 24 11.19 L 24.11 11.35 L 24.22 11.5 L 24.32 11.66 L 24.43 11.82 L 24.54 11.98 L 24.65 12.14 L 24.76 12.31 L 24.87 12.48 L 24.98 12.65 L 25.08 12.82 L 25.19 12.99 L 25.3 13.16 L 25.41 13.34 L 25.52 13.52 L 25.62 13.69 L 25.73 13.87 L 25.84 14.05 L 25.95 14.24 L 26.06 14.42 L 26.17 14.6 L 26.27 14.78 L 26.38 14.97 L 26.49 15.15 L 26.6 15.34 L 26.71 15.53 L 26.82 15.71 L 26.93 15.9 L 27.03 16.09 L 27.14 16.28 L 27.25 16.46 L 27.36 16.65 L 27.47 16.84 L 27.57 17.03 L 27.68 17.21 L 27.79 17.4 L 27.9 17.59 L 28.01 17.77 L 28.12 17.96 L 28.22 18.14 L 28.33 18.33 L 28.44 18.51 L 28.55 18.69 L 28.66 18.87 L 28.77 19.05 L 28.88 19.23 L 28.98 19.41 L 29.09 19.59 L 29.2 19.76 L 29.31 19.94 L 29.42 20.11 L 29.53 20.28 L 29.63 20.45 L 29.74 20.61 L 29.85 20.78 L 29.96 20.94 L 30.07 21.11 L 30.17 21.26 L 30.28 21.42 L 30.39 21.58 L 30.5 21.73 L 30.61 21.88 L 30.72 22.03 L 30.82 22.17 L 30.93 22.32 L 31.04 22.46 L 31.15 22.6 L 31.26 22.73 L 31.37 22.86 L 31.47 22.99 L 31.58 23.12 L 31.69 23.24 L 31.8 23.37 L 31.91 23.48 L 32.02 23.6 L 32.12 23.71 L 32.23 23.82 L 32.34 23.92 L 32.45 24.03 L 32.56 24.12 L 32.67 24.22 L 32.77 24.31 L 32.88 24.4 L 32.99 24.49 L 33.1 24.57 L 33.21 24.65 L 33.32 24.72 L 33.42 24.79 L 33.53 24.86 L 33.64 24.92 L 33.75 24.98 L 33.86 25.04 L 33.97 25.09 L 34.08 25.14 L 34.18 25.18 L 34.29 25.22 L 34.4 25.26 L 34.51 25.29 L 34.62 25.32 L 34.73 25.35 L 34.83 25.37 L 34.94 25.39 L 35.05 25.4 L 35.16 25.41 L 35.27 25.41 L 35.38 25.42 L 35.48 25.41 L 35.59 25.41 L 35.7 25.4 L 35.81 25.38 L 35.92 25.37 L 36.02 25.35 L 36.13 25.32 L 36.24 25.29 L 36.35 25.26 L 36.46 25.22 L 36.57 25.18 L 36.67 25.13 L 36.78 25.08 L 36.89 25.03 L 37 24.98 L 37.11 24.92 L 37.22 24.85 L 37.33 24.78 L 37.43 24.71 L 37.54 24.64 L 37.65 24.56 L 37.76 24.48 L 37.87 24.39 L 37.97 24.31 L 38.08 24.21 L 38.19 24.12 L 38.3 24.02 L 38.41 23.92 L 38.52 23.81 L 38.62 23.7 L 38.73 23.59 L 38.84 23.47 L 38.95 23.36 L 39.06 23.24 L 39.17 23.11 L 39.27 22.98 L 39.38 22.85 L 39.49 22.72 L 39.6 22.59 L 39.71 22.45 L 39.82 22.31 L 39.92 22.16 L 40.03 22.02 L 40.14 21.87 L 40.25 21.72 L 40.36 21.57 L 40.47 21.41 L 40.58 21.25 L 40.68 21.09 L 40.79 20.93 L 40.9 20.77 L 41.01 20.6 L 41.12 20.44 L 41.23 20.27 L 41.33 20.1 L 41.44 19.92 L 41.55 19.75 L 41.66 19.57 L 41.77 19.4 L 41.88 19.22 L 41.98 19.04 L 42.09 18.86 L 42.2 18.68 L 42.31 18.5 L 42.42 18.31 L 42.52 18.13 L 42.63 17.94 L 42.74 17.76 L 42.85 17.57 L 42.96 17.39 L 43.07 17.2 L 43.17 17.01 L 43.28 16.83 L 43.39 16.64 L 43.5 16.45 L 43.61 16.26 L 43.72 16.07 L 43.82 15.89 L 43.93 15.7 L 44.04 15.51 L 44.15 15.33 L 44.26 15.14 L 44.37 14.96 L 44.47 14.77 L 44.58 14.59 L 44.69 14.4 L 44.8 14.22 L 44.91 14.04 L 45.02 13.86 L 45.12 13.68 L 45.23 13.5 L 45.34 13.33 L 45.45 13.15 L 45.56 12.98 L 45.67 12.8 L 45.77 12.63 L 45.88 12.46 L 45.99 12.3 L 46.1 12.13 L 46.21 11.97 L 46.32 11.81 L 46.42 11.65 L 46.53 11.49 L 46.64 11.33 L 46.75 11.18 L 46.86 11.03 L 46.97 10.88 L 47.07 10.74 L 47.18 10.59 L 47.29 10.45 L 47.4 10.31 L 47.51 10.18 L 47.62 10.05 L 47.72 9.92 L 47.83 9.79 L 47.94 9.66 L 48.05 9.54 L 48.16 9.43 L 48.27 9.31 L 48.37 9.2 L 48.48 9.09 L 48.59 8.98 L 48.7 8.88 L 48.81 8.78 L 48.92 8.69 L 49.02 8.59 L 49.13 8.51 L 49.24 8.42 L 49.35 8.34 L 49.46 8.26 L 49.57 8.19 L 49.67 8.12 L 49.78 8.05 L 49.89 7.98 L 50 7.92 L 50.11 7.87 L 50.22 7.82 L 50.32 7.77 L 50.43 7.72 L 50.54 7.68 L 50.65 7.64 L 50.76 7.61 L 50.87 7.58 L 50.97 7.55 L 51.08 7.53 L 51.19 7.52 L 51.3 7.5 L 51.41 7.49 L 51.52 7.49 L 51.62 7.48 L 51.73 7.49 L 51.84 7.49 L 51.95 7.5 L 52.06 7.51 L 52.17 7.53 L 52.27 7.55 L 52.38 7.58 L 52.49 7.61 L 52.6 7.64 L 52.71 7.68 L 52.82 7.72 L 52.92 7.76 L 53.03 7.81 L 53.14 7.86 L 53.25 7.92 L 53.36 7.98 L 53.47 8.04 L 53.57 8.11 L 53.68 8.18 L 53.79 8.25 L 53.9 8.33 L 54.01 8.41 L 54.12 8.5 L 54.23 8.59 L 54.33 8.68 L 54.44 8.78 L 54.55 8.87 L 54.66 8.98 L 54.77 9.08 L 54.87 9.19 L 54.98 9.3 L 55.09 9.42 L 55.2 9.53 L 55.31 9.66 L 55.42 9.78 L 55.52 9.91 L 55.63 10.04 L 55.74 10.17 L 55.85 10.3 L 55.96 10.44 L 56.07 10.58 L 56.17 10.73 L 56.28 10.87 L 56.39 11.02 L 56.5 11.17 L 56.61 11.32 L 56.72 11.48 L 56.83 11.64 L 56.93 11.79 L 57.04 11.96 L 57.15 12.12 L 57.26 12.29 L 57.37 12.45 L 57.47 12.62 L 57.58 12.79 L 57.69 12.96 L 57.8 13.14 L 57.91 13.31 L 58.02 13.49 L 58.12 13.67 L 58.23 13.85 L 58.34 14.03 L 58.45 14.21 L 58.56 14.39 L 58.67 14.57 L 58.77 14.76 L 58.88 14.94 L 58.99 15.13 L 59.1 15.31 L 59.21 15.5 L 59.32 15.69 L 59.42 15.87 L 59.53 16.06 L 59.64 16.25 L 59.75 16.44 L 59.86 16.62 L 59.97 16.81 L 60.08 17 L 60.18 17.19 L 60.29 17.37 L 60.4 17.56 L 60.51 17.75 L 60.62 17.93 L 60.72 18.12 L 60.83 18.3 L 60.94 18.48 L 61.05 18.66 L 61.16 18.85 L 61.27 19.03 L 61.38 19.21 L 61.48 19.38 L 61.59 19.56 L 61.7 19.74 L 61.81 19.91 L 61.92 20.08 L 62.02 20.25 L 62.13 20.42 L 62.24 20.59 L 62.35 20.76 L 62.46 20.92 L 62.57 21.08 L 62.67 21.24 L 62.78 21.4 L 62.89 21.55 L 63 21.71 L 63.11 21.86 L 63.22 22.01 L 63.33 22.15 L 63.43 22.3 L 63.54 22.44 L 63.65 22.58 L 63.76 22.71 L 63.87 22.84 L 63.97 22.97 L 64.08 23.1 L 64.19 23.23 L 64.3 23.35 L 64.41 23.47 L 64.52 23.58 L 64.62 23.69 L 64.73 23.8 L 64.84 23.91 L 64.95 24.01 L 65.06 24.11 L 65.17 24.21 L 65.28 24.3 L 65.38 24.39 L 65.49 24.47 L 65.6 24.55 L 65.71 24.63 L 65.82 24.71 L 65.92 24.78 L 66.03 24.85 L 66.14 24.91 L 66.25 24.97 L 66.36 25.03 L 66.47 25.08 L 66.58 25.13 L 66.68 25.18 L 66.79 25.22 L 66.9 25.25 L 67.01 25.29 L 67.12 25.32 L 67.22 25.34 L 67.33 25.37 L 67.44 25.38 L 67.55 25.4 L 67.66 25.41 L 67.77 25.41 L 67.88 25.42 L 67.98 25.42 L 68.09 25.41 L 68.2 25.4 L 68.31 25.39 L 68.42 25.37 L 68.53 25.35 L 68.63 25.32 L 68.74 25.29 L 68.85 25.26 L 68.96 25.23 L 69.07 25.18 L 69.17 25.14 L 69.28 25.09 L 69.39 25.04 L 69.5 24.98 L 69.61 24.93 L 69.72 24.86 L 69.82 24.8 L 69.93 24.73 L 70.04 24.65 L 70.15 24.57 L 70.26 24.49 L 70.37 24.41 L 70.47 24.32 L 70.58 24.23 L 70.69 24.13 L 70.8 24.03 L 70.91 23.93 L 71.02 23.83 L 71.12 23.72 L 71.23 23.61 L 71.34 23.49 L 71.45 23.37 L 71.56 23.25 L 71.67 23.13 L 71.77 23 L 71.88 22.87 L 71.99 22.74 L 72.1 22.61 L 72.21 22.47 L 72.32 22.33 L 72.42 22.19 L 72.53 22.04 L 72.64 21.89 L 72.75 21.74 L 72.86 21.59 L 72.97 21.43 L 73.07 21.28 L 73.18 21.12 L 73.29 20.96 L 73.4 20.79 L 73.51 20.63 L 73.62 20.46 L 73.72 20.29 L 73.83 20.12 L 73.94 19.95 L 74.05 19.78 L 74.16 19.6 L 74.27 19.42 L 74.38 19.25 L 74.48 19.07 L 74.59 18.89 L 74.7 18.71 L 74.81 18.52 L 74.92 18.34 L 75.02 18.16 L 75.13 17.97 L 75.24 17.79 L 75.35 17.6 L 75.46 17.42 L 75.57 17.23 L 75.67 17.04 L 75.78 16.85 L 75.89 16.67 L 76 16.48" fill="none" stroke="#1c5f9e" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clip55170352)"/>
+<path d="M 11 7.48 L 11.11 7.49 L 11.22 7.49 L 11.33 7.5 L 11.43 7.52 L 11.54 7.54 L 11.65 7.56 L 11.76 7.58 L 11.87 7.61 L 11.97 7.65 L 12.08 7.69 L 12.19 7.73 L 12.3 7.77 L 12.41 7.82 L 12.52 7.87 L 12.62 7.93 L 12.73 7.99 L 12.84 8.06 L 12.95 8.12 L 13.06 8.19 L 13.17 8.27 L 13.27 8.35 L 13.38 8.43 L 13.49 8.52 L 13.6 8.61 L 13.71 8.7 L 13.82 8.79 L 13.92 8.89 L 14.03 9 L 14.14 9.1 L 14.25 9.21 L 14.36 9.32 L 14.47 9.44 L 14.58 9.56 L 14.68 9.68 L 14.79 9.8 L 14.9 9.93 L 15.01 10.06 L 15.12 10.19 L 15.22 10.33 L 15.33 10.47 L 15.44 10.61 L 15.55 10.75 L 15.66 10.9 L 15.77 11.05 L 15.88 11.2 L 15.98 11.35 L 16.09 11.51 L 16.2 11.67 L 16.31 11.83 L 16.42 11.99 L 16.52 12.15 L 16.63 12.32 L 16.74 12.48 L 16.85 12.65 L 16.96 12.82 L 17.07 13 L 17.18 13.17 L 17.28 13.35 L 17.39 13.52 L 17.5 13.7 L 17.61 13.88 L 17.72 14.06 L 17.83 14.24 L 17.93 14.42 L 18.04 14.61 L 18.15 14.79 L 18.26 14.98 L 18.37 15.16 L 18.47 15.35 L 18.58 15.53 L 18.69 15.72 L 18.8 15.91 L 18.91 16.1 L 19.02 16.28 L 19.12 16.47 L 19.23 16.66 L 19.34 16.85 L 19.45 17.03 L 19.56 17.22 L 19.67 17.41 L 19.77 17.59 L 19.88 17.78 L 19.99 17.97 L 20.1 18.15 L 20.21 18.33 L 20.32 18.52 L 20.42 18.7 L 20.53 18.88 L 20.64 19.06 L 20.75 19.24 L 20.86 19.42 L 20.97 19.59 L 21.08 19.77 L 21.18 19.94 L 21.29 20.11 L 21.4 20.29 L 21.51 20.45 L 21.62 20.62 L 21.73 20.79 L 21.83 20.95 L 21.94 21.11 L 22.05 21.27 L 22.16 21.43 L 22.27 21.58 L 22.37 21.74 L 22.48 21.89 L 22.59 22.03 L 22.7 22.18 L 22.81 22.32 L 22.92 22.46 L 23.02 22.6 L 23.13 22.74 L 23.24 22.87 L 23.35 23 L 23.46 23.13 L 23.57 23.25 L 23.67 23.37 L 23.78 23.49 L 23.89 23.6 L 24 23.71 L 24.11 23.82 L 24.22 23.93 L 24.32 24.03 L 24.43 24.13 L 24.54 24.22 L 24.65 24.32 L 24.76 24.4 L 24.87 24.49 L 24.98 24.57 L 25.08 24.65 L 25.19 24.72 L 25.3 24.79 L 25.41 24.86 L 25.52 24.92 L 25.62 24.98 L 25.73 25.04 L 25.84 25.09 L 25.95 25.14 L 26.06 25.18 L 26.17 25.22 L 26.27 25.26 L 26.38 25.29 L 26.49 25.32 L 26.6 25.35 L 26.71 25.37 L 26.82 25.39 L 26.93 25.4 L 27.03 25.41 L 27.14 25.41 L 27.25 25.42 L 27.36 25.41 L 27.47 25.41 L 27.57 25.4 L 27.68 25.38 L 27.79 25.37 L 27.9 25.34 L 28.01 25.32 L 28.12 25.29 L 28.22 25.26 L 28.33 25.22 L 28.44 25.18 L 28.55 25.13 L 28.66 25.08 L 28.77 25.03 L 28.88 24.97 L 28.98 24.91 L 29.09 24.85 L 29.2 24.78 L 29.31 24.71 L 29.42 24.64 L 29.53 24.56 L 29.63 24.48 L 29.74 24.39 L 29.85 24.3 L 29.96 24.21 L 30.07 24.11 L 30.17 24.01 L 30.28 23.91 L 30.39 23.81 L 30.5 23.7 L 30.61 23.59 L 30.72 23.47 L 30.82 23.35 L 30.93 23.23 L 31.04 23.11 L 31.15 22.98 L 31.26 22.85 L 31.37 22.72 L 31.47 22.58 L 31.58 22.44 L 31.69 22.3 L 31.8 22.16 L 31.91 22.01 L 32.02 21.86 L 32.12 21.71 L 32.23 21.56 L 32.34 21.4 L 32.45 21.25 L 32.56 21.09 L 32.67 20.93 L 32.77 20.76 L 32.88 20.6 L 32.99 20.43 L 33.1 20.26 L 33.21 20.09 L 33.32 19.92 L 33.42 19.74 L 33.53 19.57 L 33.64 19.39 L 33.75 19.21 L 33.86 19.03 L 33.97 18.85 L 34.08 18.67 L 34.18 18.49 L 34.29 18.31 L 34.4 18.12 L 34.51 17.94 L 34.62 17.75 L 34.73 17.57 L 34.83 17.38 L 34.94 17.19 L 35.05 17.01 L 35.16 16.82 L 35.27 16.63 L 35.38 16.44 L 35.48 16.26 L 35.59 16.07 L 35.7 15.88 L 35.81 15.69 L 35.92 15.51 L 36.02 15.32 L 36.13 15.13 L 36.24 14.95 L 36.35 14.76 L 36.46 14.58 L 36.57 14.4 L 36.67 14.21 L 36.78 14.03 L 36.89 13.85 L 37 13.67 L 37.11 13.5 L 37.22 13.32 L 37.33 13.14 L 37.43 12.97 L 37.54 12.8 L 37.65 12.63 L 37.76 12.46 L 37.87 12.29 L 37.97 12.13 L 38.08 11.96 L 38.19 11.8 L 38.3 11.64 L 38.41 11.48 L 38.52 11.33 L 38.62 11.18 L 38.73 11.03 L 38.84 10.88 L 38.95 10.73 L 39.06 10.59 L 39.17 10.45 L 39.27 10.31 L 39.38 10.17 L 39.49 10.04 L 39.6 9.91 L 39.71 9.78 L 39.82 9.66 L 39.92 9.54 L 40.03 9.42 L 40.14 9.31 L 40.25 9.19 L 40.36 9.09 L 40.47 8.98 L 40.58 8.88 L 40.68 8.78 L 40.79 8.68 L 40.9 8.59 L 41.01 8.5 L 41.12 8.42 L 41.23 8.34 L 41.33 8.26 L 41.44 8.18 L 41.55 8.11 L 41.66 8.05 L 41.77 7.98 L 41.88 7.92 L 41.98 7.87 L 42.09 7.81 L 42.2 7.76 L 42.31 7.72 L 42.42 7.68 L 42.52 7.64 L 42.63 7.61 L 42.74 7.58 L 42.85 7.55 L 42.96 7.53 L 43.07 7.51 L 43.17 7.5 L 43.28 7.49 L 43.39 7.49 L 43.5 7.48 L 43.61 7.49 L 43.72 7.49 L 43.82 7.5 L 43.93 7.51 L 44.04 7.53 L 44.15 7.55 L 44.26 7.58 L 44.37 7.61 L 44.47 7.64 L 44.58 7.68 L 44.69 7.72 L 44.8 7.76 L 44.91 7.81 L 45.02 7.87 L 45.12 7.92 L 45.23 7.98 L 45.34 8.05 L 45.45 8.11 L 45.56 8.18 L 45.67 8.26 L 45.77 8.34 L 45.88 8.42 L 45.99 8.5 L 46.1 8.59 L 46.21 8.68 L 46.32 8.78 L 46.42 8.88 L 46.53 8.98 L 46.64 9.09 L 46.75 9.19 L 46.86 9.31 L 46.97 9.42 L 47.07 9.54 L 47.18 9.66 L 47.29 9.78 L 47.4 9.91 L 47.51 10.04 L 47.62 10.17 L 47.72 10.31 L 47.83 10.45 L 47.94 10.59 L 48.05 10.73 L 48.16 10.88 L 48.27 11.03 L 48.37 11.18 L 48.48 11.33 L 48.59 11.48 L 48.7 11.64 L 48.81 11.8 L 48.92 11.96 L 49.02 12.13 L 49.13 12.29 L 49.24 12.46 L 49.35 12.63 L 49.46 12.8 L 49.57 12.97 L 49.67 13.14 L 49.78 13.32 L 49.89 13.5 L 50 13.67 L 50.11 13.85 L 50.22 14.03 L 50.32 14.21 L 50.43 14.4 L 50.54 14.58 L 50.65 14.76 L 50.76 14.95 L 50.87 15.13 L 50.97 15.32 L 51.08 15.51 L 51.19 15.69 L 51.3 15.88 L 51.41 16.07 L 51.52 16.26 L 51.62 16.44 L 51.73 16.63 L 51.84 16.82 L 51.95 17.01 L 52.06 17.19 L 52.17 17.38 L 52.27 17.57 L 52.38 17.75 L 52.49 17.94 L 52.6 18.12 L 52.71 18.31 L 52.82 18.49 L 52.92 18.67 L 53.03 18.85 L 53.14 19.03 L 53.25 19.21 L 53.36 19.39 L 53.47 19.57 L 53.57 19.74 L 53.68 19.92 L 53.79 20.09 L 53.9 20.26 L 54.01 20.43 L 54.12 20.6 L 54.23 20.76 L 54.33 20.93 L 54.44 21.09 L 54.55 21.25 L 54.66 21.4 L 54.77 21.56 L 54.87 21.71 L 54.98 21.86 L 55.09 22.01 L 55.2 22.16 L 55.31 22.3 L 55.42 22.44 L 55.52 22.58 L 55.63 22.72 L 55.74 22.85 L 55.85 22.98 L 55.96 23.11 L 56.07 23.23 L 56.17 23.35 L 56.28 23.47 L 56.39 23.59 L 56.5 23.7 L 56.61 23.81 L 56.72 23.91 L 56.83 24.01 L 56.93 24.11 L 57.04 24.21 L 57.15 24.3 L 57.26 24.39 L 57.37 24.48 L 57.47 24.56 L 57.58 24.64 L 57.69 24.71 L 57.8 24.78 L 57.91 24.85 L 58.02 24.91 L 58.12 24.97 L 58.23 25.03 L 58.34 25.08 L 58.45 25.13 L 58.56 25.18 L 58.67 25.22 L 58.77 25.26 L 58.88 25.29 L 58.99 25.32 L 59.1 25.34 L 59.21 25.37 L 59.32 25.38 L 59.42 25.4 L 59.53 25.41 L 59.64 25.41 L 59.75 25.42 L 59.86 25.41 L 59.97 25.41 L 60.08 25.4 L 60.18 25.39 L 60.29 25.37 L 60.4 25.35 L 60.51 25.32 L 60.62 25.29 L 60.72 25.26 L 60.83 25.22 L 60.94 25.18 L 61.05 25.14 L 61.16 25.09 L 61.27 25.04 L 61.38 24.98 L 61.48 24.92 L 61.59 24.86 L 61.7 24.79 L 61.81 24.72 L 61.92 24.65 L 62.02 24.57 L 62.13 24.49 L 62.24 24.4 L 62.35 24.32 L 62.46 24.22 L 62.57 24.13 L 62.67 24.03 L 62.78 23.93 L 62.89 23.82 L 63 23.71 L 63.11 23.6 L 63.22 23.49 L 63.33 23.37 L 63.43 23.25 L 63.54 23.13 L 63.65 23 L 63.76 22.87 L 63.87 22.74 L 63.97 22.6 L 64.08 22.46 L 64.19 22.32 L 64.3 22.18 L 64.41 22.03 L 64.52 21.89 L 64.62 21.74 L 64.73 21.58 L 64.84 21.43 L 64.95 21.27 L 65.06 21.11 L 65.17 20.95 L 65.28 20.79 L 65.38 20.62 L 65.49 20.45 L 65.6 20.29 L 65.71 20.11 L 65.82 19.94 L 65.92 19.77 L 66.03 19.59 L 66.14 19.42 L 66.25 19.24 L 66.36 19.06 L 66.47 18.88 L 66.58 18.7 L 66.68 18.52 L 66.79 18.33 L 66.9 18.15 L 67.01 17.97 L 67.12 17.78 L 67.22 17.59 L 67.33 17.41 L 67.44 17.22 L 67.55 17.03 L 67.66 16.85 L 67.77 16.66 L 67.88 16.47 L 67.98 16.28 L 68.09 16.1 L 68.2 15.91 L 68.31 15.72 L 68.42 15.53 L 68.53 15.35 L 68.63 15.16 L 68.74 14.98 L 68.85 14.79 L 68.96 14.61 L 69.07 14.42 L 69.17 14.24 L 69.28 14.06 L 69.39 13.88 L 69.5 13.7 L 69.61 13.52 L 69.72 13.35 L 69.82 13.17 L 69.93 13 L 70.04 12.82 L 70.15 12.65 L 70.26 12.48 L 70.37 12.32 L 70.47 12.15 L 70.58 11.99 L 70.69 11.83 L 70.8 11.67 L 70.91 11.51 L 71.02 11.35 L 71.12 11.2 L 71.23 11.05 L 71.34 10.9 L 71.45 10.75 L 71.56 10.61 L 71.67 10.47 L 71.77 10.33 L 71.88 10.19 L 71.99 10.06 L 72.1 9.93 L 72.21 9.8 L 72.32 9.68 L 72.42 9.56 L 72.53 9.44 L 72.64 9.32 L 72.75 9.21 L 72.86 9.1 L 72.97 9 L 73.07 8.89 L 73.18 8.79 L 73.29 8.7 L 73.4 8.61 L 73.51 8.52 L 73.62 8.43 L 73.72 8.35 L 73.83 8.27 L 73.94 8.19 L 74.05 8.12 L 74.16 8.06 L 74.27 7.99 L 74.38 7.93 L 74.48 7.87 L 74.59 7.82 L 74.7 7.77 L 74.81 7.73 L 74.92 7.69 L 75.02 7.65 L 75.13 7.61 L 75.24 7.58 L 75.35 7.56 L 75.46 7.54 L 75.57 7.52 L 75.67 7.5 L 75.78 7.49 L 75.89 7.49 L 76 7.48" fill="none" stroke="#b3402a" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clip55170352)"/>
+<line x1="11" y1="16.45" x2="76" y2="16.45" stroke="#1b1b1b" stroke-width="0.45"/>
+<polygon points="76,16.45 74.52,17.05 74.52,15.85" fill="#1b1b1b" stroke="none"/>
+<line x1="11" y1="16.45" x2="11" y2="17.55" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="11" y="20.45" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-6,28</text>
+<line x1="27.25" y1="16.45" x2="27.25" y2="17.55" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="27.25" y="20.45" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-3,14</text>
+<line x1="43.5" y1="16.45" x2="43.5" y2="17.55" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="59.75" y1="16.45" x2="59.75" y2="17.55" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="59.75" y="20.45" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">3,14</text>
+<line x1="76" y1="16.45" x2="76" y2="17.55" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="76" y="20.45" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">6,28</text>
+<line x1="43.5" y1="29.9" x2="43.5" y2="3" stroke="#1b1b1b" stroke-width="0.45"/>
+<polygon points="43.5,3 44.1,4.48 42.9,4.48" fill="#1b1b1b" stroke="none"/>
+<line x1="42.4" y1="25.42" x2="43.5" y2="25.42" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="41.7" y="25.42" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-1</text>
+<line x1="42.4" y1="16.45" x2="43.5" y2="16.45" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="42.4" y1="7.48" x2="43.5" y2="7.48" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="41.7" y="7.48" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">1</text>
+<rect x="50.62" y="4.6" width="23.78" height="7.2" fill="#fff" stroke="#dde2e7" stroke-width="0.25" rx="0.8"/>
+<line x1="52.22" y1="6.6" x2="57.02" y2="6.6" stroke="#1c5f9e" stroke-width="0.55"/>
+<text x="58.02" y="6.6" font-size="2.3" fill="#1b1b1b" dominant-baseline="middle">y = sin x</text>
+<line x1="52.22" y1="9.6" x2="57.02" y2="9.6" stroke="#b3402a" stroke-width="0.55"/>
+<text x="58.02" y="9.6" font-size="2.3" fill="#1b1b1b" dominant-baseline="middle">y = cos x</text>
+<text x="43.5" y="38.6" font-size="2.4" fill="#5b6470" text-anchor="middle">x</text>
+<text x="2.6" y="16.45" font-size="2.4" fill="#5b6470" text-anchor="middle" transform="rotate(-90 2.6 16.45)">y</text>
+</svg>
+<figcaption>Graferne for sin x og cos x; begge har periode 2π og værdimængde [−1, 1].</figcaption>
+</figure>
+
+<h2>Ligninger</h2>
+<table class="compact">
+<caption>Løsninger i radianer</caption>
+<tr><th>Ligning</th><th>Løsninger</th></tr>
+<tr><td><math><mi>sin</mi><mspace width="0.1em"/><mi>x</mi><mo>=</mo><mi>k</mi></math>, <math><mo>|</mo><mi>k</mi><mo>|</mo><mo>≤</mo><mn>1</mn></math></td><td><math><mi>x</mi><mo>=</mo><mi>v</mi><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi></math> eller <math><mi>x</mi><mo>=</mo><mi>π</mi><mo>−</mo><mi>v</mi><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi></math></td></tr>
+<tr><td><math><mi>cos</mi><mspace width="0.1em"/><mi>x</mi><mo>=</mo><mi>k</mi></math>, <math><mo>|</mo><mi>k</mi><mo>|</mo><mo>≤</mo><mn>1</mn></math></td><td><math><mi>x</mi><mo>=</mo><mo>±</mo><mi>v</mi><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi></math></td></tr>
+<tr><td><math><mi>tan</mi><mspace width="0.1em"/><mi>x</mi><mo>=</mo><mi>k</mi></math></td><td><math><mi>x</mi><mo>=</mo><mi>v</mi><mo>+</mo><mi>π</mi><mi>n</mi></math></td></tr>
+</table>
+<p class="where"><math><mi>v</mi></math> er én løsning, og <math><mi>n</mi><mo>∈</mo><mi>ℤ</mi></math>.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <div class="formula left">
+    <math><mn>2</mn><mi>sin</mi><mspace width="0.1em"/><mi>x</mi><mo>=</mo><mn>1</mn><mo>⇔</mo><mi>sin</mi><mspace width="0.1em"/><mi>x</mi><mo>=</mo><mn>0,5</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mfrac><mi>π</mi><mn>6</mn></mfrac><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi><mspace width="0.4em"/><mtext>eller</mtext><mspace width="0.4em"/><mi>x</mi><mo>=</mo><mfrac><mrow><mn>5</mn><mi>π</mi></mrow><mn>6</mn></mfrac><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi></math>
+  </div>
+  <p class="where">I intervallet <math><mo>[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>π</mi><mo>[</mo></math> er løsningerne <math><mfrac><mi>π</mi><mn>6</mn></mfrac></math> og <math><mfrac><mrow><mn>5</mn><mi>π</mi></mrow><mn>6</mn></mfrac></math>.</p>
+</div>
+
+<h2>Harmoniske svingninger</h2>
+<p>En harmonisk svingning beskrives ved en sinusfunktion med amplitude, periode og fase:</p>
+<div class="formula"><math><mi>y</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mi>A</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mo>(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo>)</mo><mo>+</mo><mi>d</mi></math></div>
+<dl class="kv">
+  <dt>Amplitude</dt><dd><math><mo>|</mo><mi>A</mi><mo>|</mo></math></dd>
+  <dt>Periode</dt><dd><math><mi>T</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>ω</mi></mfrac></math></dd>
+  <dt>Frekvens</dt><dd><math><mi>f</mi><mo>=</mo><mfrac><mn>1</mn><mi>T</mi></mfrac><mo>=</mo><mfrac><mi>ω</mi><mrow><mn>2</mn><mi>π</mi></mrow></mfrac></math></dd>
+  <dt>Faseforskydning</dt><dd><math><mo>−</mo><mfrac><mi>φ</mi><mi>ω</mi></mfrac></math></dd>
+  <dt>Ligevægt</dt><dd><math><mi>d</mi></math>; værdimængde <math><mo>[</mo><mi>d</mi><mo>−</mo><mo>|</mo><mi>A</mi><mo>|</mo><mo>,</mo><mi>d</mi><mo>+</mo><mo>|</mo><mi>A</mi><mo>|</mo><mo>]</mo></math></dd>
+</dl>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <div class="formula"><math><mi>y</mi><mo>=</mo><mn>3</mn><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mo>(</mo><mn>2</mn><mi>t</mi><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>)</mo><mo>+</mo><mn>1</mn></math></div>
+  <p class="where">Amplitude 3 · periode <math><mi>π</mi></math> · faseforskydning <math><mfrac><mi>π</mi><mn>4</mn></mfrac></math> · værdimængde <math><mo>[</mo><mo>−</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>]</mo></math>.</p>
+</div>
+
+<h2>Sammenhænge</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Grundidentitet</span>
+    <div class="formula"><math><msup><mi>sin</mi><mn>2</mn></msup><mspace width="0.05em"/><mi>v</mi><mo>+</mo><msup><mi>cos</mi><mn>2</mn></msup><mspace width="0.05em"/><mi>v</mi><mo>=</mo><mn>1</mn></math></div>
+    <p class="where">Følger af enhedscirklens ligning <math><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></math>.</p>
+  </div>
+  <div class="box">
+    <span class="label">Tangens</span>
+    <div class="formula"><math><mi>tan</mi><mspace width="0.1em"/><mi>v</mi><mo>=</mo><mfrac><mrow><mi>sin</mi><mspace width="0.1em"/><mi>v</mi></mrow><mrow><mi>cos</mi><mspace width="0.1em"/><mi>v</mi></mrow></mfrac></math></div>
+    <p class="where">Udefineret, når <math><mi>cos</mi><mspace width="0.1em"/><mi>v</mi><mo>=</mo><mn>0</mn></math>.</p>
+  </div>
+</div>
+<div class="box note">
+  <span class="label">Dobbelte vinkler</span>
+  <div class="formula"><math><mi>sin</mi><mspace width="0.1em"/><mn>2</mn><mi>v</mi><mo>=</mo><mn>2</mn><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>v</mi><mspace width="0.1em"/><mi>cos</mi><mspace width="0.1em"/><mi>v</mi><mo>,</mo><mspace width="1em"/><mi>cos</mi><mspace width="0.1em"/><mn>2</mn><mi>v</mi><mo>=</mo><msup><mi>cos</mi><mn>2</mn></msup><mspace width="0.05em"/><mi>v</mi><mo>−</mo><msup><mi>sin</mi><mn>2</mn></msup><mspace width="0.05em"/><mi>v</mi></math></div>
+  <p class="where">Bruges til at omskrive svingninger og løse trigonometriske ligninger.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Grader og radianer blandes sammen. Afgør først, hvilken enhed opgaven bruger.</li>
+    <li>Ved <math><mi>sin</mi><mspace width="0.1em"/><mi>x</mi><mo>=</mo><mi>k</mi></math> glemmes den anden løsningsfamilie <math><mi>π</mi><mo>−</mo><mi>v</mi></math>.</li>
+    <li><math><mi>sin</mi><mspace width="0.1em"/><mi>x</mi><mo>=</mo><mn>1,2</mn></math> har ingen løsning, fordi sinus højst er 1.</li>
+    <li>Værdimængden for <math><mi>tan</mi></math> er alle reelle tal, men funktionen er ikke defineret ved <math><mi>x</mi><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>π</mi><mi>n</mi></math>.</li>
+  </ul>
+</div>
+
+</body>
+</html>

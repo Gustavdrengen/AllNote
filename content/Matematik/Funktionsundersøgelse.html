@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Funktionsundersøgelse</title>
+</head>
+<body>
+
+<h1>Funktionsundersøgelse</h1>
+
+<h2>Arbejdsgang</h2>
+<ol class="tight">
+<li>Bestem definitionsmængden.</li>
+<li>Find nulpunkter og fortegnslinje.</li>
+<li>Undersøg grænseværdier ved endepunkter og asymptoter.</li>
+<li>Find <math><msup><mi>f</mi><mo>′</mo></msup></math>, og bestem monotonintervaller og ekstrempunkter.</li>
+<li>Find <math><msup><mi>f</mi><mo>″</mo></msup></math>, og bestem vendepunkter og krumning.</li>
+<li>Tegn grafen med de fundne punkter og asymptoter.</li>
+</ol>
+
+<h2>Monotoni og ekstrema</h2>
+<table class="compact">
+<caption>Sammenhæng mellem <math><msup><mi>f</mi><mo>′</mo></msup></math> og grafen</caption>
+<tr><th>Fortegn for <math><msup><mi>f</mi><mo>′</mo></msup></math></th><th>Forløb</th><th>Punkt</th></tr>
+<tr><td><math><msup><mi>f</mi><mo>′</mo></msup><mo>&gt;</mo><mn>0</mn></math></td><td>voksende</td><td>—</td></tr>
+<tr><td><math><msup><mi>f</mi><mo>′</mo></msup><mo>&lt;</mo><mn>0</mn></math></td><td>aftagende</td><td>—</td></tr>
+<tr><td>skifter + til −</td><td>voksende, derefter aftagende</td><td>lokalt maksimum</td></tr>
+<tr><td>skifter − til +</td><td>aftagende, derefter voksende</td><td>lokalt minimum</td></tr>
+<tr><td>skifter ikke fortegn</td><td>vender</td><td>vendepunkt med vandret tangent, ikke ekstremum</td></tr>
+</table>
+<p>Kandidater til ekstrema: punkter, hvor <math><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>0</mn></math>, eller hvor <math><msup><mi>f</mi><mo>′</mo></msup></math> ikke er defineret. Fortegnsskiftet afgør typen.</p>
+
+<h2>Krumning og vendepunkt</h2>
+<div class="formula"><math><msup><mi>f</mi><mo>″</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>&gt;</mo><mn>0</mn><mspace width="0.5em"/><mo>⇒</mo><mspace width="0.5em"/><mtext>konveks (glad)</mtext><mo>,</mo><mspace width="1em"/><msup><mi>f</mi><mo>″</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>&lt;</mo><mn>0</mn><mspace width="0.5em"/><mo>⇒</mo><mspace width="0.5em"/><mtext>konkav (sur)</mtext></math></div>
+<p>Et vendepunkt er et punkt, hvor krumningen skifter. Det kræver <math><msup><mi>f</mi><mo>″</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>0</mn></math> eller <math><msup><mi>f</mi><mo>″</mo></msup></math> udefineret <em>og</em> et fortegnsskift i <math><msup><mi>f</mi><mo>″</mo></msup></math>.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="74mm" height="46mm" viewBox="0 0 74 46" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<defs><clipPath id="clip5df3f228"><rect x="11" y="3" width="59" height="32.9"/></clipPath></defs>
+<rect x="11" y="3" width="59" height="32.9" fill="none" stroke="#dde2e7" stroke-width="0.3"/>
+<line x1="11" y1="3" x2="11" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="39.1" y1="3" x2="39.1" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="53.14" y1="3" x2="53.14" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="67.19" y1="3" x2="67.19" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="35.9" x2="70" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="28.59" x2="70" y2="28.59" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="13.97" x2="70" y2="13.97" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="6.66" x2="70" y2="6.66" stroke="#dde2e7" stroke-width="0.25"/>
+<path d="M 11 28.59 L 11.1 28.36 L 11.2 28.13 L 11.29 27.91 L 11.39 27.68 L 11.49 27.46 L 11.59 27.25 L 11.69 27.03 L 11.79 26.81 L 11.88 26.6 L 11.98 26.39 L 12.08 26.18 L 12.18 25.98 L 12.28 25.77 L 12.38 25.57 L 12.47 25.37 L 12.57 25.17 L 12.67 24.98 L 12.77 24.78 L 12.87 24.59 L 12.97 24.4 L 13.07 24.21 L 13.16 24.03 L 13.26 23.85 L 13.36 23.66 L 13.46 23.48 L 13.56 23.31 L 13.66 23.13 L 13.75 22.96 L 13.85 22.78 L 13.95 22.61 L 14.05 22.45 L 14.15 22.28 L 14.24 22.11 L 14.34 21.95 L 14.44 21.79 L 14.54 21.63 L 14.64 21.48 L 14.74 21.32 L 14.84 21.17 L 14.93 21.02 L 15.03 20.87 L 15.13 20.72 L 15.23 20.57 L 15.33 20.43 L 15.42 20.29 L 15.52 20.15 L 15.62 20.01 L 15.72 19.87 L 15.82 19.74 L 15.92 19.6 L 16.02 19.47 L 16.11 19.34 L 16.21 19.22 L 16.31 19.09 L 16.41 18.96 L 16.51 18.84 L 16.61 18.72 L 16.7 18.6 L 16.8 18.48 L 16.9 18.37 L 17 18.26 L 17.1 18.14 L 17.2 18.03 L 17.29 17.92 L 17.39 17.82 L 17.49 17.71 L 17.59 17.61 L 17.69 17.5 L 17.79 17.4 L 17.88 17.3 L 17.98 17.21 L 18.08 17.11 L 18.18 17.02 L 18.28 16.92 L 18.38 16.83 L 18.47 16.74 L 18.57 16.66 L 18.67 16.57 L 18.77 16.48 L 18.87 16.4 L 18.96 16.32 L 19.06 16.24 L 19.16 16.16 L 19.26 16.08 L 19.36 16.01 L 19.46 15.93 L 19.55 15.86 L 19.65 15.79 L 19.75 15.72 L 19.85 15.65 L 19.95 15.59 L 20.05 15.52 L 20.14 15.46 L 20.24 15.4 L 20.34 15.33 L 20.44 15.28 L 20.54 15.22 L 20.64 15.16 L 20.73 15.11 L 20.83 15.05 L 20.93 15 L 21.03 14.95 L 21.13 14.9 L 21.23 14.85 L 21.32 14.8 L 21.42 14.76 L 21.52 14.72 L 21.62 14.67 L 21.72 14.63 L 21.82 14.59 L 21.91 14.55 L 22.01 14.52 L 22.11 14.48 L 22.21 14.44 L 22.31 14.41 L 22.41 14.38 L 22.51 14.35 L 22.6 14.32 L 22.7 14.29 L 22.8 14.26 L 22.9 14.24 L 23 14.21 L 23.09 14.19 L 23.19 14.17 L 23.29 14.15 L 23.39 14.13 L 23.49 14.11 L 23.59 14.09 L 23.69 14.07 L 23.78 14.06 L 23.88 14.04 L 23.98 14.03 L 24.08 14.02 L 24.18 14.01 L 24.27 14 L 24.37 13.99 L 24.47 13.99 L 24.57 13.98 L 24.67 13.97 L 24.77 13.97 L 24.87 13.97 L 24.96 13.97 L 25.06 13.97 L 25.16 13.97 L 25.26 13.97 L 25.36 13.97 L 25.45 13.98 L 25.55 13.98 L 25.65 13.99 L 25.75 13.99 L 25.85 14 L 25.95 14.01 L 26.05 14.02 L 26.14 14.03 L 26.24 14.04 L 26.34 14.06 L 26.44 14.07 L 26.54 14.09 L 26.64 14.1 L 26.73 14.12 L 26.83 14.14 L 26.93 14.15 L 27.03 14.17 L 27.13 14.2 L 27.23 14.22 L 27.32 14.24 L 27.42 14.26 L 27.52 14.29 L 27.62 14.31 L 27.72 14.34 L 27.82 14.36 L 27.91 14.39 L 28.01 14.42 L 28.11 14.45 L 28.21 14.48 L 28.31 14.51 L 28.4 14.54 L 28.5 14.58 L 28.6 14.61 L 28.7 14.64 L 28.8 14.68 L 28.9 14.71 L 29 14.75 L 29.09 14.79 L 29.19 14.83 L 29.29 14.87 L 29.39 14.91 L 29.49 14.95 L 29.59 14.99 L 29.68 15.03 L 29.78 15.07 L 29.88 15.12 L 29.98 15.16 L 30.08 15.2 L 30.18 15.25 L 30.27 15.3 L 30.37 15.34 L 30.47 15.39 L 30.57 15.44 L 30.67 15.49 L 30.77 15.54 L 30.86 15.59 L 30.96 15.64 L 31.06 15.69 L 31.16 15.74 L 31.26 15.79 L 31.36 15.85 L 31.45 15.9 L 31.55 15.95 L 31.65 16.01 L 31.75 16.07 L 31.85 16.12 L 31.95 16.18 L 32.04 16.23 L 32.14 16.29 L 32.24 16.35 L 32.34 16.41 L 32.44 16.47 L 32.53 16.53 L 32.63 16.59 L 32.73 16.65 L 32.83 16.71 L 32.93 16.77 L 33.03 16.83 L 33.12 16.9 L 33.22 16.96 L 33.32 17.02 L 33.42 17.09 L 33.52 17.15 L 33.62 17.22 L 33.72 17.28 L 33.81 17.35 L 33.91 17.41 L 34.01 17.48 L 34.11 17.55 L 34.21 17.62 L 34.31 17.68 L 34.4 17.75 L 34.5 17.82 L 34.6 17.89 L 34.7 17.96 L 34.8 18.03 L 34.89 18.1 L 34.99 18.17 L 35.09 18.24 L 35.19 18.31 L 35.29 18.38 L 35.39 18.45 L 35.48 18.52 L 35.58 18.59 L 35.68 18.67 L 35.78 18.74 L 35.88 18.81 L 35.98 18.88 L 36.08 18.96 L 36.17 19.03 L 36.27 19.1 L 36.37 19.18 L 36.47 19.25 L 36.57 19.33 L 36.67 19.4 L 36.76 19.47 L 36.86 19.55 L 36.96 19.62 L 37.06 19.7 L 37.16 19.77 L 37.26 19.85 L 37.35 19.92 L 37.45 20 L 37.55 20.08 L 37.65 20.15 L 37.75 20.23 L 37.84 20.3 L 37.94 20.38 L 38.04 20.46 L 38.14 20.53 L 38.24 20.61 L 38.34 20.69 L 38.44 20.76 L 38.53 20.84 L 38.63 20.92 L 38.73 20.99 L 38.83 21.07 L 38.93 21.15 L 39.03 21.22 L 39.12 21.3 L 39.22 21.38 L 39.32 21.45 L 39.42 21.53 L 39.52 21.61 L 39.61 21.68 L 39.71 21.76 L 39.81 21.84 L 39.91 21.91 L 40.01 21.99 L 40.11 22.07 L 40.2 22.14 L 40.3 22.22 L 40.4 22.29 L 40.5 22.37 L 40.6 22.45 L 40.7 22.52 L 40.8 22.6 L 40.89 22.67 L 40.99 22.75 L 41.09 22.82 L 41.19 22.9 L 41.29 22.97 L 41.38 23.05 L 41.48 23.12 L 41.58 23.2 L 41.68 23.27 L 41.78 23.35 L 41.88 23.42 L 41.98 23.49 L 42.07 23.57 L 42.17 23.64 L 42.27 23.71 L 42.37 23.79 L 42.47 23.86 L 42.56 23.93 L 42.66 24 L 42.76 24.08 L 42.86 24.15 L 42.96 24.22 L 43.06 24.29 L 43.16 24.36 L 43.25 24.43 L 43.35 24.5 L 43.45 24.57 L 43.55 24.64 L 43.65 24.71 L 43.75 24.78 L 43.84 24.84 L 43.94 24.91 L 44.04 24.98 L 44.14 25.05 L 44.24 25.11 L 44.33 25.18 L 44.43 25.24 L 44.53 25.31 L 44.63 25.38 L 44.73 25.44 L 44.83 25.5 L 44.92 25.57 L 45.02 25.63 L 45.12 25.69 L 45.22 25.76 L 45.32 25.82 L 45.42 25.88 L 45.52 25.94 L 45.61 26 L 45.71 26.06 L 45.81 26.12 L 45.91 26.18 L 46.01 26.24 L 46.11 26.3 L 46.2 26.35 L 46.3 26.41 L 46.4 26.47 L 46.5 26.52 L 46.6 26.58 L 46.7 26.63 L 46.79 26.69 L 46.89 26.74 L 46.99 26.79 L 47.09 26.84 L 47.19 26.9 L 47.28 26.95 L 47.38 27 L 47.48 27.05 L 47.58 27.1 L 47.68 27.14 L 47.78 27.19 L 47.88 27.24 L 47.97 27.29 L 48.07 27.33 L 48.17 27.38 L 48.27 27.42 L 48.37 27.46 L 48.47 27.51 L 48.56 27.55 L 48.66 27.59 L 48.76 27.63 L 48.86 27.67 L 48.96 27.71 L 49.05 27.75 L 49.15 27.79 L 49.25 27.83 L 49.35 27.86 L 49.45 27.9 L 49.55 27.93 L 49.65 27.97 L 49.74 28 L 49.84 28.03 L 49.94 28.06 L 50.04 28.09 L 50.14 28.12 L 50.23 28.15 L 50.33 28.18 L 50.43 28.21 L 50.53 28.23 L 50.63 28.26 L 50.73 28.28 L 50.82 28.31 L 50.92 28.33 L 51.02 28.35 L 51.12 28.37 L 51.22 28.39 L 51.32 28.41 L 51.41 28.43 L 51.51 28.45 L 51.61 28.46 L 51.71 28.48 L 51.81 28.49 L 51.91 28.51 L 52.01 28.52 L 52.1 28.53 L 52.2 28.54 L 52.3 28.55 L 52.4 28.56 L 52.5 28.57 L 52.6 28.57 L 52.69 28.58 L 52.79 28.58 L 52.89 28.59 L 52.99 28.59 L 53.09 28.59 L 53.19 28.59 L 53.28 28.59 L 53.38 28.59 L 53.48 28.58 L 53.58 28.58 L 53.68 28.57 L 53.77 28.57 L 53.87 28.56 L 53.97 28.55 L 54.07 28.54 L 54.17 28.53 L 54.27 28.52 L 54.37 28.5 L 54.46 28.49 L 54.56 28.47 L 54.66 28.46 L 54.76 28.44 L 54.86 28.42 L 54.95 28.4 L 55.05 28.38 L 55.15 28.35 L 55.25 28.33 L 55.35 28.3 L 55.45 28.28 L 55.55 28.25 L 55.64 28.22 L 55.74 28.19 L 55.84 28.16 L 55.94 28.13 L 56.04 28.09 L 56.14 28.06 L 56.23 28.02 L 56.33 27.98 L 56.43 27.94 L 56.53 27.9 L 56.63 27.86 L 56.73 27.82 L 56.82 27.77 L 56.92 27.72 L 57.02 27.68 L 57.12 27.63 L 57.22 27.58 L 57.32 27.53 L 57.41 27.47 L 57.51 27.42 L 57.61 27.36 L 57.71 27.31 L 57.81 27.25 L 57.91 27.19 L 58 27.12 L 58.1 27.06 L 58.2 27 L 58.3 26.93 L 58.4 26.86 L 58.5 26.79 L 58.59 26.72 L 58.69 26.65 L 58.79 26.58 L 58.89 26.5 L 58.99 26.43 L 59.09 26.35 L 59.18 26.27 L 59.28 26.19 L 59.38 26.11 L 59.48 26.02 L 59.58 25.94 L 59.67 25.85 L 59.77 25.76 L 59.87 25.67 L 59.97 25.58 L 60.07 25.49 L 60.17 25.39 L 60.27 25.29 L 60.36 25.2 L 60.46 25.1 L 60.56 24.99 L 60.66 24.89 L 60.76 24.79 L 60.85 24.68 L 60.95 24.57 L 61.05 24.46 L 61.15 24.35 L 61.25 24.24 L 61.35 24.12 L 61.44 24 L 61.54 23.89 L 61.64 23.77 L 61.74 23.64 L 61.84 23.52 L 61.94 23.39 L 62.04 23.27 L 62.13 23.14 L 62.23 23.01 L 62.33 22.88 L 62.43 22.74 L 62.53 22.61 L 62.62 22.47 L 62.72 22.33 L 62.82 22.19 L 62.92 22.04 L 63.02 21.9 L 63.12 21.75 L 63.22 21.6 L 63.31 21.45 L 63.41 21.3 L 63.51 21.15 L 63.61 20.99 L 63.71 20.83 L 63.81 20.67 L 63.9 20.51 L 64 20.35 L 64.1 20.18 L 64.2 20.01 L 64.3 19.85 L 64.39 19.67 L 64.49 19.5 L 64.59 19.33 L 64.69 19.15 L 64.79 18.97 L 64.89 18.79 L 64.99 18.61 L 65.08 18.42 L 65.18 18.23 L 65.28 18.04 L 65.38 17.85 L 65.48 17.66 L 65.57 17.47 L 65.67 17.27 L 65.77 17.07 L 65.87 16.87 L 65.97 16.67 L 66.07 16.46 L 66.17 16.25 L 66.26 16.04 L 66.36 15.83 L 66.46 15.62 L 66.56 15.4 L 66.66 15.19 L 66.75 14.97 L 66.85 14.74 L 66.95 14.52 L 67.05 14.29 L 67.15 14.07 L 67.25 13.83 L 67.34 13.6 L 67.44 13.37 L 67.54 13.13 L 67.64 12.89 L 67.74 12.65 L 67.84 12.41 L 67.94 12.16 L 68.03 11.91 L 68.13 11.66 L 68.23 11.41 L 68.33 11.16 L 68.43 10.9 L 68.53 10.64 L 68.62 10.38 L 68.72 10.12 L 68.82 9.85 L 68.92 9.58 L 69.02 9.31 L 69.12 9.04 L 69.21 8.76 L 69.31 8.49 L 69.41 8.21 L 69.51 7.92 L 69.61 7.64 L 69.71 7.35 L 69.8 7.06 L 69.9 6.77 L 70 6.48" fill="none" stroke="#1c5f9e" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clip5df3f228)"/>
+<line x1="11" y1="21.28" x2="70" y2="21.28" stroke="#1b1b1b" stroke-width="0.45"/>
+<polygon points="70,21.28 68.52,21.88 68.52,20.68" fill="#1b1b1b" stroke="none"/>
+<line x1="11" y1="21.28" x2="11" y2="22.38" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="11" y="25.28" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-1</text>
+<line x1="25.05" y1="21.28" x2="25.05" y2="22.38" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="39.1" y1="21.28" x2="39.1" y2="22.38" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="39.1" y="25.28" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">1</text>
+<line x1="53.14" y1="21.28" x2="53.14" y2="22.38" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="53.14" y="25.28" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="67.19" y1="21.28" x2="67.19" y2="22.38" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="67.19" y="25.28" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">3</text>
+<line x1="25.05" y1="35.9" x2="25.05" y2="3" stroke="#1b1b1b" stroke-width="0.45"/>
+<polygon points="25.05,3 25.65,4.48 24.45,4.48" fill="#1b1b1b" stroke="none"/>
+<line x1="23.95" y1="35.9" x2="25.05" y2="35.9" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="23.25" y="35.9" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-4</text>
+<line x1="23.95" y1="28.59" x2="25.05" y2="28.59" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="23.25" y="28.59" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">-2</text>
+<line x1="23.95" y1="21.28" x2="25.05" y2="21.28" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="23.95" y1="13.97" x2="25.05" y2="13.97" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="23.25" y="13.97" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="23.95" y1="6.66" x2="25.05" y2="6.66" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="23.25" y="6.66" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">4</text>
+<circle cx="25.05" cy="13.97" r="0.85" fill="#1b1b1b" stroke="none"/>
+<circle cx="53.14" cy="28.59" r="0.85" fill="#1b1b1b" stroke="none"/>
+<circle cx="39.1" cy="21.28" r="0.85" fill="#1b1b1b" stroke="none"/>
+<text x="40.5" y="44.6" font-size="2.4" fill="#5b6470" text-anchor="middle">x</text>
+<text x="2.6" y="19.45" font-size="2.4" fill="#5b6470" text-anchor="middle" transform="rotate(-90 2.6 19.45)">f(x)</text>
+</svg>
+<figcaption>f(x) = x³ − 3x² + 2: maksimum i (0, 2), minimum i (2, −2) og vendepunkt i (1, 0).</figcaption>
+</figure>
+
+<h2>Regneeksempel</h2>
+<div class="box rule">
+  <span class="label">Eksempel</span>
+  <p><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></math>, <math><msub><mi>D</mi><mtext>m</mtext></msub><mo>=</mo><mi>ℝ</mi></math>.</p>
+  <div class="formula left">
+    <math><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>=</mo><mn>3</mn><mi>x</mi><mo>(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>)</mo></math><br>
+    <math><msup><mi>f</mi><mo>″</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>6</mn><mi>x</mi><mo>−</mo><mn>6</mn></math>
+  </div>
+  <p><math><msup><mi>f</mi><mo>′</mo></msup><mo>=</mo><mn>0</mn></math> i <math><mi>x</mi><mo>=</mo><mn>0</mn></math> og <math><mi>x</mi><mo>=</mo><mn>2</mn></math>. Fortegn: + for <math><mi>x</mi><mo>&lt;</mo><mn>0</mn></math>, − mellem 0 og 2, + for <math><mi>x</mi><mo>&gt;</mo><mn>2</mn></math>. Altså maksimum i <math><mo>(</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>)</mo></math> og minimum i <math><mo>(</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>2</mn><mo>)</mo></math>.</p>
+  <p>Vendepunkt: <math><msup><mi>f</mi><mo>″</mo></msup><mo>=</mo><mn>0</mn></math> giver <math><mi>x</mi><mo>=</mo><mn>1</mn></math>; <math><msup><mi>f</mi><mo>″</mo></msup></math> skifter fortegn der, så <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></math> er vendepunkt.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li><math><msup><mi>f</mi><mo>′</mo></msup><mo>(</mo><mi>a</mi><mo>)</mo><mo>=</mo><mn>0</mn></math> er ikke nok til et ekstremum; <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup></math> har vandret tangent i 0 uden ekstremum.</li>
+    <li>Ekstrema kan også ligge, hvor <math><msup><mi>f</mi><mo>′</mo></msup></math> ikke er defineret, fx i et knæk.</li>
+    <li>Definitionsmængdens endepunkter kan give globale ekstrema og skal undersøges særskilt.</li>
+    <li>Vendepunkt kræver fortegnsskift i <math><msup><mi>f</mi><mo>″</mo></msup></math>, ikke blot <math><msup><mi>f</mi><mo>″</mo></msup><mo>=</mo><mn>0</mn></math>.</li>
+  </ul>
+</div>
+
+</body>
+</html>

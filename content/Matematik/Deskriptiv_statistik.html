@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Deskriptiv statistik</title>
+</head>
+<body>
+
+<h1>Deskriptiv statistik</h1>
+
+<h2>Mål for beliggenhed</h2>
+<table class="compact">
+<caption>Midt i datamaterialet</caption>
+<tr><th>Mål</th><th>Definition</th><th>Følsomhed</th></tr>
+<tr><td>Middeltal <math><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math></td><td><math><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>x</mi><mi>i</mi></msub></math></td><td>påvirkes af ekstreme værdier</td></tr>
+<tr><td>Median</td><td>den midterste værdi i sorteret rækkefølge</td><td>robust over for ekstreme værdier</td></tr>
+<tr><td>Typetal</td><td>den hyppigst forekommende værdi</td><td>kan være flere eller ingen</td></tr>
+<tr><td>Kvartiler</td><td><math><msub><mi>Q</mi><mn>1</mn></msub></math>, <math><msub><mi>Q</mi><mn>3</mn></msub></math>: 25&nbsp;% og 75&nbsp;% fraktil</td><td>beskriver spredningen</td></tr>
+</table>
+<p>For et lige antal observationer er medianen gennemsnittet af de to midterste værdier. <strong>Kvartilbredden</strong> er <math><mi>IQR</mi><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub></math>.</p>
+
+<h2>Mål for spredning</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Varians</span>
+    <div class="formula"><math><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mfrac><munder><mo>∑</mo><mi>i</mi></munder><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>)</mo></mrow><mn>2</mn></msup></math></div>
+    <p class="where">Stikprøvevarians; divideres med <math><mi>n</mi><mo>−</mo><mn>1</mn></math> for at korrigere for middeltallet.</p>
+  </div>
+  <div class="box">
+    <span class="label">Standardafvigelse</span>
+    <div class="formula"><math><mi>s</mi><mo>=</mo><msqrt><mrow><msup><mi>s</mi><mn>2</mn></msup></mrow></msqrt></math></div>
+    <p class="where">Samme enhed som data; typisk afvigelse fra middeltallet.</p>
+  </div>
+</div>
+<p>Variationskoefficienten <math><mfrac><mi>s</mi><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mfrac></math> gør spredningen sammenlignelig på tværs af datasæt med forskellige enheder.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="28mm" viewBox="0 0 80 28" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="12" y1="14" x2="68" y2="14" stroke="#1b1b1b" fill="none" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="12" y1="10" x2="12" y2="18" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="24" y1="10" x2="24" y2="18" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="44" y1="10" x2="44" y2="18" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="56" y1="10" x2="56" y2="18" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="68" y1="10" x2="68" y2="18" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="24" y="8" width="32" height="12" rx="0" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="44" y1="8" x2="44" y2="20" stroke="#1c5f9e" fill="none" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="12" y="24" font-size="2.2" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">min</text>
+<text x="24" y="24" font-size="2.2" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">Q₁</text>
+<text x="44" y="24" font-size="2.2" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">median</text>
+<text x="56" y="24" font-size="2.2" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">Q₃</text>
+<text x="68" y="24" font-size="2.2" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">max</text>
+</svg>
+<figcaption>Boksplot med mindsteværdi, Q₁, median, Q₃ og størsteværdi.</figcaption>
+</figure>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <p>Datasættet 2, 4, 4, 5, 7, 9, 10 har <math><mi>n</mi><mo>=</mo><mn>7</mn></math>, sum 41 og middeltal</p>
+  <div class="formula left">
+    <math><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>=</mo><mfrac><mn>41</mn><mn>7</mn></mfrac><mo>≈</mo><mn>5,86</mn><mo>,</mo><mspace width="1em"/><mtext>median</mtext><mo>=</mo><mn>5</mn><mo>,</mo><mspace width="1em"/><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>4</mn><mo>,</mo><mspace width="0.4em"/><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>9</mn></math>
+  </div>
+  <p class="where"><math><mi>IQR</mi><mo>=</mo><mn>5</mn></math>. Standardafvigelsen er <math><mi>s</mi><mo>≈</mo><mn>2,91</mn></math>.</p>
+</div>
+<p>Grupperede data angives i intervaller. Middeltallet beregnes med intervalmidtpunkterne vægtet med hyppigheden; ved beregning af median og kvartiler bruges den kumulerede frekvens.</p>
+
+<h2>Grafisk Fremstilling</h2>
+<table class="compact">
+<caption>Diagramvalg</caption>
+<tr><th>Diagram</th><th>Viser</th><th>Egnet til</th></tr>
+<tr><td>Pindediagram</td><td>hyppigheden af hver værdi</td><td>diskrete data</td></tr>
+<tr><td>Histogram</td><td>fordelingen i intervaller</td><td>mange kontinuerte data</td></tr>
+<tr><td>Sumkurve</td><td>kumuleret frekvens</td><td>aflæsning af kvartiler</td></tr>
+<tr><td>Boksplot</td><td>median, kvartiler og yderpunkter</td><td>sammenligning af grupper</td></tr>
+</table>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Middeltal og median beskriver forskellige ting; ved skæve data kan de ligge langt fra hinanden.</li>
+    <li>Variansen angives i enhed i anden, fx cm², når data er i cm.</li>
+    <li>Ved grupperede data er middeltallet et skøn, fordi de enkelte værdier er ukendte.</li>
+    <li>Et boksplot viser ikke, om data er normalfordelte; det viser kun kvartiler og yderpunkter.</li>
+  </ul>
+</div>
+
+</body>
+</html>

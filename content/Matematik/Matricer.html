@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Matricer</title>
+</head>
+<body>
+
+<h1>Matricer</h1>
+
+<h2>Regning med matricer</h2>
+<div class="box rule">
+  <span class="label">Matrix</span>
+  <p>En <math><mi>m</mi><mo>×</mo><mi>n</mi></math>-matrix har <math><mi>m</mi></math> rækker og <math><mi>n</mi></math> søjler. Addition og skalarmultiplikation foregår elementvis. Produktet <math><mi>A</mi><mi>B</mi></math> er defineret, når antallet af søjler i <math><mi>A</mi></math> er lig antallet af rækker i <math><mi>B</mi></math>.</p>
+  <div class="formula"><math><mo>(</mo><mi>A</mi><mi>B</mi><msub><mo>)</mo><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><munder><mo>∑</mo><mi>k</mi></munder><msub><mi>a</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub><msub><mi>b</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub></math></div>
+</div>
+<p>Række gange søjle: elementet i række <math><mi>i</mi></math> og søjle <math><mi>j</mi></math> er prikproduktet af <math><mi>A</mi></math>'s række <math><mi>i</mi></math> og <math><mi>B</mi></math>'s søjle <math><mi>j</mi></math>. Enhedsmatricen <math><mi>I</mi></math> har 1 på diagonalen og 0 udenfor; <math><mi>A</mi><mi>I</mi><mo>=</mo><mi>I</mi><mi>A</mi><mo>=</mo><mi>A</mi></math>.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="60mm" height="44mm" viewBox="0 0 60 44" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="6" y1="34" x2="56" y2="34" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/><polygon points="56,34 54.42,34.64 54.42,33.36" fill="#1b1b1b" stroke="none"/>
+<line x1="20" y1="38" x2="20" y2="5" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/><polygon points="20,5 20.64,6.58 19.36,6.58" fill="#1b1b1b" stroke="none"/>
+<polygon points="20,34 27,34 27,27 20,27" stroke="#8f98a2" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.3 1"/>
+<polygon points="20,34 34,27 41,6 27,13" stroke="#b3402a" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="23" y="37.2" font-size="1.9" fill="#8f98a2" text-anchor="start" font-weight="400" dominant-baseline="middle">enhedskvadrat</text>
+<text x="41" y="3" font-size="2" fill="#b3402a" text-anchor="middle" font-weight="400" dominant-baseline="middle">billedet</text>
+<text x="55" y="36.6" font-size="2.5" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">x</text>
+<text x="18.2" y="5.6" font-size="2.5" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">y</text>
+</svg>
+<figcaption>Matricen A afbilder enhedskvadratet (stiplet) på parallelogrammet. Arealet ganges med det A = 5.</figcaption>
+</figure>
+
+
+
+<h2>Determinant og invers</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Determinant for 2×2</span>
+    <div class="formula"><math><mi>det</mi><mspace width="0.1em"/><mi>A</mi><mo>=</mo><mo stretchy="true">|</mo><mtable><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable><mo stretchy="true">|</mo><mo>=</mo><mi>a</mi><mi>d</mi><mo>−</mo><mi>b</mi><mi>c</mi></math></div>
+  </div>
+  <div class="box">
+    <span class="label">Invers for 2×2</span>
+    <div class="formula"><math><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mi>det</mi><mspace width="0.1em"/><mi>A</mi></mrow></mfrac><mo stretchy="true">(</mo><mtable><mtr><mtd><mi>d</mi></mtd><mtd><mo>−</mo><mi>b</mi></mtd></mtr><mtr><mtd><mo>−</mo><mi>c</mi></mtd><mtd><mi>a</mi></mtd></mtr></mtable><mo stretchy="true">)</mo></math></div>
+    <p class="where">Kræver <math><mi>det</mi><mspace width="0.1em"/><mi>A</mi><mo>≠</mo><mn>0</mn></math>.</p>
+  </div>
+</div>
+<p>Er <math><mi>det</mi><mspace width="0.1em"/><mi>A</mi><mo>=</mo><mn>0</mn></math>, er <math><mi>A</mi></math> singulær og har ingen invers. Matricer opfylder ikke <math><mi>A</mi><mi>B</mi><mo>=</mo><mi>B</mi><mi>A</mi></math> i almindelighed, og der findes ikke division med matricer.</p>
+
+<h2>Matricer og ligningssystemer</h2>
+<div class="formula"><math><mi>A</mi><mover accent="true"><mi>x</mi><mo>→</mo></mover><mo>=</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover><mspace width="0.8em"/><mo>⇒</mo><mspace width="0.8em"/><mover accent="true"><mi>x</mi><mo>→</mo></mover><mo>=</mo><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mover accent="true"><mi>b</mi><mo>→</mo></mover></math></div>
+<p>Hvis <math><mi>det</mi><mspace width="0.1em"/><mi>A</mi><mo>≠</mo><mn>0</mn></math>, har systemet netop én løsning. Er determinanten 0, har systemet enten ingen løsninger eller uendeligt mange; det afgøres ved rækkeoperationer (Gauss-elimination).</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <p>Løs systemet <math><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>5</mn></math> og <math><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>10</mn></math>.</p>
+  <div class="formula left">
+    <math><mi>A</mi><mo>=</mo><mo stretchy="true">(</mo><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd></mtr></mtable><mo stretchy="true">)</mo><mo>,</mo><mspace width="0.6em"/><mi>det</mi><mspace width="0.1em"/><mi>A</mi><mo>=</mo><mn>6</mn><mo>−</mo><mn>1</mn><mo>=</mo><mn>5</mn><mo>,</mo><mspace width="0.6em"/><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo stretchy="true">(</mo><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></math><br>
+    <math><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>(</mo><mn>3</mn><mo>·</mo><mn>5</mn><mo>−</mo><mn>1</mn><mo>·</mo><mn>10</mn><mo>,</mo><mspace width="0.3em"/><mo>−</mo><mn>1</mn><mo>·</mo><mn>5</mn><mo>+</mo><mn>2</mn><mo>·</mo><mn>10</mn><mo>)</mo><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>
+  </div>
+</div>
+
+<h2>Matrixmultiplikation</h2>
+<div class="box">
+  <span class="label">Eksempel</span>
+  <p><math><mi>A</mi><mo>=</mo><mo stretchy="true">(</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>4</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></math> og <math><mi>B</mi><mo>=</mo><mo stretchy="true">(</mo><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></math>.</p>
+  <div class="formula left">
+    <math><mi>A</mi><mi>B</mi><mo>=</mo><mo stretchy="true">(</mo><mtable><mtr><mtd><mn>4</mn></mtd><mtd><mn>7</mn></mtd></mtr><mtr><mtd><mn>8</mn></mtd><mtd><mn>15</mn></mtd></mtr></mtable><mo stretchy="true">)</mo><mo>,</mo><mspace width="1em"/><mi>B</mi><mi>A</mi><mo>=</mo><mo stretchy="true">(</mo><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>4</mn></mtd></mtr><mtr><mtd><mn>11</mn></mtd><mtd><mn>16</mn></mtd></mtr></mtable><mo stretchy="true">)</mo></math>
+  </div>
+  <p class="where">Her er <math><mi>A</mi><mi>B</mi><mo>≠</mo><mi>B</mi><mi>A</mi></math>, så rækkefølgen har betydning.</p>
+</div>
+<p>Transponering bytter rækker og søjler: <math><msup><mrow><mo>(</mo><mi>A</mi><mi>B</mi><mo>)</mo></mrow><mi>T</mi></msup><mo>=</mo><msup><mi>B</mi><mi>T</mi></msup><msup><mi>A</mi><mi>T</mi></msup></math>.</p>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li><math><mi>A</mi><mi>B</mi><mo>≠</mo><mi>B</mi><mi>A</mi></math> generelt; rækkefølgen betyder noget.</li>
+    <li>Der må ikke divideres med en matrix; gang i stedet med den inverse på den rigtige side.</li>
+    <li>Ved <math><mi>A</mi><mover accent="true"><mi>x</mi><mo>→</mo></mover><mo>=</mo><mover accent="true"><mi>b</mi><mo>→</mo></mover></math> er <math><mover accent="true"><mi>x</mi><mo>→</mo></mover><mo>=</mo><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mover accent="true"><mi>b</mi><mo>→</mo></mover></math>, ikke <math><mover accent="true"><mi>b</mi><mo>→</mo></mover><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></math>.</li>
+    <li>En invers findes kun, når determinanten er forskellig fra 0.</li>
+  </ul>
+</div>
+
+</body>
+</html>

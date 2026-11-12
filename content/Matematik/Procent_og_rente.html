@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Procent og rente</title>
+</head>
+<body>
+
+<h1>Procent og rente</h1>
+
+<h2>Grundbegreber</h2>
+<dl class="kv">
+  <dt>Procent</dt><dd>hundrededel: <math><mn>1</mn><mo>%</mo><mo>=</mo><mfrac><mn>1</mn><mn>100</mn></mfrac><mo>=</mo><mn>0,01</mn></math></dd>
+  <dt>Fremskrivningsfaktor</dt><dd><math><mn>1</mn><mo>+</mo><mi>r</mi></math>, hvor <math><mi>r</mi></math> er vækstraten som decimaltal</dd>
+  <dt>Procentpoint</dt><dd>forskel mellem to procentsatser, målt i <math><mo>%</mo></math>-enheder</dd>
+</dl>
+<div class="box rule">
+  <span class="label">Procent af en størrelse</span>
+  <div class="formula"><math><mi>p</mi><mo>%</mo><mspace width="0.3em"/><mtext>af</mtext><mspace width="0.3em"/><mi>K</mi><mo>=</mo><mi>K</mi><mo>·</mo><mfrac><mi>p</mi><mn>100</mn></mfrac></math></div>
+  <p class="where"><math><mi>K</mi></math>: beløb · <math><mi>p</mi></math>: procentsats</p>
+</div>
+
+<h2>Vækst og rente</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Fremskrivning</span>
+    <div class="formula"><math><msub><mi>K</mi><mi>n</mi></msub><mo>=</mo><msub><mi>K</mi><mn>0</mn></msub><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo>)</mo></mrow><mi>n</mi></msup></math></div>
+    <p class="where"><math><msub><mi>K</mi><mn>0</mn></msub></math>: startkapital · <math><mi>r</mi></math>: rente per periode · <math><mi>n</mi></math>: antal perioder</p>
+  </div>
+  <div class="box">
+    <span class="label">Tilbageskrivning</span>
+    <div class="formula"><math><msub><mi>K</mi><mn>0</mn></msub><mo>=</mo><mfrac><msub><mi>K</mi><mi>n</mi></msub><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo>)</mo></mrow><mi>n</mi></msup></mfrac></math></div>
+    <p class="where">Nutidsværdi af et beløb <math><mi>n</mi></math> perioder fremme.</p>
+  </div>
+</div>
+<div class="box note">
+  <span class="label">Gennemsnitlig vækst</span>
+  <div class="formula"><math><mi>r</mi><mo>=</mo><msup><mrow><mo>(</mo><mfrac><msub><mi>K</mi><mi>n</mi></msub><msub><mi>K</mi><mn>0</mn></msub></mfrac><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></msup><mo>−</mo><mn>1</mn></math></div>
+  <p class="where">Konstant rate, der giver samme samlede ændring over <math><mi>n</mi></math> perioder.</p>
+</div>
+<p>Fordoblingstid ved konstant rate: <math><mi>T</mi><mo>=</mo><mfrac><mrow><mi>ln</mi><mspace width="0.2em"/><mn>2</mn></mrow><mrow><mi>ln</mi><mspace width="0.2em"/><mo>(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo>)</mo></mrow></mfrac></math>. Ved <math><mi>r</mi><mo>=</mo><mn>3,5</mn><mo>%</mo></math> er <math><mi>T</mi><mo>≈</mo><mn>20,1</mn></math> år.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="78mm" height="44mm" viewBox="0 0 78 44" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<defs><clipPath id="clip93c815f6"><rect x="11" y="3" width="63" height="30.9"/></clipPath></defs>
+<rect x="11" y="3" width="63" height="30.9" fill="none" stroke="#dde2e7" stroke-width="0.3"/>
+<line x1="26.75" y1="3" x2="26.75" y2="33.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="42.5" y1="3" x2="42.5" y2="33.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="58.25" y1="3" x2="58.25" y2="33.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="74" y1="3" x2="74" y2="33.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="27.72" x2="74" y2="27.72" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="21.54" x2="74" y2="21.54" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="15.36" x2="74" y2="15.36" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="9.18" x2="74" y2="9.18" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="3" x2="74" y2="3" stroke="#dde2e7" stroke-width="0.25"/>
+<path d="M 11 18.45 L 11.11 18.43 L 11.21 18.41 L 11.31 18.4 L 11.42 18.38 L 11.53 18.36 L 11.63 18.34 L 11.73 18.33 L 11.84 18.31 L 11.95 18.29 L 12.05 18.27 L 12.15 18.25 L 12.26 18.24 L 12.37 18.22 L 12.47 18.2 L 12.57 18.18 L 12.68 18.16 L 12.79 18.15 L 12.89 18.13 L 12.99 18.11 L 13.1 18.09 L 13.21 18.07 L 13.31 18.06 L 13.41 18.04 L 13.52 18.02 L 13.62 18 L 13.73 17.98 L 13.84 17.96 L 13.94 17.95 L 14.04 17.93 L 14.15 17.91 L 14.26 17.89 L 14.36 17.87 L 14.46 17.85 L 14.57 17.84 L 14.68 17.82 L 14.78 17.8 L 14.88 17.78 L 14.99 17.76 L 15.09 17.74 L 15.2 17.72 L 15.3 17.71 L 15.41 17.69 L 15.52 17.67 L 15.62 17.65 L 15.72 17.63 L 15.83 17.61 L 15.93 17.59 L 16.04 17.58 L 16.14 17.56 L 16.25 17.54 L 16.36 17.52 L 16.46 17.5 L 16.56 17.48 L 16.67 17.46 L 16.77 17.44 L 16.88 17.43 L 16.98 17.41 L 17.09 17.39 L 17.2 17.37 L 17.3 17.35 L 17.41 17.33 L 17.51 17.31 L 17.62 17.29 L 17.72 17.27 L 17.82 17.25 L 17.93 17.24 L 18.04 17.22 L 18.14 17.2 L 18.24 17.18 L 18.35 17.16 L 18.45 17.14 L 18.56 17.12 L 18.66 17.1 L 18.77 17.08 L 18.88 17.06 L 18.98 17.04 L 19.09 17.02 L 19.19 17 L 19.3 16.99 L 19.4 16.97 L 19.51 16.95 L 19.61 16.93 L 19.71 16.91 L 19.82 16.89 L 19.93 16.87 L 20.03 16.85 L 20.13 16.83 L 20.24 16.81 L 20.34 16.79 L 20.45 16.77 L 20.55 16.75 L 20.66 16.73 L 20.77 16.71 L 20.87 16.69 L 20.98 16.67 L 21.08 16.65 L 21.19 16.63 L 21.29 16.61 L 21.39 16.59 L 21.5 16.57 L 21.61 16.55 L 21.71 16.53 L 21.81 16.51 L 21.92 16.49 L 22.02 16.47 L 22.13 16.45 L 22.23 16.43 L 22.34 16.41 L 22.45 16.39 L 22.55 16.37 L 22.66 16.35 L 22.76 16.33 L 22.87 16.31 L 22.97 16.29 L 23.07 16.27 L 23.18 16.25 L 23.29 16.23 L 23.39 16.21 L 23.49 16.19 L 23.6 16.17 L 23.7 16.15 L 23.81 16.13 L 23.91 16.11 L 24.02 16.09 L 24.12 16.07 L 24.23 16.05 L 24.34 16.03 L 24.44 16.01 L 24.55 15.99 L 24.65 15.97 L 24.75 15.95 L 24.86 15.93 L 24.96 15.9 L 25.07 15.88 L 25.17 15.86 L 25.28 15.84 L 25.38 15.82 L 25.49 15.8 L 25.59 15.78 L 25.7 15.76 L 25.8 15.74 L 25.91 15.72 L 26.02 15.7 L 26.12 15.68 L 26.22 15.66 L 26.33 15.63 L 26.44 15.61 L 26.54 15.59 L 26.64 15.57 L 26.75 15.55 L 26.85 15.53 L 26.96 15.51 L 27.06 15.49 L 27.17 15.47 L 27.28 15.44 L 27.38 15.42 L 27.48 15.4 L 27.59 15.38 L 27.7 15.36 L 27.8 15.34 L 27.9 15.32 L 28.01 15.3 L 28.12 15.27 L 28.22 15.25 L 28.32 15.23 L 28.43 15.21 L 28.54 15.19 L 28.64 15.17 L 28.75 15.15 L 28.85 15.12 L 28.95 15.1 L 29.06 15.08 L 29.16 15.06 L 29.27 15.04 L 29.38 15.02 L 29.48 14.99 L 29.59 14.97 L 29.69 14.95 L 29.79 14.93 L 29.9 14.91 L 30 14.89 L 30.11 14.86 L 30.21 14.84 L 30.32 14.82 L 30.43 14.8 L 30.53 14.78 L 30.63 14.75 L 30.74 14.73 L 30.84 14.71 L 30.95 14.69 L 31.05 14.67 L 31.16 14.64 L 31.27 14.62 L 31.37 14.6 L 31.47 14.58 L 31.58 14.56 L 31.68 14.53 L 31.79 14.51 L 31.89 14.49 L 32 14.47 L 32.11 14.45 L 32.21 14.42 L 32.31 14.4 L 32.42 14.38 L 32.52 14.36 L 32.63 14.33 L 32.73 14.31 L 32.84 14.29 L 32.95 14.27 L 33.05 14.24 L 33.16 14.22 L 33.26 14.2 L 33.36 14.18 L 33.47 14.15 L 33.58 14.13 L 33.68 14.11 L 33.78 14.08 L 33.89 14.06 L 33.99 14.04 L 34.1 14.02 L 34.2 13.99 L 34.31 13.97 L 34.41 13.95 L 34.52 13.93 L 34.62 13.9 L 34.73 13.88 L 34.83 13.86 L 34.94 13.83 L 35.05 13.81 L 35.15 13.79 L 35.25 13.76 L 35.36 13.74 L 35.47 13.72 L 35.57 13.69 L 35.67 13.67 L 35.78 13.65 L 35.89 13.63 L 35.99 13.6 L 36.09 13.58 L 36.2 13.56 L 36.3 13.53 L 36.41 13.51 L 36.52 13.49 L 36.62 13.46 L 36.72 13.44 L 36.83 13.41 L 36.93 13.39 L 37.04 13.37 L 37.15 13.34 L 37.25 13.32 L 37.36 13.3 L 37.46 13.27 L 37.56 13.25 L 37.67 13.23 L 37.77 13.2 L 37.88 13.18 L 37.98 13.15 L 38.09 13.13 L 38.19 13.11 L 38.3 13.08 L 38.41 13.06 L 38.51 13.04 L 38.62 13.01 L 38.72 12.99 L 38.83 12.96 L 38.93 12.94 L 39.03 12.92 L 39.14 12.89 L 39.25 12.87 L 39.35 12.84 L 39.45 12.82 L 39.56 12.79 L 39.66 12.77 L 39.77 12.75 L 39.88 12.72 L 39.98 12.7 L 40.08 12.67 L 40.19 12.65 L 40.3 12.62 L 40.4 12.6 L 40.5 12.58 L 40.61 12.55 L 40.72 12.53 L 40.82 12.5 L 40.92 12.48 L 41.03 12.45 L 41.13 12.43 L 41.24 12.4 L 41.34 12.38 L 41.45 12.35 L 41.55 12.33 L 41.66 12.31 L 41.77 12.28 L 41.87 12.26 L 41.98 12.23 L 42.08 12.21 L 42.19 12.18 L 42.29 12.16 L 42.39 12.13 L 42.5 12.11 L 42.61 12.08 L 42.71 12.06 L 42.81 12.03 L 42.92 12.01 L 43.02 11.98 L 43.13 11.96 L 43.23 11.93 L 43.34 11.91 L 43.45 11.88 L 43.55 11.85 L 43.66 11.83 L 43.76 11.8 L 43.87 11.78 L 43.97 11.75 L 44.07 11.73 L 44.18 11.7 L 44.28 11.68 L 44.39 11.65 L 44.49 11.63 L 44.6 11.6 L 44.7 11.58 L 44.81 11.55 L 44.91 11.52 L 45.02 11.5 L 45.12 11.47 L 45.23 11.45 L 45.34 11.42 L 45.44 11.4 L 45.55 11.37 L 45.65 11.34 L 45.75 11.32 L 45.86 11.29 L 45.96 11.27 L 46.07 11.24 L 46.17 11.21 L 46.28 11.19 L 46.38 11.16 L 46.49 11.14 L 46.59 11.11 L 46.7 11.08 L 46.8 11.06 L 46.91 11.03 L 47.02 11 L 47.12 10.98 L 47.23 10.95 L 47.33 10.93 L 47.43 10.9 L 47.54 10.87 L 47.64 10.85 L 47.75 10.82 L 47.85 10.79 L 47.96 10.77 L 48.07 10.74 L 48.17 10.71 L 48.27 10.69 L 48.38 10.66 L 48.48 10.63 L 48.59 10.61 L 48.7 10.58 L 48.8 10.55 L 48.91 10.53 L 49.01 10.5 L 49.11 10.47 L 49.22 10.45 L 49.32 10.42 L 49.43 10.39 L 49.53 10.37 L 49.64 10.34 L 49.75 10.31 L 49.85 10.28 L 49.95 10.26 L 50.06 10.23 L 50.16 10.2 L 50.27 10.18 L 50.38 10.15 L 50.48 10.12 L 50.59 10.09 L 50.69 10.07 L 50.79 10.04 L 50.9 10.01 L 51 9.98 L 51.11 9.96 L 51.22 9.93 L 51.32 9.9 L 51.43 9.88 L 51.53 9.85 L 51.63 9.82 L 51.74 9.79 L 51.84 9.76 L 51.95 9.74 L 52.05 9.71 L 52.16 9.68 L 52.27 9.65 L 52.37 9.63 L 52.47 9.6 L 52.58 9.57 L 52.68 9.54 L 52.79 9.51 L 52.9 9.49 L 53 9.46 L 53.1 9.43 L 53.21 9.4 L 53.31 9.37 L 53.42 9.35 L 53.52 9.32 L 53.63 9.29 L 53.73 9.26 L 53.84 9.23 L 53.95 9.2 L 54.05 9.18 L 54.15 9.15 L 54.26 9.12 L 54.37 9.09 L 54.47 9.06 L 54.58 9.03 L 54.68 9.01 L 54.78 8.98 L 54.89 8.95 L 54.99 8.92 L 55.1 8.89 L 55.2 8.86 L 55.31 8.83 L 55.41 8.8 L 55.52 8.78 L 55.62 8.75 L 55.73 8.72 L 55.83 8.69 L 55.94 8.66 L 56.05 8.63 L 56.15 8.6 L 56.26 8.57 L 56.36 8.54 L 56.46 8.52 L 56.57 8.49 L 56.67 8.46 L 56.78 8.43 L 56.88 8.4 L 56.99 8.37 L 57.09 8.34 L 57.2 8.31 L 57.3 8.28 L 57.41 8.25 L 57.52 8.22 L 57.62 8.19 L 57.73 8.16 L 57.83 8.13 L 57.94 8.1 L 58.04 8.08 L 58.14 8.05 L 58.25 8.02 L 58.35 7.99 L 58.46 7.96 L 58.56 7.93 L 58.67 7.9 L 58.77 7.87 L 58.88 7.84 L 58.98 7.81 L 59.09 7.78 L 59.2 7.75 L 59.3 7.72 L 59.41 7.69 L 59.51 7.66 L 59.62 7.63 L 59.72 7.6 L 59.82 7.57 L 59.93 7.54 L 60.03 7.51 L 60.14 7.48 L 60.24 7.45 L 60.35 7.42 L 60.45 7.38 L 60.56 7.35 L 60.66 7.32 L 60.77 7.29 L 60.88 7.26 L 60.98 7.23 L 61.09 7.2 L 61.19 7.17 L 61.3 7.14 L 61.4 7.11 L 61.51 7.08 L 61.61 7.05 L 61.72 7.02 L 61.82 6.99 L 61.93 6.96 L 62.03 6.92 L 62.13 6.89 L 62.24 6.86 L 62.34 6.83 L 62.45 6.8 L 62.55 6.77 L 62.66 6.74 L 62.77 6.71 L 62.87 6.68 L 62.98 6.65 L 63.08 6.61 L 63.18 6.58 L 63.29 6.55 L 63.39 6.52 L 63.5 6.49 L 63.6 6.46 L 63.71 6.43 L 63.81 6.39 L 63.92 6.36 L 64.02 6.33 L 64.13 6.3 L 64.23 6.27 L 64.34 6.24 L 64.44 6.2 L 64.55 6.17 L 64.66 6.14 L 64.76 6.11 L 64.87 6.08 L 64.97 6.04 L 65.08 6.01 L 65.18 5.98 L 65.28 5.95 L 65.39 5.92 L 65.5 5.88 L 65.6 5.85 L 65.7 5.82 L 65.81 5.79 L 65.91 5.76 L 66.02 5.72 L 66.12 5.69 L 66.23 5.66 L 66.34 5.63 L 66.44 5.59 L 66.54 5.56 L 66.65 5.53 L 66.75 5.5 L 66.86 5.46 L 66.97 5.43 L 67.07 5.4 L 67.17 5.37 L 67.28 5.33 L 67.38 5.3 L 67.49 5.27 L 67.59 5.23 L 67.7 5.2 L 67.81 5.17 L 67.91 5.14 L 68.02 5.1 L 68.12 5.07 L 68.22 5.04 L 68.33 5 L 68.44 4.97 L 68.54 4.94 L 68.65 4.9 L 68.75 4.87 L 68.85 4.84 L 68.96 4.8 L 69.06 4.77 L 69.17 4.74 L 69.28 4.7 L 69.38 4.67 L 69.48 4.64 L 69.59 4.6 L 69.69 4.57 L 69.8 4.54 L 69.91 4.5 L 70.01 4.47 L 70.11 4.43 L 70.22 4.4 L 70.32 4.37 L 70.43 4.33 L 70.53 4.3 L 70.64 4.27 L 70.74 4.23 L 70.85 4.2 L 70.96 4.16 L 71.06 4.13 L 71.17 4.09 L 71.27 4.06 L 71.38 4.03 L 71.48 3.99 L 71.59 3.96 L 71.69 3.92 L 71.8 3.89 L 71.9 3.85 L 72 3.82 L 72.11 3.79 L 72.22 3.75 L 72.32 3.72 L 72.42 3.68 L 72.53 3.65 L 72.63 3.61 L 72.74 3.58 L 72.84 3.54 L 72.95 3.51 L 73.05 3.47 L 73.16 3.44 L 73.26 3.4 L 73.37 3.37 L 73.47 3.33 L 73.58 3.3 L 73.69 3.26 L 73.79 3.23 L 73.89 3.19 L 74 3.16" fill="none" stroke="#1c5f9e" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clip93c815f6)"/>
+<line x1="11" y1="33.9" x2="11" y2="35" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="11" y="37.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0</text>
+<line x1="26.75" y1="33.9" x2="26.75" y2="35" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="26.75" y="37.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">5</text>
+<line x1="42.5" y1="33.9" x2="42.5" y2="35" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="42.5" y="37.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">10</text>
+<line x1="58.25" y1="33.9" x2="58.25" y2="35" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="58.25" y="37.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">15</text>
+<line x1="74" y1="33.9" x2="74" y2="35" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="74" y="37.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">20</text>
+<line x1="9.9" y1="33.9" x2="11" y2="33.9" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="9.9" y1="27.72" x2="11" y2="27.72" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="27.72" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">10000</text>
+<line x1="9.9" y1="21.54" x2="11" y2="21.54" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="21.54" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">20000</text>
+<line x1="9.9" y1="15.36" x2="11" y2="15.36" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="15.36" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">30000</text>
+<line x1="9.9" y1="9.18" x2="11" y2="9.18" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="9.18" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">40000</text>
+<line x1="9.9" y1="3" x2="11" y2="3" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="3" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">50000</text>
+<text x="42.5" y="42.6" font-size="2.4" fill="#5b6470" text-anchor="middle">år</text>
+<text x="2.6" y="18.45" font-size="2.4" fill="#5b6470" text-anchor="middle" transform="rotate(-90 2.6 18.45)">kr</text>
+</svg>
+<figcaption>Kapitalen K(x) = 25 000 · 1,035^x med renters rente.</figcaption>
+</figure>
+
+<h2>Regneeksempel</h2>
+<div class="box rule">
+  <span class="label">Eksempel — opsparing</span>
+  <p>25&nbsp;000&nbsp;kr står på en konto med <math><mn>3,5</mn><mo>%</mo></math> i rente om året. Beløbet efter 8 år:</p>
+  <div class="formula"><math><msub><mi>K</mi><mn>8</mn></msub><mo>=</mo><mn>25</mn><mspace width="0.15em"/><mn>000</mn><mo>·</mo><msup><mn>1,035</mn><mn>8</mn></msup><mo>≈</mo><mn>32</mn><mspace width="0.15em"/><mn>920</mn><mspace width="0.25em"/><mtext>kr</mtext></math></div>
+  <p class="where">Renters rente: der betales også rente af de allerede tilskrevne renter.</p>
+</div>
+<p>Ændres beløbet fra 25&nbsp;000&nbsp;kr til 32&nbsp;920&nbsp;kr over 8 år, er den gennemsnitlige årlige vækst <math><msup><mrow><mo>(</mo><mn>32</mn><mspace width="0.1em"/><mn>920</mn><mo>/</mo><mn>25</mn><mspace width="0.1em"/><mn>000</mn><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>8</mn></mrow></msup><mo>−</mo><mn>1</mn><mo>≈</mo><mn>0,035</mn></math>, altså <math><mn>3,5</mn><mo>%</mo></math>.</p>
+
+<h2>Procent eller procentpoint</h2>
+<table class="compact">
+<caption>To forskellige spørgsmål</caption>
+<tr><th>Spørgsmål</th><th>Regning</th><th>Svar</th></tr>
+<tr><td>Stigning fra 4&nbsp;% til 6&nbsp;%</td><td><math><mn>6</mn><mo>−</mo><mn>4</mn><mo>=</mo><mn>2</mn></math></td><td>2 procentpoint</td></tr>
+<tr><td>Relativ stigning</td><td><math><mfrac><mrow><mn>6</mn><mo>−</mo><mn>4</mn></mrow><mn>4</mn></mfrac><mo>=</mo><mn>0,5</mn></math></td><td>50&nbsp;%</td></tr>
+</table>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Vækstrater adderes ikke: 3&nbsp;% efterfulgt af 4&nbsp;% giver <math><mn>1,03</mn><mo>·</mo><mn>1,04</mn><mo>=</mo><mn>1,0712</mn></math>, dvs. 7,12&nbsp;%, ikke 7&nbsp;%.</li>
+    <li>En stigning på 25&nbsp;% og derefter et fald på 25&nbsp;% giver <math><mn>1,25</mn><mo>·</mo><mn>0,75</mn><mo>=</mo><mn>0,9375</mn></math>, altså 6,25&nbsp;% under udgangspunktet.</li>
+    <li>Rente beregnes af det aktuelle beløb, ikke altid af startkapitalen.</li>
+    <li>Ved sammenligning af procentsatser: forskellen er i procentpoint, den relative ændring i procent.</li>
+  </ul>
+</div>
+
+</body>
+</html>

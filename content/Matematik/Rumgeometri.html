@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Rumgeometri</title>
+</head>
+<body>
+
+<h1>Rumgeometri</h1>
+
+<h2>Rumfang og overflade</h2>
+<table>
+<caption>De vigtigste legemer</caption>
+<tr><th>Legeme</th><th>Rumfang</th><th>Overflade</th></tr>
+<tr><td>Prisme</td><td><math><mi>V</mi><mo>=</mo><mi>G</mi><mo>·</mo><mi>h</mi></math></td><td><math><mn>2</mn><mi>G</mi><mo>+</mo><mi>O</mi><mo>·</mo><mi>h</mi></math></td></tr>
+<tr><td>Cylinder</td><td><math><mi>V</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></math></td><td><math><mn>2</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>h</mi></math></td></tr>
+<tr><td>Pyramide</td><td><math><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>G</mi><mo>·</mo><mi>h</mi></math></td><td>sum af sideflader og grundflade</td></tr>
+<tr><td>Kegle</td><td><math><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></math></td><td><math><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mi>π</mi><mi>r</mi><mi>s</mi></math></td></tr>
+<tr><td>Kugle</td><td><math><mi>V</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></math></td><td><math><mi>O</mi><mo>=</mo><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></math></td></tr>
+</table>
+<p><math><mi>G</mi></math> er grundfladens areal, <math><mi>h</mi></math> er højden vinkelret på grundfladen, <math><mi>s</mi></math> er keglens sidelinje. For en kegle gælder <math><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><msup><mi>h</mi><mn>2</mn></msup></math>.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="66mm" height="48mm" viewBox="0 0 66 48" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<ellipse cx="30" cy="12" rx="15" ry="4.5" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="30" cy="40" rx="15" ry="4.5" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="15" y1="12" x2="15" y2="40" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="45" y1="12" x2="45" y2="40" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="30" y1="12" x2="45" y2="12" stroke="#1b1b1b" fill="none" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.2 1"/>
+<text x="37" y="10.2" font-size="2.8" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">r</text>
+<line x1="54" y1="12" x2="54" y2="40" stroke="#5b6470" fill="none" stroke-width="0.3"/><polygon points="54,12 54.56,13.39 53.44,13.39" fill="#5b6470" stroke="none"/><polygon points="54,40 53.44,38.61 54.56,38.61" fill="#5b6470" stroke="none"/><text x="56.4" y="26" font-size="2.3" fill="#1b1b1b" text-anchor="middle" dominant-baseline="middle">h</text>
+<text x="30" y="45.5" font-size="2.3" fill="#5b6470" text-anchor="middle" font-weight="400" dominant-baseline="middle">G = πr²</text>
+</svg>
+<figcaption>Cylinder med radius r og højde h; rumfang V = πr²h.</figcaption>
+</figure>
+
+<h2>Rumdiagonaler</h2>
+<div class="box rule">
+  <span class="label">Pythagoras i rummet</span>
+  <p>I en kasse med sidelængderne <math><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></math> er rumdiagonalen</p>
+  <div class="formula"><math><mi>d</mi><mo>=</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></math></div>
+  <p class="where">Først beregnes diagonalen i grundfladen, derefter diagonalen gennem kassen.</p>
+</div>
+<p>I en terning med side <math><mi>a</mi></math> er rumdiagonalen <math><mi>a</mi><msqrt><mn>3</mn></msqrt></math>, og overfladen er <math><mn>6</mn><msup><mi>a</mi><mn>2</mn></msup></math>.</p>
+
+<h2>Formskalering</h2>
+<div class="formula"><math><mfrac><msub><mi>V</mi><mn>2</mn></msub><msub><mi>V</mi><mn>1</mn></msub></mfrac><mo>=</mo><msup><mi>k</mi><mn>3</mn></msup><mo>,</mo><mspace width="1em"/><mfrac><msub><mi>O</mi><mn>2</mn></msub><msub><mi>O</mi><mn>1</mn></msub></mfrac><mo>=</mo><msup><mi>k</mi><mn>2</mn></msup></math></div>
+<p>Ved skalafaktor <math><mi>k</mi></math> ganges alle længder med <math><mi>k</mi></math>, arealer med <math><msup><mi>k</mi><mn>2</mn></msup></math> og rumfang med <math><msup><mi>k</mi><mn>3</mn></msup></math>.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — cylinder</span>
+  <p>En cylinder har <math><mi>r</mi><mo>=</mo><mn>3</mn></math> og <math><mi>h</mi><mo>=</mo><mn>10</mn></math>.</p>
+  <div class="formula left">
+    <math><mi>V</mi><mo>=</mo><mi>π</mi><mo>·</mo><msup><mn>3</mn><mn>2</mn></msup><mo>·</mo><mn>10</mn><mo>=</mo><mn>90</mn><mi>π</mi><mo>≈</mo><mn>282,7</mn></math><br>
+    <math><mi>O</mi><mo>=</mo><mn>2</mn><mi>π</mi><mo>·</mo><mn>9</mn><mo>+</mo><mn>2</mn><mi>π</mi><mo>·</mo><mn>3</mn><mo>·</mo><mn>10</mn><mo>=</mo><mn>18</mn><mi>π</mi><mo>+</mo><mn>60</mn><mi>π</mi><mo>=</mo><mn>78</mn><mi>π</mi><mo>≈</mo><mn>245,0</mn></math>
+  </div>
+  <p class="where">Rumfang i cm³ og overflade i cm², når målene er i cm.</p>
+</div>
+<div class="box">
+  <span class="label">Eksempel — kugle</span>
+  <p>For <math><mi>r</mi><mo>=</mo><mn>3</mn></math>: <math><mi>V</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><mo>·</mo><mn>27</mn><mo>=</mo><mn>36</mn><mi>π</mi><mo>≈</mo><mn>113,1</mn></math> og <math><mi>O</mi><mo>=</mo><mn>4</mn><mi>π</mi><mo>·</mo><mn>9</mn><mo>=</mo><mn>36</mn><mi>π</mi><mo>≈</mo><mn>113,1</mn></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>Keglens højde <math><mi>h</mi></math> og sidelinje <math><mi>s</mi></math> forveksles. Overfladen bruger <math><mi>s</mi></math>, rumfanget bruger <math><mi>h</mi></math>.</li>
+    <li>Pyramide og kegle har faktor <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>; prisme og cylinder har ikke.</li>
+    <li>Ved formskalering ganges rumfanget med <math><msup><mi>k</mi><mn>3</mn></msup></math>, ikke med <math><mi>k</mi></math>.</li>
+    <li>Enheder skal være ens, før tallene sættes ind; ellers bliver resultatet meningsløst.</li>
+  </ul>
+</div>
+
+</body>
+</html>

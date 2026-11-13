@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Kinematik</title>
+</head>
+<body>
+
+<h1>Kinematik</h1>
+
+<h2>Definitioner</h2>
+<div class="box rule">
+  <span class="label">Bevægelsesstørrelser</span>
+  <div class="formula"><math><mi>v</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>s</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mtext>,</mtext><mspace width="0.8em"/><mi>a</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mtext>,</mtext><mspace width="0.8em"/><msub><mover accent="true"><mi>v</mi><mo>¯</mo></mover><mtext></mtext></msub><mo>=</mo><mfrac><mrow><mi>Δ</mi><mi>s</mi></mrow><mrow><mi>Δ</mi><mi>t</mi></mrow></mfrac></math></div>
+  <p class="where"><math><mi>s</mi></math>: position (m) · <math><mi>v</mi></math>: hastighed (m/s) · <math><mi>a</mi></math>: acceleration (m/s²) · <math><mi>t</mi></math>: tid (s)</p>
+</div>
+<p>Hastighed og acceleration er vektorer. I en dimension angives retningen ved fortegnet; modsat retning betyder negativt fortegn. En negativ acceleration betyder ikke nødvendigvis, at bevægelsen bremses — det afhænger af hastighedens fortegn.</p>
+
+<h2>Konstant acceleration</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Hastighed</span>
+    <div class="formula"><math><mi>v</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mi>t</mi></math></div>
+  </div>
+  <div class="box">
+    <span class="label">Position</span>
+    <div class="formula"><math><mi>s</mi><mo>=</mo><msub><mi>s</mi><mn>0</mn></msub><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></math></div>
+  </div>
+</div>
+<div class="box">
+  <span class="label">Uden tiden — og den gennemsnitlige hastighed</span>
+  <div class="formula"><math><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>+</mo><mn>2</mn><mi>a</mi><mi>s</mi><mtext>,</mtext><mspace width="1em"/><mi>s</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>v</mi></mrow><mn>2</mn></mfrac><mi>t</mi></math></div>
+  <p class="where">De fire ligninger gælder kun, når <math><mi>a</mi></math> er konstant. Den sidste følger af, at arealet under v-t-grafen er et trapez.</p>
+</div>
+
+<h2>Grafisk analyse</h2>
+<table class="compact">
+<caption>Hvad graferne fortæller</caption>
+<tr><th>Graf</th><th>Hældning</th><th>Areal under grafen</th></tr>
+<tr><td>s-t</td><td>hastighed <math><mi>v</mi><mo>=</mo><mi>Δ</mi><mi>s</mi><mo>/</mo><mi>Δ</mi><mi>t</mi></math></td><td>ingen fysisk betydning</td></tr>
+<tr><td>v-t</td><td>acceleration <math><mi>a</mi><mo>=</mo><mi>Δ</mi><mi>v</mi><mo>/</mo><mi>Δ</mi><mi>t</mi></math></td><td>tilbagelagt vej <math><mi>s</mi></math></td></tr>
+<tr><td>a-t</td><td>ryk (<math><mi>da</mi><mo>/</mo><mi>dt</mi></math>)</td><td>hastighedsændring <math><mi>Δ</mi><mi>v</mi></math></td></tr>
+</table>
+<p>Arealet under nulpunktet tælles negativt: areal over aksen minus areal under aksen giver den resulterende forskydning, mens den samlede vejlængde er summen af de numeriske arealer.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="86mm" height="46mm" viewBox="0 0 86 46" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<defs><clipPath id="clipac67a405"><rect x="11" y="3" width="71" height="32.9"/></clipPath></defs>
+<rect x="11" y="3" width="71" height="32.9" fill="none" stroke="#dde2e7" stroke-width="0.3"/>
+<line x1="22.83" y1="3" x2="22.83" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="34.67" y1="3" x2="34.67" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="46.5" y1="3" x2="46.5" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="58.33" y1="3" x2="58.33" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="70.17" y1="3" x2="70.17" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="82" y1="3" x2="82" y2="35.9" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="29.92" x2="82" y2="29.92" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="23.94" x2="82" y2="23.94" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="17.95" x2="82" y2="17.95" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="11.97" x2="82" y2="11.97" stroke="#dde2e7" stroke-width="0.25"/>
+<line x1="11" y1="5.99" x2="82" y2="5.99" stroke="#dde2e7" stroke-width="0.25"/>
+<path d="M 11 29.92 L 11.12 29.87 L 11.24 29.83 L 11.36 29.78 L 11.47 29.74 L 11.59 29.69 L 11.71 29.65 L 11.83 29.6 L 11.95 29.56 L 12.06 29.51 L 12.18 29.47 L 12.3 29.42 L 12.42 29.38 L 12.54 29.33 L 12.66 29.29 L 12.78 29.25 L 12.89 29.2 L 13.01 29.16 L 13.13 29.11 L 13.25 29.07 L 13.37 29.02 L 13.48 28.98 L 13.6 28.93 L 13.72 28.89 L 13.84 28.84 L 13.96 28.8 L 14.08 28.75 L 14.2 28.71 L 14.31 28.66 L 14.43 28.62 L 14.55 28.57 L 14.67 28.53 L 14.79 28.48 L 14.91 28.44 L 15.02 28.39 L 15.14 28.35 L 15.26 28.3 L 15.38 28.26 L 15.5 28.21 L 15.62 28.17 L 15.73 28.12 L 15.85 28.08 L 15.97 28.03 L 16.09 27.99 L 16.21 27.94 L 16.32 27.9 L 16.44 27.85 L 16.56 27.81 L 16.68 27.76 L 16.8 27.72 L 16.92 27.67 L 17.04 27.63 L 17.15 27.59 L 17.27 27.54 L 17.39 27.5 L 17.51 27.45 L 17.63 27.41 L 17.75 27.36 L 17.86 27.32 L 17.98 27.27 L 18.1 27.23 L 18.22 27.18 L 18.34 27.14 L 18.45 27.09 L 18.57 27.05 L 18.69 27 L 18.81 26.96 L 18.93 26.91 L 19.05 26.87 L 19.16 26.82 L 19.28 26.78 L 19.4 26.73 L 19.52 26.69 L 19.64 26.64 L 19.76 26.6 L 19.88 26.55 L 19.99 26.51 L 20.11 26.46 L 20.23 26.42 L 20.35 26.37 L 20.47 26.33 L 20.59 26.28 L 20.7 26.24 L 20.82 26.19 L 20.94 26.15 L 21.06 26.1 L 21.18 26.06 L 21.3 26.02 L 21.41 25.97 L 21.53 25.93 L 21.65 25.88 L 21.77 25.84 L 21.89 25.79 L 22.01 25.75 L 22.12 25.7 L 22.24 25.66 L 22.36 25.61 L 22.48 25.57 L 22.6 25.52 L 22.71 25.48 L 22.83 25.43 L 22.95 25.39 L 23.07 25.34 L 23.19 25.3 L 23.31 25.25 L 23.43 25.21 L 23.54 25.16 L 23.66 25.12 L 23.78 25.07 L 23.9 25.03 L 24.02 24.98 L 24.14 24.94 L 24.25 24.89 L 24.37 24.85 L 24.49 24.8 L 24.61 24.76 L 24.73 24.71 L 24.84 24.67 L 24.96 24.62 L 25.08 24.58 L 25.2 24.53 L 25.32 24.49 L 25.44 24.44 L 25.55 24.4 L 25.67 24.36 L 25.79 24.31 L 25.91 24.27 L 26.03 24.22 L 26.15 24.18 L 26.27 24.13 L 26.38 24.09 L 26.5 24.04 L 26.62 24 L 26.74 23.95 L 26.86 23.91 L 26.98 23.86 L 27.09 23.82 L 27.21 23.77 L 27.33 23.73 L 27.45 23.68 L 27.57 23.64 L 27.68 23.59 L 27.8 23.55 L 27.92 23.5 L 28.04 23.46 L 28.16 23.41 L 28.28 23.37 L 28.39 23.32 L 28.51 23.28 L 28.63 23.23 L 28.75 23.19 L 28.87 23.14 L 28.99 23.1 L 29.11 23.05 L 29.22 23.01 L 29.34 22.96 L 29.46 22.92 L 29.58 22.87 L 29.7 22.83 L 29.82 22.78 L 29.93 22.74 L 30.05 22.7 L 30.17 22.65 L 30.29 22.61 L 30.41 22.56 L 30.52 22.52 L 30.64 22.47 L 30.76 22.43 L 30.88 22.38 L 31 22.34 L 31.12 22.29 L 31.23 22.25 L 31.35 22.2 L 31.47 22.16 L 31.59 22.11 L 31.71 22.07 L 31.83 22.02 L 31.95 21.98 L 32.06 21.93 L 32.18 21.89 L 32.3 21.84 L 32.42 21.8 L 32.54 21.75 L 32.66 21.71 L 32.77 21.66 L 32.89 21.62 L 33.01 21.57 L 33.13 21.53 L 33.25 21.48 L 33.36 21.44 L 33.48 21.39 L 33.6 21.35 L 33.72 21.3 L 33.84 21.26 L 33.96 21.21 L 34.08 21.17 L 34.19 21.12 L 34.31 21.08 L 34.43 21.04 L 34.55 20.99 L 34.67 20.95 L 34.78 20.9 L 34.9 20.86 L 35.02 20.81 L 35.14 20.77 L 35.26 20.72 L 35.38 20.68 L 35.5 20.63 L 35.61 20.59 L 35.73 20.54 L 35.85 20.5 L 35.97 20.45 L 36.09 20.41 L 36.2 20.36 L 36.32 20.32 L 36.44 20.27 L 36.56 20.23 L 36.68 20.18 L 36.8 20.14 L 36.91 20.09 L 37.03 20.05 L 37.15 20 L 37.27 19.96 L 37.39 19.91 L 37.51 19.87 L 37.62 19.82 L 37.74 19.78 L 37.86 19.73 L 37.98 19.69 L 38.1 19.64 L 38.22 19.6 L 38.34 19.55 L 38.45 19.51 L 38.57 19.46 L 38.69 19.42 L 38.81 19.38 L 38.93 19.33 L 39.05 19.29 L 39.16 19.24 L 39.28 19.2 L 39.4 19.15 L 39.52 19.11 L 39.64 19.06 L 39.76 19.02 L 39.87 18.97 L 39.99 18.93 L 40.11 18.88 L 40.23 18.84 L 40.35 18.79 L 40.47 18.75 L 40.58 18.7 L 40.7 18.66 L 40.82 18.61 L 40.94 18.57 L 41.06 18.52 L 41.17 18.48 L 41.29 18.43 L 41.41 18.39 L 41.53 18.34 L 41.65 18.3 L 41.77 18.25 L 41.89 18.21 L 42 18.16 L 42.12 18.12 L 42.24 18.07 L 42.36 18.03 L 42.48 17.98 L 42.59 17.94 L 42.71 17.89 L 42.83 17.85 L 42.95 17.8 L 43.07 17.76 L 43.19 17.72 L 43.3 17.67 L 43.42 17.63 L 43.54 17.58 L 43.66 17.54 L 43.78 17.49 L 43.9 17.45 L 44.02 17.4 L 44.13 17.36 L 44.25 17.31 L 44.37 17.27 L 44.49 17.22 L 44.61 17.18 L 44.73 17.13 L 44.84 17.09 L 44.96 17.04 L 45.08 17 L 45.2 16.95 L 45.32 16.91 L 45.44 16.86 L 45.55 16.82 L 45.67 16.77 L 45.79 16.73 L 45.91 16.68 L 46.03 16.64 L 46.15 16.59 L 46.26 16.55 L 46.38 16.5 L 46.5 16.46 L 46.62 16.41 L 46.74 16.37 L 46.85 16.32 L 46.97 16.28 L 47.09 16.23 L 47.21 16.19 L 47.33 16.15 L 47.45 16.1 L 47.56 16.06 L 47.68 16.01 L 47.8 15.97 L 47.92 15.92 L 48.04 15.88 L 48.16 15.83 L 48.27 15.79 L 48.39 15.74 L 48.51 15.7 L 48.63 15.65 L 48.75 15.61 L 48.87 15.56 L 48.98 15.52 L 49.1 15.47 L 49.22 15.43 L 49.34 15.38 L 49.46 15.34 L 49.58 15.29 L 49.7 15.25 L 49.81 15.2 L 49.93 15.16 L 50.05 15.11 L 50.17 15.07 L 50.29 15.02 L 50.41 14.98 L 50.52 14.93 L 50.64 14.89 L 50.76 14.84 L 50.88 14.8 L 51 14.75 L 51.12 14.71 L 51.23 14.66 L 51.35 14.62 L 51.47 14.57 L 51.59 14.53 L 51.71 14.49 L 51.83 14.44 L 51.94 14.4 L 52.06 14.35 L 52.18 14.31 L 52.3 14.26 L 52.42 14.22 L 52.53 14.17 L 52.65 14.13 L 52.77 14.08 L 52.89 14.04 L 53.01 13.99 L 53.13 13.95 L 53.24 13.9 L 53.36 13.86 L 53.48 13.81 L 53.6 13.77 L 53.72 13.72 L 53.84 13.68 L 53.95 13.63 L 54.07 13.59 L 54.19 13.54 L 54.31 13.5 L 54.43 13.45 L 54.55 13.41 L 54.66 13.36 L 54.78 13.32 L 54.9 13.27 L 55.02 13.23 L 55.14 13.18 L 55.26 13.14 L 55.38 13.09 L 55.49 13.05 L 55.61 13 L 55.73 12.96 L 55.85 12.91 L 55.97 12.87 L 56.09 12.83 L 56.2 12.78 L 56.32 12.74 L 56.44 12.69 L 56.56 12.65 L 56.68 12.6 L 56.8 12.56 L 56.91 12.51 L 57.03 12.47 L 57.15 12.42 L 57.27 12.38 L 57.39 12.33 L 57.51 12.29 L 57.62 12.24 L 57.74 12.2 L 57.86 12.15 L 57.98 12.11 L 58.1 12.06 L 58.22 12.02 L 58.33 11.97 L 58.45 11.93 L 58.57 11.88 L 58.69 11.84 L 58.81 11.79 L 58.92 11.75 L 59.04 11.7 L 59.16 11.66 L 59.28 11.61 L 59.4 11.57 L 59.52 11.52 L 59.64 11.48 L 59.75 11.43 L 59.87 11.39 L 59.99 11.34 L 60.11 11.3 L 60.23 11.25 L 60.34 11.21 L 60.46 11.17 L 60.58 11.12 L 60.7 11.08 L 60.82 11.03 L 60.94 10.99 L 61.06 10.94 L 61.17 10.9 L 61.29 10.85 L 61.41 10.81 L 61.53 10.76 L 61.65 10.72 L 61.77 10.67 L 61.88 10.63 L 62 10.58 L 62.12 10.54 L 62.24 10.49 L 62.36 10.45 L 62.48 10.4 L 62.59 10.36 L 62.71 10.31 L 62.83 10.27 L 62.95 10.22 L 63.07 10.18 L 63.19 10.13 L 63.3 10.09 L 63.42 10.04 L 63.54 10 L 63.66 9.95 L 63.78 9.91 L 63.9 9.86 L 64.01 9.82 L 64.13 9.77 L 64.25 9.73 L 64.37 9.68 L 64.49 9.64 L 64.61 9.59 L 64.72 9.55 L 64.84 9.51 L 64.96 9.46 L 65.08 9.42 L 65.2 9.37 L 65.31 9.33 L 65.43 9.28 L 65.55 9.24 L 65.67 9.19 L 65.79 9.15 L 65.91 9.1 L 66.03 9.06 L 66.14 9.01 L 66.26 8.97 L 66.38 8.92 L 66.5 8.88 L 66.62 8.83 L 66.73 8.79 L 66.85 8.74 L 66.97 8.7 L 67.09 8.65 L 67.21 8.61 L 67.33 8.56 L 67.44 8.52 L 67.56 8.47 L 67.68 8.43 L 67.8 8.38 L 67.92 8.34 L 68.04 8.29 L 68.16 8.25 L 68.27 8.2 L 68.39 8.16 L 68.51 8.11 L 68.63 8.07 L 68.75 8.02 L 68.87 7.98 L 68.98 7.93 L 69.1 7.89 L 69.22 7.85 L 69.34 7.8 L 69.46 7.76 L 69.58 7.71 L 69.69 7.67 L 69.81 7.62 L 69.93 7.58 L 70.05 7.53 L 70.17 7.49 L 70.28 7.44 L 70.4 7.4 L 70.52 7.35 L 70.64 7.31 L 70.76 7.26 L 70.88 7.22 L 71 7.17 L 71.11 7.13 L 71.23 7.08 L 71.35 7.04 L 71.47 6.99 L 71.59 6.95 L 71.7 6.9 L 71.82 6.86 L 71.94 6.81 L 72.06 6.77 L 72.18 6.72 L 72.3 6.68 L 72.42 6.63 L 72.53 6.59 L 72.65 6.54 L 72.77 6.5 L 72.89 6.45 L 73.01 6.41 L 73.12 6.36 L 73.24 6.32 L 73.36 6.28 L 73.48 6.23 L 73.6 6.19 L 73.72 6.14 L 73.84 6.1 L 73.95 6.05 L 74.07 6.01 L 74.19 5.96 L 74.31 5.92 L 74.43 5.87 L 74.55 5.83 L 74.66 5.78 L 74.78 5.74 L 74.9 5.69 L 75.02 5.65 L 75.14 5.6 L 75.25 5.56 L 75.37 5.51 L 75.49 5.47 L 75.61 5.42 L 75.73 5.38 L 75.85 5.33 L 75.97 5.29 L 76.08 5.24 L 76.2 5.2 L 76.32 5.15 L 76.44 5.11 L 76.56 5.06 L 76.67 5.02 L 76.79 4.97 L 76.91 4.93 L 77.03 4.88 L 77.15 4.84 L 77.27 4.79 L 77.39 4.75 L 77.5 4.7 L 77.62 4.66 L 77.74 4.62 L 77.86 4.57 L 77.98 4.53 L 78.09 4.48 L 78.21 4.44 L 78.33 4.39 L 78.45 4.35 L 78.57 4.3 L 78.69 4.26 L 78.81 4.21 L 78.92 4.17 L 79.04 4.12 L 79.16 4.08 L 79.28 4.03 L 79.4 3.99 L 79.52 3.94 L 79.63 3.9 L 79.75 3.85 L 79.87 3.81 L 79.99 3.76 L 80.11 3.72 L 80.22 3.67 L 80.34 3.63 L 80.46 3.58 L 80.58 3.54 L 80.7 3.49 L 80.82 3.45 L 80.94 3.4 L 81.05 3.36 L 81.17 3.31 L 81.29 3.27 L 81.41 3.22 L 81.53 3.18 L 81.64 3.13 L 81.76 3.09 L 81.88 3.04 L 82 3" fill="none" stroke="#6a3d9a" stroke-width="0.55" stroke-linecap="round" clip-path="url(#clipac67a405)"/>
+<line x1="11" y1="35.9" x2="11" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="11" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">0</text>
+<line x1="22.83" y1="35.9" x2="22.83" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="22.83" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">1</text>
+<line x1="34.67" y1="35.9" x2="34.67" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="34.67" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="46.5" y1="35.9" x2="46.5" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="46.5" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">3</text>
+<line x1="58.33" y1="35.9" x2="58.33" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="58.33" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">4</text>
+<line x1="70.17" y1="35.9" x2="70.17" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="70.17" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">5</text>
+<line x1="82" y1="35.9" x2="82" y2="37" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="82" y="39.9" font-size="2.2" fill="#5b6470" text-anchor="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">6</text>
+<line x1="9.9" y1="35.9" x2="11" y2="35.9" stroke="#8f98a2" stroke-width="0.3"/>
+<line x1="9.9" y1="29.92" x2="11" y2="29.92" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="29.92" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">2</text>
+<line x1="9.9" y1="23.94" x2="11" y2="23.94" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="23.94" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">4</text>
+<line x1="9.9" y1="17.95" x2="11" y2="17.95" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="17.95" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">6</text>
+<line x1="9.9" y1="11.97" x2="11" y2="11.97" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="11.97" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">8</text>
+<line x1="9.9" y1="5.99" x2="11" y2="5.99" stroke="#8f98a2" stroke-width="0.3"/>
+<text x="9.2" y="5.99" font-size="2.2" fill="#5b6470" text-anchor="end" dominant-baseline="middle" stroke="#fff" stroke-width="1.7" paint-order="stroke" stroke-linejoin="round">10</text>
+<text x="46.5" y="44.6" font-size="2.4" fill="#5b6470" text-anchor="middle">t / s</text>
+<text x="2.6" y="19.45" font-size="2.4" fill="#5b6470" text-anchor="middle" transform="rotate(-90 2.6 19.45)">v / (m/s)</text>
+</svg>
+<figcaption>v-t-graf for konstant acceleration: hældningen er accelerationen, arealet under grafen er tilbagelagt vej.</figcaption>
+</figure>
+
+<h2>Frit fald og kast</h2>
+<p>Ved frit fald er <math><mi>a</mi><mo>=</mo><mo>−</mo><mi>g</mi></math> med <math><mi>g</mi><mo>=</mo><mn>9,82</mn><mspace width="0.25em"/><mtext>m/s²</mtext></math>, når opad regnes positivt. Luftmodstand ses bort fra.</p>
+<div class="grid2">
+  <div class="box note">
+    <span class="label">Vandret kast</span>
+    <div class="formula"><math><mi>x</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mi>t</mi><mtext>,</mtext><mspace width="0.6em"/><mi>y</mi><mo>=</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><msup><mi>t</mi><mn>2</mn></msup></math></div>
+    <p class="where">Banen er en parabel: <math><mi>y</mi><mo>=</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><mfrac><mi>g</mi><mrow><mn>2</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow></mfrac><msup><mi>x</mi><mn>2</mn></msup></math>.</p>
+  </div>
+  <div class="box note">
+    <span class="label">Skråt kast</span>
+    <div class="formula"><math><mi>r</mi><mo>=</mo><mfrac><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mi>g</mi></mfrac><mi>sin</mi><mspace width="0.1em"/><mo>(</mo><mn>2</mn><mi>α</mi><mo>)</mo></math></div>
+    <p class="where">Rækkevidden er størst ved <math><mi>α</mi><mo>=</mo><mn>45</mn><mo>°</mo></math>; samme rækkevidde for <math><mi>α</mi></math> og <math><mn>90</mn><mo>°</mo><mo>−</mo><mi>α</mi></math>.</p>
+  </div>
+</div>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — nedbremsning</span>
+  <p>En bil kører <math><mn>72</mn><mspace width="0.25em"/><mtext>km/h</mtext><mo>=</mo><mn>20</mn><mspace width="0.25em"/><mtext>m/s</mtext></math> og bremser med <math><mi>a</mi><mo>=</mo><mo>−</mo><mn>5,0</mn><mspace width="0.25em"/><mtext>m/s²</mtext></math>.</p>
+  <div class="formula left">
+    <math><mi>t</mi><mo>=</mo><mfrac><mrow><mn>0</mn><mo>−</mo><mn>20</mn></mrow><mrow><mo>−</mo><mn>5,0</mn></mrow></mfrac><mo>=</mo><mn>4,0</mn><mspace width="0.25em"/><mtext>s</mtext><mtext>,</mtext><mspace width="1em"/><mi>s</mi><mo>=</mo><mfrac><mrow><mn>20</mn><mo>+</mo><mn>0</mn></mrow><mn>2</mn></mfrac><mo>·</mo><mn>4,0</mn><mo>=</mo><mn>40</mn><mspace width="0.25em"/><mtext>m</mtext></math>
+  </div>
+  <p class="where">Bremsevejen vokser med kvadratet på hastigheden: ved det dobbelte <math><mn>40</mn><mspace width="0.25em"/><mtext>m/s</mtext></math> bliver den <math><mn>160</mn><mspace width="0.25em"/><mtext>m</mtext></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At bruge <math><mi>s</mi><mo>=</mo><mi>v</mi><mi>t</mi></math> ved acceleration; det gælder kun for konstant hastighed.</li>
+    <li>Fortegn på <math><mi>g</mi></math>: vælg positiv retning først, og hold fast i den gennem hele regnestykket.</li>
+    <li>At blande gennemsnitshastighed og øjeblikshastighed. <math><mover accent="true"><mi>v</mi><mo>¯</mo></mover><mo>=</mo><mi>Δ</mi><mi>s</mi><mo>/</mo><mi>Δ</mi><mi>t</mi></math> er kun <math><mo>(</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>v</mi><mo>)</mo><mo>/</mo><mn>2</mn></math> ved konstant acceleration.</li>
+    <li>At glemme at omregne km/h til m/s — en faktor 3,6.</li>
+  </ul>
+</div>
+
+</body>
+</html>

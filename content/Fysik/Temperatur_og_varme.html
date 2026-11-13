@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Temperatur og varme</title>
+</head>
+<body>
+
+<h1>Temperatur og varme</h1>
+
+<h2>Temperaturskalaer</h2>
+<div class="box rule">
+  <span class="label">Kelvin og Celsius</span>
+  <div class="formula"><math><mi>T</mi><mo>=</mo><mi>t</mi><mo>+</mo><mn>273,15</mn><mspace width="0.25em"/><mtext>K</mtext><mtext>,</mtext><mspace width="1em"/><mi>Δ</mi><mi>T</mi><mo>=</mo><mi>Δ</mi><mi>t</mi></math></div>
+  <p class="where"><math><mi>T</mi></math>: absolut temperatur i kelvin · <math><mi>t</mi></math>: Celsius. En temperatur<em>forskel</em> er den samme i K og °C.</p>
+</div>
+<p>Absolut nul, 0&nbsp;K = −273,15&nbsp;°C, er den laveste mulige temperatur. Temperaturen er et mål for den gennemsnitlige kinetiske energi i partiklernes tilfældige bevægelse — ikke for den samlede energi i legemet.</p>
+
+<h2>Varmekapacitet</h2>
+<div class="box rule">
+  <span class="label">Varmemængde</span>
+  <div class="formula"><math><mi>Q</mi><mo>=</mo><mi>C</mi><mi>Δ</mi><mi>T</mi><mo>=</mo><mi>m</mi><mi>c</mi><mi>Δ</mi><mi>T</mi></math></div>
+  <p class="where"><math><mi>c</mi></math>: specifik varmekapacitet (J/(kg·K)) · <math><mi>C</mi><mo>=</mo><mi>m</mi><mi>c</mi></math>: varmekapacitet (J/K). Gælder så længe der ikke sker en faseovergang.</p>
+</div>
+<table class="compact">
+<caption>Specifik varmekapacitet</caption>
+<tr><th>Stof</th><th><math><mi>c</mi></math> i J/(kg·K)</th><th>Stof</th><th><math><mi>c</mi></math> i J/(kg·K)</th></tr>
+<tr><td>vand</td><td class="num">4 180</td><td>aluminium</td><td class="num">900</td></tr>
+<tr><td>is</td><td class="num">2 100</td><td>jern</td><td class="num">450</td></tr>
+<tr><td>damp</td><td class="num">2 010</td><td>kobber</td><td class="num">385</td></tr>
+<tr><td>ethanol</td><td class="num">2 440</td><td>bly</td><td class="num">130</td></tr>
+<tr><td>luft (konst. tryk)</td><td class="num">1 005</td><td>guld</td><td class="num">129</td></tr>
+</table>
+<p>Vands høje varmekapacitet gør det velegnet som kølemiddel og stabiliserer klimaet omkring store vandmasser: 1&nbsp;kg vand skal afgive 4,18&nbsp;kJ for at falde 1&nbsp;K.</p>
+
+<h2>Kalorimetri</h2>
+<div class="box note">
+  <span class="label">Blanding i et isoleret kar</span>
+  <div class="formula"><math><msub><mi>Q</mi><mtext>afgivet</mtext></msub><mo>=</mo><msub><mi>Q</mi><mtext>modtaget</mtext></msub></math></div>
+  <p class="where">For to stoffer: <math><msub><mi>m</mi><mn>1</mn></msub><msub><mi>c</mi><mn>1</mn></msub><mo>(</mo><msub><mi>T</mi><mn>1</mn></msub><mo>−</mo><msub><mi>T</mi><mtext>slut</mtext></msub><mo>)</mo><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><msub><mi>c</mi><mn>2</mn></msub><mo>(</mo><msub><mi>T</mi><mtext>slut</mtext></msub><mo>−</mo><msub><mi>T</mi><mn>2</mn></msub><mo>)</mo></math>. Karrets varmekapacitet lægges til.</p>
+</div>
+
+<h2>Termisk udvidelse</h2>
+<p>Længdeudvidelse: <math><mi>Δ</mi><mi>L</mi><mo>=</mo><msub><mi>L</mi><mn>0</mn></msub><mi>α</mi><mi>Δ</mi><mi>T</mi></math>, rumfangsudvidelse: <math><mi>Δ</mi><mi>V</mi><mo>=</mo><msub><mi>V</mi><mn>0</mn></msub><mi>β</mi><mi>Δ</mi><mi>T</mi></math> med <math><mi>β</mi><mo>≈</mo><mn>3</mn><mi>α</mi></math> for isotrope faste stoffer. For vand gælder en undtagelse: densiteten er størst ved 4&nbsp;°C, så is lægger sig øverst, og søer fryser fra overfladen.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — opvarmning af vand</span>
+  <p>Hvor meget energi kræves for at opvarme <math><mn>1,5</mn><mspace width="0.25em"/><mtext>L</mtext></math> vand fra <math><mn>12</mn><mo>°</mo><mtext>C</mtext></math> til <math><mn>100</mn><mo>°</mo><mtext>C</mtext></math>?</p>
+  <div class="formula left">
+    <math><mi>Q</mi><mo>=</mo><mn>1,5</mn><mo>·</mo><mn>4&nbsp;180</mn><mo>·</mo><mn>88</mn><mo>≈</mo><mn>5,52</mn><mo>·</mo><msup><mn>10</mn><mn>5</mn></msup><mspace width="0.25em"/><mtext>J</mtext><mo>=</mo><mn>552</mn><mspace width="0.25em"/><mtext>kJ</mtext></math>
+  </div>
+  <p class="where">En elkedel på 2&nbsp;000&nbsp;W bruger <math><mi>t</mi><mo>=</mo><mi>Q</mi><mo>/</mo><mi>P</mi><mo>≈</mo><mn>276</mn><mspace width="0.25em"/><mtext>s</mtext><mo>≈</mo><mn>4,6</mn><mspace width="0.25em"/><mtext>min</mtext></math> ved 100&nbsp;% virkningsgrad. I praksis går noget tabt til kedlen og omgivelserne.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At bruge <math><mi>Q</mi><mo>=</mo><mi>m</mi><mi>c</mi><mi>Δ</mi><mi>T</mi></math> hen over et faseovergang; smeltning og fordampning kræver <math><mi>Q</mi><mo>=</mo><mi>m</mi><mi>L</mi></math> ved konstant temperatur.</li>
+    <li>At blande varme (energi, J) og temperatur (°C, K).</li>
+    <li>At sætte <math><mi>Δ</mi><mi>T</mi></math> med forkert fortegn; brug altid slut minus start for det legeme, der modtager energi.</li>
+    <li>At glemme enheden: <math><mi>c</mi></math> er per kilogram, så massen skal i kg, ikke gram.</li>
+  </ul>
+</div>
+
+</body>
+</html>

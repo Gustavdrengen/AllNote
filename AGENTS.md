@@ -203,6 +203,23 @@ Units are upright text, not a row of variables. Inside math use
 `9,82&nbsp;m/s²`. Never build units from `<mo>/</mo>` and `<mo>·</mo>` — they
 are operators and pick up visible spacing (`m / s`).
 
+Two rendering rules that follow from how Chromium draws MathML:
+
+* **No square root in a fraction's denominator.** `<mfrac><mn>1</mn><msqrt>…</msqrt></mfrac>`
+  is set in script size: the radicand shrinks to about two thirds and its
+  overline passes through it, so the formula looks like a misdrawn fraction.
+  Write the expression with a negative power instead —
+  `<msup><mrow><mo>(</mo><mn>1</mn><mo>−</mo><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup><mo>)</mo></mrow><mrow><mo>−</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup>`
+  — or put the root outside the fraction. A root that stands alone renders
+  correctly at full size, so `√(2GM/r)` in its own `.formula` block is fine;
+  keep the radicand free of nested fractions and write it with a slash.
+* **No `<br>` inside a `.formula` block.** A display fraction on the second
+  line overlaps the first. Split the calculation into two `.formula` (or
+  `.formula.left`) blocks; each gets its own spacing.
+* Long inline fractions (`e = (a−b)/(c−d)` in running text) squeeze the line and
+  collide with the text above. Put them in a display block, or write them with
+  a slash.
+
 ## 6. Diagrams
 
 Diagrams are inline SVG, generated with the tool and pasted into the HTML.
@@ -302,3 +319,37 @@ Only when the user explicitly asks for a style change:
   `build.py` for margins and page furniture).
 * Then `python build.py --force` so every PDF matches the HTML again.
 * Never add per-sheet overrides; a sheet must stay pure content.
+
+---
+
+## 9. Definition of done — always
+
+A sheet is **not** finished when `build.py` prints `ok`. It is finished when the
+PDF has been opened and looked at, page by page. Notes are always delivered
+complete and checked — never as drafts, half-empty pages or "fix later".
+
+Before a sheet is reported as done:
+
+1. **Build:** `python build.py content/Subject/Sheet.html` gives `ok … 1–3 p`
+   and no `!` line.
+2. **Look at every page.** Render the PDF pages to images (for example with
+   PyMuPDF: `page.get_pixmap(matrix=pymupdf.Matrix(1.15, 1.15))`) and view them.
+   Source code and extracted text are not enough: overlaps, clipping and broken
+   formulas are only visible on the page.
+3. **Check each page for:**
+   * text that overlaps, is cut off, or runs past the text block;
+   * a fraction or a radical that collides with the line above or below;
+   * a formula shown as raw text, an empty box, or a badly drawn root sign;
+   * a heading left alone at the bottom of a page;
+   * diagrams inside the text block, with a caption;
+   * footer `SUBJECT · Sheet name` and `2 / 3` when there is more than one page.
+4. **Check the numbers.** Recalculate every worked example and compare stated
+   figures with table values (2 260 / 418 ≈ 5,4 — not "seven times").
+5. **Fix the HTML and build again.** Never patch the PDF, never leave a known
+   error in place.
+6. **Report:** state what was reviewed and what was not.
+
+A page that is only half full is not finished either. Fill it with content that
+belongs to the topic — another worked example, a table, a diagram, the special
+case or the condition of validity. Never with filler, and never by enlarging the
+type or shrinking the margins.

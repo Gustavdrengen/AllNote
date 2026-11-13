@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Lys og optik</title>
+</head>
+<body>
+
+<h1>Lys og optik</h1>
+
+<h2>Brydning</h2>
+<div class="box rule">
+  <span class="label">Snells lov</span>
+  <div class="formula"><math><msub><mi>n</mi><mn>1</mn></msub><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>n</mi><mn>2</mn></msub><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><msub><mi>θ</mi><mn>2</mn></msub><mtext>,</mtext><mspace width="1em"/><mi>n</mi><mo>=</mo><mfrac><mi>c</mi><mi>v</mi></mfrac></math></div>
+  <p class="where"><math><mi>n</mi></math>: brydningsindeks (luft 1,00 · vand 1,33 · glas 1,5 · diamant 2,42) · vinklerne måles mod normalen, ikke mod overfladen.</p>
+</div>
+<p>Går lyset fra et tættere til et tyndere medium (<math><msub><mi>n</mi><mn>1</mn></msub><mo>&gt;</mo><msub><mi>n</mi><mn>2</mn></msub></math>), bøjer strålen væk fra normalen. Ved grænsevinklen bliver brydningsvinklen 90°:</p>
+<div class="formula"><math><mi>sin</mi><mspace width="0.1em"/><msub><mi>θ</mi><mtext>grænse</mtext></msub><mo>=</mo><mfrac><msub><mi>n</mi><mn>2</mn></msub><msub><mi>n</mi><mn>1</mn></msub></mfrac></math></div>
+<p>For vand mod luft er grænsevinklen 48,8°. Ved større indfaldsvinkler sker totalrefleksion — grundlaget for lysledere og for, at diamant gnistrer.</p>
+
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="78mm" height="48mm" viewBox="0 0 78 48" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<line x1="4" y1="26" x2="74" y2="26" stroke="#1b1b1b" fill="none" stroke-width="0.4" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="40" y1="4" x2="40" y2="46" stroke="#8f98a2" fill="none" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.4 1.2"/>
+<line x1="20" y1="8" x2="40" y2="26" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="40,26 38.4,25.42 39.25,24.47" fill="#1b1b1b" stroke="none"/>
+<line x1="40" y1="26" x2="50.3" y2="44" stroke="#6a3d9a" fill="none" stroke-width="0.55" stroke-linejoin="round" stroke-linecap="round"/><polygon points="50.3,44 48.96,42.95 50.07,42.32" fill="#6a3d9a" stroke="none"/>
+<path d="M 34.05 20.65 A 8 8 0 0 1 40 18" stroke="#8f98a2" fill="none" stroke-width="0.3"/><text x="35.77" y="16.5" font-size="2.4" fill="#1b1b1b" text-anchor="middle" dominant-baseline="middle">θ1</text>
+<path d="M 43.5 32.06 A 7 7 0 0 1 40 33" stroke="#8f98a2" fill="none" stroke-width="0.3"/><text x="42.43" y="35.08" font-size="2.4" fill="#1b1b1b" text-anchor="middle" dominant-baseline="middle">θ2</text>
+<text x="8" y="23.5" font-size="2.6" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle">luft</text>
+<text x="8" y="30.5" font-size="2.6" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle">glas</text>
+<text x="41.5" y="6" font-size="2.4" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle">normal</text>
+</svg>
+<figcaption>Brydning ved en grænseflade: strålen bøjer mod normalen, når den går fra luft til glas (n₂ &gt; n₁).</figcaption>
+</figure>
+
+<div class="box">
+  <span class="label">Eksempel — grænsevinkel for glas</span>
+  <p>For glas mod luft (<math><mi>n</mi><mo>=</mo><mn>1,50</mn></math>) bliver grænsevinklen</p>
+  <div class="formula"><math><mi>sin</mi><mspace width="0.1em"/><msub><mi>θ</mi><mtext>grænse</mtext></msub><mo>=</mo><mfrac><mn>1,00</mn><mn>1,50</mn></mfrac><mo>=</mo><mn>0,667</mn><mspace width="0.6em"/><mo>⇒</mo><mspace width="0.6em"/><msub><mi>θ</mi><mtext>grænse</mtext></msub><mo>=</mo><mn>41,8</mn><mo>°</mo></math></div>
+  <p class="where">Ved indfald over 41,8° reflekteres hele strålen. Det er derfor, en glasfiber kan føre lys over kilometer med lille tab, og hvorfor et prisme kan bruges som spejl.</p>
+</div>
+
+<h2>Linser</h2>
+<div class="box rule">
+  <span class="label">Linseligningen</span>
+  <div class="formula"><math><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mi>s</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mi>s</mi><mo>′</mo></msup></mfrac><mtext>,</mtext><mspace width="1em"/><mi>m</mi><mo>=</mo><mfrac><msup><mi>s</mi><mo>′</mo></msup><mi>s</mi></mfrac><mo>=</mo><mfrac><msub><mi>y</mi><mn>1</mn></msub><msub><mi>y</mi><mn>2</mn></msub></mfrac></math></div>
+  <p class="where"><math><mi>f</mi></math>: brændvidde · <math><mi>s</mi></math>: genstandsafstand · <math><msup><mi>s</mi><mo>′</mo></msup></math>: billedafstand · <math><mi>m</mi></math>: forstørrelse. Konvention: <math><mi>f</mi><mo>&gt;</mo><mn>0</mn></math> for samlelinse, <math><mi>s</mi><mo>&gt;</mo><mn>0</mn></math> foran linsen, <math><msup><mi>s</mi><mo>′</mo></msup><mo>&lt;</mo><mn>0</mn></math> for et virtuelt billede.</p>
+</div>
+<table class="compact">
+<caption>Billeddannelse med en samlelinse</caption>
+<tr><th>Genstandens placering</th><th>Billede</th><th>Anvendelse</th></tr>
+<tr><td><math><mi>s</mi><mo>&gt;</mo><mn>2</mn><mi>f</mi></math></td><td>virkeligt, omvendt, formindsket</td><td>kamera, øje</td></tr>
+<tr><td><math><mi>f</mi><mo>&lt;</mo><mi>s</mi><mo>&lt;</mo><mn>2</mn><mi>f</mi></math></td><td>virkeligt, omvendt, forstørret</td><td>projektor</td></tr>
+<tr><td><math><mi>s</mi><mo>=</mo><mi>f</mi></math></td><td>ingen billede (parallelle stråler)</td><td>kollimator</td></tr>
+<tr><td><math><mi>s</mi><mo>&lt;</mo><mi>f</mi></math></td><td>virtuelt, opret, forstørret</td><td>forstørrelsesglas</td></tr>
+</table>
+<p>For en spredningslinse er <math><mi>f</mi><mo>&lt;</mo><mn>0</mn></math>, og billedet er altid virtuelt, opret og formindsket. Linsestyrken angives i dioptrier: <math><mi>D</mi><mo>=</mo><mn>1</mn><mo>/</mo><mi>f</mi></math> med <math><mi>f</mi></math> i meter.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — projektor</span>
+  <p>En samlelinse med <math><mi>f</mi><mo>=</mo><mn>10,0</mn><mspace width="0.25em"/><mtext>cm</mtext></math> skal give et billede på en skærm <math><mn>2,00</mn><mspace width="0.25em"/><mtext>m</mtext></math> væk.</p>
+  <div class="formula left">
+    <math><mfrac><mn>1</mn><mi>s</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>0,100</mn></mfrac><mo>−</mo><mfrac><mn>1</mn><mn>2,00</mn></mfrac><mo>=</mo><mn>9,50</mn><mspace width="0.15em"/><msup><mtext>m</mtext><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⇒</mo><mi>s</mi><mo>=</mo><mn>0,105</mn><mspace width="0.25em"/><mtext>m</mtext><mtext>,</mtext><mspace width="1em"/><mi>m</mi><mo>=</mo><mfrac><mn>2,00</mn><mn>0,105</mn></mfrac><mo>≈</mo><mn>19</mn></math>
+  </div>
+  <p class="where">Diasen skal stå 10,5&nbsp;cm fra linsen, og billedet bliver 19 gange større og omvendt — derfor sættes diaset omvendt i projektoren.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At måle vinkler mod overfladen i stedet for mod normalen.</li>
+    <li>At bruge linseligningen uden fortegnskonvention; et virtuelt billede har negativ billedafstand.</li>
+    <li>At tro, at totalrefleksion kan ske, når lyset går fra et tyndere til et tættere medium — det kræver <math><msub><mi>n</mi><mn>1</mn></msub><mo>&gt;</mo><msub><mi>n</mi><mn>2</mn></msub></math>.</li>
+    <li>At glemme, at brydningsindekset afhænger af bølgelængden — derfor deles hvidt lys i et prisme (dispersion).</li>
+  </ul>
+</div>
+
+</body>
+</html>

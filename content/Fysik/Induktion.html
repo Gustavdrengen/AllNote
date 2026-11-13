@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Induktion</title>
+</head>
+<body>
+
+<h1>Induktion</h1>
+
+<h2>Faradays lov</h2>
+<div class="box rule">
+  <span class="label">Induceret spænding</span>
+  <div class="formula"><math><mi>ε</mi><mo>=</mo><mo>−</mo><mi>N</mi><mfrac><mrow><mi>d</mi><mi>Φ</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mi>N</mi><mfrac><mrow><mi>d</mi><mo>(</mo><mi>B</mi><mi>A</mi><mspace width="0.1em"/><mi>cos</mi><mspace width="0.1em"/><mi>θ</mi><mo>)</mo></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></math></div>
+  <p class="where"><math><mi>ε</mi></math>: induceret emk (V) · <math><mi>N</mi></math>: vindingstal · <math><mi>Φ</mi></math>: flux (Wb). Spændingen opstår, når fluxen <em>ændrer</em> sig — ikke når den bare er stor.</p>
+</div>
+<p>Der er tre måder at ændre fluxen på: ændre feltstyrken <math><mi>B</mi></math>, ændre arealet <math><mi>A</mi></math> eller dreje spolen så <math><mi>θ</mi></math> ændres. En generator kombinerer de to sidste: spolen roterer i et fast felt, og fluxen varierer som <math><mi>cos</mi><mspace width="0.1em"/><mo>(</mo><mi>ω</mi><mi>t</mi><mo>)</mo></math>.</p>
+
+<h2>Lenz' lov</h2>
+<div class="box rule">
+  <span class="label">Retning og energibevarelse</span>
+  <p>Den inducerede strøm har en retning, der modvirker den ændring, der fremkaldte den. Minustegnet i Faradays lov udtrykker dette. Loven er en konsekvens af energibevarelsen: en induceret strøm, der forstærkede sin egen årsag, ville give gratis energi.</p>
+</div>
+<p>Skubber man en magnet ind i en spole, bremses magneten af den inducerede strøms felt. Trækker man den ud, holder feltet igen. Virvelstrømsbremser i tog og forlystelsesparker udnytter præcis dette: ingen sliddele, men energien går til varme i metallet.</p>
+
+<h2>Bevægelses-emk og selvinduktion</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Stang i magnetfelt</span>
+    <div class="formula"><math><mi>ε</mi><mo>=</mo><mi>B</mi><mi>l</mi><mi>v</mi></math></div>
+    <p class="where">En leder af længden <math><mi>l</mi></math> bevæges med <math><mi>v</mi></math> vinkelret på feltet. Friktionsfri bevægelse i et lukket kredsløb kræver trækkraft <math><mi>F</mi><mo>=</mo><msup><mi>B</mi><mn>2</mn></msup><msup><mi>l</mi><mn>2</mn></msup><mi>v</mi><mo>/</mo><mi>R</mi></math>.</p>
+  </div>
+  <div class="box">
+    <span class="label">Selvinduktion</span>
+    <div class="formula"><math><mi>ε</mi><mo>=</mo><mo>−</mo><mi>L</mi><mfrac><mrow><mi>d</mi><mi>I</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></math></div>
+    <p class="where"><math><mi>L</mi></math>: selvinduktans (henry, H). En spole modvirker enhver ændring af sin egen strøm — derfor gnisten, når en kreds brydes.</p>
+  </div>
+</div>
+
+<h2>Transformator</h2>
+<div class="box note">
+  <span class="label">Spændingsomsetning</span>
+  <div class="formula"><math><mfrac><msub><mi>U</mi><mn>2</mn></msub><msub><mi>U</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>N</mi><mn>2</mn></msub><msub><mi>N</mi><mn>1</mn></msub></mfrac><mtext>,</mtext><mspace width="1em"/><msub><mi>U</mi><mn>1</mn></msub><msub><mi>I</mi><mn>1</mn></msub><mo>=</mo><msub><mi>U</mi><mn>2</mn></msub><msub><mi>I</mi><mn>2</mn></msub></math></div>
+  <p class="where">Ved ideel transformator er effekten bevaret. Virker kun ved vekselstrøm — ved jævnstrøm er fluxen konstant, og der induceres intet.</p>
+</div>
+<p>I elnettet transformeres spændingen op til 400&nbsp;kV for at mindske tabene i transmissionslinjer, fordi tabet er <math><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi></math>: 10 gange højere spænding giver 100 gange mindre tab ved samme effekt.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — spole i aftagende felt</span>
+  <p>En spole med 200 vindinger og areal <math><mn>0,010</mn><mspace width="0.25em"/><mtext>m²</mtext></math> ligger vinkelret på et felt, der aftager fra <math><mn>0,50</mn><mspace width="0.25em"/><mtext>T</mtext></math> til nul på <math><mn>0,10</mn><mspace width="0.25em"/><mtext>s</mtext></math>.</p>
+  <div class="formula left">
+    <math><mi>ε</mi><mo>=</mo><mi>N</mi><mfrac><mrow><mi>Δ</mi><mi>Φ</mi></mrow><mrow><mi>Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mn>200</mn><mo>·</mo><mfrac><mrow><mn>0,50</mn><mo>·</mo><mn>0,010</mn></mrow><mn>0,10</mn></mfrac><mo>=</mo><mn>10</mn><mspace width="0.25em"/><mtext>V</mtext></math>
+  </div>
+  <p class="where">Er spolens modstand 2,0&nbsp;Ω, bliver strømmen 5,0&nbsp;A og den afsatte effekt 50&nbsp;W i de 0,10&nbsp;s. Den inducerede strømretning er sådan, at dens felt peger samme vej som det oprindelige felt og dermed modvirker aftagningen.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At tro, at en stor konstant flux giver induktion. Det er ændringen <math><mi>d</mi><mi>Φ</mi><mo>/</mo><mi>d</mi><mi>t</mi></math>, der tæller.</li>
+    <li>At glemme vindingstallet <math><mi>N</mi></math>; 200 vindinger giver 200 gange så stor emk.</li>
+    <li>At bruge transformatorformlen på jævnstrøm.</li>
+    <li>At vælge strømretning uden at tjekke med Lenz' lov — retningen er ikke valgfri.</li>
+  </ul>
+</div>
+
+</body>
+</html>

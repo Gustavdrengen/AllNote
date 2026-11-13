@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Kræfter og friktion</title>
+</head>
+<body>
+
+<h1>Kræfter og friktion</h1>
+
+<h2>Friktionskraften</h2>
+<div class="box rule">
+  <span class="label">Tør friktion</span>
+  <div class="formula"><math><msub><mi>F</mi><mrow><mi>f</mi><mtext>,</mtext><mtext>max</mtext></mrow></msub><mo>=</mo><msub><mi>μ</mi><mi>s</mi></msub><mi>N</mi><mtext>,</mtext><mspace width="1em"/><msub><mi>F</mi><mi>f</mi></msub><mo>=</mo><msub><mi>μ</mi><mi>k</mi></msub><mi>N</mi></math></div>
+  <p class="where"><math><msub><mi>μ</mi><mi>s</mi></msub></math>: hvilestiktion · <math><msub><mi>μ</mi><mi>k</mi></msub></math>: glidefriktion · <math><mi>N</mi></math>: normalkraft. Friktionskraften er uafhængig af kontaktarealet og af hastigheden.</p>
+</div>
+<p>Den statiske friktion tilpasser sig den påførte kraft op til grænseværdien; derfor står en klods stille på et skråplan, indtil tyngdekomposanten overstiger <math><msub><mi>μ</mi><mi>s</mi></msub><mi>N</mi></math>. Når den glider, er friktionen konstant og rettet mod bevægelsen.</p>
+<div class="grid2">
+<table class="compact">
+<caption>Friktionskoefficienter (typiske)</caption>
+<tr><th>Materialepar</th><th><math><msub><mi>μ</mi><mi>s</mi></msub></math></th><th><math><msub><mi>μ</mi><mi>k</mi></msub></math></th></tr>
+<tr><td>stål på stål</td><td class="num">0,74</td><td class="num">0,57</td></tr>
+<tr><td>træ på træ</td><td class="num">0,50</td><td class="num">0,30</td></tr>
+<tr><td>gummi på tørt asfalt</td><td class="num">0,9</td><td class="num">0,8</td></tr>
+<tr><td>gummi på våd asfalt</td><td class="num">0,5</td><td class="num">0,4</td></tr>
+<tr><td>teflon på stål</td><td class="num">0,04</td><td class="num">0,04</td></tr>
+<tr><td>is på is</td><td class="num">0,10</td><td class="num">0,03</td></tr>
+</table>
+<div class="box note">
+  <span class="label">Hvorfor μ ikke har enhed</span>
+  <p>Friktionskraft og normalkraft er begge kræfter, så forholdet <math><mi>μ</mi><mo>=</mo><msub><mi>F</mi><mi>f</mi></msub><mo>/</mo><mi>N</mi></math> er dimensionsløst. Værdierne gælder kun for det konkrete materialepar og den konkrete overflade.</p>
+</div>
+</div>
+
+<h2>Skråt underlag</h2>
+<div class="box">
+  <span class="label">Kræfter langs og vinkelret på planet</span>
+  <div class="formula"><math><msub><mi>F</mi><mo>∥</mo></msub><mo>=</mo><mi>m</mi><mi>g</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>θ</mi><mtext>,</mtext><mspace width="1em"/><mi>N</mi><mo>=</mo><mi>m</mi><mi>g</mi><mspace width="0.1em"/><mi>cos</mi><mspace width="0.1em"/><mi>θ</mi></math></div>
+  <p class="where"><math><mi>θ</mi></math>: planets hældning mod vandret. Accelerationen ned ad et friktionsfrit plan er <math><mi>g</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>θ</mi></math>.</p>
+</div>
+<p>Glider klodsen, bliver accelerationen ned ad planet</p>
+<div class="formula"><math><mi>a</mi><mo>=</mo><mi>g</mi><mo>(</mo><mi>sin</mi><mspace width="0.1em"/><mi>θ</mi><mo>−</mo><msub><mi>μ</mi><mi>k</mi></msub><mspace width="0.1em"/><mi>cos</mi><mspace width="0.1em"/><mi>θ</mi><mo>)</mo></math></div>
+<p>Grænsevinklen, hvor klodsen netop begynder at glide, er givet ved <math><mi>tan</mi><mspace width="0.1em"/><msub><mi>θ</mi><mtext>krit</mtext></msub><mo>=</mo><msub><mi>μ</mi><mi>s</mi></msub></math> — uafhængig af massen.</p>
+
+<h2>Fjedre og snore</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Hookes lov</span>
+    <div class="formula"><math><mi>F</mi><mo>=</mo><mo>−</mo><mi>k</mi><mi>x</mi></math></div>
+    <p class="where"><math><mi>k</mi></math>: fjederkonstant (N/m) · <math><mi>x</mi></math>: forlængelse fra ligevægt. Minus angiver, at kraften er genoprettende.</p>
+  </div>
+  <div class="box">
+    <span class="label">Snor over en masseløs trisse</span>
+    <div class="formula"><math><mi>T</mi><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac></math></div>
+    <p class="where">To lodder over en trisse: <math><mi>a</mi><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>−</mo><msub><mi>m</mi><mn>2</mn></msub></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac><mi>g</mi></math>.</p>
+  </div>
+</div>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — klods på skråplan</span>
+  <p>En klods på <math><mn>2,0</mn><mspace width="0.25em"/><mtext>kg</mtext></math> ligger på et plan med <math><mi>θ</mi><mo>=</mo><mn>25</mn><mo>°</mo></math> og <math><msub><mi>μ</mi><mi>k</mi></msub><mo>=</mo><mn>0,20</mn></math>.</p>
+  <div class="formula left">
+    <math><mi>a</mi><mo>=</mo><mn>9,82</mn><mo>·</mo><mo>(</mo><mi>sin</mi><mspace width="0.1em"/><mn>25</mn><mo>°</mo><mo>−</mo><mn>0,20</mn><mo>·</mo><mi>cos</mi><mspace width="0.1em"/><mn>25</mn><mo>°</mo><mo>)</mo><mo>=</mo><mn>9,82</mn><mo>·</mo><mo>(</mo><mn>0,4226</mn><mo>−</mo><mn>0,1813</mn><mo>)</mo><mo>≈</mo><mn>2,37</mn><mspace width="0.25em"/><mtext>m/s²</mtext></math>
+  </div>
+  <p class="where">Friktionskraften er <math><msub><mi>F</mi><mi>f</mi></msub><mo>=</mo><msub><mi>μ</mi><mi>k</mi></msub><mi>m</mi><mi>g</mi><mi>cos</mi><mspace width="0.1em"/><mi>θ</mi><mo>≈</mo><mn>3,6</mn><mspace width="0.25em"/><mtext>N</mtext></math>, mens tyngdekomposanten er <math><mn>8,3</mn><mspace width="0.25em"/><mtext>N</mtext></math>. Uden friktion ville accelerationen være <math><mn>4,15</mn><mspace width="0.25em"/><mtext>m/s²</mtext></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At bruge <math><mi>N</mi><mo>=</mo><mi>m</mi><mi>g</mi></math> på et skråt plan; rigtigt er <math><mi>m</mi><mi>g</mi><mi>cos</mi><mspace width="0.1em"/><mi>θ</mi></math>.</li>
+    <li>At sætte friktionskraften til <math><msub><mi>μ</mi><mi>s</mi></msub><mi>N</mi></math>, når legemet står stille — den er højst så stor og bestemmes af ligevægten.</li>
+    <li>At tro, at friktion altid bremser: statisk friktion er den kraft, der fx får en bil til at accelerere fremad.</li>
+    <li>At regne med <math><mi>μ</mi></math> som en materialekonstant; den afhænger af begge overflader og af fugt, temperatur og smøring.</li>
+  </ul>
+</div>
+
+</body>
+</html>

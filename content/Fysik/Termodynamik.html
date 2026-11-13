@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Termodynamik</title>
+</head>
+<body>
+
+<h1>Termodynamik</h1>
+
+<h2>Første hovedsætning</h2>
+<div class="box rule">
+  <span class="label">Energibevarelse</span>
+  <div class="formula"><math><mi>Δ</mi><mi>U</mi><mo>=</mo><mi>Q</mi><mo>−</mo><mi>W</mi></math></div>
+  <p class="where"><math><mi>Δ</mi><mi>U</mi></math>: ændring i indre energi · <math><mi>Q</mi></math>: varme tilført systemet · <math><mi>W</mi></math>: arbejde udført <em>af</em> systemet. Fortegnene følger denne konvention.</p>
+</div>
+<p>Indre energi er summen af molekylernes kinetiske og potentielle energi. For en idealgas afhænger <math><mi>U</mi></math> kun af temperaturen, så <math><mi>Δ</mi><mi>U</mi><mo>=</mo><mn>0</mn></math> ved isoterm proces. Arbejdet er <math><mi>W</mi><mo>=</mo><mo>∫</mo><mi>p</mi><mspace width="0.15em"/><mi>d</mi><mi>V</mi></math> — arealet under kurven i et p-V-diagram.</p>
+<p>En termodynamisk kredsproces returnerer systemet til starttilstanden, så <math><mi>Δ</mi><mi>U</mi><mo>=</mo><mn>0</mn></math> og <math><mi>Q</mi><mo>=</mo><mi>W</mi></math>. Nettoarbejdet er arealet, som kurven omslutter; køres kredsen mod urets retning, er arbejdet negativt (kølemaskine).</p>
+
+<h2>Anden hovedsætning</h2>
+<div class="box rule">
+  <span class="label">Entropi</span>
+  <div class="formula"><math><mi>Δ</mi><mi>S</mi><mo>=</mo><mfrac><msub><mi>Q</mi><mtext>rev</mtext></msub><mi>T</mi></mfrac><mtext>,</mtext><mspace width="1em"/><mi>Δ</mi><msub><mi>S</mi><mtext>total</mtext></msub><mo>≥</mo><mn>0</mn></math></div>
+  <p class="where">Entropi måles i J/K. I et isoleret system kan den samlede entropi aldrig aftage — processer har en retning.</p>
+</div>
+<p>Entropi er et mål for antallet af mikrotilstande, der giver samme makrotilstand: <math><mi>S</mi><mo>=</mo><mi>k</mi><mspace width="0.1em"/><mi>ln</mi><mspace width="0.1em"/><mi>Ω</mi></math>. Varme strømmer spontant fra varmt til koldt, fordi den fordeling har flest mikrotilstande. Anden hovedsætning forbyder en maskine, der omdanner varme fra et reservoir fuldstændigt til arbejde, uden at afgive varme til et koldere reservoir.</p>
+
+<h2>Carnot-proces og virkningsgrad</h2>
+<div class="box">
+  <span class="label">Teoretisk øvre grænse</span>
+  <div class="formula"><math><msub><mi>η</mi><mtext>Carnot</mtext></msub><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><msub><mi>T</mi><mtext>kold</mtext></msub><msub><mi>T</mi><mtext>varm</mtext></msub></mfrac></math></div>
+  <p class="where">Temperature i kelvin. Ingen varmekraftmaskine med de to temperaturer kan få højere virkningsgrad.</p>
+</div>
+<table class="compact">
+<caption>Virkningsgrader i praksis</caption>
+<tr><th>Anlæg</th><th>Virkningsgrad</th><th>Årsag til tabet</th></tr>
+<tr><td>kulkraftværk</td><td class="num">ca. 40 %</td><td>varme til køletårn</td></tr>
+<tr><td>kombineret gas- og dampkraftværk</td><td class="num">ca. 60 %</td><td>to temperaturspring</td></tr>
+<tr><td>benzinmotor</td><td class="num">25–35 %</td><td>udstødning og køling</td></tr>
+<tr><td>varmepumpe (COP)</td><td class="num">3–5</td><td>flytter varme, fremstiller den ikke</td></tr>
+</table>
+<p>En varmepumpe har ikke en virkningsgrad over 1 i Carnot-forstand; den angives ved effektfaktoren <math><mtext>COP</mtext><mo>=</mo><msub><mi>Q</mi><mtext>varm</mtext></msub><mo>/</mo><mi>W</mi></math>, som kan være 3–5, fordi den flytter varme fra udeluften i stedet for at omdanne el til varme.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — dampkraftværk</span>
+  <p>Dampen holder <math><mn>550</mn><mo>°</mo><mtext>C</mtext></math> (823&nbsp;K), og kondensatoren køles ved <math><mn>30</mn><mo>°</mo><mtext>C</mtext></math> (303&nbsp;K).</p>
+  <div class="formula left">
+    <math><msub><mi>η</mi><mtext>Carnot</mtext></msub><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mn>303</mn><mn>823</mn></mfrac><mo>=</mo><mn>0,632</mn><mspace width="1em"/><mtext>mod</mtext><mspace width="0.35em"/><mn>0,40</mn><mspace width="0.25em"/><mtext>i praksis</mtext></math>
+  </div>
+  <p class="where">Ved 1&nbsp;GW elektrisk effekt skal der afgives ca. 1,5&nbsp;GW varme til køletårnet. Det er grunden til, at kraftværker ligger ved vand — og til at overskudsvarmen kan bruges til fjernvarme.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At forveksle varme og indre energi. Varme er energitransport over en temperaturforskel; indre energi er en tilstand.</li>
+    <li>At regne virkningsgrad med Celsius-temperature i Carnot-formlen.</li>
+    <li>At tro, at anden hovedsætning forbyder lokalt aftagende entropi: i en fryser aftager entropien, men omgivelsernes vokser mere.</li>
+    <li>At bruge fortegnene omvendt: <math><mi>W</mi></math> er arbejde udført af systemet, ikke tilført det.</li>
+  </ul>
+</div>
+
+</body>
+</html>

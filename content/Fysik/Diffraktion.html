@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Diffraktion</title>
+</head>
+<body>
+
+<h1>Diffraktion</h1>
+
+<h2>Bøjning om en kant</h2>
+<p>Diffraktion er bølgers afbøjning, når de passerer en åbning eller en kant. Effekten er tydelig, når åbningens bredde er af samme størrelsesorden som bølgelængden eller mindre. Huygens' princip forklarer den: hvert punkt i bølgefronten virker som en ny punktkilde, og deres bidrag lægges sammen.</p>
+<div class="box note">
+  <span class="label">Hvorfor lyd bøjer om hjørner — og lys ikke</span>
+  <p>Ved en døråbning på ca. 1&nbsp;m er <math><mi>λ</mi><mo>/</mo><mi>a</mi></math> ca. 0,3 for lyd (343&nbsp;Hz) men 5&nbsp;·&nbsp;10⁻⁷ for lys. Lyd spredes derfor bredt, mens lys praktisk talt går lige igennem og kun giver en skarp skygge med smalle afbøjningsstriber ved kanten.</p>
+</div>
+
+<h2>Enkeltspalte</h2>
+<div class="box rule">
+  <span class="label">Minima for enkeltspalte</span>
+  <div class="formula"><math><mi>a</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>θ</mi><mo>=</mo><mi>k</mi><mi>λ</mi><mtext>,</mtext><mspace width="1em"/><mi>k</mi><mo>=</mo><mn>1</mn><mtext>,</mtext><mn>2</mn><mtext>,</mtext><mn>3</mn><mo>…</mo></math></div>
+  <p class="where"><math><mi>a</mi></math>: spaltebredde · <math><mi>θ</mi></math>: afbøjningsvinkel. Bemærk: dette er <em>minimum</em>sbetingelsen — modsat gitteret.</p>
+</div>
+<p>Centralmaksimum er dobbelt så bredt som sidemaksima og indeholder ca. 84&nbsp;% af lysintensiteten. Bredden af centralmaksimum på en skærm i afstand <math><mi>L</mi></math> er <math><mn>2</mn><mi>λ</mi><mi>L</mi><mo>/</mo><mi>a</mi></math>. Mindre spalte giver bredere udbredelse: en meget smal spalte virker næsten som en punktkilde med halvkugleformet bølgefront.</p>
+
+<h2>Gitter</h2>
+<div class="box rule">
+  <span class="label">Gitterligningen</span>
+  <div class="formula"><math><mi>d</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><msub><mi>θ</mi><mi>k</mi></msub><mo>=</mo><mi>k</mi><mi>λ</mi><mtext>,</mtext><mspace width="1em"/><mi>d</mi><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac></math></div>
+  <p class="where"><math><mi>N</mi></math>: ridser per meter · <math><mi>k</mi></math>: orden. Et gitter med mange ridser giver skarpe maksima, fordi bidragene fra alle ridser kun er i fase i bestemte retninger.</p>
+</div>
+<table class="compact">
+<caption>Enkeltspalte og gitter — de to ligninger bytter roller</caption>
+<tr><th>System</th><th>Ligning</th><th>Giver</th></tr>
+<tr><td>enkeltspalte, bredde <math><mi>a</mi></math></td><td><math><mi>a</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>θ</mi><mo>=</mo><mi>k</mi><mi>λ</mi></math></td><td>minima (mørke striber)</td></tr>
+<tr><td>gitter, gitterkonstant <math><mi>d</mi></math></td><td><math><mi>d</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>θ</mi><mo>=</mo><mi>k</mi><mi>λ</mi></math></td><td>maksima (lyse pletter)</td></tr>
+<tr><td>to spalter, afstand <math><mi>d</mi></math></td><td><math><mi>d</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>θ</mi><mo>=</mo><mi>k</mi><mi>λ</mi></math></td><td>maksima</td></tr>
+</table>
+<p>Et gitterspektrometer bruges til at måle bølgelængder og til at analysere stoffers spektre. Jo højere orden, jo større spredning — men også jo mindre intensitet, og ved for stor orden findes ingen løsning, fordi <math><mi>sin</mi><mspace width="0.1em"/><mi>θ</mi></math> ikke kan overstige 1.</p>
+
+<h2>Opløsningsevne</h2>
+<div class="box">
+  <span class="label">Rayleighs kriterium</span>
+  <div class="formula"><math><msub><mi>θ</mi><mtext>min</mtext></msub><mo>≈</mo><mn>1,22</mn><mfrac><mi>λ</mi><mi>D</mi></mfrac></math></div>
+  <p class="where"><math><mi>D</mi></math>: åbningens diameter (objektivets). To punkter kan netop skelnes, når deres vinkelafstand er større end dette.</p>
+</div>
+<p>Det er grunden til, at store teleskoper ser flere detaljer, og til at et mikroskop ikke kan opløse detaljer mindre end ca. halvdelen af bølgelængden. Elektronmikroskoper bruger elektroner med meget kortere de Broglie-bølgelængde og kan derfor nå atomar opløsning.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — gitter med 300 ridser/mm</span>
+  <p>Lys med <math><mi>λ</mi><mo>=</mo><mn>589</mn><mspace width="0.25em"/><mtext>nm</mtext></math> sendes gennem et gitter med <math><mn>300</mn></math> ridser per millimeter.</p>
+  <div class="formula left">
+    <math><mi>d</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>300</mn><mo>·</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mn>3,33</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mspace width="0.25em"/><mtext>m</mtext><mtext>,</mtext><mspace width="1em"/><mi>sin</mi><mspace width="0.1em"/><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>589</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup></mrow><mrow><mn>3,33</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>0,177</mn></math>
+  </div>
+  <p class="where"><math><msub><mi>θ</mi><mn>1</mn></msub><mo>≈</mo><mn>10,2</mn><mo>°</mo></math>. Anden orden giver <math><mi>sin</mi><mspace width="0.1em"/><msub><mi>θ</mi><mn>2</mn></msub><mo>=</mo><mn>0,354</mn></math>, altså <math><mn>20,7</mn><mo>°</mo></math>; tredje orden kræver <math><mn>0,531</mn></math> og er stadig mulig.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At forveksle enkeltspaltens minima-betingelse med gitterets maksima-betingelse, selv om ligningerne ser ens ud.</li>
+    <li>At regne med ridser per centimeter uden at omregne <math><mi>d</mi></math> til meter.</li>
+    <li>At tro, at diffraktion kun sker ved kanter. Den sker altid, men er kun mærkbar, når åbningen er sammenlignelig med <math><mi>λ</mi></math>.</li>
+    <li>At glemme, at et gitter med mange ridser giver skarpere — men også svagere — højere ordener.</li>
+  </ul>
+</div>
+
+</body>
+</html>

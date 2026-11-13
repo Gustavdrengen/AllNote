@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Almen relativitetsteori</title>
+</head>
+<body>
+
+<h1>Almen relativitetsteori</h1>
+
+<h2>Ækvivalensprincippet</h2>
+<div class="box rule">
+  <span class="label">Einstein, 1915</span>
+  <p>Et homogent gravitationsfelt kan lokalt ikke skelnes fra en accelereret referenceramme. Inertiel masse og tung masse er identiske, og et legeme i frit fald er derfor vægtløst — det følger en geodætisk bane gennem rumtiden.</p>
+</div>
+<p>Konsekvensen er, at tyngdekraften ikke er en kraft i sædvanlig forstand, men en egenskab ved rumtidens geometri. Masse og energi krummer rumtiden, og legemer bevæger sig langs de korteste baner i den krumme geometri — præcis som et legeme på en kugleoverflade følger en storcirkel.</p>
+
+<h2>Rumtidens krumning</h2>
+<p>Einsteins feltligning sætter krumningen i forhold til energi-impulstensor:</p>
+<div class="formula"><math><msub><mi>G</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>8</mn><mi>π</mi><mi>G</mi></mrow><msup><mi>c</mi><mn>4</mn></msup></mfrac><msub><mi>T</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub></math></div>
+<p class="where center">Venstre side beskriver geometrien, højre side stoffets energi og impuls. Det er en tensorligning — ti koblede differentialligninger, som kun kan løses eksakt i særligt symmetriske tilfælde.</p>
+<p>Faktoren <math><msup><mi>c</mi><mn>4</mn></msup></math> i nævneren forklarer, hvorfor krumningen er umålelig lille i dagligdagen: en massiv jernkugle krummer rumtiden så lidt, at effekten kun kan måles med ekstrem præcision.</p>
+
+<h2>Gravitationel tidsdilatation</h2>
+<div class="box rule">
+  <span class="label">Uret på bjerget går hurtigere</span>
+  <div class="formula"><math><mi>Δ</mi><mi>t</mi><mo>=</mo><mi>Δ</mi><msub><mi>t</mi><mn>0</mn></msub><mo>·</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>G</mi><mi>M</mi><mo>/</mo><mo>(</mo><mi>r</mi><msup><mi>c</mi><mn>2</mn></msup><mo>)</mo><mo>)</mo></mrow><mrow><mo>−</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>≈</mo><mi>Δ</mi><msub><mi>t</mi><mn>0</mn></msub><mo>(</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mi>g</mi><mi>h</mi></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac><mo>)</mo></math></div>
+  <p class="where">Tid går langsommere, hvor tyngdepotentialet er dybere. Forskellen over 1&nbsp;km højdeforskel på Jorden er ca. 100&nbsp;ns per år.</p>
+</div>
+<p>GPS-satellitterne er det mest håndgribelige bevis: deres ure går ca. 45&nbsp;µs/døgn hurtigere på grund af højden og ca. 7&nbsp;µs/døgn langsommere på grund af farten. Netto ca. 38&nbsp;µs per dag, som skal korrigeres — ellers ville positionen drive ca. 10&nbsp;km per dag.</p>
+
+<h2>Sorte huller</h2>
+<div class="box note">
+  <span class="label">Schwarzschild-radius</span>
+  <div class="formula"><math><msub><mi>r</mi><mi>s</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>G</mi><mi>M</mi></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac></math></div>
+  <p class="where">For Solen ville <math><msub><mi>r</mi><mi>s</mi></msub></math> være 3,0&nbsp;km, for Jorden 9&nbsp;mm. Inden for denne radius kan intet — heller ikke lys — undslippe.</p>
+</div>
+<p>Et sort hul opstår, når en massiv stjernes kerne kollapser og ingen kendt kraft kan stoppe sammenpresningen. Ved begivenhedshorisonten ses effekterne af tidsdilatation: en fjern observatør ser objektet nærme sig horisonten stadig langsommere og aldrig krydse den, mens det faldende legeme selv passerer på endelig egentid.</p>
+
+<h2>Observationer</h2>
+<table class="compact">
+<caption>Klassiske test og moderne bekræftelser</caption>
+<tr><th>Fænomen</th><th>Forudsigelse</th><th>Målt</th></tr>
+<tr><td>Merkurs periheldrejning</td><td>43″ per århundrede</td><td>stemmer med observation</td></tr>
+<tr><td>lysafbøjning ved Solen</td><td>1,75″ ved solranden</td><td>Eddington 1919</td></tr>
+<tr><td>gravitationsrødt skift</td><td><math><mi>Δ</mi><mi>f</mi><mo>/</mo><mi>f</mi><mo>=</mo><mi>g</mi><mi>h</mi><mo>/</mo><msup><mi>c</mi><mn>2</mn></msup></math></td><td>Pound-Rebka 1959</td></tr>
+<tr><td>gravitationsbølger</td><td>rumtidens bølger fra acceleration af masser</td><td>LIGO 2015</td></tr>
+<tr><td>billede af begivenhedshorisont</td><td>mørk skygge omgivet af lysring</td><td>EHT 2019</td></tr>
+</table>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — tid ved jordoverfladen og i kredsbane</span>
+  <p>Et ur på Jorden og et ur i 400&nbsp;km højde.</p>
+  <div class="formula left">
+    <math><mfrac><mrow><mi>Δ</mi><mi>t</mi><mo>−</mo><mi>Δ</mi><msub><mi>t</mi><mn>0</mn></msub></mrow><mrow><mi>Δ</mi><msub><mi>t</mi><mn>0</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>g</mi><mi>h</mi></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mrow><mn>9,82</mn><mo>·</mo><mn>4,0</mn><mo>·</mo><msup><mn>10</mn><mn>5</mn></msup></mrow><msup><mrow><mo>(</mo><mn>3,0</mn><mo>·</mo><msup><mn>10</mn><mn>8</mn></msup><mo>)</mo></mrow><mn>2</mn></msup></mfrac><mo>≈</mo><mn>4,4</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>11</mn></mrow></msup></math>
+  </div>
+  <p class="where">Det svarer til ca. 3,8&nbsp;µs per dag. Den samlede korrektion for en GPS-satellit bliver ca. 38&nbsp;µs/døgn, fordi den også bevæger sig med ca. 3,9&nbsp;km/s.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At tro, at tyngdekraften er en trækkraft gennem rummet i den almene teori. Legemer følger geodætiske baner i krum rumtid.</li>
+    <li>At forveksle speciel og almen relativitet: den specielle gælder kun i inertialsystemer uden gravitation.</li>
+    <li>At tro, at et sort hul »suger« alt til sig. Uden for horisonten er gravitationen som for en almindelig masse.</li>
+    <li>At glemme, at gravitationel tidsdilatation og hastighedsdilatation virker modsat for satellitter.</li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Elektriske kredsløb</title>
+</head>
+<body>
+
+<h1>Elektriske kredsløb</h1>
+
+<h2>Ohms lov</h2>
+<div class="box rule">
+  <span class="label">Strøm, spænding og modstand</span>
+  <div class="formula"><math><mi>U</mi><mo>=</mo><mi>R</mi><mi>I</mi><mtext>,</mtext><mspace width="1em"/><mi>R</mi><mo>=</mo><mi>ρ</mi><mfrac><mi>l</mi><mi>A</mi></mfrac></math></div>
+  <p class="where"><math><mi>U</mi></math> i volt · <math><mi>I</mi></math> i ampere · <math><mi>R</mi></math> i ohm (Ω) · <math><mi>ρ</mi></math>: resistivitet (Ω·m) · <math><mi>l</mi></math>: længde · <math><mi>A</mi></math>: tværsnitsareal.</p>
+</div>
+<p>Ohms lov er en materialelov for ohmske modstande ved konstant temperatur. For metaltråde stiger modstanden med temperaturen, for halvledere falder den. En diode følger slet ikke Ohms lov — dens strøm-spændingskurve er eksponentiel.</p>
+<table class="compact">
+<caption>Resistivitet ved 20 °C</caption>
+<tr><th>Materiale</th><th><math><mi>ρ</mi></math> i Ω·m</th><th>Materiale</th><th><math><mi>ρ</mi></math> i Ω·m</th></tr>
+<tr><td>sølv</td><td class="num">1,6 · 10⁻⁸</td><td>nikkelchrom</td><td class="num">1,1 · 10⁻⁶</td></tr>
+<tr><td>kobber</td><td class="num">1,7 · 10⁻⁸</td><td>kulstof (grafit)</td><td class="num">3,5 · 10⁻⁵</td></tr>
+<tr><td>aluminium</td><td class="num">2,8 · 10⁻⁸</td><td>silicium (rent)</td><td class="num">2,3 · 10³</td></tr>
+<tr><td>jern</td><td class="num">1,0 · 10⁻⁷</td><td>glas</td><td class="num">10¹⁰–10¹⁴</td></tr>
+</table>
+
+<h2>Serie og parallel</h2>
+<table class="compact">
+<caption>To modstande, <math><msub><mi>R</mi><mn>1</mn></msub></math> og <math><msub><mi>R</mi><mn>2</mn></msub></math></caption>
+<tr><th></th><th>Serie</th><th>Parallel</th></tr>
+<tr><td>erstatningsmodstand</td><td><math><msub><mi>R</mi><mtext>s</mtext></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub></math></td><td><math><mfrac><mn>1</mn><msub><mi>R</mi><mtext>p</mtext></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac></math></td></tr>
+<tr><td>strøm</td><td>samme i begge</td><td>deles, <math><msub><mi>I</mi><mn>1</mn></msub><msub><mi>R</mi><mn>1</mn></msub><mo>=</mo><msub><mi>I</mi><mn>2</mn></msub><msub><mi>R</mi><mn>2</mn></msub></math></td></tr>
+<tr><td>spænding</td><td>deles, <math><mi>U</mi><mo>=</mo><msub><mi>U</mi><mn>1</mn></msub><mo>+</mo><msub><mi>U</mi><mn>2</mn></msub></math></td><td>samme over begge</td></tr>
+<tr><td>effekt</td><td><math><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi></math></td><td><math><msup><mi>U</mi><mn>2</mn></msup><mo>/</mo><mi>R</mi></math></td></tr>
+</table>
+<p>Ved parallelkobling er erstatningsmodstanden mindre end den mindste af de enkelte modstande. Det er intuitivt: der åbnes flere veje for strømmen, så den samlede ledningsevne vokser.</p>
+
+<h2>Kirchhoffs love</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Knudepunkt</span>
+    <p><math><mo>∑</mo><mi>I</mi><mo>=</mo><mn>0</mn></math> — ladning bevares. Summen af strømme ind i et knudepunkt er lig summen af strømme ud.</p>
+  </div>
+  <div class="box">
+    <span class="label">Kredsløb</span>
+    <p><math><mo>∑</mo><mi>U</mi><mo>=</mo><mn>0</mn></math> — energi bevares. Spændingsfaldene rundt om en lukket sløjfe summerer til nul.</p>
+  </div>
+</div>
+<p>To særlige tilfælde: en ideel spændingskilde har nul indre modstand, og en ideel voltmeter har uendelig stor modstand. I virkeligheden har batteriet en indre modstand <math><mi>r</mi></math>, så polspændingen falder ved belastning: <math><mi>U</mi><mo>=</mo><mi>ε</mi><mo>−</mo><mi>r</mi><mi>I</mi></math>. Derfor bliver forlygter svagere, når starteren kører.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — blandet kredsløb</span>
+  <p>Et batteri på <math><mn>12</mn><mspace width="0.25em"/><mtext>V</mtext></math> med <math><mi>r</mi><mo>=</mo><mn>0,50</mn><mspace width="0.25em"/><mtext>Ω</mtext></math> driver <math><msub><mi>R</mi><mn>1</mn></msub><mo>=</mo><mn>4,0</mn><mspace width="0.25em"/><mtext>Ω</mtext></math> i serie med to parallelle modstande på <math><mn>12</mn><mspace width="0.25em"/><mtext>Ω</mtext></math> hver.</p>
+  <div class="formula left">
+    <math><msub><mi>R</mi><mtext>p</mtext></msub><mo>=</mo><mfrac><mrow><mn>12</mn><mo>·</mo><mn>12</mn></mrow><mrow><mn>12</mn><mo>+</mo><mn>12</mn></mrow></mfrac><mo>=</mo><mn>6,0</mn><mspace width="0.25em"/><mtext>Ω</mtext><mtext>,</mtext><mspace width="1em"/><msub><mi>R</mi><mtext>tot</mtext></msub><mo>=</mo><mn>4,0</mn><mo>+</mo><mn>6,0</mn><mo>+</mo><mn>0,50</mn><mo>=</mo><mn>10,5</mn><mspace width="0.25em"/><mtext>Ω</mtext></math></div>
+  <div class="formula left">
+    <math><mi>I</mi><mo>=</mo><mfrac><mn>12</mn><mn>10,5</mn></mfrac><mo>=</mo><mn>1,14</mn><mspace width="0.25em"/><mtext>A</mtext><mtext>,</mtext><mspace width="1em"/><msub><mi>P</mi><mtext>tab</mtext></msub><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mi>r</mi><mo>=</mo><mn>0,65</mn><mspace width="0.25em"/><mtext>W</mtext></math>
+  </div>
+  <p class="where">Den samlede effekt fra batteriet er <math><mn>13,7</mn><mspace width="0.25em"/><mtext>W</mtext></math>, hvoraf 4,7&nbsp;% går til den indre modstand. Polspændingen er <math><mn>11,4</mn><mspace width="0.25em"/><mtext>V</mtext></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At lægge parallelle modstande sammen som i serie. <math><mn>4</mn><mspace width="0.25em"/><mtext>Ω</mtext></math> og <math><mn>6</mn><mspace width="0.25em"/><mtext>Ω</mtext></math> parallelt giver <math><mn>2,4</mn><mspace width="0.25em"/><mtext>Ω</mtext></math>, ikke 10 Ω.</li>
+    <li>At glemme batteriets indre modstand, når strømmen er stor.</li>
+    <li>At anvende <math><mi>P</mi><mo>=</mo><msup><mi>U</mi><mn>2</mn></msup><mo>/</mo><mi>R</mi></math> med den samlede spænding over en enkelt modstand i en seriekobling.</li>
+    <li>At tro, at strøm »bruges op« gennem en modstand. Strømmen er den samme før og efter; det er energien, der omdannes.</li>
+  </ul>
+</div>
+
+</body>
+</html>

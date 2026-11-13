@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Cirkelbevægelse</title>
+</head>
+<body>
+
+<h1>Cirkelbevægelse</h1>
+
+<h2>Bevægelsesstørrelser</h2>
+<div class="box rule">
+  <span class="label">Jævn cirkelbevægelse</span>
+  <div class="formula"><math><mi>v</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>r</mi></mrow><mi>T</mi></mfrac><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>f</mi><mtext>,</mtext><mspace width="1em"/><mi>ω</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>T</mi></mfrac><mo>=</mo><mfrac><mi>v</mi><mi>r</mi></mfrac></math></div>
+  <p class="where"><math><mi>r</mi></math>: baneradius (m) · <math><mi>T</mi></math>: omløbstid (s) · <math><mi>f</mi><mo>=</mo><mn>1</mn><mo>/</mo><mi>T</mi></math>: frekvens (Hz) · <math><mi>ω</mi></math>: vinkelfrekvens (rad/s)</p>
+</div>
+<p>Farten er konstant, men hastigheden ændrer sig hele tiden, fordi retningen drejer. Derfor er der en acceleration — rettet ind mod centrum, vinkelret på hastigheden.</p>
+
+<h2>Acceleration og kraft</h2>
+<div class="box rule">
+  <span class="label">Centripetal</span>
+  <div class="formula"><math><msub><mi>a</mi><mi>c</mi></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac><mo>=</mo><msup><mi>ω</mi><mn>2</mn></msup><mi>r</mi><mtext>,</mtext><mspace width="1em"/><msub><mi>F</mi><mi>c</mi></msub><mo>=</mo><mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac><mo>=</mo><mi>m</mi><msup><mi>ω</mi><mn>2</mn></msup><mi>r</mi></math></div>
+  <p class="where"><math><msub><mi>F</mi><mi>c</mi></msub></math> er ikke en ny slags kraft, men summen af de kræfter, der peger mod centrum.</p>
+</div>
+<figure class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="62mm" height="48mm" viewBox="0 0 62 48" font-family="Segoe UI, Arial, Helvetica, sans-serif" role="img">
+<circle cx="28" cy="24" r="15" stroke="#1b1b1b" fill="none" stroke-width="0.45" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="28" y1="24" x2="28" y2="9" stroke="#8f98a2" fill="none" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1.4 1.2"/>
+<line x1="28" y1="9" x2="44" y2="9" stroke="#1b1b1b" fill="none" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/><polygon points="44,9 42.42,9.64 42.42,8.36" fill="#1b1b1b" stroke="none"/>
+<line x1="28" y1="9" x2="28" y2="21" stroke="#6a3d9a" fill="none" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/><polygon points="28,21 27.36,19.42 28.64,19.42" fill="#6a3d9a" stroke="none"/>
+<circle cx="28" cy="24" r="0.8" fill="#1b1b1b" stroke="none"/>
+<text x="30.5" y="24.6" font-size="2.5" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle">O</text>
+<text x="38" y="6.2" font-size="3" fill="#1b1b1b" text-anchor="middle" font-weight="400" dominant-baseline="middle" font-style="italic">v</text>
+<text x="30" y="16.5" font-size="2.8" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle" font-style="italic">F</text>
+<text x="32.2" y="18.6" font-size="2.1" fill="#1b1b1b" text-anchor="start" font-weight="400" dominant-baseline="middle">c</text>
+</svg>
+<figcaption>Jævn cirkelbevægelse: hastigheden v er tangent til banen, mens centripetalkraften F_c peger mod centrum O.</figcaption>
+</figure>
+
+<h2>Hvad leverer centripetalkraften?</h2>
+<table class="compact">
+<caption>Centripetalkraften i konkrete situationer</caption>
+<tr><th>Situation</th><th>Kraften er</th><th>Betingelse</th></tr>
+<tr><td>bil i vandret sving</td><td>statisk friktion</td><td><math><mi>v</mi><mo>≤</mo><msqrt><mrow><msub><mi>μ</mi><mi>s</mi></msub><mi>g</mi><mi>r</mi></mrow></msqrt></math></td></tr>
+<tr><td>kugle i snor, lodret plan</td><td>snorspænding + tyngde</td><td>snor stram hele vejen</td></tr>
+<tr><td>satellit i kredsbane</td><td>tyngdekraft</td><td><math><mi>G</mi><mi>M</mi><mo>/</mo><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><mi>r</mi></math></td></tr>
+<tr><td>tøj i centrifuge</td><td>normalkraft fra tromlen</td><td>tromlen skubber indad</td></tr>
+<tr><td>elektron i magnetfelt</td><td>Lorentzkraft</td><td><math><mi>v</mi><mo>⊥</mo><mover accent="true"><mi>B</mi><mo>→</mo></mover></math></td></tr>
+</table>
+<p>I et <em>lodret</em> plan er centripetalkraften summen af snorspænding og tyngdekomposant: i top <math><mi>T</mi><mo>+</mo><mi>m</mi><mi>g</mi><mo>=</mo><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><mi>r</mi></math>, i bund <math><mi>T</mi><mo>−</mo><mi>m</mi><mi>g</mi><mo>=</mo><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>/</mo><mi>r</mi></math>. Farten ændrer sig, fordi tyngden også yder arbejde.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — bil i sving</span>
+  <p>En bil på <math><mn>1&nbsp;200</mn><mspace width="0.25em"/><mtext>kg</mtext></math> kører med <math><mn>15</mn><mspace width="0.25em"/><mtext>m/s</mtext></math> gennem et sving med radius <math><mn>40</mn><mspace width="0.25em"/><mtext>m</mtext></math>.</p>
+  <div class="formula left">
+    <math><msub><mi>F</mi><mi>c</mi></msub><mo>=</mo><mfrac><mrow><mn>1&nbsp;200</mn><mo>·</mo><msup><mn>15</mn><mn>2</mn></msup></mrow><mn>40</mn></mfrac><mo>=</mo><mn>6&nbsp;750</mn><mspace width="0.25em"/><mtext>N</mtext></math>
+  </div>
+  <p class="where">Den krævede friktionskoefficient er <math><mi>μ</mi><mo>=</mo><msub><mi>F</mi><mi>c</mi></msub><mo>/</mo><mo>(</mo><mi>m</mi><mi>g</mi><mo>)</mo><mo>=</mo><mn>0,57</mn></math>. På våd vej (<math><mi>μ</mi><mo>≈</mo><mn>0,4</mn></math>) er den maksimale fart <math><mi>v</mi><mo>=</mo><msqrt><mrow><mi>μ</mi><mi>g</mi><mi>r</mi></mrow></msqrt><mo>≈</mo><mn>12,5</mn><mspace width="0.25em"/><mtext>m/s</mtext><mo>=</mo><mn>45</mn><mspace width="0.25em"/><mtext>km/h</mtext></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At tegne en »centrifugalkraft« udad i et inertialsystem. Den findes kun i et roterende referencesystem som fiktiv kraft.</li>
+    <li>At tro, at der skal en kraft <em>hen mod</em> centrum for at holde farten oppe. Centripetalkraften ændrer retningen, ikke farten — den yder intet arbejde.</li>
+    <li>At bruge <math><mi>v</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>f</mi></math> med <math><mi>f</mi></math> i omdrejninger per minut; omregn til Hz (per sekund).</li>
+    <li>At glemme, at <math><mi>r</mi></math> er banens radius, ikke legemets radius, når fx en satellit kredser.</li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Enheder og måleusikkerhed</title>
+</head>
+<body>
+
+<h1>Enheder og måleusikkerhed</h1>
+
+<h2>SI-systemet</h2>
+<table class="compact">
+<caption>De syv basisenheder</caption>
+<tr><th>Størrelse</th><th>Symbol</th><th>Enhed</th><th>Symbol</th></tr>
+<tr><td>længde</td><td><math><mi>l</mi></math></td><td>meter</td><td>m</td></tr>
+<tr><td>masse</td><td><math><mi>m</mi></math></td><td>kilogram</td><td>kg</td></tr>
+<tr><td>tid</td><td><math><mi>t</mi></math></td><td>sekund</td><td>s</td></tr>
+<tr><td>elektrisk strøm</td><td><math><mi>I</mi></math></td><td>ampere</td><td>A</td></tr>
+<tr><td>temperatur</td><td><math><mi>T</mi></math></td><td>kelvin</td><td>K</td></tr>
+<tr><td>stoffmængde</td><td><math><mi>n</mi></math></td><td>mol</td><td>mol</td></tr>
+<tr><td>lysstyrke</td><td><math><msub><mi>I</mi><mi>v</mi></msub></math></td><td>candela</td><td>cd</td></tr>
+</table>
+<p>Alle andre enheder er afledte: <math><mtext>N</mtext><mo>=</mo><mtext>kg</mtext><mo>·</mo><mtext>m</mtext><mo>/</mo><msup><mtext>s</mtext><mn>2</mn></msup></math>, <math><mtext>J</mtext><mo>=</mo><mtext>N</mtext><mo>·</mo><mtext>m</mtext></math>, <math><mtext>W</mtext><mo>=</mo><mtext>J</mtext><mo>/</mo><mtext>s</mtext></math>, <math><mtext>Pa</mtext><mo>=</mo><mtext>N</mtext><mo>/</mo><msup><mtext>m</mtext><mn>2</mn></msup></math>, <math><mtext>C</mtext><mo>=</mo><mtext>A</mtext><mo>·</mo><mtext>s</mtext></math>, <math><mtext>V</mtext><mo>=</mo><mtext>J</mtext><mo>/</mo><mtext>C</mtext></math>.</p>
+
+<h2>Præfikser og omregning</h2>
+<div class="grid2">
+<table class="compact">
+<caption>Præfikser</caption>
+<tr><th>Præfiks</th><th>Symbol</th><th>Faktor</th></tr>
+<tr><td>giga</td><td>G</td><td><math><msup><mn>10</mn><mn>9</mn></msup></math></td></tr>
+<tr><td>mega</td><td>M</td><td><math><msup><mn>10</mn><mn>6</mn></msup></math></td></tr>
+<tr><td>kilo</td><td>k</td><td><math><msup><mn>10</mn><mn>3</mn></msup></math></td></tr>
+<tr><td>milli</td><td>m</td><td><math><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup></math></td></tr>
+<tr><td>mikro</td><td>µ</td><td><math><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></math></td></tr>
+<tr><td>nano</td><td>n</td><td><math><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup></math></td></tr>
+</table>
+<table class="compact">
+<caption>Nyttige omregninger</caption>
+<tr><th>Fra</th><th>Til</th></tr>
+<tr><td>1 km/h</td><td>0,2778 m/s</td></tr>
+<tr><td>1 eV</td><td><math><mn>1,602</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>19</mn></mrow></msup></math> J</td></tr>
+<tr><td>1 u</td><td><math><mn>1,6605</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>27</mn></mrow></msup></math> kg</td></tr>
+<tr><td>1 atm</td><td><math><mn>1,013</mn><mo>·</mo><msup><mn>10</mn><mn>5</mn></msup></math> Pa</td></tr>
+<tr><td>1 kWh</td><td><math><mn>3,6</mn><mo>·</mo><msup><mn>10</mn><mn>6</mn></msup></math> J</td></tr>
+<tr><td><math><mn>0</mn><mo>°</mo><mtext>C</mtext></math></td><td>273,15 K</td></tr>
+</table>
+</div>
+<p>Regn i SI-basisenheder, og behandl enheder som algebra: <math><mfrac><mtext>m</mtext><mtext>s</mtext></mfrac><mo>·</mo><mtext>s</mtext><mo>=</mo><mtext>m</mtext></math>. En dimensionskontrol afslører de fleste omregningsfejl.</p>
+
+<h2>Måleusikkerhed</h2>
+<p>Usikkerheden angives som <math><mi>x</mi><mo>=</mo><mo>(</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>±</mo><mi>u</mi><mo>)</mo><mspace width="0.25em"/><mtext>enhed</mtext></math> med samme antal decimaler i værdi og usikkerhed.</p>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Type A — spredning</span>
+    <div class="formula"><math><mi>u</mi><mo>=</mo><mfrac><mi>s</mi><msqrt><mi>n</mi></msqrt></mfrac><mtext>,</mtext><mspace width="0.6em"/><mi>s</mi><mo>=</mo><msqrt><mfrac><mrow><mo>∑</mo><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>)</mo></mrow><mn>2</mn></msup></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mfrac></msqrt></math></div>
+    <p class="where">Fra gentagne målinger; <math><mi>s</mi></math> er standardafvigelsen, <math><mi>n</mi></math> antal målinger.</p>
+  </div>
+  <div class="box">
+    <span class="label">Type B — instrument</span>
+    <div class="formula"><math><mi>u</mi><mo>=</mo><mfrac><mrow><mi>Δ</mi><msub><mi>x</mi><mtext>opl</mtext></msub></mrow><msqrt><mn>3</mn></msqrt></mfrac></math></div>
+    <p class="where"><math><mi>Δ</mi><msub><mi>x</mi><mtext>opl</mtext></msub></math>: mindste skala på instrumentet. Digitalt display: halve springet i sidste ciffer.</p>
+  </div>
+</div>
+<p>Den samlede usikkerhed er <math><mi>u</mi><mo>=</mo><msqrt><msubsup><mi>u</mi><mtext>A</mtext><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>u</mi><mtext>B</mtext><mn>2</mn></msubsup></msqrt></math>. Relativ usikkerhed er <math><mfrac><mi>u</mi><mi>x</mi></mfrac></math>, ofte i procent.</p>
+
+<h2>Fejlforplantning</h2>
+<table class="compact">
+<caption>Usikkerhed i en beregnet størrelse</caption>
+<tr><th>Regneoperation</th><th>Absolut usikkerhed</th><th>Relativ usikkerhed</th></tr>
+<tr><td><math><mi>z</mi><mo>=</mo><mi>a</mi><mo>±</mo><mi>b</mi></math></td><td><math><mi>u</mi><mo>=</mo><msqrt><msubsup><mi>u</mi><mi>a</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>u</mi><mi>b</mi><mn>2</mn></msubsup></msqrt></math></td><td>—</td></tr>
+<tr><td><math><mi>z</mi><mo>=</mo><mi>a</mi><mo>·</mo><mi>b</mi></math> eller <math><mi>a</mi><mo>/</mo><mi>b</mi></math></td><td>—</td><td><math><mfrac><mi>u</mi><mi>z</mi></mfrac><mo>=</mo><msqrt><msup><mrow><mo>(</mo><mfrac><msub><mi>u</mi><mi>a</mi></msub><mi>a</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mfrac><msub><mi>u</mi><mi>b</mi></msub><mi>b</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup></msqrt></math></td></tr>
+<tr><td><math><mi>z</mi><mo>=</mo><mi>k</mi><mi>a</mi></math>, <math><mi>k</mi></math> eksakt</td><td><math><mi>u</mi><mo>=</mo><mo>|</mo><mi>k</mi><mo>|</mo><msub><mi>u</mi><mi>a</mi></msub></math></td><td><math><mfrac><msub><mi>u</mi><mi>a</mi></msub><mi>a</mi></mfrac></math></td></tr>
+<tr><td><math><mi>z</mi><mo>=</mo><msup><mi>a</mi><mi>n</mi></msup></math></td><td>—</td><td><math><mo>|</mo><mi>n</mi><mo>|</mo><mspace width="0.15em"/><mfrac><msub><mi>u</mi><mi>a</mi></msub><mi>a</mi></mfrac></math></td></tr>
+</table>
+
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — densitet af en metalklods</span>
+  <p>Masse <math><mi>m</mi><mo>=</mo><mo>(</mo><mn>84,2</mn><mo>±</mo><mn>0,1</mn><mo>)</mo><mspace width="0.25em"/><mtext>g</mtext></math>, rumfang <math><mi>V</mi><mo>=</mo><mo>(</mo><mn>31,5</mn><mo>±</mo><mn>0,3</mn><mo>)</mo><mspace width="0.25em"/><msup><mtext>cm</mtext><mn>3</mn></msup></math>.</p>
+  <div class="formula left">
+    <math><mi>ρ</mi><mo>=</mo><mfrac><mi>m</mi><mi>V</mi></mfrac><mo>=</mo><mfrac><mn>84,2</mn><mn>31,5</mn></mfrac><mo>=</mo><mn>2,673</mn><mspace width="0.25em"/><msup><mtext>g/cm</mtext><mn>3</mn></msup></math></div>
+  <div class="formula left">
+    <math><mfrac><msub><mi>u</mi><mi>ρ</mi></msub><mi>ρ</mi></mfrac><mo>=</mo><msqrt><msup><mrow><mo>(</mo><mfrac><mn>0,1</mn><mn>84,2</mn></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mfrac><mn>0,3</mn><mn>31,5</mn></mfrac><mo>)</mo></mrow><mn>2</mn></msup></msqrt><mo>=</mo><mn>0,0096</mn></math>
+  </div>
+  <p class="where"><math><msub><mi>u</mi><mi>ρ</mi></msub><mo>=</mo><mn>0,0096</mn><mo>·</mo><mn>2,673</mn><mo>≈</mo><mn>0,03</mn></math>, altså <math><mi>ρ</mi><mo>=</mo><mo>(</mo><mn>2,67</mn><mo>±</mo><mn>0,03</mn><mo>)</mo><mspace width="0.25em"/><msup><mtext>g/cm</mtext><mn>3</mn></msup></math>. Aluminium er 2,70 — værdien er forenelig med aluminium inden for usikkerheden.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>For mange cifre: usikkerheden bestemmer antallet. <math><mn>2,6734</mn><mo>±</mo><mn>0,03</mn></math> er forkert — skriv <math><mn>2,67</mn><mo>±</mo><mn>0,03</mn></math>.</li>
+    <li>Enheder blandes: <math><msup><mtext>g/cm</mtext><mn>3</mn></msup></math> og <math><msup><mtext>kg/m</mtext><mn>3</mn></msup></math> adskiller sig med faktor 1000.</li>
+    <li>Ved subtraktion af to næsten lige store tal eksploderer den relative usikkerhed, selv om de absolutte usikkerheder er små.</li>
+  </ul>
+</div>
+
+</body>
+</html>

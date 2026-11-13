@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Magnetisme</title>
+</head>
+<body>
+
+<h1>Magnetisme</h1>
+
+<h2>Magnetfeltet</h2>
+<div class="box rule">
+  <span class="label">Feltstyrke og feltlinjer</span>
+  <div class="formula"><math><mi>B</mi><mo>=</mo><mfrac><mi>F</mi><mrow><mi>I</mi><mi>l</mi></mrow></mfrac></math></div>
+  <p class="where"><math><mi>B</mi></math> i tesla (T). Feltlinjerne er lukkede kurver uden begyndelse og slutning — der findes ingen magnetiske monopoler.</p>
+</div>
+<p>Et magnetfelt virker ikke med en kraft på en ladning i hvile; kraften kræver bevægelse. Feltet måles med en Hall-sonde eller ud fra kraften på en strømførende leder. Nord for en magnet kaldes den ende, feltlinjerne peger ud af.</p>
+
+<h2>Felt fra strømme</h2>
+<div class="box rule">
+  <span class="label">Biot-Savarts lov, forenklet</span>
+  <div class="formula"><math><msub><mi>B</mi><mtext>leder</mtext></msub><mo>=</mo><mfrac><mrow><msub><mi>μ</mi><mn>0</mn></msub><mi>I</mi></mrow><mrow><mn>2</mn><mi>π</mi><mi>r</mi></mrow></mfrac><mtext>,</mtext><mspace width="1em"/><msub><mi>B</mi><mtext>spole</mtext></msub><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mfrac><mrow><mi>N</mi><mi>I</mi></mrow><mi>l</mi></mfrac></math></div>
+  <p class="where"><math><msub><mi>μ</mi><mn>0</mn></msub><mo>=</mo><mn>4</mn><mi>π</mi><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mspace width="0.25em"/><mtext>T·m/A</mtext></math> · <math><mi>r</mi></math>: afstand fra lederen · <math><mi>N</mi></math>: vindingstal · <math><mi>l</mi></math>: spolens længde. Feltet inde i en lang spole er næsten homogent.</p>
+</div>
+<p>Retningen følger højrehåndsreglen: griber højre hånd om lederen med tommelfingeren i strømmens retning, peger fingrene i feltets retning. To parallelle ledere med samme strømretning tiltrækker hinanden, modsat rettede frastøder.</p>
+
+<h2>Magnetisk flux</h2>
+<div class="formula"><math><mi>Φ</mi><mo>=</mo><mi>B</mi><mi>A</mi><mspace width="0.1em"/><mi>cos</mi><mspace width="0.1em"/><mi>θ</mi></math></div>
+<p class="where center">Enhed: weber (Wb = T·m²). <math><mi>θ</mi></math> er vinklen mellem feltet og fladens normal. Fluxen er det, der ændres, når der induceres en spænding.</p>
+
+<h2>Magnetiske materialer</h2>
+<table class="compact">
+<caption>Tre typer magnetisk respons</caption>
+<tr><th>Type</th><th>Egenskab</th><th>Eksempel</th></tr>
+<tr><td>ferromagnetisk</td><td>forstærker feltet kraftigt, kan være permanent magnetiseret</td><td>jern, kobolt, nikkel, neodym</td></tr>
+<tr><td>paramagnetisk</td><td>svag forstærkning, ingen permanent magnetisering</td><td>aluminium, platin, ilt</td></tr>
+<tr><td>diamagnetisk</td><td>svag svækkelse, frastødes af feltet</td><td>vand, kobber, bismut, grafit</td></tr>
+</table>
+<p>Ferromagnetisme skyldes domæner, hvor atomernes magnetiske momenter peger samme vej. Over Curie-temperaturen (770&nbsp;°C for jern) bryder domænestrukturen sammen, og materialet bliver paramagnetisk. En elektromagnet kan derfor ikke bruge jern i en smelteovn uden at miste sin virkning.</p>
+<div class="box note">
+  <span class="label">Jordens magnetfelt</span>
+  <p>Ved overfladen er feltet 25–65&nbsp;µT og peger mod nord med en hældning, der afhænger af breddegraden. Feltet dannes af konvektionsstrømme i den flydende ydre kerne (geodynamo) og vender polariteter med hundredtusindvis af års mellemrum. Kompasset peger mod den magnetiske nordpol, som ikke falder sammen med den geografiske.</p>
+</div>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — felt om en ledning</span>
+  <p>En ledning fører <math><mn>10</mn><mspace width="0.25em"/><mtext>A</mtext></math>. Hvor stort er feltet <math><mn>5,0</mn><mspace width="0.25em"/><mtext>cm</mtext></math> fra lederen?</p>
+  <div class="formula left">
+    <math><mi>B</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mi>π</mi><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo>·</mo><mn>10</mn></mrow><mrow><mn>2</mn><mi>π</mi><mo>·</mo><mn>0,050</mn></mrow></mfrac><mo>=</mo><mn>4,0</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mspace width="0.25em"/><mtext>T</mtext><mo>=</mo><mn>40</mn><mspace width="0.25em"/><mtext>µT</mtext></math>
+  </div>
+  <p class="where">Det er samme størrelsesorden som Jordens felt. En spole med 500 vindinger over 20&nbsp;cm og samme strøm giver <math><mi>B</mi><mo>=</mo><mn>31</mn><mspace width="0.25em"/><mtext>mT</mtext></math> — næsten 1&nbsp;000 gange stærkere.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At tro, at en magnet tiltrækker alle metaller. Kobber, aluminium og guld er ikke ferromagnetiske.</li>
+    <li>At bruge <math><mi>B</mi><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mi>N</mi><mi>I</mi><mo>/</mo><mi>l</mi></math> på en kort spole; formlen gælder for <math><mi>l</mi><mo>≫</mo><mi>r</mi></math>.</li>
+    <li>At forveksle <math><mi>B</mi></math> (feltstyrke, T) med <math><mi>H</mi></math> (magnetiseringsfelt, A/m) og med flux <math><mi>Φ</mi></math> (Wb).</li>
+    <li>At glemme cosinus i fluxen: står fladen parallelt med feltet, er fluxen nul.</li>
+  </ul>
+</div>
+
+</body>
+</html>

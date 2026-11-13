@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Varmetransport</title>
+</head>
+<body>
+
+<h1>Varmetransport</h1>
+
+<h2>Tre former for varmetransport</h2>
+<table class="compact">
+<caption>Mekanismer</caption>
+<tr><th>Form</th><th>Mekanisme</th><th>Kræver stof</th></tr>
+<tr><td>ledning</td><td>molekyler overdrager energi ved stød; frie elektroner i metaller</td><td>ja</td></tr>
+<tr><td>konvektion</td><td>opvarmet fluidum bevæger sig og transporterer energien</td><td>ja (fluidum)</td></tr>
+<tr><td>stråling</td><td>elektromagnetiske bølger, især infrarødt</td><td>nej — også i vakuum</td></tr>
+</table>
+
+<h2>Ledning</h2>
+<div class="box rule">
+  <span class="label">Fouriers lov</span>
+  <div class="formula"><math><mi>P</mi><mo>=</mo><mi>k</mi><mi>A</mi><mfrac><mrow><mi>Δ</mi><mi>T</mi></mrow><mi>d</mi></mfrac></math></div>
+  <p class="where"><math><mi>k</mi></math>: varmeledningsevne (W/(m·K)) · <math><mi>A</mi></math>: tværsnitsareal · <math><mi>d</mi></math>: tykkelse · <math><mi>Δ</mi><mi>T</mi></math>: temperaturforskel.</p>
+</div>
+<p>Den termiske modstand er <math><mi>R</mi><mo>=</mo><mi>d</mi><mo>/</mo><mo>(</mo><mi>k</mi><mi>A</mi><mo>)</mo></math>, og lag i serie adderer modstande ligesom elektriske modstande. Derfor virker dobbeltglas: det stillestående luftlag har lav <math><mi>k</mi></math> og stor modstand.</p>
+<table class="compact">
+<caption>Varmeledningsevne</caption>
+<tr><th>Materiale</th><th><math><mi>k</mi></math> i W/(m·K)</th><th>Materiale</th><th><math><mi>k</mi></math> i W/(m·K)</th></tr>
+<tr><td>sølv</td><td class="num">429</td><td>vand</td><td class="num">0,60</td></tr>
+<tr><td>kobber</td><td class="num">401</td><td>glas</td><td class="num">1,0</td></tr>
+<tr><td>aluminium</td><td class="num">237</td><td>træ</td><td class="num">0,12</td></tr>
+<tr><td>stål</td><td class="num">50</td><td>mineraluld</td><td class="num">0,037</td></tr>
+<tr><td>beton</td><td class="num">1,7</td><td>luft (stille)</td><td class="num">0,025</td></tr>
+</table>
+
+<h2>Stråling</h2>
+<div class="box rule">
+  <span class="label">Stefan-Boltzmanns lov</span>
+  <div class="formula"><math><mi>P</mi><mo>=</mo><mi>ε</mi><mi>σ</mi><mi>A</mi><msup><mi>T</mi><mn>4</mn></msup><mtext>,</mtext><mspace width="1em"/><msub><mi>λ</mi><mtext>max</mtext></msub><mi>T</mi><mo>=</mo><mn>2,898</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mspace width="0.25em"/><mtext>m·K</mtext></math></div>
+  <p class="where"><math><mi>ε</mi></math>: emissivitet (0–1) · <math><mi>σ</mi><mo>=</mo><mn>5,67</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>8</mn></mrow></msup><mspace width="0.25em"/><mtext>W/(m²·K⁴)</mtext></math>. Wiens lov giver strålingens maksimale bølgelængde (i meter).</p>
+</div>
+<p>Et legeme udstråler og modtager stråling samtidigt; nettoeffekten er <math><mi>P</mi><mo>=</mo><mi>ε</mi><mi>σ</mi><mi>A</mi><mo>(</mo><msup><mi>T</mi><mn>4</mn></msup><mo>−</mo><msubsup><mi>T</mi><mtext>omg</mtext><mn>4</mn></msubsup><mo>)</mo></math>. En sort flade har <math><mi>ε</mi><mo>≈</mo><mn>1</mn></math>, en poleret metalflade <math><mi>ε</mi><mo>&lt;</mo><mn>0,1</mn></math>. Ved stuetemperatur ligger <math><msub><mi>λ</mi><mtext>max</mtext></msub></math> omkring 10&nbsp;µm, i det infrarøde; Solens overflade på 5&nbsp;800&nbsp;K stråler mest ved ca. 500&nbsp;nm, midt i det synlige spektrum.</p>
+<div class="box note">
+  <span class="label">Konvektion</span>
+  <p>Naturlig konvektion opstår, når opvarmet fluidum får lavere densitet og stiger til vejrs; tvungen konvektion kræver en pumpe eller ventilator. Konvektion er typisk langt effektivere end ren ledning i væsker og gasser — derfor føles 20&nbsp;°C luft køligt, mens 20&nbsp;°C vand føles koldt.</p>
+</div>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — varmetab gennem en rude</span>
+  <p>En rude med areal <math><mn>1,5</mn><mspace width="0.25em"/><mtext>m²</mtext></math> og tykkelse <math><mn>4,0</mn><mspace width="0.25em"/><mtext>mm</mtext></math> har <math><mi>Δ</mi><mi>T</mi><mo>=</mo><mn>20</mn><mspace width="0.25em"/><mtext>K</mtext></math>.</p>
+  <div class="formula left">
+    <math><mi>P</mi><mo>=</mo><mn>1,0</mn><mo>·</mo><mn>1,5</mn><mo>·</mo><mfrac><mn>20</mn><mrow><mn>4,0</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>7&nbsp;500</mn><mspace width="0.25em"/><mtext>W</mtext></math>
+  </div>
+  <p class="where">I virkeligheden er tabet ca. 100&nbsp;W, fordi luftlagene på begge sider begrænser overgangen langt mere end glasset. Modstanden ved <em>overfladen</em> er ofte den største enkeltmodstand.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At bruge Celsius i <math><msup><mi>T</mi><mn>4</mn></msup></math>; absolut temperatur er påkrævet, og fjerde potens gør fejlen enorm.</li>
+    <li>At tro, at stråling kræver et medium. Solens energi når Jorden gennem vakuum.</li>
+    <li>At forveksle <math><mi>k</mi></math> (varmeledningsevne) med varmekapacitet <math><mi>c</mi></math> eller med Boltzmanns konstant.</li>
+    <li>At glemme, at et legeme både udstråler og absorberer; kun nettoeffekten afgør, om det afkøles.</li>
+  </ul>
+</div>
+
+</body>
+</html>

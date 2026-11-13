@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Lorentzkraften</title>
+</head>
+<body>
+
+<h1>Lorentzkraften</h1>
+
+<h2>Kraften på en bevæget ladning</h2>
+<div class="box rule">
+  <span class="label">Lorentzkraften</span>
+  <div class="formula"><math><mover accent="true"><mi>F</mi><mo>→</mo></mover><mo>=</mo><mi>q</mi><mover accent="true"><mi>v</mi><mo>→</mo></mover><mo>×</mo><mover accent="true"><mi>B</mi><mo>→</mo></mover><mtext>,</mtext><mspace width="1em"/><mi>F</mi><mo>=</mo><mi>q</mi><mi>v</mi><mi>B</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>θ</mi></math></div>
+  <p class="where"><math><mi>θ</mi></math>: vinklen mellem hastighed og felt. Kraften står vinkelret på både <math><mover accent="true"><mi>v</mi><mo>→</mo></mover></math> og <math><mover accent="true"><mi>B</mi><mo>→</mo></mover></math>.</p>
+</div>
+<p>Retningen findes med højrehåndsreglen for positive ladninger: pegefinger langs <math><mover accent="true"><mi>v</mi><mo>→</mo></mover></math>, langfinger langs <math><mover accent="true"><mi>B</mi><mo>→</mo></mover></math>, tommelfinger langs <math><mover accent="true"><mi>F</mi><mo>→</mo></mover></math>. For negative ladninger vendes kraften. Bevæger ladningen sig parallelt med feltet, er kraften nul.</p>
+
+<h2>Cirkelbane i et magnetfelt</h2>
+<div class="box rule">
+  <span class="label">Når v ⊥ B</span>
+  <div class="formula"><math><mi>q</mi><mi>v</mi><mi>B</mi><mo>=</mo><mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac><mspace width="0.6em"/><mo>⇒</mo><mspace width="0.6em"/><mi>r</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mi>v</mi></mrow><mrow><mi>q</mi><mi>B</mi></mrow></mfrac><mtext>,</mtext><mspace width="1em"/><mi>T</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>m</mi></mrow><mrow><mi>q</mi><mi>B</mi></mrow></mfrac></math></div>
+  <p class="where">Lorentzkraften leverer centripetalaccelerationen. Omløbstiden er uafhængig af farten — det er grundlaget for cyklotronen.</p>
+</div>
+<p>Lorentzkraften yder intet arbejde, fordi den altid står vinkelret på hastigheden. Den ændrer derfor ikke farten eller den kinetiske energi, kun retningen. Har hastigheden en komposant langs feltet, bliver banen en skrueformet spiral.</p>
+
+<h2>Kraften på en strømførende leder</h2>
+<div class="formula"><math><mover accent="true"><mi>F</mi><mo>→</mo></mover><mo>=</mo><mi>I</mi><mover accent="true"><mi>l</mi><mo>→</mo></mover><mo>×</mo><mover accent="true"><mi>B</mi><mo>→</mo></mover><mtext>,</mtext><mspace width="1em"/><mi>F</mi><mo>=</mo><mi>B</mi><mi>I</mi><mi>l</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>θ</mi></math></div>
+<p class="where center">Kraften er summen af Lorentzkræfterne på ladningsbærerne i lederen. Det er denne kraft, der driver elmotoren.</p>
+
+<h2>Anvendelser</h2>
+<table class="compact">
+<caption>Lorentzkraften i apparater</caption>
+<tr><th>Apparat</th><th>Princip</th></tr>
+<tr><td>cyklotron</td><td>partikler accelereres over et gap og bøjes i cirkelbane; <math><mi>T</mi></math> uafhængig af <math><mi>v</mi></math></td></tr>
+<tr><td>massespektrometer</td><td><math><mi>r</mi><mo>∝</mo><mi>m</mi><mo>/</mo><mi>q</mi></math> adskiller isotoper</td></tr>
+<tr><td>hastighedsvælger</td><td><math><mi>q</mi><mi>E</mi><mo>=</mo><mi>q</mi><mi>v</mi><mi>B</mi></math> giver <math><mi>v</mi><mo>=</mo><mi>E</mi><mo>/</mo><mi>B</mi></math></td></tr>
+<tr><td>hall-sensor</td><td>måler ladningsopbygning i en tynd plade</td></tr>
+<tr><td>elmotor</td><td>kraft på spole i felt, moment <math><mi>τ</mi><mo>=</mo><mi>N</mi><mi>B</mi><mi>I</mi><mi>A</mi></math></td></tr>
+<tr><td>aurora</td><td>solvindspartikler styres mod polerne</td></tr>
+</table>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — proton i magnetfelt</span>
+  <p>En proton med <math><mi>v</mi><mo>=</mo><mn>2,0</mn><mo>·</mo><msup><mn>10</mn><mn>6</mn></msup><mspace width="0.25em"/><mtext>m/s</mtext></math> går vinkelret ind i et felt på <math><mn>0,50</mn><mspace width="0.25em"/><mtext>T</mtext></math>.</p>
+  <div class="formula left">
+    <math><mi>r</mi><mo>=</mo><mfrac><mrow><mn>1,673</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>27</mn></mrow></msup><mo>·</mo><mn>2,0</mn><mo>·</mo><msup><mn>10</mn><mn>6</mn></msup></mrow><mrow><mn>1,602</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>19</mn></mrow></msup><mo>·</mo><mn>0,50</mn></mrow></mfrac><mo>=</mo><mn>0,042</mn><mspace width="0.25em"/><mtext>m</mtext><mtext>,</mtext><mspace width="1em"/><mi>T</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mo>·</mo><mn>0,042</mn></mrow><mrow><mn>2,0</mn><mo>·</mo><msup><mn>10</mn><mn>6</mn></msup></mrow></mfrac><mo>=</mo><mn>1,3</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>7</mn></mrow></msup><mspace width="0.25em"/><mtext>s</mtext></math>
+  </div>
+  <p class="where">Baneradius er 4,2&nbsp;cm. En elektron med samme fart ville få en radius ca. 1&nbsp;840 gange mindre, fordi massen er tilsvarende mindre.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At tro, at magnetfeltet gør arbejde og øger farten. Kun retningen ændres.</li>
+    <li>At bruge venstre hånd til positive ladninger. Højrehåndsreglen gælder for <math><mi>q</mi><mo>&gt;</mo><mn>0</mn></math>.</li>
+    <li>At glemme, at kraften er nul, når <math><mi>v</mi></math> er parallel med <math><mi>B</mi></math>, og maksimal når de er vinkelrette.</li>
+    <li>At forveksle radius og omløbstid: en hurtigere partikkel får større radius, men samme omløbstid.</li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Gasser</title>
+</head>
+<body>
+
+<h1>Gasser</h1>
+
+<h2>Idealgasloven</h2>
+<div class="box rule">
+  <span class="label">Tilstandsligningen</span>
+  <div class="formula"><math><mi>p</mi><mi>V</mi><mo>=</mo><mi>n</mi><mi>R</mi><mi>T</mi><mo>=</mo><mi>N</mi><mi>k</mi><mi>T</mi></math></div>
+  <p class="where"><math><mi>n</mi></math>: stofmængde (mol) · <math><mi>N</mi></math>: antal molekyler · <math><mi>R</mi><mo>=</mo><mn>8,314</mn><mspace width="0.25em"/><mtext>J/(mol·K)</mtext></math> · <math><mi>k</mi><mo>=</mo><mn>1,381</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>23</mn></mrow></msup><mspace width="0.25em"/><mtext>J/K</mtext></math> · <math><mi>T</mi></math> i kelvin.</p>
+</div>
+<p>Loven forudsætter, at molekylerne er punktformede, at de ikke vekselvirker bortset fra stød, og at stødene er elastiske. Ved højt tryk og lav temperatur bryder antagelserne sammen — så bruges van der Waals-ligningen.</p>
+<div class="box note">
+  <span class="label">Ved konstant stofmængde</span>
+  <div class="formula"><math><mfrac><mrow><msub><mi>p</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub></mrow><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mrow><msub><mi>p</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><msub><mi>T</mi><mn>2</mn></msub></mfrac></math></div>
+  <p class="where">Brug denne form, så <math><mi>n</mi></math> og <math><mi>R</mi></math> ikke skal regnes ud.</p>
+</div>
+
+<h2>Kinetisk gasteori</h2>
+<p>Trykket er molekylernes stød mod væggene. Den gennemsnitlige kinetiske energi per molekyle afhænger kun af temperaturen:</p>
+<div class="formula"><math><msub><mover accent="true"><mi>E</mi><mo>¯</mo></mover><mi>kin</mi></msub><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>k</mi><mi>T</mi><mtext>,</mtext><mspace width="1em"/><msub><mi>v</mi><mtext>rms</mtext></msub><mo>=</mo><msqrt><mfrac><mrow><mn>3</mn><mi>R</mi><mi>T</mi></mrow><mi>M</mi></mfrac></msqrt></math></div>
+<p class="where center"><math><mi>M</mi></math>: molmasse i kg/mol. Ved 300&nbsp;K er <math><msub><mi>v</mi><mtext>rms</mtext></msub></math> ca. 480&nbsp;m/s for <math><msub><mtext>N</mtext><mn>2</mn></msub></math> og 1&nbsp;930&nbsp;m/s for <math><msub><mtext>H</mtext><mn>2</mn></msub></math> — lette molekyler undslipper derfor Jordens atmosfære lettere.</p>
+<p>Molekyler med mange atomer har flere frihedsgrader: <math><msub><mover accent="true"><mi>E</mi><mo>¯</mo></mover><mi>kin</mi></msub><mo>=</mo><mfrac><mi>f</mi><mn>2</mn></mfrac><mi>k</mi><mi>T</mi></math> med <math><mi>f</mi><mo>=</mo><mn>3</mn></math> for enatomig, <math><mn>5</mn></math> for toatomig og <math><mn>6</mn></math> for fleratomig gas. Derfor er <math><msub><mi>c</mi><mi>V</mi></msub></math> forskellig for fx He og <math><msub><mtext>CO</mtext><mn>2</mn></msub></math>.</p>
+
+<h2>Termodynamiske processer</h2>
+<table class="compact">
+<caption>Processer for en idealgas</caption>
+<tr><th>Proces</th><th>Konstant</th><th>Arbejde og varme</th></tr>
+<tr><td>isoterm</td><td><math><mi>T</mi></math></td><td><math><mi>Δ</mi><mi>U</mi><mo>=</mo><mn>0</mn></math>, så <math><mi>Q</mi><mo>=</mo><mi>W</mi></math></td></tr>
+<tr><td>isobar</td><td><math><mi>p</mi></math></td><td><math><mi>W</mi><mo>=</mo><mi>p</mi><mi>Δ</mi><mi>V</mi></math>, <math><mi>Q</mi><mo>=</mo><mi>n</mi><msub><mi>c</mi><mi>p</mi></msub><mi>Δ</mi><mi>T</mi></math></td></tr>
+<tr><td>isokor</td><td><math><mi>V</mi></math></td><td><math><mi>W</mi><mo>=</mo><mn>0</mn></math>, <math><mi>Q</mi><mo>=</mo><mi>Δ</mi><mi>U</mi></math></td></tr>
+<tr><td>adiabatisk</td><td><math><mi>Q</mi><mo>=</mo><mn>0</mn></math></td><td><math><mi>Δ</mi><mi>U</mi><mo>=</mo><mo>−</mo><mi>W</mi></math>, <math><mi>p</mi><msup><mi>V</mi><mi>κ</mi></msup><mo>=</mo><mtext>konstant</mtext></math></td></tr>
+</table>
+<p>For en idealgas er <math><mi>Δ</mi><mi>U</mi><mo>=</mo><mfrac><mi>f</mi><mn>2</mn></mfrac><mi>n</mi><mi>R</mi><mi>Δ</mi><mi>T</mi></math>. Arbejdet er arealet under kurven i et p-V-diagram, og for en kredsproces er nettoarbejdet arealet indesluttet af kurven.</p>
+
+<h2>Dalton's lov</h2>
+<p>I en blanding af ikke-reagerende gasser er det samlede tryk summen af partialtrykkene: <math><mi>p</mi><mo>=</mo><msub><mi>p</mi><mn>1</mn></msub><mo>+</mo><msub><mi>p</mi><mn>2</mn></msub><mo>+</mo><mo>…</mo></math>, hvor <math><msub><mi>p</mi><mi>i</mi></msub><mo>=</mo><msub><mi>x</mi><mi>i</mi></msub><mi>p</mi></math> og <math><msub><mi>x</mi><mi>i</mi></msub></math> er stofmængdebrøken. Atmosfærens iltpartialtryk ved havoverfladen er 0,21&nbsp;atm.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — trykstigning i en lukket beholder</span>
+  <p>En beholder med luft ved <math><mn>20</mn><mo>°</mo><mtext>C</mtext></math> og <math><mn>1,00</mn><mspace width="0.25em"/><mtext>atm</mtext></math> opvarmes til <math><mn>80</mn><mo>°</mo><mtext>C</mtext></math>.</p>
+  <div class="formula left">
+    <math><msub><mi>p</mi><mn>2</mn></msub><mo>=</mo><msub><mi>p</mi><mn>1</mn></msub><mfrac><msub><mi>T</mi><mn>2</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mn>1,00</mn><mo>·</mo><mfrac><mn>353</mn><mn>293</mn></mfrac><mo>≈</mo><mn>1,20</mn><mspace width="0.25em"/><mtext>atm</mtext></math>
+  </div>
+  <p class="where">Volumenet er konstant, så trykket vokser proportionalt med den absolutte temperatur — en stigning på 20&nbsp;%. Havde man regnet i Celsius, ville resultatet blive helt forkert.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At indsætte temperaturen i °C i <math><mi>p</mi><mi>V</mi><mo>=</mo><mi>n</mi><mi>R</mi><mi>T</mi></math>. Kun kelvin giver mening.</li>
+    <li>At bruge idealgasloven på en væske eller på en gas nær kondensationspunktet.</li>
+    <li>At forveksle <math><mi>R</mi></math> og <math><mi>k</mi></math>: <math><mi>R</mi></math> hører til mol, <math><mi>k</mi></math> til enkelte molekyler (<math><mi>R</mi><mo>=</mo><msub><mi>N</mi><mi>A</mi></msub><mi>k</mi></math>).</li>
+    <li>At antage, at temperaturen stiger ved en isoterm proces — isoterm betyder netop konstant temperatur, mens varme tilføres og omdannes til arbejde.</li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Elektrostatik</title>
+</head>
+<body>
+
+<h1>Elektrostatik</h1>
+
+<h2>Ladning</h2>
+<div class="box rule">
+  <span class="label">Elementarladningen</span>
+  <div class="formula"><math><mi>q</mi><mo>=</mo><mi>n</mi><mi>e</mi><mtext>,</mtext><mspace width="1em"/><mi>e</mi><mo>=</mo><mn>1,602</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>19</mn></mrow></msup><mspace width="0.25em"/><mtext>C</mtext></math></div>
+  <p class="where">Ladning findes kun i hele multipla af <math><mi>e</mi></math> og er bevaret: ladning kan flyttes, men ikke opstå eller forsvinde.</p>
+</div>
+<table class="compact">
+<caption>Elementarpartiklers ladning og masse</caption>
+<tr><th>Partikel</th><th>Ladning</th><th>Masse (kg)</th></tr>
+<tr><td>elektron</td><td><math><mo>−</mo><mi>e</mi></math></td><td class="num">9,109 · 10⁻³¹</td></tr>
+<tr><td>proton</td><td><math><mo>+</mo><mi>e</mi></math></td><td class="num">1,673 · 10⁻²⁷</td></tr>
+<tr><td>neutron</td><td>0</td><td class="num">1,675 · 10⁻²⁷</td></tr>
+</table>
+<p>Ladninger af samme tegn frastøder hinanden, modsatte tegn tiltrækker. I faste stoffer er det elektronerne, der flyttes — protonerne sidder fast i kernerne. Et legeme bliver positivt ladet ved at afgive elektroner, negativt ved at modtage dem.</p>
+
+<h2>Coulombs lov</h2>
+<div class="box rule">
+  <span class="label">Kraften mellem to punktladninger</span>
+  <div class="formula"><math><mi>F</mi><mo>=</mo><mi>k</mi><mfrac><mrow><mo>|</mo><msub><mi>q</mi><mn>1</mn></msub><mo>|</mo><mo>|</mo><msub><mi>q</mi><mn>2</mn></msub><mo>|</mo></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac><mtext>,</mtext><mspace width="1em"/><mi>k</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mi>π</mi><msub><mi>ε</mi><mn>0</mn></msub></mrow></mfrac><mo>=</mo><mn>8,99</mn><mo>·</mo><msup><mn>10</mn><mn>9</mn></msup><mspace width="0.25em"/><mtext>N·m²/C²</mtext></math></div>
+  <p class="where"><math><msub><mi>ε</mi><mn>0</mn></msub></math>: vakuumpermittiviteten 8,85&nbsp;·&nbsp;10⁻¹²&nbsp;C²/(N·m²) · <math><mi>r</mi></math>: afstand mellem ladningerne.</p>
+</div>
+<p>I et medium med relativ permittivitet <math><msub><mi>ε</mi><mi>r</mi></msub></math> svækkes kraften med faktoren <math><msub><mi>ε</mi><mi>r</mi></msub></math>: <math><mi>F</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mi>π</mi><msub><mi>ε</mi><mn>0</mn></msub><msub><mi>ε</mi><mi>r</mi></msub></mrow></mfrac><mfrac><mrow><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></math>. For vand er <math><msub><mi>ε</mi><mi>r</mi></msub><mo>≈</mo><mn>80</mn></math>, hvilket forklarer, hvorfor ioner er langt mere mobile i vand end i luft.</p>
+
+<h2>Elektrisk felt og potential</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Feltstyrke</span>
+    <div class="formula"><math><mover accent="true"><mi>E</mi><mo>→</mo></mover><mo>=</mo><mfrac><mover accent="true"><mi>F</mi><mo>→</mo></mover><mi>q</mi></mfrac><mtext>,</mtext><mspace width="0.5em"/><mi>E</mi><mo>=</mo><mi>k</mi><mfrac><mi>Q</mi><msup><mi>r</mi><mn>2</mn></msup></mfrac></math></div>
+    <p class="where">Enhed: N/C = V/m. Feltlinjer peger væk fra positiv ladning.</p>
+  </div>
+  <div class="box">
+    <span class="label">Potential</span>
+    <div class="formula"><math><mi>V</mi><mo>=</mo><mi>k</mi><mfrac><mi>Q</mi><mi>r</mi></mfrac><mtext>,</mtext><mspace width="0.5em"/><mi>U</mi><mo>=</mo><mi>q</mi><mi>V</mi></math></div>
+    <p class="where">Potentialet er energi per ladning (J/C = V). Feltet er <math><mi>E</mi><mo>=</mo><mo>−</mo><mi>d</mi><mi>V</mi><mo>/</mo><mi>d</mi><mi>x</mi></math>.</p>
+  </div>
+</div>
+<p>I et homogent felt mellem to parallelle plader med afstanden <math><mi>d</mi></math> og spændingen <math><mi>U</mi></math> er feltet <math><mi>E</mi><mo>=</mo><mi>U</mi><mo>/</mo><mi>d</mi></math>. En ladet partikel accelereres så over spændingen <math><mi>U</mi></math> og får den kinetiske energi <math><mi>q</mi><mi>U</mi></math> — deraf enheden elektronvolt: 1&nbsp;eV er energien, en elementarladning får over 1&nbsp;V.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — to punktladninger</span>
+  <p>To ladninger, <math><msub><mi>q</mi><mn>1</mn></msub><mo>=</mo><mo>+</mo><mn>3,0</mn><mspace width="0.25em"/><mtext>nC</mtext></math> og <math><msub><mi>q</mi><mn>2</mn></msub><mo>=</mo><mo>−</mo><mn>5,0</mn><mspace width="0.25em"/><mtext>nC</mtext></math>, står <math><mn>4,0</mn><mspace width="0.25em"/><mtext>cm</mtext></math> fra hinanden i luft.</p>
+  <div class="formula left">
+    <math><mi>F</mi><mo>=</mo><mn>8,99</mn><mo>·</mo><msup><mn>10</mn><mn>9</mn></msup><mo>·</mo><mfrac><mrow><mn>3,0</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup><mo>·</mo><mn>5,0</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup></mrow><msup><mrow><mo>(</mo><mn>0,040</mn><mo>)</mo></mrow><mn>2</mn></msup></mfrac><mo>≈</mo><mn>8,4</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mspace width="0.25em"/><mtext>N</mtext></math>
+  </div>
+  <p class="where">Kraften er tiltrækkende. Feltstyrken i afstanden 4,0&nbsp;cm fra <math><msub><mi>q</mi><mn>1</mn></msub></math> er <math><mi>E</mi><mo>=</mo><mi>k</mi><msub><mi>q</mi><mn>1</mn></msub><mo>/</mo><msup><mi>r</mi><mn>2</mn></msup><mo>≈</mo><mn>1,7</mn><mo>·</mo><msup><mn>10</mn><mn>4</mn></msup><mspace width="0.25em"/><mtext>N/C</mtext></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At glemme at omregne nC og µC til coulomb — en faktor 10⁹ slås let fejl.</li>
+    <li>At indsætte ladningernes fortegn i Coulombs lov og få en negativ kraft; loven giver størrelsen, retningen afgøres separat.</li>
+    <li>At forveksle felt og potential: feltet er en vektor i N/C, potentialet en skalar i V.</li>
+    <li>At tro, at feltet inde i en leder er stort. I elektrostatisk ligevægt er feltet nul inde i en leder, og ladningen sidder på overfladen.</li>
+  </ul>
+</div>
+
+</body>
+</html>

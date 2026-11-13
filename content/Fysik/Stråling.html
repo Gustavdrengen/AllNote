@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Stråling</title>
+</head>
+<body>
+
+<h1>Stråling</h1>
+
+<h2>Ioniserende og ikke-ioniserende stråling</h2>
+<p>Ioniserende stråling har tilstrækkelig foton- eller partikelenergi til at rive elektroner løs fra atomer. Grænsen ligger omkring nogle få eV; ultraviolet lys kan netop ionisere visse molekyler, mens synligt lys ikke kan. Røntgen og gammastråling er stærkt ioniserende, radiobølger slet ikke.</p>
+<table class="compact">
+<caption>Strålingstyper og deres vekselvirkning</caption>
+<tr><th>Type</th><th>Vekselvirker ved</th><th>Stoppes af</th></tr>
+<tr><td>alfa</td><td>kraftig ionisering, kort rækkevidde</td><td>papir, få cm luft, hudens overhud</td></tr>
+<tr><td>beta</td><td>middel ionisering, spredes let</td><td>nogle mm aluminium</td></tr>
+<tr><td>gamma, røntgen</td><td>fotoeffekt, Compton-spredning, pardannelse</td><td>bly, tyk beton</td></tr>
+<tr><td>neutroner</td><td>stød med lette kerner, fx hydrogen</td><td>vand, paraffin, beton</td></tr>
+</table>
+<p>Alfastråling er farligst ved indtagelse, fordi hele energien afsættes i et lille vævsvolumen. Gamma- og neutronstråling trænger derimod gennem kroppen og kræver afskærmning udefra. Princippet for strålingsbeskyttelse er tid, afstand og afskærmning: dosis falder med kvadratet på afstanden til en punktkilde.</p>
+
+<h2>Dosimetri</h2>
+<div class="box rule">
+  <span class="label">Tre forskellige størrelser</span>
+  <div class="formula"><math><mi>D</mi><mo>=</mo><mfrac><mi>E</mi><mi>m</mi></mfrac><mtext>,</mtext><mspace width="1em"/><mi>H</mi><mo>=</mo><msub><mi>w</mi><mi>R</mi></msub><mi>D</mi></math></div>
+  <p class="where"><math><mi>D</mi></math>: absorberet dosis i gray (Gy = J/kg) · <math><mi>H</mi></math>: ækvivalent dosis i sievert (Sv) · <math><msub><mi>w</mi><mi>R</mi></msub></math>: strålingsvægtningsfaktor (1 for beta og gamma, 20 for alfa, 5–20 for neutroner).</p>
+</div>
+<p>Den effektive dosis vægter desuden organernes følsomhed og angives også i sievert. Sievert er altså ikke en energi, men et mål for biologisk risiko. Ved samme absorberede dosis giver alfastråling 20 gange større risiko end gammastråling.</p>
+<table class="compact">
+<caption>Typiske effektive doser</caption>
+<tr><th>Kilde</th><th>Dosis</th></tr>
+<tr><td>naturlig baggrund i Danmark, per år</td><td class="num">ca. 3 mSv</td></tr>
+<tr><td>flyrejse København–New York</td><td class="num">ca. 0,05 mSv</td></tr>
+<tr><td>røntgen af brystkassen</td><td class="num">ca. 0,02 mSv</td></tr>
+<tr><td>CT-scanning af abdomen</td><td class="num">ca. 8 mSv</td></tr>
+<tr><td>grænse for arbejdstagere, per år</td><td class="num">20 mSv</td></tr>
+<tr><td>akut strålesyge</td><td class="num">1 000 mSv</td></tr>
+</table>
+
+<h2>Absorption</h2>
+<div class="box note">
+  <span class="label">Eksponentiel svækkelse</span>
+  <div class="formula"><math><mi>I</mi><mo>=</mo><msub><mi>I</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>μ</mi><mi>x</mi></mrow></msup><mtext>,</mtext><mspace width="1em"/><msub><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>ln</mi><mspace width="0.1em"/><mn>2</mn></mrow><mi>μ</mi></mfrac></math></div>
+  <p class="where"><math><mi>μ</mi></math>: absorptionskoefficient (m⁻¹) · <math><msub><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub></math>: halvtykkelsen. For bly og gammastråling fra ⁶⁰Co er halvtykkelsen ca. 1,2&nbsp;cm.</p>
+</div>
+<p>Hver halvtykkelse halverer intensiteten. Ti halvtykkelser reducerer den med en faktor ca. 1&nbsp;000, og tyve med en faktor en million — derfor bliver afskærmning hurtigt tyk, men også meget effektiv.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — dosis fra en kaliumkilde</span>
+  <p>En person indtager en prøve, der giver en absorberet dosis på <math><mn>0,40</mn><mspace width="0.25em"/><mtext>mGy</mtext></math> fra alfastråling.</p>
+  <div class="formula left">
+    <math><mi>H</mi><mo>=</mo><msub><mi>w</mi><mi>R</mi></msub><mi>D</mi><mo>=</mo><mn>20</mn><mo>·</mo><mn>0,40</mn><mspace width="0.25em"/><mtext>mGy</mtext><mo>=</mo><mn>8,0</mn><mspace width="0.25em"/><mtext>mSv</mtext></math>
+  </div>
+  <p class="where">Samme absorberede dosis fra gammastråling ville give 0,40&nbsp;mSv. Forskellen på en faktor 20 er grunden til, at alfastrålende stoffer som radon og plutonium er så farlige ved indånding eller indtagelse.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At bruge Gy og Sv som synonyme. Gy angiver afsat energi, Sv angiver biologisk risiko.</li>
+    <li>At tro, at alfastråling er harmløs, fordi den stoppes af papir. Den er harmløs uden på huden, men ikke indeni.</li>
+    <li>At regne med lineær aftagen i stedet for eksponentiel ved absorption.</li>
+    <li>At glemme, at baggrundsstråling altid er til stede; alle doser skal ses i forhold til de ca. 3&nbsp;mSv per år.</li>
+  </ul>
+</div>
+
+</body>
+</html>

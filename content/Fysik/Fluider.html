@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Fluider</title>
+</head>
+<body>
+
+<h1>Fluider</h1>
+
+<h2>Tryk</h2>
+<div class="box rule">
+  <span class="label">Definition og hydrostatisk tryk</span>
+  <div class="formula"><math><mi>p</mi><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac><mtext>,</mtext><mspace width="1em"/><mi>p</mi><mo>=</mo><msub><mi>p</mi><mn>0</mn></msub><mo>+</mo><mi>ρ</mi><mi>g</mi><mi>h</mi></math></div>
+  <p class="where"><math><mi>p</mi></math> i pascal (<math><mtext>Pa</mtext><mo>=</mo><mtext>N</mtext><mo>/</mo><msup><mtext>m</mtext><mn>2</mn></msup></math>) · <math><mi>h</mi></math>: dybde under overfladen · trykket virker vinkelret på enhver flade og er ens i alle retninger i samme punkt.</p>
+</div>
+<p>Hydrostatisk tryk afhænger kun af dybden og densiteten — ikke af karrets form. Et smalt rør med 10&nbsp;m vand giver samme tryk som en bred tank med 10&nbsp;m vand. Trykket er en skalar; det er kraften per areal, der har retning.</p>
+
+<h2>Opdrift</h2>
+<div class="box rule">
+  <span class="label">Archimedes' princip</span>
+  <div class="formula"><math><msub><mi>F</mi><mtext>op</mtext></msub><mo>=</mo><msub><mi>ρ</mi><mtext>væske</mtext></msub><mi>V</mi><mi>g</mi></math></div>
+  <p class="where"><math><mi>V</mi></math>: den fortrængte væskemængdes rumfang. Opdriften er vægten af den fortrængte væske og peger lodret op.</p>
+</div>
+<p>Et legeme flyder, når <math><msub><mi>ρ</mi><mtext>legeme</mtext></msub><mo>&lt;</mo><msub><mi>ρ</mi><mtext>væske</mtext></msub></math>. Den neddykkede brøkdel er forholdet mellem densiteterne: <math><mfrac><msub><mi>V</mi><mtext>nede</mtext></msub><mi>V</mi></mfrac><mo>=</mo><mfrac><msub><mi>ρ</mi><mtext>legeme</mtext></msub><msub><mi>ρ</mi><mtext>væske</mtext></msub></mfrac></math>. Is flyder derfor med ca. 92&nbsp;% under vand.</p>
+
+<h2>Strømning</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Kontinuitet</span>
+    <div class="formula"><math><msub><mi>A</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><msub><mi>A</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub></math></div>
+    <p class="where">Volumenstrømmen <math><mi>Q</mi><mo>=</mo><mi>A</mi><mi>v</mi></math> er konstant i et lukket rør med inkompressibel væske.</p>
+  </div>
+  <div class="box">
+    <span class="label">Bernoulli</span>
+    <div class="formula"><math><mi>p</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><msup><mi>v</mi><mn>2</mn></msup><mo>+</mo><mi>ρ</mi><mi>g</mi><mi>h</mi><mo>=</mo><mtext>konstant</mtext></math></div>
+    <p class="where">Gælder for stationær, friktionsfri strømning af inkompressibel væske.</p>
+  </div>
+</div>
+<p>Bernoullis ligning er energibevarelse per rumfang: hvor farten er stor, er trykket lille. Det forklarer løftet på en vingeprofil, at en dusjforhænger suges ind mod kroppen, og at en bold kan svæve i en luftstrøm.</p>
+<table class="compact">
+<caption>Tryk og densitet</caption>
+<tr><th>Størrelse</th><th>Værdi</th></tr>
+<tr><td>normalt lufttryk ved havoverfladen</td><td class="num">1,013 · 10⁵ Pa</td></tr>
+<tr><td>densitet af vand (4 °C)</td><td class="num">1 000 kg/m³</td></tr>
+<tr><td>densitet af luft (20 °C)</td><td class="num">1,20 kg/m³</td></tr>
+<tr><td>densitet af havvand</td><td class="num">1 025 kg/m³</td></tr>
+<tr><td>tryk 10 m under vandoverfladen</td><td class="num">ca. 2,0 · 10⁵ Pa</td></tr>
+</table>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — opdrift på en svømmer</span>
+  <p>En person på <math><mn>75</mn><mspace width="0.25em"/><mtext>kg</mtext></math> har en densitet på <math><mn>980</mn><mspace width="0.25em"/><mtext>kg/m³</mtext></math>.</p>
+  <div class="formula left">
+    <math><msub><mi>V</mi><mtext>legeme</mtext></msub><mo>=</mo><mfrac><mi>m</mi><mi>ρ</mi></mfrac><mo>=</mo><mfrac><mn>75</mn><mn>980</mn></mfrac><mo>=</mo><mn>0,0765</mn><mspace width="0.25em"/><mtext>m³</mtext><mtext>,</mtext><mspace width="1em"/><msub><mi>F</mi><mtext>op,maks</mtext></msub><mo>=</mo><mn>1&nbsp;000</mn><mo>·</mo><mn>0,0765</mn><mo>·</mo><mn>9,82</mn><mo>≈</mo><mn>751</mn><mspace width="0.25em"/><mtext>N</mtext></math>
+  </div>
+  <p class="where">Tyngden er 737&nbsp;N, så personen flyder med ca. 98&nbsp;% af kroppen under vand — kun hovedet stikker op. I saltvand (<math><mn>1&nbsp;025</mn><mspace width="0.25em"/><mtext>kg/m³</mtext></math>) er opdriften større, og personen flyder højere.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At bruge legemets fulde rumfang i opdriften, når det kun er delvist nedsænket. Kun det fortrængte rumfang tæller.</li>
+    <li>At glemme atmosfæretrykket oven på væsken; det samlede tryk i dybden er <math><msub><mi>p</mi><mn>0</mn></msub><mo>+</mo><mi>ρ</mi><mi>g</mi><mi>h</mi></math>.</li>
+    <li>At anvende Bernoulli på en strømning med stor friktion eller på en gas med stor trykændring; ligningen forudsætter inkompressibel, friktionsfri strømning.</li>
+    <li>At tro, at opdriften afhænger af legemets masse. Den afhænger af det fortrængte fluidums densitet og rumfang.</li>
+  </ul>
+</div>
+
+</body>
+</html>

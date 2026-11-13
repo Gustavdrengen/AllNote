@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Impuls</title>
+</head>
+<body>
+
+<h1>Impuls</h1>
+
+<h2>Bevægelsesmængde</h2>
+<div class="box rule">
+  <span class="label">Impuls</span>
+  <div class="formula"><math><mover accent="true"><mi>p</mi><mo>→</mo></mover><mo>=</mo><mi>m</mi><mover accent="true"><mi>v</mi><mo>→</mo></mover><mtext>,</mtext><mspace width="1em"/><msub><mover accent="true"><mi>p</mi><mo>→</mo></mover><mtext></mtext></msub><mo>=</mo><msub><mover accent="true"><mi>F</mi><mo>→</mo></mover><mtext>res</mtext></msub><mspace width="0.15em"/><mi>Δ</mi><mi>t</mi></math></div>
+  <p class="where"><math><mi>p</mi></math> i <math><mtext>kg</mtext><mo>·</mo><mtext>m</mtext><mo>/</mo><mtext>s</mtext><mo>=</mo><mtext>N</mtext><mo>·</mo><mtext>s</mtext></math>. Højre side kaldes kraftstødet; det er arealet under F-t-grafen.</p>
+</div>
+<p>Newtons 2. lov på impulsform er <math><mover accent="true"><mi>F</mi><mo>→</mo></mover><mo>=</mo><mi>d</mi><mover accent="true"><mi>p</mi><mo>→</mo></mover><mo>/</mo><mi>d</mi><mi>t</mi></math>, og den gælder også, når massen ændrer sig (raket, snebold). Ved et stød er middelkraften <math><msub><mi>F</mi><mtext>middel</mtext></msub><mo>=</mo><mi>Δ</mi><mi>p</mi><mo>/</mo><mi>Δ</mi><mi>t</mi></math>: samme impulsændring over kortere tid giver større kraft — derfor airbags og støddæmpere.</p>
+
+<h2>Impulsbevarelse</h2>
+<div class="box rule">
+  <span class="label">Isoleret system</span>
+  <div class="formula"><math><munder><mo>∑</mo><mtext>før</mtext></munder><mover accent="true"><mi>p</mi><mo>→</mo></mover><mo>=</mo><munder><mo>∑</mo><mtext>efter</mtext></munder><mover accent="true"><mi>p</mi><mo>→</mo></mover></math></div>
+  <p class="where">Gælder når den ydre resulterende kraft er nul — også ved stød, eksplosioner og sammenstød, hvor de indre kræfter er store men parvist ophæver hinanden.</p>
+</div>
+<table class="compact">
+<caption>Stødtyper i én dimension</caption>
+<tr><th>Type</th><th>Kinetisk energi</th><th>Kendetegn</th></tr>
+<tr><td>fuldstændig elastisk</td><td>bevaret</td><td>legemerne fjerner sig; <math><mi>e</mi><mo>=</mo><mn>1</mn></math></td></tr>
+<tr><td>uelastisk</td><td>aftager</td><td>legemerne hænger sammen efter; <math><mi>e</mi><mo>=</mo><mn>0</mn></math></td></tr>
+<tr><td>delvist elastisk</td><td>aftager</td><td><math><mn>0</mn><mo>&lt;</mo><mi>e</mi><mo>&lt;</mo><mn>1</mn></math></td></tr>
+</table>
+<p>Stødtallet angiver, hvor elastisk stødet er:</p>
+<div class="formula"><math><mi>e</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mrow><mn>2</mn><mtext>,</mtext><mtext>efter</mtext></mrow></msub><mo>−</mo><msub><mi>v</mi><mrow><mn>1</mn><mtext>,</mtext><mtext>efter</mtext></mrow></msub></mrow><mrow><msub><mi>v</mi><mrow><mn>1</mn><mtext>,</mtext><mtext>før</mtext></mrow></msub><mo>−</mo><msub><mi>v</mi><mrow><mn>2</mn><mtext>,</mtext><mtext>før</mtext></mrow></msub></mrow></mfrac></math></div>
+<p>Ved fuldstændig uelastisk stød bevæger legemerne sig med fælles hastighed:</p>
+<div class="formula"><math><mi>v</mi><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac></math></div>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — to vogne kobles sammen</span>
+  <p>Vogn 1 (<math><mn>0,50</mn><mspace width="0.25em"/><mtext>kg</mtext></math>) rammer med <math><mn>1,2</mn><mspace width="0.25em"/><mtext>m/s</mtext></math> vogn 2 (<math><mn>0,30</mn><mspace width="0.25em"/><mtext>kg</mtext></math>), der står stille. De kobles sammen.</p>
+  <div class="formula left">
+    <math><mi>v</mi><mo>=</mo><mfrac><mrow><mn>0,50</mn><mo>·</mo><mn>1,2</mn></mrow><mrow><mn>0,50</mn><mo>+</mo><mn>0,30</mn></mrow></mfrac><mo>=</mo><mn>0,75</mn><mspace width="0.25em"/><mtext>m/s</mtext><mtext>,</mtext><mspace width="1em"/><msub><mi>E</mi><mtext>før</mtext></msub><mo>=</mo><mn>0,36</mn><mspace width="0.25em"/><mtext>J</mtext><mtext>,</mtext><mspace width="0.6em"/><msub><mi>E</mi><mtext>efter</mtext></msub><mo>=</mo><mn>0,225</mn><mspace width="0.25em"/><mtext>J</mtext></math>
+  </div>
+  <p class="where">Impulsen er bevaret (<math><mn>0,60</mn><mspace width="0.25em"/><mtext>kg·m/s</mtext></math>), men 0,135&nbsp;J er blevet varme og lyd. Dette er et uelastisk stød.</p>
+</div>
+
+<h2>Kraftstød</h2>
+<div class="box">
+  <span class="label">Eksempel — bold mod en væg</span>
+  <p>En bold på <math><mn>0,20</mn><mspace width="0.25em"/><mtext>kg</mtext></math> rammer en væg med <math><mn>12</mn><mspace width="0.25em"/><mtext>m/s</mtext></math> og springer tilbage med <math><mn>8,0</mn><mspace width="0.25em"/><mtext>m/s</mtext></math>. Kontakttiden er <math><mn>15</mn><mspace width="0.25em"/><mtext>ms</mtext></math>.</p>
+  <div class="formula left">
+    <math><mi>Δ</mi><mi>p</mi><mo>=</mo><mi>m</mi><mo>(</mo><msub><mi>v</mi><mtext>efter</mtext></msub><mo>−</mo><msub><mi>v</mi><mtext>før</mtext></msub><mo>)</mo><mo>=</mo><mn>0,20</mn><mo>·</mo><mo>(</mo><mo>−</mo><mn>8,0</mn><mo>−</mo><mn>12</mn><mo>)</mo><mo>=</mo><mo>−</mo><mn>4,0</mn><mspace width="0.25em"/><mtext>kg·m/s</mtext></math>
+  </div>
+  <div class="formula left">
+    <math><msub><mi>F</mi><mtext>middel</mtext></msub><mo>=</mo><mfrac><mrow><mo>|</mo><mi>Δ</mi><mi>p</mi><mo>|</mo></mrow><mrow><mi>Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mn>4,0</mn><mrow><mn>15</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow></mfrac><mo>≈</mo><mn>2,7</mn><mo>·</mo><msup><mn>10</mn><mn>2</mn></msup><mspace width="0.25em"/><mtext>N</mtext></math>
+  </div>
+  <p class="where">Impulsen peger væk fra væggen. Fordobles kontakttiden — fx med en blødere bold — halveres middelkraften, mens impulsændringen er den samme.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At tro, at kinetisk energi altid er bevaret. Kun ved fuldstændig elastisk stød; impulsen er derimod bevaret ved alle stød uden ydre kræfter.</li>
+    <li>At glemme fortegnet: impulser i modsat retning skal trækkes fra, ikke lægges til.</li>
+    <li>At antage, at et legeme »ikke har impuls«, fordi det bremser — under nedbremsningen overføres impulsen til jorden.</li>
+    <li>At bruge <math><msub><mi>F</mi><mtext>middel</mtext></msub><mo>=</mo><mi>Δ</mi><mi>p</mi><mo>/</mo><mi>Δ</mi><mi>t</mi></math> med en kraft, der ikke er konstant, uden at kalde resultatet en middelkraft.</li>
+  </ul>
+</div>
+
+</body>
+</html>

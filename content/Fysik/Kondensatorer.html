@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Kondensatorer</title>
+</head>
+<body>
+
+<h1>Kondensatorer</h1>
+
+<h2>Kapacitans</h2>
+<div class="box rule">
+  <span class="label">Ladning og spænding</span>
+  <div class="formula"><math><mi>C</mi><mo>=</mo><mfrac><mi>Q</mi><mi>U</mi></mfrac><mtext>,</mtext><mspace width="1em"/><mi>C</mi><mo>=</mo><msub><mi>ε</mi><mn>0</mn></msub><msub><mi>ε</mi><mi>r</mi></msub><mfrac><mi>A</mi><mi>d</mi></mfrac></math></div>
+  <p class="where"><math><mi>C</mi></math> i farad (F) · <math><mi>A</mi></math>: pladeareal · <math><mi>d</mi></math>: pladeafstand · i praksis bruges µF, nF og pF.</p>
+</div>
+<p>Kapacitansen afhænger kun af geometrien og materialet mellem pladerne — ikke af <math><mi>Q</mi></math> eller <math><mi>U</mi></math>. Spændingen over kondensatoren er proportional med ladningen, og proportionalitetsfaktoren er <math><mn>1</mn><mo>/</mo><mi>C</mi></math>.</p>
+
+<h2>Energi</h2>
+<div class="formula"><math><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>C</mi><msup><mi>U</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>Q</mi><mi>U</mi><mo>=</mo><mfrac><msup><mi>Q</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>C</mi></mrow></mfrac></math></div>
+<p>Energien er lagret i det elektriske felt mellem pladerne med energitætheden <math><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>ε</mi><mn>0</mn></msub><msup><mi>E</mi><mn>2</mn></msup></math> per rumfang. Det er derfor, en kondensator kan afgive en meget stor effekt i kort tid — som i et kamerablitz.</p>
+
+<h2>Serie og parallel</h2>
+<table class="compact">
+<caption>Kondensatorer — omvendt af modstande</caption>
+<tr><th></th><th>Serie</th><th>Parallel</th></tr>
+<tr><td>erstatningskapacitans</td><td><math><mfrac><mn>1</mn><mi>C</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>C</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>C</mi><mn>2</mn></msub></mfrac></math></td><td><math><mi>C</mi><mo>=</mo><msub><mi>C</mi><mn>1</mn></msub><mo>+</mo><msub><mi>C</mi><mn>2</mn></msub></math></td></tr>
+<tr><td>ladning</td><td>samme på begge plader</td><td>deles</td></tr>
+<tr><td>spænding</td><td>deles</td><td>samme over begge</td></tr>
+</table>
+<p>Seriekobling mindsker den samlede kapacitans, fordi den effektive pladeafstand vokser. Parallelkobling øger den, fordi det samlede pladeareal vokser.</p>
+
+<h2>Op- og afladning</h2>
+<div class="box rule">
+  <span class="label">RC-kreds</span>
+  <div class="formula"><math><mi>τ</mi><mo>=</mo><mi>R</mi><mi>C</mi><mtext>,</mtext><mspace width="1em"/><mi>U</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><msub><mi>U</mi><mn>0</mn></msub><mo>(</mo><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi><mo>/</mo><mi>τ</mi></mrow></msup><mo>)</mo><mspace width="1em"/><mtext>opladning</mtext></math></div>
+  <p class="where">Afladning: <math><mi>U</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><msub><mi>U</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi><mo>/</mo><mi>τ</mi></mrow></msup></math>. Efter <math><mi>τ</mi></math> er 63&nbsp;% opnået ved opladning og 37&nbsp;% tilbage ved afladning; efter ca. <math><mn>5</mn><mi>τ</mi></math> er processen praktisk talt færdig.</p>
+</div>
+<p>Strømmen er størst i begyndelsen og aftager eksponentielt: <math><mi>I</mi><mo>=</mo><msub><mi>I</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi><mo>/</mo><mi>τ</mi></mrow></msup></math>. En kondensator virker derfor som kortslutning for hurtige ændringer og som afbrydelse for jævnstrøm — derfor bruges den som filter og som koblingskondensator i forstærkere.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — blitz</span>
+  <p>En kondensator på <math><mn>1&nbsp;200</mn><mspace width="0.25em"/><mtext>µF</mtext></math> oplades til <math><mn>330</mn><mspace width="0.25em"/><mtext>V</mtext></math> og aflades på <math><mn>2,0</mn><mspace width="0.25em"/><mtext>ms</mtext></math>.</p>
+  <div class="formula left">
+    <math><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mn>1&nbsp;200</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo>·</mo><msup><mn>330</mn><mn>2</mn></msup><mo>=</mo><mn>65,3</mn><mspace width="0.25em"/><mtext>J</mtext><mtext>,</mtext><mspace width="1em"/><msub><mi>P</mi><mtext>middel</mtext></msub><mo>=</mo><mfrac><mn>65,3</mn><mrow><mn>2,0</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow></mfrac><mo>≈</mo><mn>33</mn><mspace width="0.25em"/><mtext>kW</mtext></math>
+  </div>
+  <p class="where">Ladningen er <math><mi>Q</mi><mo>=</mo><mi>C</mi><mi>U</mi><mo>=</mo><mn>0,396</mn><mspace width="0.25em"/><mtext>C</mtext></math>. Kondensatoren kan altså afgive en effekt, som ingen almindelig batterikobling kan præstere i så kort tid.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At bruge modstandsreglerne for serie og parallel på kondensatorer — de er omvendt.</li>
+    <li>At regne med µF som F; omregn altid til farad, før du indsætter tal.</li>
+    <li>At tro, at en kondensator er »tom«, når kredsen er slukket. Den kan holde ladning længe og give stød — af sikkerhedsgrunde aflades den over en modstand.</li>
+    <li>At forveksle kapacitans med ladning: <math><mi>C</mi></math> er en geometrisk egenskab, <math><mi>Q</mi></math> afhænger af spændingen.</li>
+  </ul>
+</div>
+
+</body>
+</html>

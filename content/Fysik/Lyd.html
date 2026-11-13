@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Lyd</title>
+</head>
+<body>
+
+<h1>Lyd</h1>
+
+<h2>Lyd som trykbølge</h2>
+<div class="box rule">
+  <span class="label">Lydhastighed</span>
+  <div class="formula"><math><mi>v</mi><mo>=</mo><msqrt><mrow><mi>κ</mi><mi>p</mi><mo>/</mo><mi>ρ</mi></mrow></msqrt><mtext>,</mtext><mspace width="1em"/><mi>v</mi><mo>≈</mo><mn>331</mn><mo>+</mo><mn>0,6</mn><mspace width="0.1em"/><mi>t</mi></math></div>
+  <p class="where">I luft ved <math><mn>20</mn><mo>°</mo><mtext>C</mtext></math>: 343&nbsp;m/s. <math><mi>κ</mi></math>: adiabatisk eksponent · lydhastigheden i vand er ca. 1&nbsp;480&nbsp;m/s, i stål ca. 5&nbsp;000&nbsp;m/s.</p>
+</div>
+<p>Lyd er en longitudinal bølge af trykvariationer. Øret opfatter frekvenser fra ca. 20&nbsp;Hz til 20&nbsp;kHz; under dette kaldes lyden infralyd, over ultralyd. Lydens hastighed afhænger af mediets stivhed og densitet — ikke af frekvensen, bortset fra svag dispersion i luft.</p>
+
+<h2>Intensitet og lydtrykniveau</h2>
+<div class="box rule">
+  <span class="label">Decibel</span>
+  <div class="formula"><math><mi>L</mi><mo>=</mo><mn>10</mn><mspace width="0.1em"/><mi>log</mi><mspace width="0.1em"/><mfrac><mi>I</mi><msub><mi>I</mi><mn>0</mn></msub></mfrac><mtext>,</mtext><mspace width="1em"/><msub><mi>I</mi><mn>0</mn></msub><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>12</mn></mrow></msup><mspace width="0.25em"/><mtext>W/m²</mtext></math></div>
+  <p class="where"><math><mi>I</mi></math>: intensitet (W/m²) · <math><mi>L</mi></math> i dB. En fordobling af intensiteten giver ca. 3&nbsp;dB; en tidobling giver 10&nbsp;dB.</p>
+</div>
+<p>Intensiteten aftager med kvadratet på afstanden fra en punktkilde: <math><mi>I</mi><mo>=</mo><mfrac><mi>P</mi><mrow><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></math>. Derfor falder lydtrykniveauet med ca. 6&nbsp;dB, hver gang afstanden fordobles.</p>
+<table class="compact">
+<caption>Typiske lydniveauer</caption>
+<tr><th>Kilde</th><th><math><mi>L</mi></math> i dB</th><th><math><mi>I</mi></math> i W/m²</th></tr>
+<tr><td>høretærskel</td><td class="num">0</td><td class="num">10⁻¹²</td></tr>
+<tr><td>hvisken</td><td class="num">30</td><td class="num">10⁻⁹</td></tr>
+<tr><td>samtale</td><td class="num">60</td><td class="num">10⁻⁶</td></tr>
+<tr><td>travl gade</td><td class="num">80</td><td class="num">10⁻⁴</td></tr>
+<tr><td>rockkoncert</td><td class="num">110</td><td class="num">10⁻¹</td></tr>
+<tr><td>smertetærskel</td><td class="num">130</td><td class="num">10</td></tr>
+</table>
+
+<h2>Stående bølger i rør</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Åbent rør i begge ender</span>
+    <div class="formula"><math><mi>L</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mi>λ</mi></mrow><mn>2</mn></mfrac><mtext>,</mtext><mspace width="0.5em"/><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mi>n</mi><mi>v</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></math></div>
+    <p class="where">Buge ved begge åbninger; alle harmoniske er tilladt (<math><mi>n</mi><mo>=</mo><mn>1</mn><mtext>,</mtext><mn>2</mn><mo>,…</mo></math>).</p>
+  </div>
+  <div class="box">
+    <span class="label">Lukket rør i den ene ende</span>
+    <div class="formula"><math><mi>L</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mi>λ</mi></mrow><mn>4</mn></mfrac><mtext>,</mtext><mspace width="0.5em"/><msub><mi>f</mi><mi>m</mi></msub><mo>=</mo><mfrac><mrow><mi>m</mi><mi>v</mi></mrow><mrow><mn>4</mn><mi>L</mi></mrow></mfrac></math></div>
+    <p class="where">Knude ved den lukkede ende; kun ulige harmoniske (<math><mi>m</mi><mo>=</mo><mn>1</mn><mtext>,</mtext><mn>3</mn><mtext>,</mtext><mn>5</mn><mo>,…</mo></math>).</p>
+  </div>
+</div>
+<p>Derfor lyder en klarinet (lukket rør) dybere og mere »hul« end en fløjte af samme længde: grundtonen er en oktav lavere, og de lige overtoner mangler. Lydens hastighed i røret påvirkes af temperaturen, så instrumenter skal stemmes efter temperaturen.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — resonansrør</span>
+  <p>Et rør, der er lukket i den ene ende, giver resonans ved <math><mn>340</mn><mspace width="0.25em"/><mtext>Hz</mtext></math> og næste gang ved <math><mn>1&nbsp;020</mn><mspace width="0.25em"/><mtext>Hz</mtext></math>.</p>
+  <div class="formula left">
+    <math><mi>Δ</mi><mi>f</mi><mo>=</mo><mn>680</mn><mspace width="0.25em"/><mtext>Hz</mtext><mo>=</mo><mfrac><mi>v</mi><mrow><mn>2</mn><mi>L</mi></mrow></mfrac><mspace width="0.5em"/><mo>⇒</mo><mspace width="0.5em"/><mi>L</mi><mo>=</mo><mfrac><mn>343</mn><mrow><mn>2</mn><mo>·</mo><mn>680</mn></mrow></mfrac><mo>=</mo><mn>0,252</mn><mspace width="0.25em"/><mtext>m</mtext></math>
+  </div>
+  <p class="where">Frekvenserne er 1. og 3. harmoniske (grundtone og 2. overtone), hvilket bekræfter, at røret er lukket i den ene ende. Grundtonen er 340&nbsp;Hz, så <math><mi>λ</mi><mo>=</mo><mn>1,01</mn><mspace width="0.25em"/><mtext>m</mtext></math> og <math><mi>L</mi><mo>=</mo><mi>λ</mi><mo>/</mo><mn>4</mn></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At tro, at dB er en absolut enhed. Den er et logaritmisk forhold; 0&nbsp;dB er en reference, ikke »ingen lyd«.</li>
+    <li>At lægge dB sammen som almindelige tal: to kilder på 60&nbsp;dB giver 63&nbsp;dB, ikke 120&nbsp;dB.</li>
+    <li>At bruge formlen for åbent rør på et rør med én lukket ende — overtonerne bliver forkert.</li>
+    <li>At regne med lydhastigheden ved 0&nbsp;°C i et opvarmet lokale; 343&nbsp;m/s hører til 20&nbsp;°C.</li>
+  </ul>
+</div>
+
+</body>
+</html>

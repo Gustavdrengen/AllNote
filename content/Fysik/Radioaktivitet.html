@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Radioaktivitet</title>
+</head>
+<body>
+
+<h1>Radioaktivitet</h1>
+
+<h2>Henfaldstyper</h2>
+<table class="compact">
+<caption>De tre vigtigste henfald</caption>
+<tr><th>Type</th><th>Udsendt</th><th>Ændring i kernen</th><th>Gennemtrængning</th></tr>
+<tr><td>alfa, <math><mi>α</mi></math></td><td>⁴He-kerne</td><td><math><mi>Z</mi><mo>−</mo><mn>2</mn></math>, <math><mi>A</mi><mo>−</mo><mn>4</mn></math></td><td>få cm i luft, stopper i papir</td></tr>
+<tr><td>beta-minus, <math><msup><mi>β</mi><mo>−</mo></msup></math></td><td>elektron + antineutrino</td><td><math><mi>Z</mi><mo>+</mo><mn>1</mn></math>, <math><mi>A</mi></math> uændret</td><td>få mm aluminium</td></tr>
+<tr><td>beta-plus, <math><msup><mi>β</mi><mo>+</mo></msup></math></td><td>positron + neutrino</td><td><math><mi>Z</mi><mo>−</mo><mn>1</mn></math>, <math><mi>A</mi></math> uændret</td><td>annihilerer straks</td></tr>
+<tr><td>gamma, <math><mi>γ</mi></math></td><td>foton</td><td>ingen</td><td>kræver bly eller tyk beton</td></tr>
+</table>
+<p>Ved beta-minus omdannes en neutron til en proton: <math><mi>n</mi><mo>→</mo><mi>p</mi><mo>+</mo><msup><mi>e</mi><mo>−</mo></msup><mo>+</mo><msub><mover accent="true"><mi>ν</mi><mo>¯</mo></mover><mi>e</mi></msub></math>. Neutrinoen var længe en hypotese, fordi beta-spektret er kontinuert — energien deles mellem tre partikler. Gammastråling følger ofte efter alfa eller beta, når den nye kerne er i en exciteret tilstand.</p>
+
+<h2>Henfaldsloven</h2>
+<div class="box rule">
+  <span class="label">Eksponentielt henfald</span>
+  <div class="formula"><math><mi>N</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>t</mi></mrow></msup><mtext>,</mtext><mspace width="1em"/><msub><mi>T</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>ln</mi><mspace width="0.1em"/><mn>2</mn></mrow><mi>λ</mi></mfrac><mtext>,</mtext><mspace width="1em"/><mi>A</mi><mo>=</mo><mi>λ</mi><mi>N</mi></math></div>
+  <p class="where"><math><mi>λ</mi></math>: henfaldskonstanten (s⁻¹) · <math><msub><mi>T</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub></math>: halveringstid · <math><mi>A</mi></math>: aktivitet i becquerel (Bq = henfald/s).</p>
+</div>
+<p>Henfaldet er statistisk: man kan ikke forudsige, hvornår en given kerne henfalder, kun sandsynligheden. Efter <math><mi>n</mi></math> halveringstider er andelen <math><msup><mn>2</mn><mrow><mo>−</mo><mi>n</mi></mrow></msup></math> af den oprindelige mængde tilbage. Halveringstiderne spænder fra mikrosekunder til milliarder af år, og de kan ikke ændres ved opvarmning eller kemisk behandling.</p>
+<table class="compact">
+<caption>Halveringstider</caption>
+<tr><th>Isotop</th><th><math><msub><mi>T</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub></math></th><th>Anvendelse</th></tr>
+<tr><td>¹⁴C</td><td class="num">5 730 år</td><td>kulstof-14-datering</td></tr>
+<tr><td>⁴⁰K</td><td class="num">1,25 · 10⁹ år</td><td>kalium-argon-datering</td></tr>
+<tr><td>¹³¹I</td><td class="num">8,0 døgn</td><td>skjoldbruskkirtel-diagnostik</td></tr>
+<tr><td>⁹⁹ᵐTc</td><td class="num">6,0 timer</td><td>knoglescanning</td></tr>
+</table>
+
+<h2>Datering</h2>
+<div class="box note">
+  <span class="label">Kulstof-14</span>
+  <p>Levende organismer optager ¹⁴C fra atmosfæren i et konstant forhold til ¹²C. Når organismen dør, stopper optaget, og ¹⁴C henfalder. Ud fra forholdet kan alderen beregnes:</p>
+  <div class="formula"><math><mi>t</mi><mo>=</mo><mfrac><msub><mi>T</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub><mrow><mi>ln</mi><mspace width="0.1em"/><mn>2</mn></mrow></mfrac><mspace width="0.1em"/><mi>ln</mi><mspace width="0.1em"/><mfrac><msub><mi>N</mi><mn>0</mn></msub><mi>N</mi></mfrac></math></div>
+  <p class="where">Metoden virker op til ca. 50&nbsp;000 år; herefter er aktiviteten for lille til at måle pålideligt.</p>
+</div>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — trækul fra en boplads</span>
+  <p>En prøve har 35&nbsp;% af den oprindelige ¹⁴C-aktivitet.</p>
+  <div class="formula left">
+    <math><mi>t</mi><mo>=</mo><mfrac><mn>5&nbsp;730</mn><mn>0,693</mn></mfrac><mspace width="0.1em"/><mi>ln</mi><mspace width="0.1em"/><mfrac><mn>1</mn><mn>0,35</mn></mfrac><mo>=</mo><mn>8&nbsp;268</mn><mo>·</mo><mn>1,050</mn><mo>≈</mo><mn>8&nbsp;680</mn><mspace width="0.25em"/><mtext>år</mtext></math>
+  </div>
+  <p class="where">Prøven er ca. 8&nbsp;700 år gammel. Usikkerheden er typisk ±100&nbsp;år for velbevarede prøver, men større hvis prøven har optaget kulstof fra omgivelserne.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At tro, at halveringstiden aftager med tiden, eller at kerner »bliver gamle«. Sandsynligheden er konstant.</li>
+    <li>At bruge <math><mi>N</mi><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><mo>/</mo><mn>2</mn></math> efter én halveringstid, men glemme, at det kun gælder netop der.</li>
+    <li>At forveksle aktivitet (Bq) med dosis (Gy, Sv).</li>
+    <li>At glemme neutrinoen i beta-henfald og dermed undre sig over det kontinuerte energispektrum.</li>
+  </ul>
+</div>
+
+</body>
+</html>

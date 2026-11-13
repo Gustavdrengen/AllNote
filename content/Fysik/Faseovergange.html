@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Faseovergange</title>
+</head>
+<body>
+
+<h1>Faseovergange</h1>
+
+<h2>Faser og overgange</h2>
+<table class="compact">
+<caption>De fire tilstandsformer og overgangene mellem dem</caption>
+<tr><th>Overgang</th><th>Navn</th><th>Energi</th></tr>
+<tr><td>fast → flydende</td><td>smeltning</td><td>tilføres (smeltevarme)</td></tr>
+<tr><td>flydende → fast</td><td>størkning</td><td>afgives</td></tr>
+<tr><td>flydende → gas</td><td>fordampning / kogning</td><td>tilføres (fordampningsvarme)</td></tr>
+<tr><td>gas → flydende</td><td>kondensation</td><td>afgives</td></tr>
+<tr><td>fast → gas</td><td>sublimation</td><td>tilføres</td></tr>
+<tr><td>gas → fast</td><td>deposition</td><td>afgives</td></tr>
+</table>
+<p>Under en faseovergang er temperaturen konstant, selv om der tilføres energi. Energien bruges til at bryde bindingerne mellem molekylerne — ikke til at øge deres kinetiske energi. Derfor er en blanding af is og vand altid 0&nbsp;°C, indtil isen er smeltet.</p>
+
+<h2>Faseovergangsvarme</h2>
+<div class="box rule">
+  <span class="label">Energi ved overgangen</span>
+  <div class="formula"><math><mi>Q</mi><mo>=</mo><mi>m</mi><msub><mi>L</mi><mi>s</mi></msub><mspace width="1em"/><mtext>eller</mtext><mspace width="0.5em"/><mi>Q</mi><mo>=</mo><mi>m</mi><msub><mi>L</mi><mi>f</mi></msub></math></div>
+  <p class="where"><math><msub><mi>L</mi><mi>s</mi></msub></math>: specifik smeltevarme · <math><msub><mi>L</mi><mi>f</mi></msub></math>: specifik fordampningsvarme (J/kg). Gælder ved overgangens temperatur.</p>
+</div>
+<table class="compact">
+<caption>Vands faseovergangsvarme</caption>
+<tr><th>Størrelse</th><th>Værdi</th><th>Betydning</th></tr>
+<tr><td><math><msub><mi>L</mi><mi>s</mi></msub></math></td><td class="num">334 kJ/kg</td><td>smeltning ved 0 °C</td></tr>
+<tr><td><math><msub><mi>L</mi><mi>f</mi></msub></math></td><td class="num">2 260 kJ/kg</td><td>fordampning ved 100 °C</td></tr>
+<tr><td><math><msub><mi>L</mi><mi>s</mi></msub></math> + <math><mi>c</mi><mi>Δ</mi><mi>T</mi></math></td><td class="num">418 kJ/kg</td><td>opvarmning 0 → 100 °C</td></tr>
+</table>
+<p>Fordampningsvarmen er godt fem gange større end den energi, der skal til for at opvarme vandet fra 0 til 100&nbsp;°C (2&nbsp;260 mod 418&nbsp;kJ/kg). Det er derfor, svedkøling er så effektiv, og hvorfor dampafkøling kræver store køleanlæg.</p>
+
+<h2>Kogepunkt og fasekurve</h2>
+<div class="box note">
+  <span class="label">Trykket bestemmer kogepunktet</span>
+  <p>Kogning indtræder, når mætningstrykket er lig med det ydre tryk. Ved 0,5&nbsp;atm koger vand ved ca. 81&nbsp;°C, i en trykkoger ved 2&nbsp;atm ved ca. 120&nbsp;°C. På 3&nbsp;000&nbsp;m højde koger vand allerede ved ca. 90&nbsp;°C, så madlavning tager længere tid.</p>
+</div>
+<p>Fasekurven i et p-T-diagram har tre linjer, der mødes i tripelpunktet (for vand: 273,16&nbsp;K og 611&nbsp;Pa). Over den kritiske temperatur (647&nbsp;K for vand) findes ingen forskel på væske og gas — stoffet er en superkritisk fluid. Fordampning sker også under kogepunktet fra overfladen, når molekyler med tilstrækkelig energi undslipper; mætningstrykket er da mindre end det ydre tryk.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — fra is til damp</span>
+  <p>Hvor meget energi kræves for at omdanne <math><mn>0,50</mn><mspace width="0.25em"/><mtext>kg</mtext></math> is ved <math><mo>−</mo><mn>10</mn><mo>°</mo><mtext>C</mtext></math> til damp ved <math><mn>100</mn><mo>°</mo><mtext>C</mtext></math>?</p>
+  <div class="formula left">
+    <math><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>0,50</mn><mo>·</mo><mn>2&nbsp;100</mn><mo>·</mo><mn>10</mn><mo>=</mo><mn>10,5</mn><mspace width="0.25em"/><mtext>kJ</mtext><mspace width="0.8em"/><mtext>(opvarm is)</mtext></math></div>
+  <div class="formula left">
+    <math><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><mn>0,50</mn><mo>·</mo><mn>334</mn><mo>=</mo><mn>167</mn><mspace width="0.25em"/><mtext>kJ</mtext><mspace width="0.8em"/><mtext>(smelt)</mtext></math></div>
+  <div class="formula left">
+    <math><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>0,50</mn><mo>·</mo><mn>4&nbsp;180</mn><mo>·</mo><mn>100</mn><mo>=</mo><mn>209</mn><mspace width="0.25em"/><mtext>kJ</mtext><mspace width="0.8em"/><mtext>(opvarm vand)</mtext></math></div>
+  <div class="formula left">
+    <math><msub><mi>Q</mi><mn>4</mn></msub><mo>=</mo><mn>0,50</mn><mo>·</mo><mn>2&nbsp;260</mn><mo>=</mo><mn>1&nbsp;130</mn><mspace width="0.25em"/><mtext>kJ</mtext><mspace width="0.8em"/><mtext>(fordamp)</mtext></math>
+  </div>
+  <p class="where">I alt <math><mi>Q</mi><mo>≈</mo><mn>1,52</mn><mo>·</mo><msup><mn>10</mn><mn>6</mn></msup><mspace width="0.25em"/><mtext>J</mtext></math>. Fordampningen udgør ca. 74&nbsp;% af energien — de fire led skal lægges sammen, fordi de sker ved forskellige temperaturer.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At regne med temperaturstigning under smeltning eller kogning; temperaturen er konstant, indtil hele stoffet har skiftet fase.</li>
+    <li>At bruge <math><msub><mi>L</mi><mi>f</mi></msub></math> ved en anden temperatur end kogepunktet uden at korrigere for trykket.</li>
+    <li>At glemme de mellemliggende led i en samlet beregning (opvarmning før smeltning, opvarmning af vandet før fordampning).</li>
+    <li>At forveksle fordampning og kogning: fordampning sker ved alle temperaturer fra overfladen, kogning kræver mætningstryk lig det ydre tryk.</li>
+  </ul>
+</div>
+
+</body>
+</html>

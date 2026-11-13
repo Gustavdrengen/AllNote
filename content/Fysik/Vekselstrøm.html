@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Vekselstrøm</title>
+</head>
+<body>
+
+<h1>Vekselstrøm</h1>
+
+<h2>Sinusformet vekselstrøm</h2>
+<div class="box rule">
+  <span class="label">Tidsforløb og effektivværdi</span>
+  <div class="formula"><math><mi>u</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><msub><mi>U</mi><mn>0</mn></msub><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mo>(</mo><mi>ω</mi><mi>t</mi><mo>)</mo><mtext>,</mtext><mspace width="1em"/><msub><mi>U</mi><mtext>eff</mtext></msub><mo>=</mo><mfrac><msub><mi>U</mi><mn>0</mn></msub><msqrt><mn>2</mn></msqrt></mfrac></math></div>
+  <p class="where"><math><msub><mi>U</mi><mn>0</mn></msub></math>: spidsværdi · <math><mi>ω</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>f</mi></math> · i Danmark er <math><mi>f</mi><mo>=</mo><mn>50</mn><mspace width="0.25em"/><mtext>Hz</mtext></math> og <math><msub><mi>U</mi><mtext>eff</mtext></msub><mo>=</mo><mn>230</mn><mspace width="0.25em"/><mtext>V</mtext></math>, altså <math><msub><mi>U</mi><mn>0</mn></msub><mo>≈</mo><mn>325</mn><mspace width="0.25em"/><mtext>V</mtext></math>.</p>
+</div>
+<p>Effektivværdien er den jævnspænding, der ville afsætte samme effekt i en modstand. For en sinusform er den <math><mn>1</mn><mo>/</mo><msqrt><mn>2</mn></msqrt></math> af spidsværdien. Det er derfor, 230&nbsp;V er den værdi, der står på apparaterne.</p>
+
+<h2>Impedans</h2>
+<div class="box rule">
+  <span class="label">Modstand, spole og kondensator</span>
+  <div class="formula"><math><msub><mi>X</mi><mi>L</mi></msub><mo>=</mo><mi>ω</mi><mi>L</mi><mtext>,</mtext><mspace width="0.8em"/><msub><mi>X</mi><mi>C</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>ω</mi><mi>C</mi></mrow></mfrac><mtext>,</mtext><mspace width="0.8em"/><mi>Z</mi><mo>=</mo><msqrt><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msub><mi>X</mi><mi>L</mi></msub><mo>−</mo><msub><mi>X</mi><mi>C</mi></msub><mo>)</mo></mrow><mn>2</mn></msup></msqrt></math></div>
+  <p class="where"><math><mi>Z</mi></math> i ohm. I en spole er strømmen 90° bagud for spændingen; i en kondensator 90° foran. Modstanden <math><mi>R</mi></math> giver ingen faseforskydning.</p>
+</div>
+<table class="compact">
+<caption>Faseforskydning og effekt</caption>
+<tr><th>Komponent</th><th>Fase <math><mi>φ</mi></math></th><th>Effekt</th></tr>
+<tr><td>modstand</td><td>0°</td><td><math><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi></math></td></tr>
+<tr><td>spole</td><td>−90° (strøm bagud)</td><td>0 (reaktiv)</td></tr>
+<tr><td>kondensator</td><td>+90° (strøm foran)</td><td>0 (reaktiv)</td></tr>
+</table>
+<p>Den gennemsnitlige effekt er <math><mi>P</mi><mo>=</mo><msub><mi>U</mi><mtext>eff</mtext></msub><msub><mi>I</mi><mtext>eff</mtext></msub><mspace width="0.1em"/><mi>cos</mi><mspace width="0.1em"/><mi>φ</mi></math>, hvor <math><mi>cos</mi><mspace width="0.1em"/><mi>φ</mi><mo>=</mo><mi>R</mi><mo>/</mo><mi>Z</mi></math> kaldes effektfaktoren. Kun modstanden optager energi; spole og kondensator udveksler energi med kilden frem og tilbage.</p>
+
+<h2>Resonans i en RLC-kreds</h2>
+<div class="box note">
+  <span class="label">Egenfrekvens</span>
+  <div class="formula"><math><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>π</mi><msqrt><mrow><mi>L</mi><mi>C</mi></mrow></msqrt></mrow></mfrac></math></div>
+  <p class="where">Ved resonans er <math><msub><mi>X</mi><mi>L</mi></msub><mo>=</mo><msub><mi>X</mi><mi>C</mi></msub></math>, så <math><mi>Z</mi><mo>=</mo><mi>R</mi></math> og strømmen maksimal. Afstemning af radio og filtre i højttalere bygger på dette.</p>
+</div>
+<p>Kredsens godhed <math><mi>Q</mi><mo>=</mo><mfrac><msub><mi>f</mi><mn>0</mn></msub><mrow><mi>Δ</mi><mi>f</mi></mrow></mfrac></math> angiver, hvor skarp resonansen er: høj <math><mi>Q</mi></math> giver smal båndbredde. Ved resonans kan spændingen over spolen eller kondensatoren blive mange gange større end kildens spænding.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — RLC i serie</span>
+  <p>En kreds med <math><mi>R</mi><mo>=</mo><mn>30</mn><mspace width="0.25em"/><mtext>Ω</mtext></math>, <math><mi>L</mi><mo>=</mo><mn>0,10</mn><mspace width="0.25em"/><mtext>H</mtext></math> og <math><mi>C</mi><mo>=</mo><mn>50</mn><mspace width="0.25em"/><mtext>µF</mtext></math> tilsluttes 230&nbsp;V, 50&nbsp;Hz.</p>
+  <div class="formula left">
+    <math><msub><mi>X</mi><mi>L</mi></msub><mo>=</mo><mn>2</mn><mi>π</mi><mo>·</mo><mn>50</mn><mo>·</mo><mn>0,10</mn><mo>=</mo><mn>31,4</mn><mspace width="0.25em"/><mtext>Ω</mtext><mtext>,</mtext><mspace width="1em"/><msub><mi>X</mi><mi>C</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>π</mi><mo>·</mo><mn>50</mn><mo>·</mo><mn>50</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>63,7</mn><mspace width="0.25em"/><mtext>Ω</mtext></math></div>
+  <div class="formula left">
+    <math><mi>Z</mi><mo>=</mo><msqrt><msup><mn>30</mn><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mn>31,4</mn><mo>−</mo><mn>63,7</mn><mo>)</mo></mrow><mn>2</mn></msup></msqrt><mo>=</mo><mn>44,1</mn><mspace width="0.25em"/><mtext>Ω</mtext><mtext>,</mtext><mspace width="1em"/><mi>I</mi><mo>=</mo><mfrac><mn>230</mn><mn>44,1</mn></mfrac><mo>=</mo><mn>5,2</mn><mspace width="0.25em"/><mtext>A</mtext></math>
+  </div>
+  <p class="where">Effektfaktoren er <math><mi>cos</mi><mspace width="0.1em"/><mi>φ</mi><mo>=</mo><mn>30</mn><mo>/</mo><mn>44,1</mn><mo>=</mo><mn>0,68</mn></math>, så den optagne effekt er <math><mi>P</mi><mo>=</mo><mn>230</mn><mo>·</mo><mn>5,2</mn><mo>·</mo><mn>0,68</mn><mo>≈</mo><mn>810</mn><mspace width="0.25em"/><mtext>W</mtext></math>.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At lægge <math><mi>R</mi></math>, <math><msub><mi>X</mi><mi>L</mi></msub></math> og <math><msub><mi>X</mi><mi>C</mi></msub></math> sammen som tal. De skal lægges som vektorer — deraf kvadratroden.</li>
+    <li>At bruge spidsværdien i effektberegninger; brug effektivværdier.</li>
+    <li>At tro, at en kondensator »bruger« effekt i en vekselstrømskreds. Den optager og afgiver energi, men nettoeffekten er nul.</li>
+    <li>At skrive <math><mi>f</mi></math> i rad/s. <math><mi>ω</mi></math> er rad/s, <math><mi>f</mi></math> er Hz.</li>
+  </ul>
+</div>
+
+</body>
+</html>

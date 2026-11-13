@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Eksperimentelt arbejde</title>
+</head>
+<body>
+
+<h1>Eksperimentelt arbejde</h1>
+
+<h2>Fra spørgsmål til måling</h2>
+<p>Et eksperiment begynder med en kvantitativ sammenhæng, der kan afprøves: en hypotese om, hvordan <math><mi>y</mi></math> afhænger af <math><mi>x</mi></math>. Vælg den uafhængige variabel, hold de kontrollerede variable fast, og mål den afhængige variabel flere gange. En måling uden angivet usikkerhed er ikke en måling.</p>
+<table class="compact">
+<caption>Variabeltyper</caption>
+<tr><th>Type</th><th>Rolle</th><th>Eksempel</th></tr>
+<tr><td>uafhængig</td><td>den, du ændrer</td><td>pendulets længde <math><mi>l</mi></math></td></tr>
+<tr><td>afhængig</td><td>den, du måler</td><td>perioden <math><mi>T</mi></math></td></tr>
+<tr><td>kontrolleret</td><td>holdes fast</td><td>amplitude, masse, temperatur</td></tr>
+</table>
+
+<h2>Grafer og regression</h2>
+<div class="box rule">
+  <span class="label">Linearisering</span>
+  <p>Linearisér sammenhængen, før du laver regression. For <math><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mrow><mi>l</mi><mo>/</mo><mi>g</mi></mrow></msqrt></math> afbildes <math><msup><mi>T</mi><mn>2</mn></msup></math> mod <math><mi>l</mi></math>:</p>
+  <div class="formula"><math><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow><mi>g</mi></mfrac><mo>·</mo><mi>l</mi></math></div>
+  <p class="where">Hældningen <math><mi>a</mi><mo>=</mo><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><mo>/</mo><mi>g</mi></math> giver <math><mi>g</mi><mo>=</mo><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><mo>/</mo><mi>a</mi></math>. Regressionen giver både hældning og usikkerhed på hældningen.</p>
+</div>
+<p>Den lineære model er <math><mi>y</mi><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi></math>. Regressionskoefficienten <math><msup><mi>R</mi><mn>2</mn></msup></math> angiver, hvor stor en del af variationen modellen forklarer; den er tæt på 1 for en god ret linje. <math><msup><mi>R</mi><mn>2</mn></msup></math> alene beviser intet — se altid på residualerne for systematiske afvigelser.</p>
+<div class="box note">
+  <span class="label">Akser og enheder</span>
+  <p>Sæt altid størrelse og enhed på begge akser, fx <math><mi>l</mi></math> i m og <math><msup><mi>T</mi><mn>2</mn></msup></math> i s². Vælg skala, så datapunkterne fylder grafen, og tegn usikkerhedsbjælker, hvor de er synlige. En graf uden enheder kan ikke bruges til at bestemme en fysisk størrelse.</p>
+</div>
+
+<h2>Journalens indhold</h2>
+<ol class="tight">
+  <li>Formål og den hypotese, der afprøves.</li>
+  <li>Apparatur og fremgangsmåde, så kort at en anden kan gentage forsøget.</li>
+  <li>Måledata i tabel med enheder og usikkerheder.</li>
+  <li>Grafer med regression, hældning og usikkerhed.</li>
+  <li>Resultat med enhed og usikkerhed, sammenlignet med en tabelværdi.</li>
+  <li>Fejlkilder: systematiske og tilfældige, og hvordan de påvirker resultatet.</li>
+  <li>Konklusion, der svarer direkte på formålet.</li>
+</ol>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — g fra pendulforsøg</span>
+  <p>Regression af <math><msup><mi>T</mi><mn>2</mn></msup></math> mod <math><mi>l</mi></math> giver hældningen <math><mi>a</mi><mo>=</mo><mo>(</mo><mn>4,05</mn><mo>±</mo><mn>0,06</mn><mo>)</mo><mspace width="0.25em"/><mtext>s²/m</mtext></math>.</p>
+  <div class="formula left">
+    <math><mi>g</mi><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow><mi>a</mi></mfrac><mo>=</mo><mfrac><mn>39,48</mn><mn>4,05</mn></mfrac><mo>=</mo><mn>9,75</mn><mspace width="0.25em"/><mtext>m/s²</mtext><mtext>,</mtext><mspace width="1em"/><mfrac><msub><mi>u</mi><mi>g</mi></msub><mi>g</mi></mfrac><mo>=</mo><mfrac><msub><mi>u</mi><mi>a</mi></msub><mi>a</mi></mfrac><mo>=</mo><mn>1,5</mn><mtext>%</mtext></math>
+  </div>
+  <p class="where">Resultatet er <math><mi>g</mi><mo>=</mo><mo>(</mo><mn>9,75</mn><mo>±</mo><mn>0,15</mn><mo>)</mo><mspace width="0.25em"/><mtext>m/s²</mtext></math>. Tabelværdien 9,82 ligger uden for intervallet, hvilket peger på en systematisk fejl — fx at pendullængden er målt til ophænget i stedet for til massemidtpunktet.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At vælge akserne, så hældningen bliver noget andet end den størrelse, du vil bestemme.</li>
+    <li>At bruge et enkelt målepunkt i stedet for en regression over hele serien.</li>
+    <li>At kalde en forskel for »en fejl«, når den ligger inden for usikkerheden.</li>
+    <li>At konkludere ud over data: et forsøg med 5 punkter kan ikke skelne mellem to modeller, der afviger med 1&nbsp;%.</li>
+  </ul>
+</div>
+
+</body>
+</html>

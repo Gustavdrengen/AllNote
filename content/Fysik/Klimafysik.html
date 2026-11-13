@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Klimafysik</title>
+</head>
+<body>
+
+<h1>Klimafysik</h1>
+
+<h2>Strålingsbalance</h2>
+<div class="box rule">
+  <span class="label">Jordens effektive temperatur</span>
+  <div class="formula"><math><mfrac><mrow><mi>S</mi><mo>(</mo><mn>1</mn><mo>−</mo><mi>a</mi><mo>)</mo></mrow><mn>4</mn></mfrac><mo>=</mo><mi>σ</mi><msup><msub><mi>T</mi><mtext>eff</mtext></msub><mn>4</mn></msup></math></div>
+  <p class="where"><math><mi>S</mi><mo>=</mo><mn>1&nbsp;361</mn><mspace width="0.25em"/><mtext>W/m²</mtext></math>: solarkonstanten · <math><mi>a</mi><mo>≈</mo><mn>0,30</mn></math>: albedo. Faktoren 4 kommer af forholdet mellem tværsnitsareal og kugleoverflade.</p>
+</div>
+<p>Indsættes værdierne fås <math><msub><mi>T</mi><mtext>eff</mtext></msub><mo>≈</mo><mn>255</mn><mspace width="0.25em"/><mtext>K</mtext></math>, dvs. ca. −18&nbsp;°C. Den målte middeltemperatur ved overfladen er ca. 288&nbsp;K (15&nbsp;°C). Forskellen på 33&nbsp;K skyldes drivhuseffekten.</p>
+
+<h2>Drivhuseffekten</h2>
+<div class="box rule">
+  <span class="label">Hvorfor overfladen er varmere</span>
+  <p>Atmosfæren er gennemsigtig for synligt lys, men absorberer infrarød stråling fra overfladen. Den udstråler selv — både opad mod rummet og nedad mod overfladen. Den nedadgående stråling varmer overfladen, så den må udstråle mere, end den ville gøre uden atmosfære.</p>
+</div>
+<p>Drivhusgasserne virker ikke som et låg, men ved at hæve den højde, hvorfra strålingen undslipper til rummet. Fordi temperaturen aftager med højden, betyder en højere emissionshøjde en lavere udstrålingstemperatur — og dermed en varmere overflade for samme energibalance.</p>
+<table class="compact">
+<caption>Albedo og strålingsegenskaber</caption>
+<tr><th>Overflade</th><th>Albedo</th></tr>
+<tr><td>fersk sne</td><td class="num">0,80–0,90</td></tr>
+<tr><td>havis</td><td class="num">0,50–0,70</td></tr>
+<tr><td>ørken</td><td class="num">0,30–0,40</td></tr>
+<tr><td>skov</td><td class="num">0,10–0,20</td></tr>
+<tr><td>åbent hav</td><td class="num">0,06</td></tr>
+</table>
+
+<h2>Tilbagekoblinger og følsomhed</h2>
+<p>En ændring i strålingsbalancen kaldes en strålingspåvirkning og måles i W/m². En fordobling af CO₂ giver ca. 3,7&nbsp;W/m². Klimafølsomheden angiver, hvor meget middeltemperaturen stiger ved denne fordobling, og anslås til 2,5–4&nbsp;°C inklusive tilbagekoblinger.</p>
+<div class="grid2">
+  <div class="box note">
+    <span class="label">Forstærkende</span>
+    <ul class="tight">
+      <li>Vanddamp: varmere luft holder mere damp, som selv er drivhusgas.</li>
+      <li>Is-albedo: smeltende is blottlægger mørkt vand, som absorberer mere.</li>
+    </ul>
+  </div>
+  <div class="box note">
+    <span class="label">Dæmpende</span>
+    <ul class="tight">
+      <li>Mere lavtliggende skyer reflekterer sollys.</li>
+      <li>Øget CO₂-optag i hav og planter.</li>
+    </ul>
+  </div>
+</div>
+<p>Forskellen mellem en Ford-model (kun stråling) og virkeligheden er netop tilbagekoblingerne. Derfor er usikkerheden på klimafølsomheden større end usikkerheden på den grundlæggende strålingsfysik.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — effektiv temperatur</span>
+  <p>Beregn Jordens strålingstemperatur med <math><mi>S</mi><mo>=</mo><mn>1&nbsp;361</mn><mspace width="0.25em"/><mtext>W/m²</mtext></math> og <math><mi>a</mi><mo>=</mo><mn>0,30</mn></math>.</p>
+  <div class="formula left">
+    <math><msub><mi>T</mi><mtext>eff</mtext></msub><mo>=</mo><msup><mrow><mo>(</mo><mfrac><mrow><mn>1&nbsp;361</mn><mo>·</mo><mn>0,70</mn></mrow><mrow><mn>4</mn><mo>·</mo><mn>5,67</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>8</mn></mrow></msup></mrow></mfrac><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></msup><mo>=</mo><msup><mrow><mo>(</mo><mn>238</mn><mo>/</mo><mn>5,67</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>8</mn></mrow></msup><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></msup><mo>≈</mo><mn>255</mn><mspace width="0.25em"/><mtext>K</mtext></math>
+  </div>
+  <p class="where">Dvs. −18&nbsp;°C. En ændring af albedoen med 0,01 ændrer temperaturen med ca. 1&nbsp;K — hvilket viser, hvor følsom balancen er over for ændringer i isdække og skydække.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At glemme faktoren 4 mellem indstrålet tværsnit og udstrålende overflade.</li>
+    <li>At tro, at drivhuseffekten skyldes, at atmosfæren »holder på varmen« som et lukket rum. Den skyldes strålingsovergang ved højere og koldere luftlag.</li>
+    <li>At forveksle vejr og klima: enkeltår siger intet om tendensen.</li>
+    <li>At bruge Celsius i <math><msup><mi>T</mi><mn>4</mn></msup></math>.</li>
+  </ul>
+</div>
+
+</body>
+</html>

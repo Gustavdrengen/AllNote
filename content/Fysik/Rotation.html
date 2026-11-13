@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Rotation</title>
+</head>
+<body>
+
+<h1>Rotation</h1>
+
+<h2>Vinkelstørrelser</h2>
+<div class="box rule">
+  <span class="label">Kinematik om en akse</span>
+  <div class="formula"><math><mi>θ</mi><mo>=</mo><mfrac><mi>s</mi><mi>r</mi></mfrac><mtext>,</mtext><mspace width="0.8em"/><mi>ω</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>θ</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mtext>,</mtext><mspace width="0.8em"/><mi>α</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>ω</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mtext>,</mtext><mspace width="0.8em"/><mi>v</mi><mo>=</mo><mi>ω</mi><mi>r</mi></math></div>
+  <p class="where"><math><mi>θ</mi></math> i radian · <math><mi>ω</mi></math> i rad/s · <math><mi>α</mi></math> i rad/s² · <math><mi>s</mi></math>: buelængde</p>
+</div>
+<p>Ved konstant vinkelacceleration gælder de samme tre ligninger som ved retlinet bevægelse, blot med <math><mi>θ</mi></math>, <math><mi>ω</mi></math> og <math><mi>α</mi></math>: <math><mi>ω</mi><mo>=</mo><msub><mi>ω</mi><mn>0</mn></msub><mo>+</mo><mi>α</mi><mi>t</mi></math>, <math><mi>θ</mi><mo>=</mo><msub><mi>ω</mi><mn>0</mn></msub><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>α</mi><msup><mi>t</mi><mn>2</mn></msup></math>, <math><msup><mi>ω</mi><mn>2</mn></msup><mo>=</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>+</mo><mn>2</mn><mi>α</mi><mi>θ</mi></math>.</p>
+
+<h2>Drejningsmoment og inertimoment</h2>
+<div class="grid2">
+  <div class="box">
+    <span class="label">Moment</span>
+    <div class="formula"><math><mi>τ</mi><mo>=</mo><mi>r</mi><mi>F</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mi>θ</mi></math></div>
+    <p class="where">Kun kraftkomposanten vinkelret på armen giver moment. Enhed: N·m.</p>
+  </div>
+  <div class="box">
+    <span class="label">Kraftligningen</span>
+    <div class="formula"><math><msub><mi>τ</mi><mtext>res</mtext></msub><mo>=</mo><mi>I</mi><mi>α</mi></math></div>
+    <p class="where"><math><mi>I</mi><mo>=</mo><mo>∑</mo><msub><mi>m</mi><mi>i</mi></msub><msubsup><mi>r</mi><mi>i</mi><mn>2</mn></msubsup></math>: inertimoment, kg·m².</p>
+  </div>
+</div>
+<table class="compact">
+<caption>Inertimomenter om massemidtpunktet</caption>
+<tr><th>Legeme</th><th><math><mi>I</mi></math></th><th>Legeme</th><th><math><mi>I</mi></math></th></tr>
+<tr><td>punktmasse i afstand <math><mi>r</mi></math></td><td><math><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></math></td><td>massiv kugle</td><td><math><mfrac><mn>2</mn><mn>5</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></math></td></tr>
+<tr><td>tynd stang, midt</td><td><math><mfrac><mn>1</mn><mn>12</mn></mfrac><mi>m</mi><msup><mi>L</mi><mn>2</mn></msup></math></td><td>kugleskal</td><td><math><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></math></td></tr>
+<tr><td>massiv cylinder</td><td><math><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></math></td><td>hul cylinder</td><td><math><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></math></td></tr>
+</table>
+<p>Steiners sætning (parallelakse-sætningen): <math><mi>I</mi><mo>=</mo><msub><mi>I</mi><mtext>cm</mtext></msub><mo>+</mo><mi>m</mi><msup><mi>d</mi><mn>2</mn></msup></math>, hvor <math><mi>d</mi></math> er afstanden til den nye akse. Inertimomentet afhænger altså af, hvor massen ligger i forhold til aksen — ikke kun af massen.</p>
+
+<h2>Energi og impulsmoment</h2>
+<div class="formula"><math><msub><mi>E</mi><mi>rot</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>I</mi><msup><mi>ω</mi><mn>2</mn></msup><mtext>,</mtext><mspace width="1em"/><mi>L</mi><mo>=</mo><mi>I</mi><mi>ω</mi><mtext>,</mtext><mspace width="1em"/><msub><mi>P</mi><mi>rot</mi></msub><mo>=</mo><mi>τ</mi><mi>ω</mi></math></div>
+<p>Impulsmomentet er bevaret, når det resulterende moment om aksen er nul: <math><msub><mi>I</mi><mn>1</mn></msub><msub><mi>ω</mi><mn>1</mn></msub><mo>=</mo><msub><mi>I</mi><mn>2</mn></msub><msub><mi>ω</mi><mn>2</mn></msub></math>. Det er grunden til, at en skøjteløber snurrer hurtigere, når armene trækkes ind, og til at en kat kan lande på benene.</p>
+<div class="box note">
+  <span class="label">Rulning uden glidning</span>
+  <p><math><mi>v</mi><mo>=</mo><mi>ω</mi><mi>R</mi></math> og <math><mi>a</mi><mo>=</mo><mi>α</mi><mi>R</mi></math>. Den samlede kinetiske energi er <math><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>I</mi><msup><mi>ω</mi><mn>2</mn></msup></math>. Ned ad et skråplan accelererer en kugle derfor langsommere end en klods uden friktion.</p>
+</div>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — svinghjul</span>
+  <p>Et svinghjul er en massiv skive med <math><mi>m</mi><mo>=</mo><mn>8,0</mn><mspace width="0.25em"/><mtext>kg</mtext></math> og <math><mi>R</mi><mo>=</mo><mn>0,25</mn><mspace width="0.25em"/><mtext>m</mtext></math>. Det accelereres fra hvile til <math><mn>20</mn><mspace width="0.25em"/><mtext>rad/s</mtext></math> på <math><mn>4,0</mn><mspace width="0.25em"/><mtext>s</mtext></math>.</p>
+  <div class="formula left">
+    <math><mi>I</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mn>8,0</mn><mo>·</mo><msup><mn>0,25</mn><mn>2</mn></msup><mo>=</mo><mn>0,25</mn><mspace width="0.25em"/><mtext>kg·m²</mtext><mtext>,</mtext><mspace width="1em"/><mi>α</mi><mo>=</mo><mfrac><mn>20</mn><mn>4,0</mn></mfrac><mo>=</mo><mn>5,0</mn><mspace width="0.25em"/><mtext>rad/s²</mtext></math></div>
+  <div class="formula left">
+    <math><mi>τ</mi><mo>=</mo><mi>I</mi><mi>α</mi><mo>=</mo><mn>1,25</mn><mspace width="0.25em"/><mtext>N·m</mtext><mtext>,</mtext><mspace width="1em"/><msub><mi>E</mi><mi>rot</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mn>0,25</mn><mo>·</mo><msup><mn>20</mn><mn>2</mn></msup><mo>=</mo><mn>50</mn><mspace width="0.25em"/><mtext>J</mtext></math>
+  </div>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At bruge <math><mi>I</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></math> for en skive om en akse, der ikke går gennem midten; brug Steiners sætning.</li>
+    <li>At regne i grader: alle vinkelstørrelser i <math><mi>ω</mi><mo>=</mo><mi>v</mi><mo>/</mo><mi>r</mi></math> og <math><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>I</mi><msup><mi>ω</mi><mn>2</mn></msup></math> skal være radianer.</li>
+    <li>At glemme, at moment afhænger af angrebspunktet: en kraft gennem aksen giver intet moment.</li>
+    <li>At tro, at <math><mi>ω</mi></math> er bevaret, når <math><mi>I</mi></math> ændres — det er <math><mi>L</mi><mo>=</mo><mi>I</mi><mi>ω</mi></math>, der er bevaret.</li>
+  </ul>
+</div>
+
+</body>
+</html>

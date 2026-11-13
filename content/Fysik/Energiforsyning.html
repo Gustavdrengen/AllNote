@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Energiforsyning</title>
+</head>
+<body>
+
+<h1>Energiforsyning</h1>
+
+<h2>Energikilder og energitæthed</h2>
+<table class="compact">
+<caption>Energiindhold og effekttæthed</caption>
+<tr><th>Brændsel</th><th>Energi per kg</th><th>Bemærkning</th></tr>
+<tr><td>træ (tørt)</td><td class="num">15 MJ</td><td>biomasse, CO₂-neutral i princippet</td></tr>
+<tr><td>kul</td><td class="num">24–33 MJ</td><td>høj CO₂-udledning</td></tr>
+<tr><td>olie</td><td class="num">42–46 MJ</td><td>transport, petrokemi</td></tr>
+<tr><td>naturgas</td><td class="num">50 MJ</td><td>fossil, lavere CO₂ per energi end kul</td></tr>
+<tr><td>uran (²³⁵U)</td><td class="num">8 · 10¹³ J</td><td>ca. 2 millioner gange olie</td></tr>
+<tr><td>deuterium (fusion)</td><td class="num">3 · 10¹⁴ J</td><td>endnu ikke udnyttet kommercielt</td></tr>
+</table>
+<p>Fossile brændsler er lagret solenergi fra millioner af år; ved forbrænding frigives kulstof, der ellers var bundet i jorden. Vedvarende kilder — sol, vind, vand, biomasse, geotermi — er alle varianter af strømme i nutiden, bortset fra geotermi og tidevand, som har andre oprindelser.</p>
+
+<h2>Virkningsgrad i kæden</h2>
+<div class="box rule">
+  <span class="label">Fra primærenergi til nyttig energi</span>
+  <div class="formula"><math><msub><mi>η</mi><mtext>tot</mtext></msub><mo>=</mo><msub><mi>η</mi><mn>1</mn></msub><msub><mi>η</mi><mn>2</mn></msub><mo>…</mo><msub><mi>η</mi><mi>n</mi></msub></math></div>
+  <p class="where">Virkningsgraderne ganges. Et kulkraftværk (40&nbsp;%), et elnet (92&nbsp;%) og en elmotor (90&nbsp;%) giver tilsammen ca. 33&nbsp;% fra brændsel til bevægelse.</p>
+</div>
+<p>En elbil udnytter energien bedre end en benzinbil, fordi motoren har høj virkningsgrad og kan genvinde bremseenergi. Men regnestykket skal starte ved primærenergien: gik elen fra et kulkraftværk, ville den samlede udnyttelse være sammenlignelig med en effektiv benzinmotor — det er sammensætningen af elnettet, der afgør forskellen.</p>
+
+<h2>Dansk elproduktion</h2>
+<table class="compact">
+<caption>Oversigt over teknologier</caption>
+<tr><th>Teknologi</th><th>Fordel</th><th>Udfordring</th></tr>
+<tr><td>vindmøller</td><td>moden, billig, høj kapacitetsfaktor til havs</td><td>fluktuerende produktion</td></tr>
+<tr><td>solceller</td><td>skalerbar, ingen bevægelige dele</td><td>kun dagtimerne om sommeren</td></tr>
+<tr><td>biomasse</td><td>kan lagres og reguleres</td><td>areal, bæredygtighed</td></tr>
+<tr><td>vandkraft</td><td>regulerbar, høj virkningsgrad</td><td>begrænsede geografiske muligheder</td></tr>
+<tr><td>kernekraft</td><td>lav CO₂, stabil basisproduktion</td><td>affald, omkostninger, accept</td></tr>
+</table>
+<p>Et elsystem med stor andel af vind og sol kræver fleksibilitet: lagring, udveksling over grænser, fleksibelt forbrug og regulerbare værker. Danmark har i perioder dækket hele elforbruget fra vind, men ikke hele året.</p>
+<div class="box note">
+  <span class="label">Energilagring</span>
+  <p>Batterier er velegnede til timer, pumpet vandkraft og brint til dage og uger. Virkningsgraden er altafgørende: batterier giver ca. 90&nbsp;% rundtur, brint via elektrolyse og brændselscelle kun 30–40&nbsp;%. Jo flere led i kæden, jo mere energi går tabt.</p>
+</div>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — hvor meget brændsel?</span>
+  <p>Et kraftværk leverer <math><mn>1,0</mn><mspace width="0.25em"/><mtext>GW</mtext></math> elektrisk med virkningsgrad 42&nbsp;%, fyret med kul på 28&nbsp;MJ/kg.</p>
+  <div class="formula left">
+    <math><msub><mi>P</mi><mtext>brændsel</mtext></msub><mo>=</mo><mfrac><mrow><mn>1,0</mn><mo>·</mo><msup><mn>10</mn><mn>9</mn></msup></mrow><mn>0,42</mn></mfrac><mo>=</mo><mn>2,38</mn><mo>·</mo><msup><mn>10</mn><mn>9</mn></msup><mspace width="0.25em"/><mtext>W</mtext><mtext>,</mtext><mspace width="1em"/><mover accent="true"><mi>m</mi><mo>˙</mo></mover><mo>=</mo><mfrac><mrow><mn>2,38</mn><mo>·</mo><msup><mn>10</mn><mn>9</mn></msup></mrow><mrow><mn>28</mn><mo>·</mo><msup><mn>10</mn><mn>6</mn></msup></mrow></mfrac><mo>≈</mo><mn>85</mn><mspace width="0.25em"/><mtext>kg/s</mtext></math>
+  </div>
+  <p class="where">Det er ca. 7&nbsp;300 ton kul i døgnet, eller ca. 2,7&nbsp;millioner ton om året. Samme effekt fra kernekraft kræver ca. 3&nbsp;kg ²³⁵U per døgn.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At sammenligne effekt (GW) med energi (GWh). Effekt er øjeblikkelig, energi er over tid.</li>
+    <li>At kalde vindmøller »CO₂-frie« uden at regne produktion og nedtagning med i livscyklussen — de er meget lave, men ikke nul.</li>
+    <li>At glemme virkningsgradskæden og sammenligne elforbrug direkte med brændselsforbrug.</li>
+    <li>At tro, at kapacitetsfaktor er det samme som virkningsgrad. En vindmølle kan have høj virkningsgrad, men lav kapacitetsfaktor, fordi vinden ikke altid blæser.</li>
+  </ul>
+</div>
+
+</body>
+</html>

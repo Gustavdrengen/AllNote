@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Bølger</title>
+</head>
+<body>
+
+<h1>Bølger</h1>
+
+<h2>Bølgeligningen</h2>
+<div class="box rule">
+  <span class="label">Bølgehastighed</span>
+  <div class="formula"><math><mi>v</mi><mo>=</mo><mi>λ</mi><mi>f</mi><mo>=</mo><mfrac><mi>λ</mi><mi>T</mi></mfrac></math></div>
+  <p class="where"><math><mi>λ</mi></math>: bølgelængde (m) · <math><mi>f</mi></math>: frekvens (Hz) · <math><mi>T</mi></math>: periode (s). Ved en overgang mellem medier ændres <math><mi>λ</mi></math>, mens <math><mi>f</mi></math> er bestemt af kilden og forbliver uændret.</p>
+</div>
+<p>Bølgehastigheden bestemmes af mediet, ikke af kilden. En bølge transporterer energi og impuls, men ikke stof: vandmolekylerne i en overfladebølge bevæger sig i små cirkler omkring deres ligevægtsposition.</p>
+
+<h2>Bølgetyper</h2>
+<table class="compact">
+<caption>Sortering efter udsving og medium</caption>
+<tr><th>Type</th><th>Udsving</th><th>Eksempel</th></tr>
+<tr><td>transversal, mekanisk</td><td>vinkelret på udbredelsen</td><td>snor, vandoverflade, seismisk S-bølge</td></tr>
+<tr><td>longitudinal, mekanisk</td><td>parallelt med udbredelsen</td><td>lyd, fjeder, seismisk P-bølge</td></tr>
+<tr><td>elektromagnetisk</td><td>svingende <math><mover accent="true"><mi>E</mi><mo>→</mo></mover></math> og <math><mover accent="true"><mi>B</mi><mo>→</mo></mover></math></td><td>lys, radio, røntgen — kræver intet medium</td></tr>
+</table>
+<p>Overfladebølger på vand er en blanding: partiklerne bevæger sig i cirkler, og bevægelsen aftager med dybden. Ved kysten bliver bølgen asymmetrisk og bryder, fordi vandet bliver grundere end bølgelængden.</p>
+
+<h2>Superposition og stående bølger</h2>
+<div class="box note">
+  <span class="label">Superpositionsprincippet</span>
+  <p>To bølger, der mødes, lægges sammen punkt for punkt: <math><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub></math>. Bølgerne påvirker ikke hinandens udbredelse — efter mødet fortsætter de uændret.</p>
+</div>
+<p>To modløbende bølger med samme frekvens og amplitude danner en stående bølge:</p>
+<div class="formula"><math><mi>y</mi><mo>=</mo><mn>2</mn><mi>A</mi><mspace width="0.1em"/><mi>sin</mi><mspace width="0.1em"/><mo>(</mo><mi>k</mi><mi>x</mi><mo>)</mo><mspace width="0.1em"/><mi>cos</mi><mspace width="0.1em"/><mo>(</mo><mi>ω</mi><mi>t</mi><mo>)</mo><mtext>,</mtext><mspace width="1em"/><mi>k</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>λ</mi></mfrac></math></div>
+<p>Knudepunkter ligger fast med afstanden <math><mi>λ</mi><mo>/</mo><mn>2</mn></math>, og buge ligger midt imellem. I en snor med fastspændte ender kræver det <math><mi>L</mi><mo>=</mo><mi>n</mi><mi>λ</mi><mo>/</mo><mn>2</mn></math>, så egenfrekvenserne er <math><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mi>n</mi><mi>v</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></math> med <math><mi>n</mi><mo>=</mo><mn>1</mn><mtext>,</mtext><mn>2</mn><mtext>,</mtext><mn>3</mn><mo>…</mo></math>. Grundtonen svarer til <math><mi>n</mi><mo>=</mo><mn>1</mn></math>; de øvrige kaldes overtoner.</p>
+<p>For en streng gælder <math><mi>v</mi><mo>=</mo><msqrt><mrow><mi>F</mi><mo>/</mo><mi>μ</mi></mrow></msqrt></math>, hvor <math><mi>F</mi></math> er spændkraften og <math><mi>μ</mi></math> massen per længde. Derfor kan en guitar stemmes ved at ændre spændingen.</p>
+
+<h2>Doppler-effekten</h2>
+<div class="box rule">
+  <span class="label">Ændret frekvens ved bevægelse</span>
+  <div class="formula"><math><msub><mi>f</mi><mtext>obs</mtext></msub><mo>=</mo><msub><mi>f</mi><mtext>kilde</mtext></msub><mfrac><mrow><mi>v</mi><mo>±</mo><msub><mi>v</mi><mtext>obs</mtext></msub></mrow><mrow><mi>v</mi><mo>∓</mo><msub><mi>v</mi><mtext>kilde</mtext></msub></mrow></mfrac></math></div>
+  <p class="where">Øvre tegn: når observatør og kilde nærmer sig hinanden. <math><mi>v</mi></math> er bølgens hastighed i mediet. For lys gælder den relativistiske form, hvor kun den relative hastighed indgår.</p>
+</div>
+<p>Når kilden nærmer sig, presses bølgelængderne sammen og frekvensen stiger. Ved hastigheder over bølgehastigheden dannes et Mach-spring — for lyd en chokbølge, der høres som en knald. Politiets fartmåling og måling af galaksers rødforskydning bygger på samme princip.</p>
+
+<h2>Regneeksempel</h2>
+<div class="box">
+  <span class="label">Eksempel — ambulance</span>
+  <p>En ambulance kører med <math><mn>25</mn><mspace width="0.25em"/><mtext>m/s</mtext></math> og bruger hornet med <math><mn>700</mn><mspace width="0.25em"/><mtext>Hz</mtext></math>. Lydhastigheden er <math><mn>343</mn><mspace width="0.25em"/><mtext>m/s</mtext></math>.</p>
+  <div class="formula left">
+    <math><msub><mi>f</mi><mtext>nærmer</mtext></msub><mo>=</mo><mn>700</mn><mo>·</mo><mfrac><mn>343</mn><mrow><mn>343</mn><mo>−</mo><mn>25</mn></mrow></mfrac><mo>≈</mo><mn>754</mn><mspace width="0.25em"/><mtext>Hz</mtext><mtext>,</mtext><mspace width="1em"/><msub><mi>f</mi><mtext>fjerner</mtext></msub><mo>=</mo><mn>700</mn><mo>·</mo><mfrac><mn>343</mn><mrow><mn>343</mn><mo>+</mo><mn>25</mn></mrow></mfrac><mo>≈</mo><mn>652</mn><mspace width="0.25em"/><mtext>Hz</mtext></math>
+  </div>
+  <p class="where">Faldet på ca. 100&nbsp;Hz, når ambulancen passerer, svarer til ca. 2,4 halvtoner — det hørbare »iiiu«-fald.</p>
+</div>
+
+<h2>Faldgruber</h2>
+<div class="box warn">
+  <span class="label">Typiske fejl</span>
+  <ul class="tight">
+    <li>At tro, at frekvensen ændrer sig, når en bølge skifter medium. Det er bølgelængden og hastigheden, der ændres.</li>
+    <li>At skrive <math><mi>v</mi><mo>=</mo><mi>λ</mi><mi>f</mi></math> med <math><mi>f</mi></math> i kHz uden at omregne.</li>
+    <li>At forveksle knudepunkter og buge: knudepunkter står stille, buge svinger med maksimal amplitude.</li>
+    <li>At bruge Doppler-formlen for lyd på lys ved høje hastigheder; der skal den relativistiske form anvendes.</li>
+  </ul>
+</div>
+
+</body>
+</html>
